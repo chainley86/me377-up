@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tag>
+    <name>Recipe_01</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Recipe_01?float</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Recipe_02</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Recipe_02?float</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Recipe_03</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Recipe_03?float</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Recipe_04</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Recipe_04?float</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Recipe_11</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Recipe_11?float</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Recipe_12</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Recipe_12?float</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Recipe_13</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Recipe_13?float</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Recipe_14</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Recipe_14?float</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Schedule_Every</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Schedule_Every?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Schedule_Every2</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Schedule_Every2?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Schedule_Hours</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Schedule_Hours?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Schedule_Daily</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Schedule_Daily?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Schedule_Condition</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Schedule_Condition?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Alarm_01</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Alarm_01?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Alarm_02</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Alarm_02?short</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Alarm_03</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Alarm_03?int</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Alarm_04</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Alarm_04?float</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Alarm_History_EN</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Alarm_History_EN?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Alarm_Active_EN</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Alarm_Active_EN?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Trend_MotorCurrent</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Trend_MotorCurrent?float</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Trend_MotorCurrent_Sel</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Trend_MotorCurrent_Sel?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Trend_MotorSpeed</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Trend_MotorSpeed?float</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Trend_MotorSpeed_Sel</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Trend_MotorSpeed_Sel?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Trend_MotorTemp</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Trend_MotorTemp?float</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Trend_MotorTemp_Sel</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Trend_MotorTemp_Sel?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Trend_MotorTemp_EN1</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Trend_MotorTemp_EN1?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Trend_MotorTemp_EN2</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Trend_MotorTemp_EN2?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Trend_Motor_Start</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Trend_Motor_Start?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Trend_Motor_Started</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Trend_Motor_Started?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Trend_Motor_Stop</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Trend_Motor_Stop?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Trend_Motor_Stopped</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Trend_Motor_Stopped?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Trend_Real_EN</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Trend_Real_EN?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Trend_Real_CursorON</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Trend_Real_CursorON?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Trend_Real_CursorOFF</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Trend_Real_CursorOFF?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Trend_History_EN</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Trend_History_EN?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Trend_History_CursorON</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Trend_History_CursorON?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Trend_History_CursorOFF</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Trend_History_CursorOFF?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>DT_Manual_Year</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://DT_Manual_Year?unsignedShort</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>DT_Manual_Month</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://DT_Manual_Month?unsignedByte</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>DT_Manual_Day</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://DT_Manual_Day?unsignedByte</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>DT_Manual_Hour</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://DT_Manual_Hour?unsignedByte</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>DT_Manual_Minute</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://DT_Manual_Minute?unsignedByte</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>DT_Manual_Second</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://DT_Manual_Second?unsignedByte</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>DT_Manual_Sync_EN</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://DT_Manual_Sync_EN?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Languages</name>
+    <refreshTime>1000</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Languages?unsignedInt</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Email_To</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Email_To?string-100</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Email_Subject</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Email_Subject?string-100</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Email_Content</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Email_Content?string-1000</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Email_ServerAddress</name>
+    <refreshTime>1000</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Email_ServerAddress?string-100</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Email_ServerPort</name>
+    <refreshTime>1000</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Email_ServerPort?string-50</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Email_ServerAuthentication</name>
+    <refreshTime>1000</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Email_ServerAuthentication?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Email_User</name>
+    <refreshTime>1000</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Email_User?string-100</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Email_Password</name>
+    <refreshTime>1000</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Email_Password?string-50</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Email_SSL</name>
+    <refreshTime>1000</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Email_SSL?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>File_SourcePath</name>
+    <refreshTime>1000</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://File_SourcePath?string-200</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>File_DestPath</name>
+    <refreshTime>1000</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://File_DestPath?string-200</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Table_Data01</name>
+    <refreshTime>1000</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Table_Data01?unsignedShort</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Table_Data02</name>
+    <refreshTime>1000</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Table_Data02?unsignedShort</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Table_Data03</name>
+    <refreshTime>1000</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Table_Data03?unsignedShort</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Table_Data04</name>
+    <refreshTime>1000</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Table_Data04?unsignedByte</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Table_Data05</name>
+    <refreshTime>1000</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Table_Data05?unsignedByte</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Table_Data06</name>
+    <refreshTime>1000</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Table_Data06?unsignedByte</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Table_Data07</name>
+    <refreshTime>1000</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Table_Data07?unsignedByte</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Help_FileBrowser</name>
+    <refreshTime>1000</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Help_FileBrowser?short</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Help_JavaScript</name>
+    <refreshTime>1000</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Help_JavaScript?short</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>Help_Table</name>
+    <refreshTime>1000</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Help_Table?short</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>PLC_AC500_V3/Application/GVL/Pot_AI1</name>
+    <refreshTime>50</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://PLC_AC500_V3/Application/GVL/Pot_AI1?short</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>CODESYS V3 ETH:prot1:uid0:Application/GVL/Pot_AI1</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>PLC_AC500_V3/Application/GVL/Pot_AI2</name>
+    <refreshTime>50</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://PLC_AC500_V3/Application/GVL/Pot_AI2?short</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>CODESYS V3 ETH:prot1:uid0:Application/GVL/Pot_AI2</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDI_08_CI502</name>
+    <refreshTime>50</refreshTime>
+    <accessMode>READ</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDI_08_CI502?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>CODESYS V3 ETH:prot1:uid0:Application/IoConfig_Globals_Mapping/xDI_08_CI502</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDI_08_DA501</name>
+    <refreshTime>50</refreshTime>
+    <accessMode>READ</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDI_08_DA501?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>CODESYS V3 ETH:prot1:uid0:Application/IoConfig_Globals_Mapping/xDI_08_DA501</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDI_09_CI502</name>
+    <refreshTime>50</refreshTime>
+    <accessMode>READ</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDI_09_CI502?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>CODESYS V3 ETH:prot1:uid0:Application/IoConfig_Globals_Mapping/xDI_09_CI502</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDI_09_DA501</name>
+    <refreshTime>50</refreshTime>
+    <accessMode>READ</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDI_09_DA501?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>CODESYS V3 ETH:prot1:uid0:Application/IoConfig_Globals_Mapping/xDI_09_DA501</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDI_10_CI502</name>
+    <refreshTime>50</refreshTime>
+    <accessMode>READ</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDI_10_CI502?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>CODESYS V3 ETH:prot1:uid0:Application/IoConfig_Globals_Mapping/xDI_10_CI502</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDI_10_DA501</name>
+    <refreshTime>50</refreshTime>
+    <accessMode>READ</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDI_10_DA501?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>CODESYS V3 ETH:prot1:uid0:Application/IoConfig_Globals_Mapping/xDI_10_DA501</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDI_11_CI502</name>
+    <refreshTime>50</refreshTime>
+    <accessMode>READ</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDI_11_CI502?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>CODESYS V3 ETH:prot1:uid0:Application/IoConfig_Globals_Mapping/xDI_11_CI502</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDI_11_DA501</name>
+    <refreshTime>50</refreshTime>
+    <accessMode>READ</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDI_11_DA501?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>CODESYS V3 ETH:prot1:uid0:Application/IoConfig_Globals_Mapping/xDI_11_DA501</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_08_CI502</name>
+    <refreshTime>50</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_08_CI502?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>CODESYS V3 ETH:prot1:uid0:Application/IoConfig_Globals_Mapping/xDO_08_CI502</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_09_CI502</name>
+    <refreshTime>50</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_09_CI502?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>CODESYS V3 ETH:prot1:uid0:Application/IoConfig_Globals_Mapping/xDO_09_CI502</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_10_CI502</name>
+    <refreshTime>50</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_10_CI502?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>CODESYS V3 ETH:prot1:uid0:Application/IoConfig_Globals_Mapping/xDO_10_CI502</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_11_CI502</name>
+    <refreshTime>50</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_11_CI502?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>CODESYS V3 ETH:prot1:uid0:Application/IoConfig_Globals_Mapping/xDO_11_CI502</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_13_CI502</name>
+    <refreshTime>50</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_13_CI502?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>CODESYS V3 ETH:prot1:uid0:Application/IoConfig_Globals_Mapping/xDO_13_CI502</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_14_CI502</name>
+    <refreshTime>50</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_14_CI502?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>CODESYS V3 ETH:prot1:uid0:Application/IoConfig_Globals_Mapping/xDO_14_CI502</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_15_CI502</name>
+    <refreshTime>50</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_15_CI502?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>CODESYS V3 ETH:prot1:uid0:Application/IoConfig_Globals_Mapping/xDO_15_CI502</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_16_DA501</name>
+    <refreshTime>50</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_16_DA501?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>CODESYS V3 ETH:prot1:uid0:Application/IoConfig_Globals_Mapping/xDO_16_DA501</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_17_DA501</name>
+    <refreshTime>50</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_17_DA501?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>CODESYS V3 ETH:prot1:uid0:Application/IoConfig_Globals_Mapping/xDO_17_DA501</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_18_DA501</name>
+    <refreshTime>50</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_18_DA501?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>CODESYS V3 ETH:prot1:uid0:Application/IoConfig_Globals_Mapping/xDO_18_DA501</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_19_DA501</name>
+    <refreshTime>50</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_19_DA501?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>CODESYS V3 ETH:prot1:uid0:Application/IoConfig_Globals_Mapping/xDO_19_DA501</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_21_DA501</name>
+    <refreshTime>50</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_21_DA501?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>CODESYS V3 ETH:prot1:uid0:Application/IoConfig_Globals_Mapping/xDO_21_DA501</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_22_DA501</name>
+    <refreshTime>50</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_22_DA501?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>CODESYS V3 ETH:prot1:uid0:Application/IoConfig_Globals_Mapping/xDO_22_DA501</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>
+<tag>
+    <name>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_23_DA501</name>
+    <refreshTime>50</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_23_DA501?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <TAGLOCATOR>CODESYS V3 ETH:prot1:uid0:Application/IoConfig_Globals_Mapping/xDO_23_DA501</TAGLOCATOR>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+</tag>

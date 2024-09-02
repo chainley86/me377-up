@@ -1,0 +1,111 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="Web_CP600eCo" pageType="mobile" pageSize="1280,720" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" templateFile="webtemplate.jmx" usedFonts="Arial,SimHei" staticFile="opt/web_cp600eco.png" id="Web_CP600eCo" staticOptEnable="true">
+  <wgtStyle width="1280" x="0" y="0" height="720" fitToSize="1" ver="020800424" v="02.08.00.424"/>
+  <object class="ImageWgt" id="GroupWgt1.ImageWgt1" static="true">
+   <wgtStyle width="500" imagePath="images/CP600-eCo_All.jpg" x="385" y="80" cx="250" cy="180.50" height="361"/>
+  </object>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="English" defaultFont="Arial"/>
+    <lang removable="false" langCode="it-IT" langId="L2" writingsystem="Any" name="Italian" defaultFont="Arial"/>
+    <lang removable="false" langCode="de-DE" langId="L3" writingsystem="Any" name="German" defaultFont="Arial"/>
+    <lang removable="false" langCode="fr-FR" langId="L4" writingsystem="Any" name="French" defaultFont="Arial"/>
+    <lang removable="false" langCode="zh-CN" langId="L5" writingsystem="Any" name="Chinese" defaultFont="SimHei"/>
+    <lang removable="false" langCode="grc" langId="L6" writingsystem="Any" name="Greek" defaultFont="Arial"/>
+    <lang removable="false" langCode="es-ES" langId="L7" writingsystem="Any" name="Spanish" defaultFont="Arial"/>
+    <lang removable="false" langCode="ru-RU" langId="L8" writingsystem="Any" name="Russian" defaultFont="Arial"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="CP600-eCo" L2="CP600-eCo" L3="CP600-eCo" L4="CP600-eCo" L5="CP600-eCo" id="0" L6="CP600-eCo" L7="CP600-eCo" L8="CP600-eCo"/>
+    <MLText L1="Economic HMI portfolio for basic applications" L2="Economic HMI portfolio for basic applications" L3="Economic HMI portfolio for basic applications" L4="Economic HMI portfolio for basic applications" L5="Economic HMI portfolio for basic applications" id="2" L6="Economic HMI portfolio for basic applications" L7="Economic HMI portfolio for basic applications" L8="Economic HMI portfolio for basic applications"/>
+    <MLText L1="Control panels in three different screen sizes from 4.3“ to 10.1“ in ABB design or just black provide HMI functions typically required for basic applications. The engineering tool PB610 Panel Builder 600, part of Automation Builder, ensures easy scalability on the CP600 platform." L2="Control panels in three different screen sizes from 4.3“ to 10.1“ in ABB design or just black provide HMI functions typically required for basic applications. The engineering tool PB610 Panel Builder 600, part of Automation Builder, ensures easy scalability on the CP600 platform." L3="Control panels in three different screen sizes from 4.3“ to 10.1“ in ABB design or just black provide HMI functions typically required for basic applications. The engineering tool PB610 Panel Builder 600, part of Automation Builder, ensures easy scalability on the CP600 platform." L4="Control panels in three different screen sizes from 4.3“ to 10.1“ in ABB design or just black provide HMI functions typically required for basic applications. The engineering tool PB610 Panel Builder 600, part of Automation Builder, ensures easy scalability on the CP600 platform." L5="Control panels in three different screen sizes from 4.3“ to 10.1“ in ABB design or just black provide HMI functions typically required for basic applications. The engineering tool PB610 Panel Builder 600, part of Automation Builder, ensures easy scalability on the CP600 platform." id="3" L6="Control panels in three different screen sizes from 4.3“ to 10.1“ in ABB design or just black provide HMI functions typically required for basic applications. The engineering tool PB610 Panel Builder 600, part of Automation Builder, ensures easy scalability on the CP600 platform." L7="Control panels in three different screen sizes from 4.3“ to 10.1“ in ABB design or just black provide HMI functions typically required for basic applications. The engineering tool PB610 Panel Builder 600, part of Automation Builder, ensures easy scalability on the CP600 platform." L8="Control panels in three different screen sizes from 4.3“ to 10.1“ in ABB design or just black provide HMI functions typically required for basic applications. The engineering tool PB610 Panel Builder 600, part of Automation Builder, ensures easy scalability on the CP600 platform."/>
+    <MLText L1="Designed for basic applications" L2="Designed for basic applications" L3="Designed for basic applications" L4="Designed for basic applications" L5="Designed for basic applications" id="4" L6="Designed for basic applications" L7="Designed for basic applications" L8="Designed for basic applications"/>
+    <MLText L1="• The widescreens available in 4.3“, 7“ and 10.1“ are suitable for many applications.&#xa;• Protocols for ABB PLCs, machinery and motion drives for Ethernet and serial connection make these control panels first choice for ABB automation solutions.&#xa;• OPC UA client and server functions make them well prepared for future communication solutions.&#xa;• Engineering by means of PB610 Panel Builder 600, part of ABB’s Automation Builder, facilitates integration into automation packages and enables good scalability on the CP600 platform for different applications." L2="• The widescreens available in 4.3“, 7“ and 10.1“ are suitable for many applications.&#xa;• Protocols for ABB PLCs, machinery and motion drives for Ethernet and serial connection make these control panels first choice for ABB automation solutions.&#xa;• OPC UA client and server functions make them well prepared for future communication solutions.&#xa;• Engineering by means of PB610 Panel Builder 600, part of ABB’s Automation Builder, facilitates integration into automation packages and enables good scalability on the CP600 platform for different applications." L3="• The widescreens available in 4.3“, 7“ and 10.1“ are suitable for many applications.&#xa;• Protocols for ABB PLCs, machinery and motion drives for Ethernet and serial connection make these control panels first choice for ABB automation solutions.&#xa;• OPC UA client and server functions make them well prepared for future communication solutions.&#xa;• Engineering by means of PB610 Panel Builder 600, part of ABB’s Automation Builder, facilitates integration into automation packages and enables good scalability on the CP600 platform for different applications." L4="• The widescreens available in 4.3“, 7“ and 10.1“ are suitable for many applications.&#xa;• Protocols for ABB PLCs, machinery and motion drives for Ethernet and serial connection make these control panels first choice for ABB automation solutions.&#xa;• OPC UA client and server functions make them well prepared for future communication solutions.&#xa;• Engineering by means of PB610 Panel Builder 600, part of ABB’s Automation Builder, facilitates integration into automation packages and enables good scalability on the CP600 platform for different applications." L5="• The widescreens available in 4.3“, 7“ and 10.1“ are suitable for many applications.&#xa;• Protocols for ABB PLCs, machinery and motion drives for Ethernet and serial connection make these control panels first choice for ABB automation solutions.&#xa;• OPC UA client and server functions make them well prepared for future communication solutions.&#xa;• Engineering by means of PB610 Panel Builder 600, part of ABB’s Automation Builder, facilitates integration into automation packages and enables good scalability on the CP600 platform for different applications." id="5" L6="• The widescreens available in 4.3“, 7“ and 10.1“ are suitable for many applications.&#xa;• Protocols for ABB PLCs, machinery and motion drives for Ethernet and serial connection make these control panels first choice for ABB automation solutions.&#xa;• OPC UA client and server functions make them well prepared for future communication solutions.&#xa;• Engineering by means of PB610 Panel Builder 600, part of ABB’s Automation Builder, facilitates integration into automation packages and enables good scalability on the CP600 platform for different applications." L7="• The widescreens available in 4.3“, 7“ and 10.1“ are suitable for many applications.&#xa;• Protocols for ABB PLCs, machinery and motion drives for Ethernet and serial connection make these control panels first choice for ABB automation solutions.&#xa;• OPC UA client and server functions make them well prepared for future communication solutions.&#xa;• Engineering by means of PB610 Panel Builder 600, part of ABB’s Automation Builder, facilitates integration into automation packages and enables good scalability on the CP600 platform for different applications." L8="• The widescreens available in 4.3“, 7“ and 10.1“ are suitable for many applications.&#xa;• Protocols for ABB PLCs, machinery and motion drives for Ethernet and serial connection make these control panels first choice for ABB automation solutions.&#xa;• OPC UA client and server functions make them well prepared for future communication solutions.&#xa;• Engineering by means of PB610 Panel Builder 600, part of ABB’s Automation Builder, facilitates integration into automation packages and enables good scalability on the CP600 platform for different applications."/>
+    <MLText L1="Slim industrial design" L2="Slim industrial design" L3="Slim industrial design" L4="Slim industrial design" L5="Slim industrial design" id="6" L6="Slim industrial design" L7="Slim industrial design" L8="Slim industrial design"/>
+    <MLText L1="The slim plastic housing in attractive industrial design with a mounting depth of 29 mm enables installation even in narrow spaces. All connectors are located on one side. Landscape and portrait mounting options provide installation flexibility and various HMI presentations. These devices are available either in ABB design or in black." L2="The slim plastic housing in attractive industrial design with a mounting depth of 29 mm enables installation even in narrow spaces. All connectors are located on one side. Landscape and portrait mounting options provide installation flexibility and various HMI presentations. These devices are available either in ABB design or in black." L3="The slim plastic housing in attractive industrial design with a mounting depth of 29 mm enables installation even in narrow spaces. All connectors are located on one side. Landscape and portrait mounting options provide installation flexibility and various HMI presentations. These devices are available either in ABB design or in black." L4="The slim plastic housing in attractive industrial design with a mounting depth of 29 mm enables installation even in narrow spaces. All connectors are located on one side. Landscape and portrait mounting options provide installation flexibility and various HMI presentations. These devices are available either in ABB design or in black." L5="The slim plastic housing in attractive industrial design with a mounting depth of 29 mm enables installation even in narrow spaces. All connectors are located on one side. Landscape and portrait mounting options provide installation flexibility and various HMI presentations. These devices are available either in ABB design or in black." id="7" L6="The slim plastic housing in attractive industrial design with a mounting depth of 29 mm enables installation even in narrow spaces. All connectors are located on one side. Landscape and portrait mounting options provide installation flexibility and various HMI presentations. These devices are available either in ABB design or in black." L7="The slim plastic housing in attractive industrial design with a mounting depth of 29 mm enables installation even in narrow spaces. All connectors are located on one side. Landscape and portrait mounting options provide installation flexibility and various HMI presentations. These devices are available either in ABB design or in black." L8="The slim plastic housing in attractive industrial design with a mounting depth of 29 mm enables installation even in narrow spaces. All connectors are located on one side. Landscape and portrait mounting options provide installation flexibility and various HMI presentations. These devices are available either in ABB design or in black."/>
+    <MLText L1="State-of-the-art connectivity" L2="State-of-the-art connectivity" L3="State-of-the-art connectivity" L4="State-of-the-art connectivity" L5="State-of-the-art connectivity" id="8" L6="State-of-the-art connectivity" L7="State-of-the-art connectivity" L8="State-of-the-art connectivity"/>
+    <MLText L1="• Ethernet interface 10/100 Mbit for easy connectivity to ABB automation components.&#xa;• Flexible serial connectivity to automation components without Ethernet interface.&#xa;• USB host for flexible data storage and easy updating." L2="• Ethernet interface 10/100 Mbit for easy connectivity to ABB automation components.&#xa;• Flexible serial connectivity to automation components without Ethernet interface.&#xa;• USB host for flexible data storage and easy updating." L3="• Ethernet interface 10/100 Mbit for easy connectivity to ABB automation components.&#xa;• Flexible serial connectivity to automation components without Ethernet interface.&#xa;• USB host for flexible data storage and easy updating." L4="• Ethernet interface 10/100 Mbit for easy connectivity to ABB automation components.&#xa;• Flexible serial connectivity to automation components without Ethernet interface.&#xa;• USB host for flexible data storage and easy updating." L5="• Ethernet interface 10/100 Mbit for easy connectivity to ABB automation components.&#xa;• Flexible serial connectivity to automation components without Ethernet interface.&#xa;• USB host for flexible data storage and easy updating." id="9" L6="• Ethernet interface 10/100 Mbit for easy connectivity to ABB automation components.&#xa;• Flexible serial connectivity to automation components without Ethernet interface.&#xa;• USB host for flexible data storage and easy updating." L7="• Ethernet interface 10/100 Mbit for easy connectivity to ABB automation components.&#xa;• Flexible serial connectivity to automation components without Ethernet interface.&#xa;• USB host for flexible data storage and easy updating." L8="• Ethernet interface 10/100 Mbit for easy connectivity to ABB automation components.&#xa;• Flexible serial connectivity to automation components without Ethernet interface.&#xa;• USB host for flexible data storage and easy updating."/>
+    <MLText L1="CP600-eCo control panels" L2="CP600-eCo control panels" L3="CP600-eCo control panels" L4="CP600-eCo control panels" L5="CP600-eCo control panels" id="10" L6="CP600-eCo control panels" L7="CP600-eCo control panels" L8="CP600-eCo control panels"/>
+   </MLTexts>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label7">
+   <wgtStyle width="500" font-color="rgb(255,255,255)" x="118" forcePaint="2" font-sizepx="24" y="10" font-family="Arial" font-bold="true" wrapping="true" cx="250" cy="18.94" height="40" vert-align="middle" keypad-type="None" font-size="18"/>
+   <links>
+    <lang class="MLTextLink" textid="0"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label1">
+   <wgtStyle width="400" font-color="rgb(23,30,40)" x="20" forcePaint="2" font-sizepx="21" y="400" font-family="Arial" wrapping="true" cx="200" cy="15" height="30" vert-align="middle" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="10">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label2">
+   <wgtStyle width="400" font-color="rgb(23,30,40)" x="20" forcePaint="2" font-sizepx="16" y="440" font-family="Arial" font-bold="true" wrapping="true" cx="200" cy="10" height="20" vert-align="middle" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="2">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label3">
+   <wgtStyle width="600" font-color="rgb(23,30,40)" x="20" forcePaint="2" font-sizepx="14" y="470" font-family="Arial" wrapping="true" cx="300" cy="30" height="60" vert-align="top" keypad-type="None" font-size="11"/>
+   <links>
+    <lang class="MLTextLink" textid="3">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label4">
+   <wgtStyle width="400" font-color="rgb(23,30,40)" x="20" forcePaint="2" font-sizepx="16" y="535" font-family="Arial" font-bold="true" wrapping="true" cx="200" cy="10" height="20" vert-align="middle" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="4">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label6">
+   <wgtStyle width="600" font-color="rgb(23,30,40)" x="21" forcePaint="2" font-sizepx="14" y="565" font-family="Arial" wrapping="true" cx="300" cy="70" height="140" vert-align="top" keypad-type="None" font-size="11"/>
+   <links>
+    <lang class="MLTextLink" textid="5">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label5">
+   <wgtStyle width="400" font-color="rgb(23,30,40)" x="640" forcePaint="2" font-sizepx="16" y="440" font-family="Arial" font-bold="true" wrapping="true" cx="200" cy="10" height="20" vert-align="middle" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="6">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label8">
+   <wgtStyle width="600" font-color="rgb(23,30,40)" x="640" forcePaint="2" font-sizepx="14" y="470" font-family="Arial" wrapping="true" cx="300" cy="40" height="80" vert-align="top" keypad-type="None" font-size="11"/>
+   <links>
+    <lang class="MLTextLink" textid="7">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label9">
+   <wgtStyle width="400" font-color="rgb(23,30,40)" x="640" forcePaint="2" font-sizepx="16" y="550" font-family="Arial" font-bold="true" wrapping="true" cx="200" cy="10" height="20" vert-align="middle" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="8">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label10">
+   <wgtStyle width="600" font-color="rgb(23,30,40)" x="640" forcePaint="2" font-sizepx="14" y="580" font-family="Arial" wrapping="true" cx="300" cy="30" height="60" vert-align="top" keypad-type="None" font-size="11"/>
+   <links>
+    <lang class="MLTextLink" textid="9">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+ </object>
+</wgtPage>

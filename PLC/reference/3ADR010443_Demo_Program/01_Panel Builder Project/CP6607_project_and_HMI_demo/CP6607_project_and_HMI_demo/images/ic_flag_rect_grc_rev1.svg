@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd' [
+	<!ENTITY ns_svg "http://www.w3.org/2000/svg">
+	<!ENTITY ns_xlink "http://www.w3.org/1999/xlink">
+]>
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" height="85.039" viewBox="0 0 85.039 85.039" width="85.039" version="1.1" overflow="visible" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 85.039 85.039">
+<polygon points="17.722 0.001 27.177 0.001 46.075 0.001 85.039 0.001 85.039 0 0 0 0 0.001" fill="none"/>
+<rect y="56.7" width="85.039" height="9.442" fill="#0161A7"/>
+<rect y="75.598" width="85.039" height="9.441" fill="#0161A7"/>
+<rect y="66.143" width="85.039" height="9.455" fill="#fff"/>
+<polygon points="27.177 47.245 17.722 47.245 0 47.245 0 56.7 85.039 56.7 85.039 47.245 46.075 47.245" fill="#fff"/>
+<rect y="28.348" x="46.075" height="9.455" width="38.964" fill="#fff"/>
+<rect y="18.905" x="46.075" height="9.442" width="38.964" fill="#0161A7"/>
+<polygon points="46.075 18.898 46.075 18.905 85.039 18.905 85.039 9.45 46.075 9.45" fill="#fff"/>
+<rect y=".001" width="17.722" height="18.897" fill="#0161A7"/>
+<path d="m27.177 0.001v18.897h18.898v-9.448h38.964v-9.449h-57.862zm18.898 28.347h-18.898v18.897h57.862v-9.442h-38.964v-9.455z" fill="#0161A7"/>
+<rect y="28.348" width="17.722" height="18.897" fill="#0161A7"/>
+<polygon points="17.722 47.245 27.177 47.245 27.177 28.348 46.075 28.348 46.075 18.905 46.075 18.898 27.177 18.898 27.177 0.001 17.722 0.001 17.722 18.898 0 18.898 0 28.348 17.722 28.348" fill="#fff"/>
+</svg>

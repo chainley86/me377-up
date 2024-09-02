@@ -1,0 +1,12 @@
+<multiLangs>
+ <langs defLangId="L1" curLangId="L1">
+  <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="English" defaultFont="Arial"/>
+  <lang removable="false" langCode="it-IT" langId="L2" writingsystem="Any" name="Italian" defaultFont="Arial"/>
+  <lang removable="false" langCode="de-DE" langId="L3" writingsystem="Any" name="German" defaultFont="Arial"/>
+  <lang removable="false" langCode="fr-FR" langId="L4" writingsystem="Any" name="French" defaultFont="Arial"/>
+  <lang removable="false" langCode="zh-CN" langId="L5" writingsystem="Any" name="Chinese" defaultFont="SimHei"/>
+  <lang removable="false" langCode="grc" langId="L6" writingsystem="Any" name="Greek" defaultFont="Arial"/>
+  <lang removable="false" langCode="es-ES" langId="L7" writingsystem="Any" name="Spanish" defaultFont="Arial"/>
+  <lang removable="false" langCode="ru-RU" langId="L8" writingsystem="Any" name="Russian" defaultFont="Arial"/>
+ </langs>
+</multiLangs>

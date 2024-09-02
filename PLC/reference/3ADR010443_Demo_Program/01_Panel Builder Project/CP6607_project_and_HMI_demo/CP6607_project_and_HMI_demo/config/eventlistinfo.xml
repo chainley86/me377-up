@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<events>
+    <event id="1" name="Alarm1" group="Alarm1" trigger="bitMaskAlarm" description="[7@Alarm]Error: Alarm 01 Bit Mask Alarm"/>
+    <event id="2" name="Alarm2" group="Alarm2" notTriggeredBgColor="#0096e0" disabledBgColor="#0096e0" triggeredBgColor="#0096e0" triggeredNotAckedBgColor="#0096e0" notTriggeredAckedBgColor="#0096e0" triggeredAckedBgColor="#0096e0" trigger="valueAlarm" description="[8@Alarm]Information: Alarm 02 Value Alarm [Alarm_02] Hz"/>
+    <event id="3" name="Alarm3" group="Alarm3" notTriggeredBgColor="#ff7300" disabledBgColor="#ff7300" triggeredBgColor="#ff7300" triggeredNotAckedBgColor="#ff7300" notTriggeredAckedBgColor="#ff7300" triggeredAckedBgColor="#ff7300" trigger="limitAlarm" description="[9@Alarm]Warning: Alarm 03 Limit Alarm [Alarm_03] %"/>
+    <event id="4" name="Alarm4" group="Alarm4" trigger="deviationAlarm" description="[10@Alarm]Error: Alarm 04 Deviation Alarm [Alarm_04] kg"/>
+</events>

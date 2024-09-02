@@ -1,0 +1,76 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="WebTemplate" pageType="mobile" pageSize="1280,720" class="TemplatePageWgt" dataWndSize="0,70" downloadPrepDone="true" usedFonts="Arial" staticFile="opt/webtemplate.png" id="WebTemplate" staticOptEnable="true">
+  <wgtStyle width="1280" x="0" y="0" height="720" ver="020800424" color="none" v="02.08.00.424"/>
+  <object class="PageMLTextMgrWgt" id="_TemplatePageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="English" defaultFont="Arial"/>
+    <lang removable="false" langCode="it-IT" langId="L2" writingsystem="Any" name="Italian" defaultFont="Arial"/>
+    <lang removable="false" langCode="de-DE" langId="L3" writingsystem="Any" name="German" defaultFont="Arial"/>
+    <lang removable="false" langCode="fr-FR" langId="L4" writingsystem="Any" name="French" defaultFont="Arial"/>
+    <lang removable="false" langCode="zh-CN" langId="L5" writingsystem="Any" name="Chinese" defaultFont="SimHei"/>
+    <lang removable="false" langCode="grc" langId="L6" writingsystem="Any" name="Greek" defaultFont="Arial"/>
+    <lang removable="false" langCode="es-ES" langId="L7" writingsystem="Any" name="Spanish" defaultFont="Arial"/>
+    <lang removable="false" langCode="ru-RU" langId="L8" writingsystem="Any" name="Russian" defaultFont="Arial"/>
+   </langs>
+   <MLTexts/>
+  </object>
+  <object class="ShapeWgt" id="rect1" static="true">
+   <wgtStyle width="1280" x="0" y="0" fill="rgb(36,36,36)" cx="619.36" cy="30" height="60" nodeName="rect" stroke="rgb(36,36,36)"/>
+  </object>
+  <object class="NumericWgt" id="timedate1">
+   <wgtStyle font-bold="true" forcePaint="8" font-family="Arial" font-sizepx="13" cx="37.37" cy="10" step="1" timeSpec="local" alignment="right" x="1000" y="10" vert-align="middle" text="-1" max="4096" usingFormat="hh:mm:ss" value="-1" keypad-type="None" font-color="rgb(180,180,180)" min="0" width="80" numberFormat="0" height="20" form="date-time" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="value" tag="System Time" class="SysPropMgrWgt" widgetType="Project" sourceType="System" dataSource="_SysPropMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ImageWgt" id="image1" static="true">
+   <wgtStyle width="82" imagePath="images/ABB_Logo_Screen_RGB_15px_white_@2x.png" x="18" y="15" cx="41" cy="15" height="30"/>
+  </object>
+  <object class="NumericWgt" id="timedate2">
+   <wgtStyle font-bold="true" forcePaint="8" font-family="Arial" font-sizepx="13" cx="37.37" cy="100" step="1" timeSpec="local" alignment="right" x="1000" y="30" vert-align="middle" text="-1" max="4096" usingFormat="DD mmm YYYY" value="-1" keypad-type="None" font-color="rgb(180,180,180)" min="0" width="80" numberFormat="0" height="20" form="date-time" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="value" tag="System Time" class="SysPropMgrWgt" widgetType="Project" sourceType="System" dataSource="_SysPropMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="rect4" static="true">
+   <wgtStyle width="2" x="1220" y="5" cx="0.97" cy="25" height="50" nodeName="rect"/>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="hotspotbtn">
+   <wgtStyle width="60" x="1160" y="0" fill="rgb(160,160,164)" dx="1" cx="29.54" form="hotspot" dy="-1" cy="29.41" height="60" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action class="NextPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+   </links>
+  </object>
+  <object class="ImageWgt" id="image2" static="true">
+   <wgtStyle width="20" imagePath="images/UI_Home_20.png" x="1240" y="20" cx="10" cy="10" height="20"/>
+  </object>
+  <object class="ShapeWgt" id="rect5">
+   <wgtStyle width="2" x="1160" forcePaint="1" y="5" cx="0.97" cy="25" height="50" nodeName="rect"/>
+  </object>
+  <object class="ShapeWgt" id="rect6" static="true">
+   <wgtStyle width="2" x="1100" y="5" cx="0.97" cy="25" height="50" nodeName="rect"/>
+  </object>
+  <object class="ImageWgt" id="image3" static="true">
+   <wgtStyle width="20" imagePath="images/UI_Left_20.png" x="1120" y="20" cx="10" cy="10" height="20"/>
+  </object>
+  <object class="ImageWgt" id="image4">
+   <wgtStyle width="20" imagePath="images/UI_Right_20.png" x="1180" forcePaint="1" y="20" cx="10" cy="10" height="20"/>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="hotspotbtn1">
+   <wgtStyle width="60" x="1220" y="0" fill="rgb(160,160,164)" dx="1" cx="29.54" form="hotspot" dy="-1" cy="29.41" height="60" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action class="HomePageAction" attribute="onMouseClick" event="onMouseClick" actionID="0" actionWgt="_PageMgr"/>
+   </links>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="hotspotbtn2">
+   <wgtStyle width="60" x="1100" y="0" fill="rgb(160,160,164)" dx="1" cx="29.54" form="hotspot" dy="-1" cy="29.41" height="60" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action class="PrevPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+   </links>
+  </object>
+  <object class="GroupSubscribeWgt" id="WebTemplate@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+ </object>
+</wgtPage>

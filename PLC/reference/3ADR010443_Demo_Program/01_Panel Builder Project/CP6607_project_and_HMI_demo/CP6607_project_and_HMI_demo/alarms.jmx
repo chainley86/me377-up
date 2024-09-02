@@ -1,0 +1,752 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="Alarms" pageSize="800,480" class="PageWgt" scriptFile="alarms.js" dataWndSize="0,70" downloadPrepDone="true" templateFile="background.jmx" usedFonts="Arial,SimHei,Tahoma" id="Alarms" staticOptEnable="false">
+  <wgtStyle width="800" x="0" y="0" height="480" ver="020800424" v="02.08.00.424"/>
+  <links>
+   <action BitIndex="0" class="SetBitAction" attribute="onActivate" event="onActivate" actionID="1" actionWgt="_TagMgr">
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Alarm_History_EN" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </action>
+   <action BitIndex="0" class="ResetBitAction" attribute="onActivate" event="onActivate" actionID="2" actionWgt="_TagMgr">
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Alarm_Active_EN" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </action>
+  </links>
+  <object class="GroupWgt" id="BtnStd1" customType="Button">
+   <wgtStyle width="26" x="535" y="73" cx="13.01" cy="12.99" height="26"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image5">
+    <wgtStyle width="30.73" x="-4.13" y="-4.14" visibility="false" bdrImageSize="57.00,52.00" fill="rgb(127,127,127)" cx="15.09" cy="15.37" bdrSize="0.45,0.43,0.40,0.42" height="30.73" bdrEdges="0.13,0.13,0.13,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:btn; type:btn" id="buttonStd1">
+    <wgtStyle width="22.46" x="0" y="0" bdrImageSize="42.00,38.00" fill="rgb(192,192,192)" cx="10.16" form="standard" cy="10.83" bdrSize="0.40,0.43,0.38,0.35" height="22.46" type="momentary" value="0"/>
+    <links>
+     <action pageName="help_alarm_banner.jmx" class="ShowDialogAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label1">
+    <wgtStyle width="19.50" font-color="rgb(40,40,40)" x="0.59" font-sizepx="13" y="2.95" font-family="Arial" wrapping="true" cx="12.99" cy="11.24" height="17.73" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image6">
+    <wgtStyle width="23.64" imagePath="images/ic_ma1_022.svg" x="2.36" forcePaint="1" y="2.36" fill="rgb(70,70,70)" cx="11.81" cy="10.34" height="23.64"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="alarm_banner">
+   <wgtStyle width="279" font-color="rgb(255,0,0)" x="240" forcePaint="2064" font-sizepx="16" y="75" font-family="Arial" cx="140" cy="11.84" wgtStaticOpt="dynamic" height="24" vert-align="middle" frame="true" scrollMode="2" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="1"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="badge">
+   <wgtStyle width="28" x="505" forcePaint="9" y="73.50" cx="14" cy="14" height="28"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="int" attribute="visibility" tag="Alarm triggered" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+   <object class="ShapeWgt" id="badge.circle1">
+    <wgtStyle width="28" x="0" forcePaint="1" y="0" fill="rgb(255,0,0)" cx="14" cy="14" rx="22" height="28" nodeName="ellipse" ry="19" stroke="none"/>
+   </object>
+   <object class="NumericWgt" id="badge.field1">
+    <wgtStyle font-bold="true" forcePaint="9" font-family="Tahoma" font-sizepx="13" cx="12.42" cy="8.10" step="1" timeSpec="local" alignment="center" x="0" y="5" vert-align="top" text="99" max="2147483647" usingFormat="#" value="99" keypad-type="Numeric" font-color="rgb(255,255,255)" min="-2147483648" width="27" numberFormat="6" height="18" form="Numeric" font-size="10"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="int" attribute="value" tag="Number of triggered not acknowledged" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+    </dataLinks>
+    <links>
+     <action f="update_alarm_banner" class="JavaScriptAction" attribute="onDataUpdate" event="onDataUpdate" actionID="1" actionWgt="_WgtMgr"/>
+    </links>
+   </object>
+  </object>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="English" defaultFont="Arial"/>
+    <lang removable="false" langCode="it-IT" langId="L2" writingsystem="Any" name="Italian" defaultFont="Arial"/>
+    <lang removable="false" langCode="de-DE" langId="L3" writingsystem="Any" name="German" defaultFont="Arial"/>
+    <lang removable="false" langCode="fr-FR" langId="L4" writingsystem="Any" name="French" defaultFont="Arial"/>
+    <lang removable="false" langCode="zh-CN" langId="L5" writingsystem="Any" name="Chinese" defaultFont="SimHei"/>
+    <lang removable="false" langCode="grc" langId="L6" writingsystem="Any" name="Greek" defaultFont="Arial"/>
+    <lang removable="false" langCode="es-ES" langId="L7" writingsystem="Any" name="Spanish" defaultFont="Arial"/>
+    <lang removable="false" langCode="ru-RU" langId="L8" writingsystem="Any" name="Russian" defaultFont="Arial"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="" L2="" L3="" L4="" L5="" id="1" L6="" L7="" L8=""/>
+    <MLText L1="" L2="" L3="" L4="" L5="" id="1" L6="" L7="" L8=""/>
+    <MLText L1="" L2="" L3="" L4="" L5="" id="1" L6="" L7="" L8=""/>
+    <MLText L1="Alarms" L2="Allarmi" L3="Alarms" L4="Alarmes" L5="报警" id="3" L6="Συναγερμός" L7="Alarmas" L8="сигнализация"/>
+    <MLText L1="Active Alarms" L2="Allarmi attivi" L3="Aktive Alarme" L4="Alarmes actives" L5="活性报警" id="4" L6="Ενεργοί συναγερμοί" L7="Alarmas activas" L8="Активные сигналы"/>
+    <MLText L1="Select" L2="Select" L3="Select" L4="Select" L5="Select" id="5" L6="Select" L7="Select" L8="Select"/>
+    <MLText L1="Name" L2="Name" L3="Name" L4="Name" L5="Name" id="6" L6="Name" L7="Name" L8="Name"/>
+    <MLText L1="Groups" L2="Groups" L3="Groups" L4="Groups" L5="Groups" id="7" L6="Groups" L7="Groups" L8="Groups"/>
+    <MLText L1="State" L2="State" L3="State" L4="State" L5="State" id="8" L6="State" L7="State" L8="State"/>
+    <MLText L1="Value" L2="Value" L3="Value" L4="Value" L5="Value" id="9" L6="Value" L7="Value" L8="Value"/>
+    <MLText L1="Time" L2="Time" L3="Time" L4="Time" L5="Time" id="10" L6="Time" L7="Time" L8="Time"/>
+    <MLText L1="Description" L2="Description" L3="Description" L4="Description" L5="Description" id="11" L6="Description" L7="Description" L8="Description"/>
+    <MLText L1="Severity" L2="Severity" L3="Severity" L4="Severity" L5="Severity" id="12" L6="Severity" L7="Severity" L8="Severity"/>
+    <MLText L1="Action" L2="Action" L3="Action" L4="Action" L5="Action" id="13" L6="Action" L7="Action" L8="Action"/>
+    <MLText L1="Filter :" L2="Filter :" L3="Filter :" L4="Filter :" L5="Filter :" id="14" L6="Filter :" L7="Filter :" L8="Filter :"/>
+    <MLText L1="Show All" L2="Show All" L3="Show All" L4="Show All" L5="Show All" id="15" L6="Show All" L7="Show All" L8="Show All"/>
+    <MLText L1="Hide Not Triggered" L2="Hide Not Triggered" L3="Hide Not Triggered" L4="Hide Not Triggered" L5="Hide Not Triggered" id="16" L6="Hide Not Triggered" L7="Hide Not Triggered" L8="Hide Not Triggered"/>
+    <MLText L1="Check/Uncheck All" L2="Check/Uncheck All" L3="Check/Uncheck All" L4="Check/Uncheck All" L5="Check/Uncheck All" id="17" L6="Check/Uncheck All" L7="Check/Uncheck All" L8="Check/Uncheck All"/>
+    <MLText L1="Ack" L2="Ack" L3="Ack" L4="Ack" L5="Ack" id="18" L6="Ack" L7="Ack" L8="Ack"/>
+    <MLText L1="Reset" L2="Reset" L3="Reset" L4="Reset" L5="Reset" id="19" L6="Reset" L7="Reset" L8="Reset"/>
+    <MLText L1="Alarms History" L2="Cronologia allarmi" L3="Alarmgeschichte" L4="Historique des alarmes" L5="报警历史" id="20" L6="Ιστορικό συναγερμών" L7="Historial de alarmas" L8="История аварий"/>
+    <MLText L1="Active Alarms" L2="Allarmi attivi" L3="Aktive Alarme" L4="Alarmes actives" L5="活性报警" id="21" L6="Ενεργοί συναγερμοί" L7="Alarmas activas" L8="Активные сигналы"/>
+    <MLText L1="Alarms History" L2="Cronologia allarmi" L3="Alarmgeschichte" L4="Historique des alarmes" L5="报警历史" id="22" L6="Ιστορικό συναγερμών" L7="Historial de alarmas" L8="История аварий"/>
+    <MLText L1="From :" L2="From :" L3="From :" L4="From :" L5="From :" id="23" L6="From :" L7="From :" L8="From :"/>
+    <MLText L1="Name" L2="Name" L3="Name" L4="Name" L5="Name" id="24" L6="Name" L7="Name" L8="Name"/>
+    <MLText L1="State" L2="State" L3="State" L4="State" L5="State" id="25" L6="State" L7="State" L8="State"/>
+    <MLText L1="Value" L2="Value" L3="Value" L4="Value" L5="Value" id="26" L6="Value" L7="Value" L8="Value"/>
+    <MLText L1="Time" L2="Time" L3="Time" L4="Time" L5="Time" id="27" L6="Time" L7="Time" L8="Time"/>
+    <MLText L1="Description" L2="Description" L3="Description" L4="Description" L5="Description" id="28" L6="Description" L7="Description" L8="Description"/>
+    <MLText L1="Event Type" L2="Event Type" L3="Event Type" L4="Event Type" L5="Event Type" id="29" L6="Event Type" L7="Event Type" L8="Event Type"/>
+    <MLText L1="Alarm Id" L2="Alarm Id" L3="Alarm Id" L4="Alarm Id" L5="Alarm Id" id="30" L6="Alarm Id" L7="Alarm Id" L8="Alarm Id"/>
+    <MLText L1="Duration :" L2="Duration :" L3="Duration :" L4="Duration :" L5="Duration :" id="31" L6="Duration :" L7="Duration :" L8="Duration :"/>
+    <MLText L1="5 Mins" L2="5 Mins" L3="5 Mins" L4="5 Mins" L5="5 Mins" id="32" L6="5 Mins" L7="5 Mins" L8="5 Mins"/>
+    <MLText L1="10 Mins" L2="10 Mins" L3="10 Mins" L4="10 Mins" L5="10 Mins" id="33" L6="10 Mins" L7="10 Mins" L8="10 Mins"/>
+    <MLText L1="30 Mins" L2="30 Mins" L3="30 Mins" L4="30 Mins" L5="30 Mins" id="34" L6="30 Mins" L7="30 Mins" L8="30 Mins"/>
+    <MLText L1="1 Hour" L2="1 Hour" L3="1 Hour" L4="1 Hour" L5="1 Hour" id="35" L6="1 Hour" L7="1 Hour" L8="1 Hour"/>
+    <MLText L1="2 Hours" L2="2 Hours" L3="2 Hours" L4="2 Hours" L5="2 Hours" id="36" L6="2 Hours" L7="2 Hours" L8="2 Hours"/>
+    <MLText L1="4 Hours" L2="4 Hours" L3="4 Hours" L4="4 Hours" L5="4 Hours" id="37" L6="4 Hours" L7="4 Hours" L8="4 Hours"/>
+    <MLText L1="8 Hours" L2="8 Hours" L3="8 Hours" L4="8 Hours" L5="8 Hours" id="38" L6="8 Hours" L7="8 Hours" L8="8 Hours"/>
+    <MLText L1="12 Hours" L2="12 Hours" L3="12 Hours" L4="12 Hours" L5="12 Hours" id="39" L6="12 Hours" L7="12 Hours" L8="12 Hours"/>
+    <MLText L1="1 Day" L2="1 Day" L3="1 Day" L4="1 Day" L5="1 Day" id="40" L6="1 Day" L7="1 Day" L8="1 Day"/>
+    <MLText L1="2 Days" L2="2 Days" L3="2 Days" L4="2 Days" L5="2 Days" id="41" L6="2 Days" L7="2 Days" L8="2 Days"/>
+    <MLText L1="5 Days" L2="5 Days" L3="5 Days" L4="5 Days" L5="5 Days" id="42" L6="5 Days" L7="5 Days" L8="5 Days"/>
+    <MLText L1="1 Week" L2="1 Week" L3="1 Week" L4="1 Week" L5="1 Week" id="43" L6="1 Week" L7="1 Week" L8="1 Week"/>
+    <MLText L1="2 Weeks" L2="2 Weeks" L3="2 Weeks" L4="2 Weeks" L5="2 Weeks" id="44" L6="2 Weeks" L7="2 Weeks" L8="2 Weeks"/>
+    <MLText L1="4 Weeks" L2="4 Weeks" L3="4 Weeks" L4="4 Weeks" L5="4 Weeks" id="45" L6="4 Weeks" L7="4 Weeks" L8="4 Weeks"/>
+    <MLText L1="All" L2="All" L3="All" L4="All" L5="All" id="46" L6="All" L7="All" L8="All"/>
+    <MLText L1="1 Min" L2="1 Min" L3="1 Min" L4="1 Min" L5="1 Min" id="47" L6="1 Min" L7="1 Min" L8="1 Min"/>
+    <MLText L1="To :" L2="To :" L3="To :" L4="To :" L5="To :" id="48" L6="To :" L7="To :" L8="To :"/>
+    <MLText L1="Refresh" L2="Refresh" L3="Refresh" L4="Refresh" L5="Refresh" id="49" L6="Refresh" L7="Refresh" L8="Refresh"/>
+    <MLText L1="Alarm Simulation" L2="Simulazione allarme" L3="Alarmsimulation" L4="Simulation d'alarme" L5="报警模拟" id="50" L6="Προσομοίωση συναγερμού" L7="Simulación de alarma" L8="Симуляция сигналов тревоги"/>
+    <MLText L1="Alarm 01" L2="Alarm 01" L3="Alarm 01" L4="Alarm 01" L5="Alarm 01" id="51" L6="Alarm 01" L7="Alarm 01" L8="Alarm 01"/>
+    <MLText L1="Alarm 02" L2="Alarm 02" L3="Alarm 02" L4="Alarm 02" L5="Alarm 02" id="52" L6="Alarm 02" L7="Alarm 02" L8="Alarm 02"/>
+    <MLText L1="Alarm 03" L2="Alarm 03" L3="Alarm 03" L4="Alarm 03" L5="Alarm 03" id="53" L6="Alarm 03" L7="Alarm 03" L8="Alarm 03"/>
+    <MLText L1="Alarm 04" L2="Alarm 04" L3="Alarm 04" L4="Alarm 04" L5="Alarm 04" id="54" L6="Alarm 04" L7="Alarm 04" L8="Alarm 04"/>
+   </MLTexts>
+  </object>
+  <object class="GroupSubscribeWgt" id="Alarms@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label5">
+   <wgtStyle width="350" font-color="rgb(255,255,255)" x="118" font-sizepx="24" y="10" font-family="Arial" font-bold="true" wrapping="true" cx="175" cy="18.94" height="40" vert-align="middle" keypad-type="None" font-size="18"/>
+   <links>
+    <lang class="MLTextLink" textid="3"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="ActiveAlarms.lbl">
+   <wgtStyle width="170" font-color="rgb(70,70,70)" x="60" font-sizepx="16" y="75" font-family="Arial" font-bold="true" wrapping="true" cx="75.13" cy="7.11" height="30" vert-align="middle" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="4"/>
+   </links>
+  </object>
+  <object class="TableWgt" id="ActiveAlarms.table">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="25.40" cy="8.79" scrollHeight="25" x="60" filterString="^((Not Triggered Acked|Not Triggered Not Acked|Triggered).*$)" y="105" scroll_type="1" filterCol="3" defaultSortCol="7" width="500" datafont-sizepx="13" datafont-bold="true" hdrbgColor="rgb(240,240,240)" hdrfgColor="rgb(70,70,70)" height="305" showHeader="true"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="rowCount" tag="alarmCount" widgetType="Project" sourceType="Data" dataSource="_AlarmsMgr"/>
+    <dataLink readWrite="R/W" attribute="filterString" tag="itemData" sourceType="Widget" dataSource="ActiveAlarms.FilterCombo"/>
+    <dataLink readWrite="R" attribute="fgColor" tag="FGColor" widgetType="Project" sourceType="Data" dataSource="_AlarmsMgr">
+     <xForms>
+      <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="" name="ColorPaletteCustom"/>
+     </xForms>
+    </dataLink>
+    <dataLink readWrite="R" attribute="bgColor" tag="BGColor" widgetType="Project" sourceType="Data" dataSource="_AlarmsMgr">
+     <xForms>
+      <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="" name="ColorPaletteCustom"/>
+     </xForms>
+    </dataLink>
+    <dataLink readWrite="R/W" attribute="selectionAttr" tag="alSelect" widgetType="Project" sourceType="Widget" tagIndex="-1" dataSource="_AlarmsMgr"/>
+   </dataLinks>
+   <table cols="9" rows="0">
+    <colInfo>
+     <col width="50" sizeToFit="false" stringList="" visibility="true" type="2" name="Select">
+      <links>
+       <lang class="MLTableColLink:tableCol:" textid="5"/>
+      </links>
+      <dataLinks>
+       <dataLink readWrite="R/W" attribute="value" tag="alSelect" widgetType="Project" sourceType="Data" dataSource="_AlarmsMgr"/>
+      </dataLinks>
+     </col>
+     <col width="90" sizeToFit="false" stringList="" visibility="true" type="0" name="Name">
+      <links>
+       <lang class="MLTableColLink:tableCol:" textid="6"/>
+      </links>
+      <dataLinks>
+       <dataLink readWrite="R" attribute="value" tag="alName" widgetType="Project" sourceType="Data" dataSource="_AlarmsMgr"/>
+      </dataLinks>
+     </col>
+     <col width="100" sizeToFit="false" stringList="" visibility="false" type="0" name="Groups">
+      <links>
+       <lang class="MLTableColLink:tableCol:" textid="7"/>
+      </links>
+      <dataLinks>
+       <dataLink readWrite="R" attribute="value" tag="alGroups" widgetType="Project" sourceType="Widget" dataSource="_AlarmsMgr"/>
+      </dataLinks>
+     </col>
+     <col width="148" sizeToFit="false" stringList="" visibility="true" type="0" name="State">
+      <links>
+       <lang class="MLTableColLink:tableCol:" textid="8"/>
+      </links>
+      <dataLinks>
+       <dataLink readWrite="R" attribute="value" tag="alState" widgetType="Project" sourceType="Data" dataSource="_AlarmsMgr"/>
+      </dataLinks>
+     </col>
+     <col width="90" sizeToFit="false" stringList="" visibility="true" type="0" name="Value">
+      <links>
+       <lang class="MLTableColLink:tableCol:" textid="9"/>
+      </links>
+      <dataLinks>
+       <dataLink readWrite="R" attribute="value" tag="alValue" widgetType="Project" sourceType="Data" dataSource="_AlarmsMgr"/>
+      </dataLinks>
+     </col>
+     <col width="152" sizeToFit="false" stringList="" visibility="true" type="4" name="Time">
+      <links>
+       <lang class="MLTableColLink:tableCol:" textid="10"/>
+      </links>
+      <dataLinks>
+       <dataLink readWrite="R" attribute="value" tag="alDateTime" widgetType="Project" sourceType="Data" dataSource="_AlarmsMgr"/>
+      </dataLinks>
+     </col>
+     <col width="150" sizeToFit="false" stringList="" visibility="true" type="0" name="Description">
+      <links>
+       <lang class="MLTableColLink:tableCol:" textid="11"/>
+      </links>
+      <dataLinks>
+       <dataLink readWrite="R" attribute="value" tag="alDescription" widgetType="Project" sourceType="Data" dataSource="_AlarmsMgr"/>
+      </dataLinks>
+     </col>
+     <col width="80" sizeToFit="false" stringList="" visibility="true" type="0" name="Severity">
+      <links>
+       <lang class="MLTableColLink:tableCol:" textid="12"/>
+      </links>
+      <dataLinks>
+       <dataLink readWrite="R/W" attribute="value" tag="alSeverity" widgetType="Project" sourceType="Data" dataSource="_AlarmsMgr"/>
+      </dataLinks>
+     </col>
+     <col width="100" sizeToFit="false" stringList="" imagePath="images/action.png" visibility="false" type="5" name="Action">
+      <links>
+       <lang class="MLTableColLink:tableCol:" textid="13"/>
+      </links>
+      <dataLinks>
+       <dataLink readWrite="R/W" attribute="value" tag="alUserAction" widgetType="Project" sourceType="Widget" dataSource="_AlarmsMgr"/>
+      </dataLinks>
+     </col>
+    </colInfo>
+   </table>
+  </object>
+  <object class="LabelWgt" id="ActiveAlarms.Filterlbl">
+   <wgtStyle width="45.35" font-color="rgb(70,70,70)" x="184.72" font-sizepx="13" y="427.08" font-family="Arial" cx="13.71" cy="11.92" height="21.95" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="14"/>
+   </links>
+  </object>
+  <object class="ComboBoxWgt" id="ActiveAlarms.FilterCombo">
+   <wgtStyle width="210" font-color="rgb(70,70,70)" listData="^((Not Triggered Acked|Not Triggered Not Acked|Triggered).*$)," x="230.16" font-sizepx="12" y="417.47" font-family="Arial" cx="25.33" cy="19.04" height="41" alignment="center" vert-align="top" index="0" text="" keypad-type="None" list="Hide Not Triggered,Show All" font-size="9"/>
+   <links>
+    <lang class="MLComboBoxLink:list:">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="SimHei" L6="Arial" L7="Arial" L8="Arial"/>
+     <textid idx="0" val="16"/>
+     <textid idx="1" val="15"/>
+    </lang>
+   </links>
+  </object>
+  <object class="GroupWgt" id="ActiveAlarms.BtnRect" customType="Shape Button">
+   <wgtStyle width="122.77" x="61.14" y="417.47" cx="61.38" cy="20.84" height="41.68"/>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="ActiveAlarms.BtnRect.btn">
+    <wgtStyle width="122.45" x="0" y="0" fill="rgb(220,220,220)" dx="1" form="rectangle" dy="-1" height="41.16" releasePath="images\win-like.svg" stroke="rgb(180,180,180)" needlePath="images\win-like-press.svg" type="momentary" value="0" pushColor="rgb(240,240,240)" needleColor="rgb(160,160,160)"/>
+    <links>
+     <action class="SelectAllAlarmsAction" attribute="onMousePress" mode="0" event="onMouseDown" actionID="0" applyTo="0" widgetId="" actionWgt="_AlarmsMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="ActiveAlarms.BtnRect.txt">
+    <wgtStyle width="122.59" font-color="rgb(70,70,70)" x="0.18" forcePaint="1" font-sizepx="12" y="0.68" font-family="Arial" wrapping="true" cx="62.92" cy="21.32" height="41" alignment="center" vert-align="middle" keypad-type="None" font-size="9"/>
+    <links>
+     <lang class="MLTextLink" textid="17"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="ActiveAlarms.BtnRect1" customType="Shape Button">
+   <wgtStyle width="53.34" x="451.15" y="416.85" cx="26.67" cy="21.50" height="43"/>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="ActiveAlarms.BtnRect1.btn">
+    <wgtStyle width="53.29" x="0" y="0.62" fill="rgb(220,220,220)" dx="1" form="rectangle" dy="-1" height="41.16" releasePath="images\win-like.svg" stroke="rgb(180,180,180)" needlePath="images\win-like-press.svg" type="momentary" value="0" pushColor="rgb(240,240,240)" needleColor="rgb(160,160,160)"/>
+    <links>
+     <action class="AckAlarmAction" attribute="onMousePress" event="onMouseDown" actionID="1" alarmID="" actionWgt="_AlarmsMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="ActiveAlarms.BtnRect1.txt">
+    <wgtStyle width="52.85" font-color="rgb(70,70,70)" x="0.49" forcePaint="1" font-sizepx="12" y="0" font-family="Arial" wrapping="true" cx="27.13" cy="22.37" height="43" alignment="center" vert-align="middle" keypad-type="None" font-size="9"/>
+    <links>
+     <lang class="MLTextLink" textid="18"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="ActiveAlarms.BtnRect3" customType="Shape Button">
+   <wgtStyle width="53.29" x="506.71" y="417.47" cx="26.65" cy="20.58" height="41.16"/>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="ActiveAlarms.BtnRect3.btn">
+    <wgtStyle width="53.29" x="0" y="0" fill="rgb(220,220,220)" dx="1" form="rectangle" dy="-1" height="41.16" releasePath="images\win-like.svg" stroke="rgb(180,180,180)" needlePath="images\win-like-press.svg" type="momentary" value="0" pushColor="rgb(240,240,240)" needleColor="rgb(160,160,160)"/>
+    <links>
+     <action class="ResetAlarmAction" attribute="onMousePress" event="onMouseDown" actionID="1" alarmID="" actionWgt="_AlarmsMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="ActiveAlarms.BtnRect3.txt">
+    <wgtStyle width="53" font-color="rgb(70,70,70)" x="0" forcePaint="1" font-sizepx="12" y="0.26" font-family="Arial" wrapping="true" cx="27.21" cy="21.13" height="40.63" alignment="center" vert-align="middle" keypad-type="None" font-size="9"/>
+    <links>
+     <lang class="MLTextLink" textid="19"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt3">
+   <wgtStyle width="600" x="-560" y="70" cx="300" cy="200" height="400"/>
+   <object class="GroupWgt" id="GroupWgt3.GroupWgt3">
+    <wgtStyle width="40" x="560" forcePaint="1033" y="0" cx="20" cy="200" height="400"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="Alarm_History_EN" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+    <object class="ShapeWgt" id="GroupWgt3.GroupWgt3.trapizoid">
+     <wgtStyle width="400" x="0" forcePaint="1025" y="0" fill="rgb(230,230,230)" points="36.061,28.424 0.061,28.424 8.061,0.424 29.061,0.424 " cx="20" cy="200" height="40" nodeName="polygon" stroke="rgb(230,230,230)" mtx="0,1,0,-1,0,0,40,0,1" stroke-width="1.00006"/>
+    </object>
+    <object class="LabelWgt" id="GroupWgt3.GroupWgt3.label3">
+     <wgtStyle width="170" font-color="rgb(70,70,70)" x="5" forcePaint="1025" font-sizepx="16" y="120" font-family="Arial" wrapping="true" cx="14.20" cy="85" height="30" alignment="center" vert-align="middle" mtx="0,-1,0,1,0,0,0,170,1" keypad-type="None" font-size="12"/>
+     <links>
+      <lang class="MLTextLink" textid="20"/>
+     </links>
+    </object>
+    <object class="ButtonWgt" hmiStyle="type:btn" id="GroupWgt3.GroupWgt3.hotspotbtn">
+     <wgtStyle width="40" x="0" forcePaint="1025" y="70" fill="rgb(160,160,164)" dx="1" cx="19.69" form="hotspot" dy="-1" cy="132.36" height="270" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+     <links>
+      <action slideLimit="true" speed="medium" class="SlideWidgetAction" attribute="onMousePress" dx="580" dy="0" event="onMouseDown" dir="0" actionID="1" imageWgtId="" toggleVisibility="false" widgetId="GroupWgt3" dyLimit="0" dxLimit="20" actionWgt="_WgtMgr"/>
+      <action BitIndex="0" class="ResetBitAction" attribute="onMousePress" event="onMouseDown" actionID="2" actionWgt="_TagMgr">
+       <dataLinks>
+        <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Alarm_History_EN" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+       </dataLinks>
+      </action>
+      <action BitIndex="0" class="SetBitAction" attribute="onMousePress" event="onMouseDown" actionID="3" actionWgt="_TagMgr">
+       <dataLinks>
+        <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Alarm_Active_EN" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+       </dataLinks>
+      </action>
+     </links>
+    </object>
+   </object>
+   <object class="GroupWgt" id="GroupWgt3.GroupWgt1">
+    <wgtStyle width="40" x="0" forcePaint="1033" y="0" cx="20" cy="200" height="400"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="Alarm_Active_EN" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+    <object class="ShapeWgt" id="GroupWgt3.GroupWgt1.trapizoid">
+     <wgtStyle width="400" x="0" forcePaint="1025" y="0" fill="rgb(230,230,230)" points="36.061,28.424 0.061,28.424 8.061,0.424 29.061,0.424 " cx="20" cy="200" height="40" nodeName="polygon" stroke="rgb(230,230,230)" mtx="0,-1,0,1,0,0,0,400,1" stroke-width="1.00006"/>
+    </object>
+    <object class="LabelWgt" id="GroupWgt3.GroupWgt1.label3">
+     <wgtStyle width="150" font-color="rgb(70,70,70)" x="5" forcePaint="1025" font-sizepx="16" y="130" font-family="Arial" wrapping="true" cx="14.20" cy="75" height="30" alignment="center" vert-align="middle" mtx="0,-1,0,1,0,0,0,150,1" keypad-type="None" font-size="12"/>
+     <links>
+      <lang class="MLTextLink" textid="21"/>
+     </links>
+    </object>
+    <object class="ButtonWgt" hmiStyle="type:btn" id="GroupWgt3.GroupWgt1.hotspotbtn1">
+     <wgtStyle width="40" x="0" forcePaint="1025" y="60" fill="rgb(160,160,164)" dx="1" cx="19.69" form="hotspot" dy="-1" cy="132.36" height="270" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+     <links>
+      <action slideLimit="true" speed="medium" class="SlideWidgetAction" attribute="onMouseRelease" dx="-580" dy="0" event="onMouseUp" dir="0" actionID="1" imageWgtId="" toggleVisibility="false" widgetId="GroupWgt3" dyLimit="0" dxLimit="-560" actionWgt="_WgtMgr"/>
+      <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" event="onMouseUp" actionID="2" actionWgt="_TagMgr">
+       <dataLinks>
+        <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Alarm_Active_EN" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+       </dataLinks>
+      </action>
+      <action BitIndex="0" class="SetBitAction" attribute="onMouseRelease" event="onMouseUp" actionID="3" actionWgt="_TagMgr">
+       <dataLinks>
+        <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Alarm_History_EN" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+       </dataLinks>
+      </action>
+     </links>
+    </object>
+   </object>
+   <object class="GroupWgt" id="GroupWgt3.GroupWgt1">
+    <wgtStyle width="520" x="40" y="0" cx="260" cy="200" height="400"/>
+    <object class="ShapeWgt" id="GroupWgt3.GroupWgt1.rect4">
+     <wgtStyle width="520" x="0" forcePaint="1025" y="0" fill="rgb(230,230,230)" cx="251.62" cy="200" height="400" nodeName="rect" stroke="rgb(230,230,230)"/>
+    </object>
+    <object class="LabelWgt" id="GroupWgt3.GroupWgt1.lbl">
+     <wgtStyle width="250" font-color="rgb(70,70,70)" x="10" forcePaint="1025" font-sizepx="16" y="10" font-family="Arial" font-bold="true" wrapping="true" cx="104.06" cy="6.95" height="22.28" vert-align="top" keypad-type="None" font-size="12"/>
+     <links>
+      <lang class="MLTextLink" textid="22"/>
+     </links>
+    </object>
+    <object class="LabelWgt" id="GroupWgt3.GroupWgt1.Fromtimelbl">
+     <wgtStyle width="44.12" font-color="rgb(70,70,70)" x="10" forcePaint="1025" font-sizepx="13" y="36" font-family="Arial" wrapping="true" cx="22.05" cy="9.38" height="18.76" vert-align="top" keypad-type="None" font-size="10"/>
+     <links>
+      <lang class="MLTextLink" textid="23"/>
+     </links>
+    </object>
+    <object class="NumericWgt" id="GroupWgt3.GroupWgt1.Fromtimedate">
+     <wgtStyle forcePaint="1033" font-family="Arial" font-sizepx="13" cx="87.87" cy="13.71" step="1" timeSpec="local" x="60.91" y="36" vert-align="top" text="-1" max="4096" usingFormat="MM/DD/YY - hh:mm:ss" value="-1" keypad-type="None" font-color="rgb(70,70,70)" min="0" width="144.80" numberFormat="0" height="19.93" form="date-time" font-size="10"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="value" tag="min" sourceType="Widget" dataSource="GroupWgt3.GroupWgt1.EventWgt.EventBufferWgt"/>
+     </dataLinks>
+    </object>
+    <object class="TableWgt" id="GroupWgt3.GroupWgt1.table">
+     <wgtStyle forcePaint="1033" font-family="Arial" font-sizepx="13" cx="24.23" cy="8.91" scrollHeight="25" x="10" y="88" filterCol1="3" scroll_type="1" filterCol="3" defaultSortCol="3" width="500" datafont-sizepx="13" datafont-bold="true" hdrbgColor="rgb(240,240,240)" hdrfgColor="rgb(70,70,70)" height="300" showHeader="true"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="rowCount" tag="eventCount" sourceType="Data" dataSource="GroupWgt3.GroupWgt1.EventWgt.EventBufferWgt"/>
+      <dataLink readWrite="R" attribute="fgColor" tag="alFGColor" sourceType="Data" dataSource="GroupWgt3.GroupWgt1.EventWgt.EventBufferWgt">
+       <xForms>
+        <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="" name="ColorPaletteCustom"/>
+       </xForms>
+      </dataLink>
+      <dataLink readWrite="R" attribute="bgColor" tag="alBGColor" sourceType="Data" dataSource="GroupWgt3.GroupWgt1.EventWgt.EventBufferWgt">
+       <xForms>
+        <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="" name="ColorPaletteCustom"/>
+       </xForms>
+      </dataLink>
+     </dataLinks>
+     <table cols="7" rows="0">
+      <colInfo>
+       <col width="90" sizeToFit="false" stringList="" visibility="true" type="0" name="Name">
+        <links>
+         <lang class="MLTableColLink:tableCol:" textid="24"/>
+        </links>
+        <dataLinks>
+         <dataLink readWrite="R" attribute="value" tag="alName" sourceType="Data" dataSource="GroupWgt3.GroupWgt1.EventWgt.EventBufferWgt"/>
+        </dataLinks>
+       </col>
+       <col width="148" sizeToFit="false" stringList="" visibility="true" type="0" name="State">
+        <links>
+         <lang class="MLTableColLink:tableCol:" textid="25"/>
+        </links>
+        <dataLinks>
+         <dataLink readWrite="R" attribute="value" tag="alState" sourceType="Data" dataSource="GroupWgt3.GroupWgt1.EventWgt.EventBufferWgt"/>
+        </dataLinks>
+       </col>
+       <col width="90" sizeToFit="false" stringList="" visibility="true" type="0" name="Value">
+        <links>
+         <lang class="MLTableColLink:tableCol:" textid="26"/>
+        </links>
+        <dataLinks>
+         <dataLink readWrite="R" attribute="value" tag="alValue" sourceType="Data" dataSource="GroupWgt3.GroupWgt1.EventWgt.EventBufferWgt"/>
+        </dataLinks>
+       </col>
+       <col width="152" sizeToFit="false" stringList="" visibility="true" type="4" name="Time">
+        <links>
+         <lang class="MLTableColLink:tableCol:" textid="27"/>
+        </links>
+        <dataLinks>
+         <dataLink readWrite="R" attribute="value" tag="alDateTime" sourceType="Data" dataSource="GroupWgt3.GroupWgt1.EventWgt.EventBufferWgt"/>
+        </dataLinks>
+       </col>
+       <col width="150" sizeToFit="false" stringList="" visibility="true" type="0" name="Description">
+        <links>
+         <lang class="MLTableColLink:tableCol:" textid="28"/>
+        </links>
+        <dataLinks>
+         <dataLink readWrite="R" attribute="value" tag="alDescription" sourceType="Data" dataSource="GroupWgt3.GroupWgt1.EventWgt.EventBufferWgt"/>
+        </dataLinks>
+       </col>
+       <col width="95" sizeToFit="false" stringList="" visibility="true" type="0" name="Event Type">
+        <links>
+         <lang class="MLTableColLink:tableCol:" textid="29"/>
+        </links>
+        <dataLinks>
+         <dataLink readWrite="R" attribute="value" tag="alEventType" sourceType="Data" dataSource="GroupWgt3.GroupWgt1.EventWgt.EventBufferWgt"/>
+        </dataLinks>
+       </col>
+       <col width="80" sizeToFit="false" stringList="" visibility="false" type="0" name="Alarm Id">
+        <links>
+         <lang class="MLTableColLink:tableCol:" textid="30"/>
+        </links>
+        <dataLinks>
+         <dataLink readWrite="R" attribute="value" tag="alAlarmID" sourceType="Data" dataSource="GroupWgt3.GroupWgt1.EventWgt.EventBufferWgt"/>
+        </dataLinks>
+       </col>
+      </colInfo>
+     </table>
+    </object>
+    <object class="LabelWgt" id="GroupWgt3.GroupWgt1.Durationlbl">
+     <wgtStyle width="64.48" font-color="rgb(70,70,70)" x="201" forcePaint="1089" font-sizepx="13" y="48" font-family="Arial" cx="20.61" cy="10.53" height="19.93" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+     <links>
+      <lang class="MLTextLink" textid="31"/>
+     </links>
+    </object>
+    <object class="ComboBoxWgt" id="GroupWgt3.GroupWgt1.Durationcombo">
+     <wgtStyle width="164.03" font-color="rgb(70,70,70)" listData="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,0" x="265" forcePaint="1033" font-sizepx="13" y="40" font-family="Arial" cx="42.56" cy="23.46" height="36" vert-align="top" index="0" text="" keypad-type="None" list="1 Min,5 Mins,10 Mins,30 Mins,1 Hour,2 Hours,4 Hours,8 Hours,12 Hours,1 Day,2 Days,5 Days,1 Week,2 Weeks,4 Weeks,All" font-size="10"/>
+     <dataLinks>
+      <dataLink readWrite="R/W" attribute="data" tag="PageDuration" sourceType="Widget" dataSource="GroupWgt3.GroupWgt1.EventWgt.EventBufferWgt"/>
+     </dataLinks>
+     <links>
+      <lang class="MLComboBoxLink:list:">
+       <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="SimHei" L6="Arial" L7="Arial" L8="Arial"/>
+       <textid idx="0" val="47"/>
+       <textid idx="1" val="32"/>
+       <textid idx="2" val="33"/>
+       <textid idx="3" val="34"/>
+       <textid idx="4" val="35"/>
+       <textid idx="5" val="36"/>
+       <textid idx="6" val="37"/>
+       <textid idx="7" val="38"/>
+       <textid idx="8" val="39"/>
+       <textid idx="9" val="40"/>
+       <textid idx="10" val="41"/>
+       <textid idx="11" val="42"/>
+       <textid idx="12" val="43"/>
+       <textid idx="13" val="44"/>
+       <textid idx="14" val="45"/>
+       <textid idx="15" val="46"/>
+      </lang>
+     </links>
+    </object>
+    <object class="GroupWgt" id="GroupWgt3.GroupWgt1.EventWgt">
+     <wgtStyle width="36.20" x="417.24" forcePaint="1025" y="271.55" height="37.53"/>
+     <object PageDuration="300" xmlFileWgt="groupwgt3.groupwgt1.xmlfile" StartTime="0" class="EventBufferWgt" EventBuffer="AlarmBuffer1" StopTime="0" dateFormat="dd/MM/yy - hh:mm:ss" NumSamples="512" BlockDuration="86400" id="GroupWgt3.GroupWgt1.EventWgt.EventBufferWgt" timeSpec="local">
+      <wgtStyle width="35" x="0" forcePaint="1033" y="1" height="36"/>
+      <dataLinks>
+       <dataLink readWrite="R" attribute="ReadSource" sourceType="Data" dataSource="GroupWgt3.GroupWgt1.EventWgt.IdalEventsWgt"/>
+      </dataLinks>
+     </object>
+     <object class="IdalEventsWgt" id="GroupWgt3.GroupWgt1.EventWgt.IdalEventsWgt">
+      <wgtStyle width="35" x="44" forcePaint="1025" y="1" height="36"/>
+     </object>
+    </object>
+    <object class="XMLFileWgt" id="GroupWgt3.GroupWgt1.XMLFile" fileName="config/eventlistinfo.xml">
+     <wgtStyle width="35" x="371" forcePaint="1025" y="270" height="36"/>
+    </object>
+    <object class="NumericWgt" id="GroupWgt3.GroupWgt1.Totimedate">
+     <wgtStyle forcePaint="1033" font-family="Arial" font-sizepx="13" cx="87.87" cy="13.71" step="1" timeSpec="local" x="60.91" y="63" vert-align="top" text="-1" max="4096" usingFormat="MM/DD/YY - hh:mm:ss" value="-1" keypad-type="None" font-color="rgb(70,70,70)" min="0" width="144.80" numberFormat="0" height="19.93" form="date-time" font-size="10"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="value" tag="max" sourceType="Widget" dataSource="GroupWgt3.GroupWgt1.EventWgt.EventBufferWgt"/>
+     </dataLinks>
+    </object>
+    <object class="LabelWgt" id="GroupWgt3.GroupWgt1.Totimelbl">
+     <wgtStyle width="44.12" font-color="rgb(70,70,70)" x="10" forcePaint="1025" font-sizepx="13" y="64" font-family="Arial" wrapping="true" cx="22.05" cy="9.38" height="18.76" vert-align="top" keypad-type="None" font-size="10"/>
+     <links>
+      <lang class="MLTextLink" textid="48"/>
+     </links>
+    </object>
+    <object class="GroupWgt" id="GroupWgt3.GroupWgt1.BtnRect2" customType="Shape Button">
+     <wgtStyle width="73" x="437.47" y="39.50" cx="36.50" cy="18.25" height="36.50"/>
+     <object class="ButtonWgt" hmiStyle="type:btn" id="GroupWgt3.GroupWgt1.BtnRect2.btn">
+      <wgtStyle width="72.40" x="0.13" y="0.50" fill="rgb(220,220,220)" dx="1" form="rectangle" dy="-1" height="36" releasePath="images\win-like.svg" stroke="rgb(180,180,180)" needlePath="images\win-like-press.svg" type="momentary" value="0" pushColor="rgb(240,240,240)" needleColor="rgb(160,160,160)"/>
+      <links>
+       <action class="RefreshEventAction" attribute="onMousePress" wgtName="GroupWgt3.GroupWgt2.EventWgt.EventBufferWgt" event="onMouseDown" actionID="1" actionWgt="_WgtMgr"/>
+      </links>
+     </object>
+     <object class="LabelWgt" id="GroupWgt3.GroupWgt1.BtnRect2.txt">
+      <wgtStyle width="73" font-color="rgb(70,70,70)" x="0" forcePaint="1" font-sizepx="12" y="0" font-family="Arial" wrapping="true" cx="37.47" cy="18.72" height="36" alignment="center" vert-align="middle" keypad-type="None" font-size="9"/>
+      <links>
+       <lang class="MLTextLink" textid="49"/>
+      </links>
+     </object>
+    </object>
+   </object>
+  </object>
+  <object class="ShapeWgt" id="rect2">
+   <wgtStyle width="190" x="595" y="105" fill="none" cx="91.93" cy="177.50" height="355" nodeName="rect" stroke="rgb(70,70,70)"/>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label3">
+   <wgtStyle width="159" font-color="rgb(70,70,70)" x="600" forcePaint="65" font-sizepx="16" y="65" font-family="Arial" font-bold="true" wrapping="true" cx="80" cy="18.93" height="39" vert-align="middle" keypad-type="None" font-size="12" frameColor="none"/>
+   <links>
+    <lang class="MLTextLink" textid="50"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="GroupWgt1">
+   <wgtStyle width="180" x="610" y="105" cx="90" cy="37.50" height="75"/>
+   <object class="LabelWgt" id="GroupWgt1.label6">
+    <wgtStyle width="130" font-color="rgb(70,70,70)" x="0" forcePaint="65" font-sizepx="16" y="0" font-family="Arial" wrapping="true" cx="65" cy="14.20" height="30" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="51"/>
+    </links>
+   </object>
+   <object class="GroupWgt" id="GroupWgt1.SldrHrz5" customType="Slider">
+    <wgtStyle width="143" x="0" y="5" cx="90" cy="35" height="61" mtx="1.25874,0,0,0,1.14754,0,0,0,1" groupStyle="xform-scaling"/>
+    <links>
+     <attr attrName="min" alias="NeedleWgt.min;LabelsWgt.min;ScaleWgt.min"/>
+     <attr attrName="max" alias="NeedleWgt.max;LabelsWgt.max;ScaleWgt.max"/>
+     <attr attrName="visibility2" alias="TicksWgt.visibility2;ScaleWgt.visibility2;LabelsWgt.visibility2"/>
+     <attr attrName="align" alias="TicksWgt.align;ScaleWgt.align;LabelsWgt.align"/>
+     <attr attrName="reverseScale" alias="NeedleWgt.reverseScale;ScaleWgt.reverseScale;LabelsWgt.reverseScale;TicksWgt.startAngle"/>
+     <attr attrName="labelFreq" alias="TicksWgt.labelFreq;LabelsWgt.labelFreq"/>
+     <attr attrName="tickSize2" alias="TicksWgt.tickSize2; ScaleWgt.tickSize2"/>
+    </links>
+    <object class="LabelsWgt" id="GroupWgt1.SldrHrz5.lbl">
+     <wgtStyle font-family="Arial" font-sizepx="10" cx="60" startAngle="-20" cy="9" timeSpec="local" endAngle="185" x="10" y="0" rotated="true" vert-align="top" max="1" align="1" font-color="rgb(70,70,70)" width="119" labelNames="" tickFreq="4" height="61" labelFreq="1" form="horizontal" font-size="8"/>
+    </object>
+    <object class="ScaleWgt" id="GroupWgt1.SldrHrz5.scale">
+     <wgtStyle alarmMin="0.5" cx="46" startAngle="-20" cy="15" reverseScale="false" endAngle="185" x="18" y="12" max="1" autoAdjust="true" align="1" stroke-width="10" width="104" Color="none" fill="none" size="99" alarmMax="1" height="36" stroke="rgb(255,0,0)" form="horizontal"/>
+    </object>
+    <object class="TicksWgt" id="GroupWgt1.SldrHrz5.ticks">
+     <wgtStyle cx="52" startAngle="-10" cy="18" endAngle="200" reverseScale="true" tickSize2="10" x="18" y="12" max="10" align="1" stroke-width="2" width="104" stroke-linecap="butt" tickSize="8" tickFreq="1" height="36" labelFreq="2" stroke="rgb(128,128,128)" form="horizontal"/>
+    </object>
+    <object class="ImageWgt" hmiStyle="hmi-name:none; hmi-shape:rrect_1; hmi-type:bkgd-hsldr" id="GroupWgt1.SldrHrz5.img">
+     <wgtStyle width="119" imagePath="images/hslbk_rrect1_metal.svg" enableCache="true" x="11" y="19" cx="59.85" cy="7.65" height="22"/>
+    </object>
+    <object class="NeedleWgt" hmiStyle="hmi-name:black plastic; hmi-shape:rect_2; hmi-type:top-hthmb" id="GroupWgt1.SldrHrz5.ndl">
+     <wgtStyle forcePaint="8" cx="20.42" cy="11" acceptClick="true" moveStep="1" x="0" y="19" imagePath="images/hthmb_blkpl_rect_2_rev1.svg" discrete="true" max="1" width="143" toolTipFontSize="12" toolTipFontName="Arial" toolTipTextColor="rgb(0,0,0)" writeMode="0" toolTipBgColor="rgb(255,255,255)" height="23" form="horizontal"/>
+     <dataLinks>
+      <dataLink readWrite="R/W" tagType="boolean" attribute="value" tag="Alarm_01" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+     </dataLinks>
+     <object class="ImageWgt" id="GroupWgt1.SldrHrz5.ndl.img">
+      <wgtStyle width="36" imagePath="images/hthmb_blkpl_rect_2_rev1.svg" x="104" forcePaint="65" y="-1" fill="rgb(70,70,70)" cx="18" cy="12" height="24" stroke="none" stroke-width="3"/>
+     </object>
+    </object>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt2">
+   <wgtStyle width="180" x="610" y="195" cx="90" cy="37.50" height="75"/>
+   <object class="GroupWgt" id="GroupWgt2.SldrHrz1" customType="Slider">
+    <wgtStyle width="143" x="0" y="5" cx="90" cy="35" height="61" mtx="1.25874,0,0,0,1.14754,0,0,0,1" groupStyle="xform-scaling"/>
+    <links>
+     <attr attrName="min" alias="NeedleWgt.min;LabelsWgt.min;ScaleWgt.min"/>
+     <attr attrName="max" alias="NeedleWgt.max;LabelsWgt.max;ScaleWgt.max"/>
+     <attr attrName="visibility2" alias="TicksWgt.visibility2;ScaleWgt.visibility2;LabelsWgt.visibility2"/>
+     <attr attrName="align" alias="TicksWgt.align;ScaleWgt.align;LabelsWgt.align"/>
+     <attr attrName="reverseScale" alias="NeedleWgt.reverseScale;ScaleWgt.reverseScale;LabelsWgt.reverseScale;TicksWgt.startAngle"/>
+     <attr attrName="labelFreq" alias="TicksWgt.labelFreq;LabelsWgt.labelFreq"/>
+     <attr attrName="tickSize2" alias="TicksWgt.tickSize2; ScaleWgt.tickSize2"/>
+    </links>
+    <object class="LabelsWgt" id="GroupWgt2.SldrHrz1.lbl">
+     <wgtStyle font-family="Arial" font-sizepx="10" cx="60" startAngle="-20" cy="9" timeSpec="local" endAngle="185" x="10" y="0" rotated="true" vert-align="top" max="100" align="1" font-color="rgb(70,70,70)" width="119" labelNames="" tickFreq="4" height="61" labelFreq="6" form="horizontal" font-size="8"/>
+    </object>
+    <object class="ScaleWgt" id="GroupWgt2.SldrHrz1.scale">
+     <wgtStyle alarmMin="98" cx="46" startAngle="-20" cy="15" reverseScale="false" endAngle="185" x="18" y="12" max="100" autoAdjust="true" align="1" stroke-width="10" width="104" Color="none" fill="none" size="99" alarmMax="1000" height="36" stroke="rgb(255,0,0)" form="horizontal"/>
+    </object>
+    <object class="TicksWgt" id="GroupWgt2.SldrHrz1.ticks">
+     <wgtStyle cx="52" startAngle="-10" cy="18" endAngle="200" reverseScale="true" tickSize2="10" x="18" y="12" max="10" align="1" stroke-width="2" width="104" stroke-linecap="butt" tickSize="8" tickFreq="1" height="36" labelFreq="6" stroke="rgb(128,128,128)" form="horizontal"/>
+    </object>
+    <object class="ImageWgt" hmiStyle="hmi-name:none; hmi-shape:rrect_1; hmi-type:bkgd-hsldr" id="GroupWgt2.SldrHrz1.img">
+     <wgtStyle width="119" imagePath="images/hslbk_rrect1_metal.svg" enableCache="true" x="11" y="19" cx="59.85" cy="7.65" height="22"/>
+    </object>
+    <object class="NeedleWgt" hmiStyle="hmi-name:black plastic; hmi-shape:rect_2; hmi-type:top-hthmb" id="GroupWgt2.SldrHrz1.ndl">
+     <wgtStyle forcePaint="8" cx="20.42" cy="11" acceptClick="true" moveStep="1" x="0" y="19" imagePath="images/hthmb_blkpl_rect_2_rev1.svg" discrete="true" max="100" width="143" toolTipFontSize="12" toolTipFontName="Arial" toolTipTextColor="rgb(0,0,0)" writeMode="0" toolTipBgColor="rgb(255,255,255)" height="23" form="horizontal"/>
+     <dataLinks>
+      <dataLink readWrite="R/W" tagType="short" attribute="value" tag="Alarm_02" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+     </dataLinks>
+     <object class="ImageWgt" id="GroupWgt2.SldrHrz1.ndl.img">
+      <wgtStyle width="36" imagePath="images/hthmb_blkpl_rect_2_rev1.svg" x="104" forcePaint="65" y="-1" fill="rgb(70,70,70)" cx="18" cy="12" height="24" stroke="none" stroke-width="3"/>
+     </object>
+    </object>
+   </object>
+   <object class="LabelWgt" id="GroupWgt2.label1">
+    <wgtStyle width="130" font-color="rgb(70,70,70)" x="0" forcePaint="65" font-sizepx="16" y="0" font-family="Arial" wrapping="true" cx="65" cy="14.20" height="30" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="52"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt4">
+   <wgtStyle width="180" x="610" y="285" cx="90" cy="37.50" height="75"/>
+   <object class="ShapeWgt" id="GroupWgt4.rect6">
+    <wgtStyle width="38" x="24" y="50" fill="rgb(255,0,0)" cx="18.39" cy="5" height="10" nodeName="rect" stroke="rgb(255,0,0)"/>
+   </object>
+   <object class="GroupWgt" id="GroupWgt4.SldrHrz2" customType="Slider">
+    <wgtStyle width="143" x="0" y="5" cx="90" cy="35" height="61" mtx="1.25874,0,0,0,1.14754,0,0,0,1" groupStyle="xform-scaling"/>
+    <links>
+     <attr attrName="min" alias="NeedleWgt.min;LabelsWgt.min;ScaleWgt.min"/>
+     <attr attrName="max" alias="NeedleWgt.max;LabelsWgt.max;ScaleWgt.max"/>
+     <attr attrName="visibility2" alias="TicksWgt.visibility2;ScaleWgt.visibility2;LabelsWgt.visibility2"/>
+     <attr attrName="align" alias="TicksWgt.align;ScaleWgt.align;LabelsWgt.align"/>
+     <attr attrName="reverseScale" alias="NeedleWgt.reverseScale;ScaleWgt.reverseScale;LabelsWgt.reverseScale;TicksWgt.startAngle"/>
+     <attr attrName="labelFreq" alias="TicksWgt.labelFreq;LabelsWgt.labelFreq"/>
+     <attr attrName="tickSize2" alias="TicksWgt.tickSize2; ScaleWgt.tickSize2"/>
+    </links>
+    <object class="LabelsWgt" id="GroupWgt4.SldrHrz2.lbl">
+     <wgtStyle font-family="Arial" font-sizepx="10" cx="60" startAngle="-20" cy="9" timeSpec="local" endAngle="185" x="10" y="0" rotated="true" vert-align="top" max="100" align="1" font-color="rgb(70,70,70)" width="119" labelNames="" tickFreq="4" height="61" labelFreq="6" form="horizontal" font-size="8"/>
+    </object>
+    <object class="ScaleWgt" id="GroupWgt4.SldrHrz2.scale">
+     <wgtStyle alarmMin="70" cx="46" startAngle="-20" cy="15" reverseScale="false" endAngle="185" x="18" y="12" max="100" autoAdjust="true" align="1" stroke-width="10" width="104" Color="none" fill="none" size="99" alarmMax="100" height="36" stroke="rgb(255,0,0)" form="horizontal"/>
+    </object>
+    <object class="TicksWgt" id="GroupWgt4.SldrHrz2.ticks">
+     <wgtStyle cx="52" startAngle="-10" cy="18" endAngle="200" reverseScale="true" tickSize2="10" x="18" y="12" max="10" align="1" stroke-width="2" width="104" stroke-linecap="butt" tickSize="8" tickFreq="1" height="36" labelFreq="6" stroke="rgb(128,128,128)" form="horizontal"/>
+    </object>
+    <object class="ImageWgt" hmiStyle="hmi-name:none; hmi-shape:rrect_1; hmi-type:bkgd-hsldr" id="GroupWgt4.SldrHrz2.img">
+     <wgtStyle width="119" imagePath="images/hslbk_rrect1_metal.svg" enableCache="true" x="11" y="19" cx="59.85" cy="7.65" height="22"/>
+    </object>
+    <object class="NeedleWgt" hmiStyle="hmi-name:black plastic; hmi-shape:rect_2; hmi-type:top-hthmb" id="GroupWgt4.SldrHrz2.ndl">
+     <wgtStyle width="143" x="0" forcePaint="8" toolTipFontSize="12" toolTipBgColor="rgb(255,255,255)" y="19" cx="20.42" discrete="true" form="horizontal" cy="11" height="23" writeMode="0" moveStep="1" toolTipTextColor="rgb(0,0,0)" max="100" acceptClick="true" toolTipFontName="Arial"/>
+     <dataLinks>
+      <dataLink readWrite="R/W" tagType="int" attribute="value" tag="Alarm_03" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+     </dataLinks>
+     <object class="ImageWgt" id="GroupWgt4.SldrHrz2.ndl.img">
+      <wgtStyle width="36" imagePath="images/hthmb_blkpl_rect_2_rev1.svg" x="104" forcePaint="65" y="-1" fill="rgb(70,70,70)" cx="18" cy="12" height="24" stroke="none" stroke-width="3"/>
+     </object>
+    </object>
+   </object>
+   <object class="LabelWgt" id="GroupWgt4.label2">
+    <wgtStyle width="130" font-color="rgb(70,70,70)" x="0" forcePaint="65" font-sizepx="16" y="0" font-family="Arial" wrapping="true" cx="65" cy="14.20" height="30" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="53"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt5">
+   <wgtStyle width="180" x="610" y="375" cx="90" cy="37.50" height="75"/>
+   <object class="ShapeWgt" id="GroupWgt5.rect5">
+    <wgtStyle width="63" x="24" y="50" fill="rgb(255,0,0)" cx="30.48" cy="5" height="10" nodeName="rect" stroke="rgb(255,0,0)"/>
+   </object>
+   <object class="GroupWgt" id="GroupWgt5.SldrHrz3" customType="Slider">
+    <wgtStyle width="143" x="0" y="5" cx="90" cy="35" height="61" mtx="1.25874,0,0,0,1.14754,0,0,0,1" groupStyle="xform-scaling"/>
+    <links>
+     <attr attrName="min" alias="NeedleWgt.min;LabelsWgt.min;ScaleWgt.min"/>
+     <attr attrName="max" alias="NeedleWgt.max;LabelsWgt.max;ScaleWgt.max"/>
+     <attr attrName="visibility2" alias="TicksWgt.visibility2;ScaleWgt.visibility2;LabelsWgt.visibility2"/>
+     <attr attrName="align" alias="TicksWgt.align;ScaleWgt.align;LabelsWgt.align"/>
+     <attr attrName="reverseScale" alias="NeedleWgt.reverseScale;ScaleWgt.reverseScale;LabelsWgt.reverseScale;TicksWgt.startAngle"/>
+     <attr attrName="labelFreq" alias="TicksWgt.labelFreq;LabelsWgt.labelFreq"/>
+     <attr attrName="tickSize2" alias="TicksWgt.tickSize2; ScaleWgt.tickSize2"/>
+    </links>
+    <object class="LabelsWgt" id="GroupWgt5.SldrHrz3.lbl">
+     <wgtStyle font-family="Arial" font-sizepx="10" cx="60" startAngle="-20" cy="9" timeSpec="local" endAngle="185" x="10" y="0" rotated="true" vert-align="top" max="100" align="1" font-color="rgb(70,70,70)" width="119" labelNames="" tickFreq="4" height="61" labelFreq="6" form="horizontal" font-size="8"/>
+    </object>
+    <object class="ScaleWgt" id="GroupWgt5.SldrHrz3.scale">
+     <wgtStyle alarmMin="70" cx="46" startAngle="-20" cy="15" reverseScale="false" endAngle="185" x="18" y="12" max="100" autoAdjust="true" align="1" stroke-width="10" width="104" Color="none" fill="none" size="99" alarmMax="100" height="36" stroke="rgb(255,0,0)" form="horizontal"/>
+    </object>
+    <object class="TicksWgt" id="GroupWgt5.SldrHrz3.ticks">
+     <wgtStyle cx="52" startAngle="-10" cy="18" endAngle="200" reverseScale="true" tickSize2="10" x="18" y="12" max="10" align="1" stroke-width="2" width="104" stroke-linecap="butt" tickSize="8" tickFreq="1" height="36" labelFreq="6" stroke="rgb(128,128,128)" form="horizontal"/>
+    </object>
+    <object class="ImageWgt" hmiStyle="hmi-name:none; hmi-shape:rrect_1; hmi-type:bkgd-hsldr" id="GroupWgt5.SldrHrz3.img">
+     <wgtStyle width="119" imagePath="images/hslbk_rrect1_metal.svg" enableCache="true" x="11" y="19" cx="59.85" cy="7.65" height="22"/>
+    </object>
+    <object class="NeedleWgt" hmiStyle="hmi-name:black plastic; hmi-shape:rect_2; hmi-type:top-hthmb" id="GroupWgt5.SldrHrz3.ndl">
+     <wgtStyle width="143" x="0" forcePaint="8" toolTipFontSize="12" toolTipBgColor="rgb(255,255,255)" y="19" cx="20.42" discrete="true" form="horizontal" cy="11" height="23" writeMode="0" moveStep="1" toolTipTextColor="rgb(0,0,0)" max="100" acceptClick="true" toolTipFontName="Arial"/>
+     <dataLinks>
+      <dataLink readWrite="R/W" tagType="float" attribute="value" tag="Alarm_04" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+     </dataLinks>
+     <object class="ImageWgt" id="GroupWgt5.SldrHrz3.ndl.img">
+      <wgtStyle width="36" imagePath="images/hthmb_blkpl_rect_2_rev1.svg" x="104" forcePaint="65" y="-1" fill="rgb(70,70,70)" cx="18" cy="12" height="24" stroke="none" stroke-width="3"/>
+     </object>
+    </object>
+   </object>
+   <object class="LabelWgt" id="GroupWgt5.label4">
+    <wgtStyle width="130" font-color="rgb(70,70,70)" x="0" forcePaint="65" font-sizepx="16" y="0" font-family="Arial" wrapping="true" cx="65" cy="14.20" height="30" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="54"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd7" customType="Button">
+   <wgtStyle width="26" x="760" y="70" cx="13.01" cy="12.99" height="26"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image16">
+    <wgtStyle width="30.73" x="-4.13" y="-4.14" visibility="false" bdrImageSize="57.00,52.00" fill="rgb(127,127,127)" cx="15.09" cy="15.37" bdrSize="0.45,0.43,0.40,0.42" height="30.73" bdrEdges="0.13,0.13,0.13,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:btn; type:btn" id="buttonStd20">
+    <wgtStyle width="22.46" x="0" y="0" bdrImageSize="42.00,38.00" fill="rgb(192,192,192)" cx="10.16" form="standard" cy="10.83" bdrSize="0.40,0.43,0.38,0.35" height="22.46" type="momentary" value="0"/>
+    <links>
+     <action pageName="help_alarm_simulation.jmx" class="ShowDialogAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label8">
+    <wgtStyle width="19.50" font-color="rgb(40,40,40)" x="0.59" font-sizepx="13" y="2.95" font-family="Arial" wrapping="true" cx="12.99" cy="11.24" height="17.73" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image17">
+    <wgtStyle width="23.64" imagePath="images/ic_ma1_022.svg" x="2.36" forcePaint="1" y="2.36" fill="rgb(70,70,70)" cx="11.81" cy="10.34" height="23.64"/>
+   </object>
+  </object>
+ </object>
+</wgtPage>

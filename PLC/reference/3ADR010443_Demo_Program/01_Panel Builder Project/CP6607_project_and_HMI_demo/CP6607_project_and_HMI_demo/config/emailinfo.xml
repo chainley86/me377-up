@@ -1,0 +1,13 @@
+<emailInfos>
+ <emailInfo>
+  <id>eMail1</id>
+  <enable>true</enable>
+  <name>ABB PLC Team</name>
+  <description></description>
+  <from>abb.automation.product@gmail.com</from>
+  <to attachto="Email_To"></to>
+  <subject attachto="Email_Subject"></subject>
+  <message attachto="Email_Content"></message>
+  <taglist></taglist>
+ </emailInfo>
+</emailInfos>

@@ -1,0 +1,514 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="Language" pageSize="800,480" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" templateFile="background.jmx" usedFonts="Arial,SimHei" staticFile="opt/language.png" id="Language" staticOptEnable="true">
+  <wgtStyle width="800" x="0" y="0" height="480" ver="020800424" v="02.08.00.424"/>
+  <object class="ShapeWgt" id="rect2" static="true">
+   <wgtStyle width="800" x="0" y="60" fill="rgb(230,230,230)" cx="387.10" cy="210" height="420" nodeName="rect" stroke="rgb(230,230,230)" lock="true"/>
+  </object>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="English" defaultFont="Arial"/>
+    <lang removable="false" langCode="it-IT" langId="L2" writingsystem="Any" name="Italian" defaultFont="Arial"/>
+    <lang removable="false" langCode="de-DE" langId="L3" writingsystem="Any" name="German" defaultFont="Arial"/>
+    <lang removable="false" langCode="fr-FR" langId="L4" writingsystem="Any" name="French" defaultFont="Arial"/>
+    <lang removable="false" langCode="zh-CN" langId="L5" writingsystem="Any" name="Chinese" defaultFont="SimHei"/>
+    <lang removable="false" langCode="grc" langId="L6" writingsystem="Any" name="Greek" defaultFont="Arial"/>
+    <lang removable="false" langCode="es-ES" langId="L7" writingsystem="Any" name="Spanish" defaultFont="Arial"/>
+    <lang removable="false" langCode="ru-RU" langId="L8" writingsystem="Any" name="Russian" defaultFont="Arial"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="" L2="" L3="" L4="" L5="" id="2" L6="" L7="" L8=""/>
+    <MLText L1="Multi-Language Support" L2="Supporto multilingua" L3="Mehrsprachige Unterstützung" L4="Prise en charge multilingue" L5="多语言支持" id="0" L6="Πολυγλωσσική υποστήριξη" L7="Soporte multilenguaje" L8="Многоязыковая поддержка"/>
+    <MLText L1="English" L2="Inglese" L3="Englisch" L4="English" L5="英语" id="10" L6="Αγγλικά" L7="Inglés" L8="Английский"/>
+    <MLText L1="Italian" L2="Italiano" L3="Italienisch" L4="Italien" L5="意大利语" id="11" L6="ιταλικά" L7="Italiano" L8="итальянский"/>
+    <MLText L1="German" L2="Tedesco" L3="Deutsch" L4="German" L5="德语" id="12" L6="Γερμανός" L7="Alemán" L8="немецкий"/>
+    <MLText L1="French" L2="Francese" L3="Französisch" L4="Français" L5="法语" id="13" L6="Γάλλος" L7="Francés" L8="французский"/>
+    <MLText L1="Chinese" L2="Cinese" L3="Chinesisch" L4="Chinois" L5="中文" id="14" L6="κινέζικα" L7="Chino" L8="китайский"/>
+    <MLText L1="Greek" L2="Greco" L3="Griechisch" L4="Grecque" L5="希腊语" id="15" L6="ελληνικά" L7="Griego" L8="греческий"/>
+    <MLText L1="Spanish" L2="Spagnolo" L3="Spanisch" L4="Espagnol" L5="西班牙语" id="16" L6="ισπανικά" L7="Español" L8="испанский"/>
+    <MLText L1="Russian" L2="Russo" L3="Russisch" L4="Russe" L5="俄语" id="17" L6="ρωσικός" L7="Ruso" L8="русский"/>
+   </MLTexts>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label2">
+   <wgtStyle width="350" font-color="rgb(255,255,255)" x="118" forcePaint="2" font-sizepx="24" y="10" font-family="Arial" font-bold="true" wrapping="true" cx="175" cy="18.94" height="40" vert-align="middle" keypad-type="None" font-size="18"/>
+   <links>
+    <lang class="MLTextLink" textid="0"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="BtnFlg37" customType="Button Flag">
+   <wgtStyle width="100" x="260" y="130" cx="50" cy="35" height="70"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnFlg37.frmImg" static="true">
+    <wgtStyle width="132.56" imagePath="images/frame_rect_chrome.svg" x="-16.28" y="-12.89" visibility="false" cx="65.12" cy="47.89" bdrSize="0.16,0.17,0.16,0.16" height="95.79" bdrEdges="0.12,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnFlg37.btn">
+    <wgtStyle width="100" x="0" y="0" fill="rgb(255,0,0)" cx="46.51" form="standard" cy="35" bdrSize="0.13,0.12,0.10,0.13" fillPattern="images\ic_flag_rect_ita_rev1.svg" height="70" releasePath="images\btn_plastic_rect_1.svg" needlePath="images\btn_plastic_rect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="WriteTagAction" attribute="onMouseClick" event="onMouseClick" actionID="1" TagValue="1" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="unsignedInt" attribute="tagSrc" tag="Languages" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+     <action class="SetLanguageAction" attribute="onMouseClick" event="onMouseClick" actionID="2" langId="L2" actionWgt="_MultiLangMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnFlg37.lbl" static="true">
+    <wgtStyle width="76.74" font-color="rgb(40,40,40)" x="11.63" font-sizepx="13" y="5.53" font-family="Arial" wrapping="true" cx="51.16" cy="35" height="55.26" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnFlg37.icoImg" static="true">
+    <wgtStyle width="41.86" x="32.56" y="22.11" cx="20.93" cy="12.89" height="29.47"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnFlg22" customType="Button Flag">
+   <wgtStyle width="100" x="440" y="130" cx="50" cy="35" height="70"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnFlg22.frmImg" static="true">
+    <wgtStyle width="132.56" imagePath="images/frame_rect_chrome.svg" x="-16.28" y="-12.89" visibility="false" cx="65.12" cy="47.89" bdrSize="0.16,0.17,0.16,0.16" height="95.79" bdrEdges="0.12,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnFlg22.btn">
+    <wgtStyle width="100" x="0" y="0" fill="rgb(255,0,0)" cx="46.51" form="standard" cy="35" bdrSize="0.13,0.12,0.10,0.13" fillPattern="images\ic_flag_rect_deu_rev1.svg" height="70" releasePath="images\btn_plastic_rect_1.svg" needlePath="images\btn_plastic_rect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="WriteTagAction" attribute="onMouseClick" event="onMouseClick" actionID="1" TagValue="2" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="unsignedInt" attribute="tagSrc" tag="Languages" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+     <action class="SetLanguageAction" attribute="onMouseClick" event="onMouseClick" actionID="2" langId="L3" actionWgt="_MultiLangMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnFlg22.lbl" static="true">
+    <wgtStyle width="76.74" font-color="rgb(40,40,40)" x="11.63" font-sizepx="13" y="5.53" font-family="Arial" wrapping="true" cx="51.16" cy="35" height="55.26" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnFlg22.icoImg" static="true">
+    <wgtStyle width="41.86" x="32.56" y="22.11" cx="20.93" cy="12.89" height="29.47"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnFlg28" customType="Button Flag">
+   <wgtStyle width="100" x="620" y="130" cx="50" cy="35" height="70"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnFlg28.frmImg" static="true">
+    <wgtStyle width="132.56" imagePath="images/frame_rect_chrome.svg" x="-16.28" y="-12.89" visibility="false" cx="65.12" cy="47.89" bdrSize="0.16,0.17,0.16,0.16" height="95.79" bdrEdges="0.12,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnFlg28.btn">
+    <wgtStyle width="100" x="0" y="0" fill="rgb(255,0,0)" cx="46.51" form="standard" cy="35" bdrSize="0.13,0.12,0.10,0.13" fillPattern="images\ic_flag_rect_fra_rev1.svg" height="70" releasePath="images\btn_plastic_rect_1.svg" needlePath="images\btn_plastic_rect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="WriteTagAction" attribute="onMouseClick" event="onMouseClick" actionID="1" TagValue="3" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="unsignedInt" attribute="tagSrc" tag="Languages" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+     <action class="SetLanguageAction" attribute="onMouseClick" event="onMouseClick" actionID="2" langId="L4" actionWgt="_MultiLangMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnFlg28.lbl" static="true">
+    <wgtStyle width="76.74" font-color="rgb(40,40,40)" x="11.63" font-sizepx="13" y="5.53" font-family="Arial" wrapping="true" cx="51.16" cy="35" height="55.26" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnFlg28.icoImg" static="true">
+    <wgtStyle width="41.86" x="32.56" y="22.11" cx="20.93" cy="12.89" height="29.47"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnFlg16" customType="Button Flag">
+   <wgtStyle width="100" x="80" y="300" cx="50" cy="35" height="70"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnFlg16.frmImg" static="true">
+    <wgtStyle width="132.56" imagePath="images/frame_rect_chrome.svg" x="-16.28" y="-12.89" visibility="false" cx="65.12" cy="47.89" bdrSize="0.16,0.17,0.16,0.16" height="95.79" bdrEdges="0.12,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnFlg16.btn">
+    <wgtStyle width="100" x="0" y="0" fill="rgb(255,0,0)" cx="46.51" form="standard" cy="35" bdrSize="0.13,0.12,0.10,0.13" fillPattern="images\ic_flag_rect_chn_rev1.svg" height="70" releasePath="images\btn_plastic_rect_1.svg" needlePath="images\btn_plastic_rect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="WriteTagAction" attribute="onMouseClick" event="onMouseClick" actionID="1" TagValue="4" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="unsignedInt" attribute="tagSrc" tag="Languages" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+     <action class="SetLanguageAction" attribute="onMouseClick" event="onMouseClick" actionID="2" langId="L5" actionWgt="_MultiLangMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnFlg16.lbl" static="true">
+    <wgtStyle width="76.74" font-color="rgb(40,40,40)" x="11.63" font-sizepx="13" y="5.53" font-family="Arial" wrapping="true" cx="51.16" cy="35" height="55.26" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnFlg16.icoImg" static="true">
+    <wgtStyle width="41.86" x="32.56" y="22.11" cx="20.93" cy="12.89" height="29.47"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnFlg30" customType="Button Flag">
+   <wgtStyle width="100" x="260" y="300" cx="50" cy="35" height="70"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnFlg30.frmImg" static="true">
+    <wgtStyle width="132.56" imagePath="images/frame_rect_chrome.svg" x="-16.28" y="-12.89" visibility="false" cx="65.12" cy="47.89" bdrSize="0.16,0.17,0.16,0.16" height="95.79" bdrEdges="0.12,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnFlg30.btn">
+    <wgtStyle width="100" x="0" y="0" fill="rgb(255,0,0)" cx="46.51" form="standard" cy="35" bdrSize="0.13,0.12,0.10,0.13" fillPattern="images\ic_flag_rect_grc_rev1.svg" height="70" releasePath="images\btn_plastic_rect_1.svg" needlePath="images\btn_plastic_rect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="WriteTagAction" attribute="onMouseClick" event="onMouseClick" actionID="1" TagValue="5" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="unsignedInt" attribute="tagSrc" tag="Languages" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+     <action class="SetLanguageAction" attribute="onMouseClick" event="onMouseClick" actionID="2" langId="L6" actionWgt="_MultiLangMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnFlg30.lbl" static="true">
+    <wgtStyle width="76.74" font-color="rgb(40,40,40)" x="11.63" font-sizepx="13" y="5.53" font-family="Arial" wrapping="true" cx="51.16" cy="35" height="55.26" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnFlg30.icoImg" static="true">
+    <wgtStyle width="41.86" x="32.56" y="22.11" cx="20.93" cy="12.89" height="29.47"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnFlg73" customType="Button Flag">
+   <wgtStyle width="100" x="80" y="130" cx="50" cy="35" height="70"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnFlg73.frmImg" static="true">
+    <wgtStyle width="132.56" imagePath="images/frame_rect_chrome.svg" x="-16.28" y="-12.89" visibility="false" cx="65.12" cy="47.89" bdrSize="0.16,0.17,0.16,0.16" height="95.79" bdrEdges="0.12,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnFlg73.btn">
+    <wgtStyle width="100" x="0" y="0" fill="rgb(255,0,0)" cx="46.51" form="standard" cy="35" bdrSize="0.13,0.12,0.10,0.13" fillPattern="images\ic_flag_rect_usa_rev1.svg" height="70" releasePath="images\btn_plastic_rect_1.svg" needlePath="images\btn_plastic_rect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="WriteTagAction" attribute="onMouseClick" event="onMouseClick" actionID="1" TagValue="0" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="unsignedInt" attribute="tagSrc" tag="Languages" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+     <action class="SetLanguageAction" attribute="onMouseClick" event="onMouseClick" actionID="2" langId="L1" actionWgt="_MultiLangMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnFlg73.lbl" static="true">
+    <wgtStyle width="76.74" font-color="rgb(40,40,40)" x="11.63" font-sizepx="13" y="5.53" font-family="Arial" wrapping="true" cx="51.16" cy="35" height="55.26" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnFlg73.icoImg" static="true">
+    <wgtStyle width="41.86" x="32.56" y="22.11" cx="20.93" cy="12.89" height="29.47"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnFlg25" customType="Button Flag">
+   <wgtStyle width="100" x="440" y="300" cx="50" cy="35" height="70"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnFlg25.frmImg" static="true">
+    <wgtStyle width="132.56" imagePath="images/frame_rect_chrome.svg" x="-16.28" y="-12.89" visibility="false" cx="65.12" cy="47.89" bdrSize="0.16,0.17,0.16,0.16" height="95.79" bdrEdges="0.12,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnFlg25.btn">
+    <wgtStyle width="100" x="0" y="0" fill="rgb(255,0,0)" cx="46.51" form="standard" cy="35" bdrSize="0.13,0.12,0.10,0.13" fillPattern="images\ic_flag_rect_esp_rev1.svg" height="70" releasePath="images\btn_plastic_rect_1.svg" needlePath="images\btn_plastic_rect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="WriteTagAction" attribute="onMouseClick" event="onMouseClick" actionID="1" TagValue="6" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="unsignedInt" attribute="tagSrc" tag="Languages" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+     <action class="SetLanguageAction" attribute="onMouseClick" event="onMouseClick" actionID="2" langId="L7" actionWgt="_MultiLangMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnFlg25.lbl" static="true">
+    <wgtStyle width="76.74" font-color="rgb(40,40,40)" x="11.63" font-sizepx="13" y="5.53" font-family="Arial" wrapping="true" cx="51.16" cy="35" height="55.26" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnFlg25.icoImg" static="true">
+    <wgtStyle width="41.86" x="32.56" y="22.11" cx="20.93" cy="12.89" height="29.47"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnFlg62" customType="Button Flag">
+   <wgtStyle width="100" x="620" y="300" cx="50" cy="35" height="70"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnFlg62.frmImg" static="true">
+    <wgtStyle width="132.56" imagePath="images/frame_rect_chrome.svg" x="-16.28" y="-12.89" visibility="false" cx="65.12" cy="47.89" bdrSize="0.16,0.17,0.16,0.16" height="95.79" bdrEdges="0.12,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnFlg62.btn">
+    <wgtStyle width="100" x="0" y="0" fill="rgb(255,0,0)" cx="46.51" form="standard" cy="35" bdrSize="0.13,0.12,0.10,0.13" fillPattern="images\ic_flag_rect_rus_rev1.svg" height="70" releasePath="images\btn_plastic_rect_1.svg" needlePath="images\btn_plastic_rect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action class="WriteTagAction" attribute="onMouseClick" event="onMouseClick" actionID="1" TagValue="7" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="unsignedInt" attribute="tagSrc" tag="Languages" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+     <action class="SetLanguageAction" attribute="onMouseClick" event="onMouseClick" actionID="2" langId="L8" actionWgt="_MultiLangMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnFlg62.lbl" static="true">
+    <wgtStyle width="76.74" font-color="rgb(40,40,40)" x="11.63" font-sizepx="13" y="5.53" font-family="Arial" wrapping="true" cx="51.16" cy="35" height="55.26" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnFlg62.icoImg" static="true">
+    <wgtStyle width="41.86" x="32.56" y="22.11" cx="20.93" cy="12.89" height="29.47"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label6">
+   <wgtStyle width="120" font-color="rgb(70,70,70)" x="70" forcePaint="2" font-sizepx="18" y="210" font-family="Arial" font-bold="true" wrapping="true" cx="60" cy="14.20" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="14"/>
+   <links>
+    <lang class="MLTextLink" textid="10"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label1">
+   <wgtStyle width="120" font-color="rgb(70,70,70)" x="250" forcePaint="2" font-sizepx="18" y="210" font-family="Arial" font-bold="true" wrapping="true" cx="60" cy="14.20" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="14"/>
+   <links>
+    <lang class="MLTextLink" textid="11"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label2">
+   <wgtStyle width="120" font-color="rgb(70,70,70)" x="430" forcePaint="2" font-sizepx="18" y="210" font-family="Arial" font-bold="true" wrapping="true" cx="60" cy="14.20" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="14"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label3">
+   <wgtStyle width="120" font-color="rgb(70,70,70)" x="610" forcePaint="2" font-sizepx="18" y="210" font-family="Arial" font-bold="true" wrapping="true" cx="60" cy="14.20" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="14"/>
+   <links>
+    <lang class="MLTextLink" textid="13"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label4">
+   <wgtStyle width="120" font-color="rgb(70,70,70)" x="70" forcePaint="2" font-sizepx="18" y="380" font-family="Arial" font-bold="true" wrapping="true" cx="60" cy="14.20" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="14"/>
+   <links>
+    <lang class="MLTextLink" textid="14"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label5">
+   <wgtStyle width="120" font-color="rgb(70,70,70)" x="250" forcePaint="2" font-sizepx="18" y="380" font-family="Arial" font-bold="true" wrapping="true" cx="60" cy="14.20" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="14"/>
+   <links>
+    <lang class="MLTextLink" textid="15"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label7">
+   <wgtStyle width="120" font-color="rgb(70,70,70)" x="430" forcePaint="2" font-sizepx="18" y="380" font-family="Arial" font-bold="true" wrapping="true" cx="60" cy="14.20" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="14"/>
+   <links>
+    <lang class="MLTextLink" textid="16"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label8">
+   <wgtStyle width="120" font-color="rgb(70,70,70)" x="610" forcePaint="2" font-sizepx="18" y="380" font-family="Arial" font-bold="true" wrapping="true" cx="60" cy="14.20" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="14"/>
+   <links>
+    <lang class="MLTextLink" textid="17"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="LgtSmp7" customType="Light">
+   <wgtStyle width="80" x="90" forcePaint="1" y="238" cx="40" cy="2.50" height="5"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtSmp7.img" static="true">
+    <wgtStyle width="107.69" imagePath="images/frame_rect_chrome.svg" enableCache="true" x="-15.38" y="-0.87" visibility="false" bdrImageSize="60.00,49.00" cx="54.54" cy="3.33" bdrSize="0.17,0.16,0.13,0.13" height="6.74" bdrEdges="0.15,0.14,0.12,0.12"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp7.ind">
+    <wgtStyle width="80" imagePath="images/li_shape_rect.svg" x="0" forcePaint="9" y="0" cx="40" cy="2.36" bdrSize="0.10,0.11,0.08,0.08" bkgColor="rgb(0,150,224);rgb(230,230,230);rgb(230,230,230);rgb(230,230,230);rgb(230,230,230);rgb(230,230,230);rgb(230,230,230);rgb(230,230,230)" height="5" stroke="none"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="unsignedInt" attribute="value" tag="Languages" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp7.lbl" static="true">
+    <wgtStyle width="80" x="0" font-sizepx="13" y="-0.22" font-family="Arial" cx="40" cy="2.64" height="5.22" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp7.img1" static="true">
+    <wgtStyle width="27.69" enableCache="true" x="24.62" y="1.41" cx="14.54" cy="1.11" height="2.17" fill-opacity="0.5"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LgtSmp1" customType="Light">
+   <wgtStyle width="80" x="270" forcePaint="1" y="238" cx="40" cy="2.50" height="5"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtSmp1.img" static="true">
+    <wgtStyle width="107.69" imagePath="images/frame_rect_chrome.svg" enableCache="true" x="-15.38" y="-0.87" visibility="false" bdrImageSize="60.00,49.00" cx="54.54" cy="3.33" bdrSize="0.17,0.16,0.13,0.13" height="6.74" bdrEdges="0.15,0.14,0.12,0.12"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp1.ind">
+    <wgtStyle width="80" imagePath="images/li_shape_rect.svg" x="0" forcePaint="9" y="0" cx="40" cy="2.36" bdrSize="0.10,0.11,0.08,0.08" bkgColor="rgb(230,230,230);rgb(0,150,224);rgb(230,230,230);rgb(230,230,230);rgb(230,230,230);rgb(230,230,230);rgb(230,230,230);rgb(230,230,230)" height="5" frame="1" stroke="none"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="unsignedInt" attribute="value" tag="Languages" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp1.lbl" static="true">
+    <wgtStyle width="80" x="0" font-sizepx="13" y="-0.22" font-family="Arial" cx="40" cy="2.64" height="5.22" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp1.img1" static="true">
+    <wgtStyle width="27.69" enableCache="true" x="24.62" y="1.41" cx="14.54" cy="1.11" height="2.17" fill-opacity="0.5"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LgtSmp2" customType="Light">
+   <wgtStyle width="80" x="450" forcePaint="1" y="238" cx="40" cy="2.50" height="5"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtSmp2.img" static="true">
+    <wgtStyle width="107.69" imagePath="images/frame_rect_chrome.svg" enableCache="true" x="-15.38" y="-0.87" visibility="false" bdrImageSize="60.00,49.00" cx="54.54" cy="3.33" bdrSize="0.17,0.16,0.13,0.13" height="6.74" bdrEdges="0.15,0.14,0.12,0.12"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp2.ind">
+    <wgtStyle width="80" imagePath="images/li_shape_rect.svg" x="0" forcePaint="9" y="0" cx="40" cy="2.36" bdrSize="0.10,0.11,0.08,0.08" bkgColor="rgb(230,230,230);rgb(230,230,230);rgb(0,150,224);rgb(230,230,230);rgb(230,230,230);rgb(230,230,230);rgb(230,230,230);rgb(230,230,230)" height="5" frame="2" stroke="none"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="unsignedInt" attribute="value" tag="Languages" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp2.lbl" static="true">
+    <wgtStyle width="80" x="0" font-sizepx="13" y="-0.22" font-family="Arial" cx="40" cy="2.64" height="5.22" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp2.img1" static="true">
+    <wgtStyle width="27.69" enableCache="true" x="24.62" y="1.41" cx="14.54" cy="1.11" height="2.17" fill-opacity="0.5"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LgtSmp3" customType="Light">
+   <wgtStyle width="80" x="630" forcePaint="1" y="238" cx="40" cy="2.50" height="5"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtSmp3.img" static="true">
+    <wgtStyle width="107.69" imagePath="images/frame_rect_chrome.svg" enableCache="true" x="-15.38" y="-0.87" visibility="false" bdrImageSize="60.00,49.00" cx="54.54" cy="3.33" bdrSize="0.17,0.16,0.13,0.13" height="6.74" bdrEdges="0.15,0.14,0.12,0.12"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp3.ind">
+    <wgtStyle width="80" imagePath="images/li_shape_rect.svg" x="0" forcePaint="9" y="0" cx="40" cy="2.36" bdrSize="0.10,0.11,0.08,0.08" bkgColor="rgb(230,230,230);rgb(230,230,230);rgb(230,230,230);rgb(0,150,224);rgb(230,230,230);rgb(230,230,230);rgb(230,230,230);rgb(230,230,230)" height="5" frame="3" stroke="none"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="unsignedInt" attribute="value" tag="Languages" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp3.lbl" static="true">
+    <wgtStyle width="80" x="0" font-sizepx="13" y="-0.22" font-family="Arial" cx="40" cy="2.64" height="5.22" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp3.img1" static="true">
+    <wgtStyle width="27.69" enableCache="true" x="24.62" y="1.41" cx="14.54" cy="1.11" height="2.17" fill-opacity="0.5"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LgtSmp4" customType="Light">
+   <wgtStyle width="80" x="90" forcePaint="1" y="408" cx="40" cy="2.50" height="5"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtSmp4.img" static="true">
+    <wgtStyle width="107.69" imagePath="images/frame_rect_chrome.svg" enableCache="true" x="-15.38" y="-0.87" visibility="false" bdrImageSize="60.00,49.00" cx="54.54" cy="3.33" bdrSize="0.17,0.16,0.13,0.13" height="6.74" bdrEdges="0.15,0.14,0.12,0.12"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp4.ind">
+    <wgtStyle width="80" imagePath="images/li_shape_rect.svg" x="0" forcePaint="9" y="0" cx="40" cy="2.36" bdrSize="0.10,0.11,0.08,0.08" bkgColor="rgb(230,230,230);rgb(230,230,230);rgb(230,230,230);rgb(230,230,230);rgb(0,150,224);rgb(230,230,230);rgb(230,230,230);rgb(230,230,230)" height="5" frame="4" stroke="none"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="unsignedInt" attribute="value" tag="Languages" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp4.lbl" static="true">
+    <wgtStyle width="80" x="0" font-sizepx="13" y="-0.22" font-family="Arial" cx="40" cy="2.64" height="5.22" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp4.img1" static="true">
+    <wgtStyle width="27.69" enableCache="true" x="24.62" y="1.41" cx="14.54" cy="1.11" height="2.17" fill-opacity="0.5"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LgtSmp5" customType="Light">
+   <wgtStyle width="80" x="270" forcePaint="1" y="408" cx="40" cy="2.50" height="5"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtSmp5.img" static="true">
+    <wgtStyle width="107.69" imagePath="images/frame_rect_chrome.svg" enableCache="true" x="-15.38" y="-0.87" visibility="false" bdrImageSize="60.00,49.00" cx="54.54" cy="3.33" bdrSize="0.17,0.16,0.13,0.13" height="6.74" bdrEdges="0.15,0.14,0.12,0.12"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp5.ind">
+    <wgtStyle width="80" imagePath="images/li_shape_rect.svg" x="0" forcePaint="9" y="0" cx="40" cy="2.36" bdrSize="0.10,0.11,0.08,0.08" bkgColor="rgb(230,230,230);rgb(230,230,230);rgb(230,230,230);rgb(230,230,230);rgb(230,230,230);rgb(0,150,224);rgb(230,230,230);rgb(230,230,230)" height="5" frame="5" stroke="none"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="unsignedInt" attribute="value" tag="Languages" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp5.lbl" static="true">
+    <wgtStyle width="80" x="0" font-sizepx="13" y="-0.22" font-family="Arial" cx="40" cy="2.64" height="5.22" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp5.img1" static="true">
+    <wgtStyle width="27.69" enableCache="true" x="24.62" y="1.41" cx="14.54" cy="1.11" height="2.17" fill-opacity="0.5"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LgtSmp6" customType="Light">
+   <wgtStyle width="80" x="450" forcePaint="1" y="408" cx="40" cy="2.50" height="5"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtSmp6.img" static="true">
+    <wgtStyle width="107.69" imagePath="images/frame_rect_chrome.svg" enableCache="true" x="-15.38" y="-0.87" visibility="false" bdrImageSize="60.00,49.00" cx="54.54" cy="3.33" bdrSize="0.17,0.16,0.13,0.13" height="6.74" bdrEdges="0.15,0.14,0.12,0.12"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp6.ind">
+    <wgtStyle width="80" imagePath="images/li_shape_rect.svg" x="0" forcePaint="9" y="0" cx="40" cy="2.36" bdrSize="0.10,0.11,0.08,0.08" bkgColor="rgb(230,230,230);rgb(230,230,230);rgb(230,230,230);rgb(230,230,230);rgb(230,230,230);rgb(230,230,230);rgb(0,150,224);rgb(230,230,230)" height="5" frame="6" stroke="none"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="unsignedInt" attribute="value" tag="Languages" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp6.lbl" static="true">
+    <wgtStyle width="80" x="0" font-sizepx="13" y="-0.22" font-family="Arial" cx="40" cy="2.64" height="5.22" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp6.img1" static="true">
+    <wgtStyle width="27.69" enableCache="true" x="24.62" y="1.41" cx="14.54" cy="1.11" height="2.17" fill-opacity="0.5"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LgtSmp8" customType="Light">
+   <wgtStyle width="80" x="630" forcePaint="1" y="408" cx="40" cy="2.50" height="5"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtSmp8.img" static="true">
+    <wgtStyle width="107.69" imagePath="images/frame_rect_chrome.svg" enableCache="true" x="-15.38" y="-0.87" visibility="false" bdrImageSize="60.00,49.00" cx="54.54" cy="3.33" bdrSize="0.17,0.16,0.13,0.13" height="6.74" bdrEdges="0.15,0.14,0.12,0.12"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp8.ind">
+    <wgtStyle width="80" imagePath="images/li_shape_rect.svg" x="0" forcePaint="9" y="0" cx="40" cy="2.36" bdrSize="0.10,0.11,0.08,0.08" bkgColor="rgb(230,230,230);rgb(230,230,230);rgb(230,230,230);rgb(230,230,230);rgb(230,230,230);rgb(230,230,230);rgb(230,230,230);rgb(0,150,224)" height="5" frame="7" stroke="none"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="unsignedInt" attribute="value" tag="Languages" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp8.lbl" static="true">
+    <wgtStyle width="80" x="0" font-sizepx="13" y="-0.22" font-family="Arial" cx="40" cy="2.64" height="5.22" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp8.img1" static="true">
+    <wgtStyle width="27.69" enableCache="true" x="24.62" y="1.41" cx="14.54" cy="1.11" height="2.17" fill-opacity="0.5"/>
+   </object>
+  </object>
+  <object class="GroupSubscribeWgt" id="Language@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="GroupWgt" id="BtnStd7" customType="Button">
+   <wgtStyle width="26" x="750" y="85" cx="13.01" cy="12.99" height="26"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image16" static="true">
+    <wgtStyle width="30.73" x="-4.13" y="-4.14" visibility="false" bdrImageSize="57.00,52.00" fill="rgb(127,127,127)" cx="15.09" cy="15.37" bdrSize="0.45,0.43,0.40,0.42" height="30.73" bdrEdges="0.13,0.13,0.13,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:btn; type:btn" id="buttonStd20">
+    <wgtStyle width="22.46" x="0" y="0" bdrImageSize="42.00,38.00" fill="rgb(192,192,192)" cx="10.16" form="standard" cy="10.83" bdrSize="0.40,0.43,0.38,0.35" height="22.46" type="momentary" value="0"/>
+    <links>
+     <action pageName="help_multilanguage.jmx" class="ShowDialogAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label8" static="true">
+    <wgtStyle width="19.50" font-color="rgb(40,40,40)" x="0.59" font-sizepx="13" y="2.95" font-family="Arial" wrapping="true" cx="12.99" cy="11.24" height="17.73" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image17">
+    <wgtStyle width="23.64" imagePath="images/ic_ma1_022.svg" x="2.36" forcePaint="1" y="2.36" fill="rgb(70,70,70)" cx="11.81" cy="10.34" height="23.64"/>
+   </object>
+  </object>
+ </object>
+</wgtPage>

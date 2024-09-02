@@ -1,0 +1,13 @@
+<mailInfo>
+ <serverInfo>
+  <id>eMailServer1</id>
+  <serverip attachto="Email_ServerAddress">smtp.gmail.com</serverip>
+  <serverport attachto="Email_ServerPort">465</serverport>
+  <serverName></serverName>
+  <requireauth attachto="Email_ServerAuthentication">true</requireauth>
+  <user attachto="Email_User">abb.automation.product@gmail.com</user>
+  <password attachto="Email_Password">ABBplcAC500</password>
+  <encrypt attachto="Email_SSL">1</encrypt>
+  <verbose>1</verbose>
+ </serverInfo>
+</mailInfo>

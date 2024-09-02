@@ -1,0 +1,7 @@
+<fonts>
+ <font fontname="Arial" langIds="1,2,3,4,5,6,7,8" size="772192" removable="false" name="arial.ttf"/>
+ <font fontname="Arial" langIds="1,2,3,4,5,6,7,8" size="748720" removable="false" name="arialbd.ttf"/>
+ <font fontname="SimHei" langIds="1,5" size="9751960" removable="false" name="simhei.ttf"/>
+ <font fontname="Tahoma" langIds="1" size="647184" removable="false" name="tahomabd.ttf"/>
+ <font fontname="Tahoma" langIds="1" size="697972" removable="false" name="tahoma.ttf"/>
+</fonts>

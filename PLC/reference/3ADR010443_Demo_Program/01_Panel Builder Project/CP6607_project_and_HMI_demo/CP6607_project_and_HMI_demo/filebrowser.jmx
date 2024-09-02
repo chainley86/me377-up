@@ -1,0 +1,389 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="FileBrowser" pageSize="800,480" class="PageWgt" scriptFile="filebrowser.js" dataWndSize="0,70" downloadPrepDone="true" templateFile="background.jmx" usedFonts="Arial,SimHei,Tahoma" staticFile="opt/filebrowser.png" id="FileBrowser" staticOptEnable="true">
+  <wgtStyle width="800" x="0" y="0" height="480" ver="020800424" v="02.08.00.424"/>
+  <object class="GroupWgt" id="GroupWgt4">
+   <wgtStyle width="352" x="390" y="240" cx="176" cy="101" height="202"/>
+   <object class="ShapeWgt" id="GroupWgt4.rect14" static="true">
+    <wgtStyle width="352" x="0" y="100" fill="rgb(220,220,220)" cx="170.72" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt4.rect1" static="true">
+    <wgtStyle width="352" x="0" y="200" fill="rgb(220,220,220)" cx="170.72" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt4.rect20" static="true">
+    <wgtStyle width="350" x="0" y="0" fill="rgb(240,240,240)" cx="169.36" cy="15" height="30" nodeName="rect" stroke="rgb(240,240,240)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt4.rect3" static="true">
+    <wgtStyle width="2" x="0" y="0" fill="rgb(220,220,220)" cx="0.97" cy="101" height="202" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt4.rect11" static="true">
+    <wgtStyle width="2" x="350" y="0" fill="rgb(220,220,220)" cx="0.97" cy="101" height="202" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt4.rect12" static="true">
+    <wgtStyle width="352" x="0" y="0" fill="rgb(200,200,200)" cx="170.72" cy="1" height="2" nodeName="rect" stroke="rgb(200,200,200)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt4.rect13" static="true">
+    <wgtStyle width="352" x="0" y="30" fill="rgb(220,220,220)" cx="170.72" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt2">
+   <wgtStyle width="352" x="20" y="240" cx="176" cy="101" height="202"/>
+   <object class="ShapeWgt" id="GroupWgt2.rect14" static="true">
+    <wgtStyle width="352" x="0" y="100" fill="rgb(220,220,220)" cx="170.72" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt2.rect1" static="true">
+    <wgtStyle width="352" x="0" y="200" fill="rgb(220,220,220)" cx="170.72" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt2.rect20" static="true">
+    <wgtStyle width="350" x="0" y="0" fill="rgb(240,240,240)" cx="169.36" cy="15" height="30" nodeName="rect" stroke="rgb(240,240,240)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt2.rect3" static="true">
+    <wgtStyle width="2" x="0" y="0" fill="rgb(220,220,220)" cx="0.97" cy="101" height="202" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt2.rect11" static="true">
+    <wgtStyle width="2" x="350" y="0" fill="rgb(220,220,220)" cx="0.97" cy="101" height="202" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt2.rect12" static="true">
+    <wgtStyle width="352" x="0" y="0" fill="rgb(200,200,200)" cx="170.72" cy="1" height="2" nodeName="rect" stroke="rgb(200,200,200)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt2.rect13" static="true">
+    <wgtStyle width="352" x="0" y="30" fill="rgb(220,220,220)" cx="170.72" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt3">
+   <wgtStyle width="749" x="20" y="90" cx="374.50" cy="16" height="32"/>
+   <object class="ShapeWgt" id="GroupWgt3.rect20" static="true">
+    <wgtStyle width="200" x="0" y="0" fill="rgb(240,240,240)" cx="96.77" cy="15" height="30" nodeName="rect" stroke="rgb(240,240,240)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt3.rect3" static="true">
+    <wgtStyle width="2" x="0" y="0" fill="rgb(220,220,220)" cx="0.97" cy="16" height="32" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt3.rect8" static="true">
+    <wgtStyle width="2" x="200" y="0" fill="rgb(220,220,220)" cx="0.97" cy="16" height="32" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt3.rect11" static="true">
+    <wgtStyle width="2" x="720" y="0" fill="rgb(220,220,220)" cx="0.97" cy="16" height="32" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt3.rect12" static="true">
+    <wgtStyle width="722" x="0" y="0" fill="rgb(200,200,200)" cx="350.17" cy="1" height="2" nodeName="rect" stroke="rgb(200,200,200)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt3.rect13" static="true">
+    <wgtStyle width="722" x="0" y="30" fill="rgb(220,220,220)" cx="350.17" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ImageWgt" id="GroupWgt3.image5" static="true">
+    <wgtStyle width="24" imagePath="images/UI_Calculator_24.png" x="725" y="3" cx="12" cy="12" height="24"/>
+   </object>
+  </object>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="English" defaultFont="Arial"/>
+    <lang removable="false" langCode="it-IT" langId="L2" writingsystem="Any" name="Italian" defaultFont="Arial"/>
+    <lang removable="false" langCode="de-DE" langId="L3" writingsystem="Any" name="German" defaultFont="Arial"/>
+    <lang removable="false" langCode="fr-FR" langId="L4" writingsystem="Any" name="French" defaultFont="Arial"/>
+    <lang removable="false" langCode="zh-CN" langId="L5" writingsystem="Any" name="Chinese" defaultFont="SimHei"/>
+    <lang removable="false" langCode="grc" langId="L6" writingsystem="Any" name="Greek" defaultFont="Arial"/>
+    <lang removable="false" langCode="es-ES" langId="L7" writingsystem="Any" name="Spanish" defaultFont="Arial"/>
+    <lang removable="false" langCode="ru-RU" langId="L8" writingsystem="Any" name="Russian" defaultFont="Arial"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="" L2="" L3="" L4="" L5="" id="5" L6="" L7="" L8=""/>
+    <MLText L1="File Browser" L2="Browser di file" L3="Dateibrowser" L4="Navigateur de fichiers" L5="文件浏览器" id="0" L6="Αρχείο περιήγησης αρχείων" L7="Explorador de archivos" L8="Браузер файлов"/>
+    <MLText L1="Source path:" L2="Percorso di origine:" L3="Quellpfad:" L4="Chemin de la source:" L5="来源路径：" id="2" L6="Διαδρομή προέλευσης:" L7="Ruta de origen:" L8="Исходный путь:"/>
+    <MLText L1="Destination path:" L2="Percorso di destinazione:" L3="Weg zum Ziel:" L4="Chemin de destination:" L5="目标路径：" id="3" L6="Διαδρομή προορισμού:" L7="Ruta de destino:" L8="Путь назначения:"/>
+    <MLText L1="Combo Box" L2="Casella combinata" L3="Kombinationsfeld" L4="Boîte combo" L5="组合框" id="4" L6="Σύνθετο κιβώτιο" L7="Caja combo" L8="Поле со списком"/>
+    <MLText L1="Source" L2="Origine" L3="Quelle" L4="La source" L5="来源" id="6" L6="προέλευση" L7="Origen" L8="Источник"/>
+    <MLText L1="Destination" L2="Destinazione" L3="Ziel" L4="Destination" L5="目标" id="7" L6="Προορισμός" L7="Destino" L8="Место назначения"/>
+    <MLText L1="Combo Box" L2="Casella combinata" L3="Kombinationsfeld" L4="Boîte combo" L5="组合框" id="9" L6="Σύνθετο κιβώτιο" L7="Caja combo" L8="Поле со списком"/>
+    <MLText L1="Load Example" L2="Carica un esempio" L3="Beispiel laden" L4="Charger un exemple" L5="加载示例" id="13" L6="Παράδειγμα φόρτωσης" L7="Ejemplo de carga" L8="Пример загрузки"/>
+   </MLTexts>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label2">
+   <wgtStyle width="350" font-color="rgb(255,255,255)" x="118" forcePaint="2" font-sizepx="24" y="10" font-family="Arial" font-bold="true" wrapping="true" cx="175" cy="18.94" height="40" vert-align="middle" keypad-type="None" font-size="18"/>
+   <links>
+    <lang class="MLTextLink" textid="0"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="fieldSource">
+   <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="18" cx="253" cy="13.50" timeSpec="local" x="230" y="91" vert-align="middle" text="Source Path" usingFormat="" value="Source Path" keypad-type="Alphabet" font-color="rgb(23,30,40)" width="550" numberFormat="0" readWrite="true" height="30" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="string-200" attribute="value" tag="File_SourcePath" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+   <links>
+    <action f="fieldSource_onDataUpdate" class="JavaScriptAction" attribute="onDataUpdate" event="onDataUpdate" actionID="0" actionWgt="_WgtMgr"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label5">
+   <wgtStyle width="180" font-color="rgb(70,70,70)" x="30" forcePaint="2" font-sizepx="16" y="91" font-family="Arial" wrapping="true" cx="90" cy="14.20" height="30" vert-align="middle" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="2"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="GroupWgt1">
+   <wgtStyle width="749" x="20" y="130" cx="374.50" cy="16" height="32"/>
+   <object class="ShapeWgt" id="GroupWgt1.rect20" static="true">
+    <wgtStyle width="200" x="0" y="0" fill="rgb(240,240,240)" cx="96.77" cy="15" height="30" nodeName="rect" stroke="rgb(240,240,240)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.rect3" static="true">
+    <wgtStyle width="2" x="0" y="0" fill="rgb(220,220,220)" cx="0.97" cy="16" height="32" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.rect8" static="true">
+    <wgtStyle width="2" x="200" y="0" fill="rgb(220,220,220)" cx="0.97" cy="16" height="32" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.rect11" static="true">
+    <wgtStyle width="2" x="720" y="0" fill="rgb(220,220,220)" cx="0.97" cy="16" height="32" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.rect12" static="true">
+    <wgtStyle width="722" x="0" y="0" fill="rgb(200,200,200)" cx="350.17" cy="1" height="2" nodeName="rect" stroke="rgb(200,200,200)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.rect13" static="true">
+    <wgtStyle width="722" x="0" y="30" fill="rgb(220,220,220)" cx="350.17" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ImageWgt" id="GroupWgt1.image5" static="true">
+    <wgtStyle width="24" imagePath="images/UI_Calculator_24.png" x="725" y="3" cx="12" cy="12" height="24"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label1">
+   <wgtStyle width="180" font-color="rgb(70,70,70)" x="30" forcePaint="2" font-sizepx="16" y="131" font-family="Arial" wrapping="true" cx="90" cy="14.20" height="30" vert-align="middle" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="3"/>
+   </links>
+  </object>
+  <object class="ComboBoxWgt" id="ComboSource">
+   <wgtStyle width="330" x="30" forcePaint="2" font-sizepx="16" y="290" font-family="Arial" cx="164" cy="17" height="35" vert-align="top" index="0" text="" keypad-type="None" list="Combo Box" font-size="12"/>
+   <links>
+    <lang class="MLComboBoxLink:list:">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="SimHei" L6="Arial" L7="Arial" L8="Arial"/>
+     <textid idx="0" val="4"/>
+    </lang>
+   </links>
+  </object>
+  <object class="GroupWgt" id="BtnSourceReload" customType="Keyboard Button">
+   <wgtStyle width="60" x="45" y="366" cx="30" cy="25" height="50"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnSourceReload.frmImg" static="true">
+    <wgtStyle width="74.36" enableCache="true" x="-8.45" y="-17.31" visibility="false" bdrImageSize="80.00,40.00" cx="31.32" cy="59.85" bdrSize="0.19,0.18,0.17,0.17" height="84.62" bdrEdges="0.14,0.16,0.14,0.14"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="BtnSourceReload.btn">
+    <wgtStyle width="60" x="0" y="0" fill="rgb(120,120,120)" dx="1" cx="29.58" form="standard" cy="25" height="50" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+    <links>
+     <action f="BtnSourceReload_btn_onMouseClick" class="JavaScriptAction" attribute="onMouseClick" event="onMouseClick" actionID="0" actionWgt="_WgtMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnSourceReload.lbl" static="true">
+    <wgtStyle width="48.17" font-color="rgb(192,192,192)" x="5.07" font-sizepx="13" y="0" font-family="Arial" wrapping="true" cx="21.12" cy="21.15" height="44.23" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="5"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnSourceReload.icoImg">
+    <wgtStyle width="24" imagePath="images/UI_Refresh_24.png" x="18" forcePaint="1" y="13" cx="14.67" cy="12.79" height="24"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label2">
+   <wgtStyle width="180" font-color="rgb(70,70,70)" x="30" forcePaint="2" font-sizepx="16" y="241" font-family="Arial" wrapping="true" cx="90" cy="14.20" height="30" vert-align="middle" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="6"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label3">
+   <wgtStyle width="180" font-color="rgb(70,70,70)" x="400" forcePaint="2" font-sizepx="16" y="241" font-family="Arial" wrapping="true" cx="90" cy="14.20" height="30" vert-align="middle" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="7"/>
+   </links>
+  </object>
+  <object class="ComboBoxWgt" id="ComboDest">
+   <wgtStyle width="330" x="400" forcePaint="2" font-sizepx="16" y="290" font-family="Arial" cx="164" cy="17" height="35" vert-align="top" index="0" text="" keypad-type="None" list="Combo Box" font-size="12"/>
+   <links>
+    <lang class="MLComboBoxLink:list:">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="SimHei" L6="Arial" L7="Arial" L8="Arial"/>
+     <textid idx="0" val="9"/>
+    </lang>
+   </links>
+  </object>
+  <object class="GroupWgt" id="BtnDestReload" customType="Keyboard Button">
+   <wgtStyle width="60" x="415" y="366" cx="30" cy="25" height="50"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnDestReload.frmImg" static="true">
+    <wgtStyle width="74.36" enableCache="true" x="-8.45" y="-17.31" visibility="false" bdrImageSize="80.00,40.00" cx="31.32" cy="59.85" bdrSize="0.19,0.18,0.17,0.17" height="84.62" bdrEdges="0.14,0.16,0.14,0.14"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="BtnDestReload.btn">
+    <wgtStyle width="60" x="0" y="0" fill="rgb(120,120,120)" dx="1" cx="29.58" form="standard" cy="25" height="50" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+    <links>
+     <action f="BtnDestReload_btn_onMouseClick" class="JavaScriptAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_WgtMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnDestReload.lbl" static="true">
+    <wgtStyle width="48.17" font-color="rgb(192,192,192)" x="5.07" font-sizepx="13" y="0" font-family="Arial" wrapping="true" cx="21.12" cy="21.15" height="44.23" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="5"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnDestReload.icoImg">
+    <wgtStyle width="24" imagePath="images/UI_Refresh_24.png" x="18" forcePaint="1" y="13" cx="14.67" cy="12.79" height="24"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnSourceDelete" customType="Keyboard Button">
+   <wgtStyle width="60" x="155" y="366" cx="30" cy="25" height="50"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnSourceDelete.frmImg" static="true">
+    <wgtStyle width="74.36" enableCache="true" x="-8.45" y="-17.31" visibility="false" bdrImageSize="80.00,40.00" cx="31.32" cy="59.85" bdrSize="0.19,0.18,0.17,0.17" height="84.62" bdrEdges="0.14,0.16,0.14,0.14"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="BtnSourceDelete.btn">
+    <wgtStyle width="60" x="0" y="0" fill="rgb(120,120,120)" dx="1" cx="29.58" form="standard" cy="25" height="50" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+    <links>
+     <action f="BtnSourceDelete_btn_onMouseClick" class="JavaScriptAction" attribute="onMouseClick" event="onMouseClick" actionID="0" actionWgt="_WgtMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnSourceDelete.lbl" static="true">
+    <wgtStyle width="48.17" font-color="rgb(192,192,192)" x="5.07" font-sizepx="13" y="0" font-family="Arial" wrapping="true" cx="21.12" cy="21.15" height="44.23" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="5"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnSourceDelete.icoImg">
+    <wgtStyle width="24" imagePath="images/UI_Trash_24.png" x="18" forcePaint="1" y="13" cx="14.67" cy="12.79" height="24"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnSourceCopy" customType="Keyboard Button">
+   <wgtStyle width="60" x="265" y="366" cx="30" cy="25" height="50"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnSourceCopy.frmImg" static="true">
+    <wgtStyle width="74.36" enableCache="true" x="-8.45" y="-17.31" visibility="false" bdrImageSize="80.00,40.00" cx="31.32" cy="59.85" bdrSize="0.19,0.18,0.17,0.17" height="84.62" bdrEdges="0.14,0.16,0.14,0.14"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="BtnSourceCopy.btn">
+    <wgtStyle width="60" x="0" y="0" fill="rgb(120,120,120)" dx="1" cx="29.58" form="standard" cy="25" height="50" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+    <links>
+     <action f="BtnSourceCopy_btn_onMouseClick" class="JavaScriptAction" attribute="onMouseClick" event="onMouseClick" actionID="0" actionWgt="_WgtMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnSourceCopy.lbl" static="true">
+    <wgtStyle width="48.17" font-color="rgb(192,192,192)" x="5.07" font-sizepx="13" y="0" font-family="Arial" wrapping="true" cx="21.12" cy="21.15" height="44.23" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="5"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnSourceCopy.icoImg">
+    <wgtStyle width="24" imagePath="images/UI_Copy_24.png" x="18" forcePaint="1" y="13" cx="14.67" cy="12.79" height="24"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnRect" customType="Shape Button">
+   <wgtStyle width="150" x="590" y="175" cx="75" cy="22.50" height="45"/>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="BtnRect.btn">
+    <wgtStyle width="150" x="0" y="0" fill="rgb(220,220,220)" dx="1" form="rectangle" dy="-1" height="45" releasePath="images\win-like.svg" stroke="rgb(180,180,180)" needlePath="images\win-like-press.svg" type="momentary" value="0" pushColor="rgb(240,240,240)" needleColor="rgb(160,160,160)"/>
+    <links>
+     <action class="WriteTagAction" attribute="onMouseClick" event="onMouseClick" actionID="1" TagValue="/mnt/usbmemory/pdf/" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="string-200" attribute="tagSrc" tag="File_SourcePath" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+     <action class="WriteTagAction" attribute="onMouseClick" event="onMouseClick" actionID="2" TagValue="/mnt/data/hmi/qthmi/deploy/pdf/" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="string-200" attribute="tagSrc" tag="File_DestPath" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" id="BtnRect.txt">
+    <wgtStyle width="150" font-color="rgb(70,70,70)" x="0" forcePaint="3" font-sizepx="16" y="0" font-family="Arial" wrapping="true" cx="77.01" cy="23.40" height="45" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="13"/>
+    </links>
+   </object>
+  </object>
+  <object class="NumericWgt" id="fieldDest">
+   <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="18" cx="253" cy="13.50" timeSpec="local" x="230" y="131" vert-align="middle" text="Destination Path" usingFormat="" value="Destination Path" keypad-type="Alphabet" font-color="rgb(23,30,40)" width="550" numberFormat="0" readWrite="true" height="30" form="Numeric" font-size="14"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="string-200" attribute="value" tag="File_DestPath" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+   <links>
+    <action f="fieldDest_onDataUpdate" class="JavaScriptAction" attribute="onDataUpdate" event="onDataUpdate" actionID="0" actionWgt="_WgtMgr"/>
+   </links>
+  </object>
+  <object class="GroupSubscribeWgt" id="FileBrowser@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="GroupWgt" id="BtnStd7" customType="Button">
+   <wgtStyle width="26" x="107" y="366" cx="13.01" cy="12.99" height="26"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image16" static="true">
+    <wgtStyle width="30.73" x="-4.13" y="-4.14" visibility="false" bdrImageSize="57.00,52.00" fill="rgb(127,127,127)" cx="15.09" cy="15.37" bdrSize="0.45,0.43,0.40,0.42" height="30.73" bdrEdges="0.13,0.13,0.13,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:btn; type:btn" id="buttonStd20">
+    <wgtStyle width="22.46" x="0" y="0" bdrImageSize="42.00,38.00" fill="rgb(192,192,192)" cx="10.16" form="standard" cy="10.83" bdrSize="0.40,0.43,0.38,0.35" height="22.46" type="momentary" value="0"/>
+    <links>
+     <action class="WriteTagAction" attribute="onMouseClick" event="onMouseClick" actionID="1" TagValue="0" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="short" attribute="tagSrc" tag="Help_FileBrowser" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+     <action pageName="help_filebrowser.jmx" class="ShowDialogAction" attribute="onMouseClick" event="onMouseClick" actionID="2" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label8" static="true">
+    <wgtStyle width="19.50" font-color="rgb(40,40,40)" x="0.59" font-sizepx="13" y="2.95" font-family="Arial" wrapping="true" cx="12.99" cy="11.24" height="17.73" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="5"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image17">
+    <wgtStyle width="23.64" imagePath="images/ic_ma1_022.svg" x="2.36" forcePaint="1" y="2.36" fill="rgb(70,70,70)" cx="11.81" cy="10.34" height="23.64"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd1" customType="Button">
+   <wgtStyle width="26" x="217" y="366" cx="13.01" cy="12.99" height="26"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image5" static="true">
+    <wgtStyle width="30.73" x="-4.13" y="-4.14" visibility="false" bdrImageSize="57.00,52.00" fill="rgb(127,127,127)" cx="15.09" cy="15.37" bdrSize="0.45,0.43,0.40,0.42" height="30.73" bdrEdges="0.13,0.13,0.13,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:btn; type:btn" id="buttonStd1">
+    <wgtStyle width="22.46" x="0" y="0" bdrImageSize="42.00,38.00" fill="rgb(192,192,192)" cx="10.16" form="standard" cy="10.83" bdrSize="0.40,0.43,0.38,0.35" height="22.46" type="momentary" value="0"/>
+    <links>
+     <action class="WriteTagAction" attribute="onMouseClick" event="onMouseClick" actionID="1" TagValue="1" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="short" attribute="tagSrc" tag="Help_FileBrowser" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+     <action pageName="help_filebrowser.jmx" class="ShowDialogAction" attribute="onMouseClick" event="onMouseClick" actionID="2" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label1" static="true">
+    <wgtStyle width="19.50" font-color="rgb(40,40,40)" x="0.59" font-sizepx="13" y="2.95" font-family="Arial" wrapping="true" cx="12.99" cy="11.24" height="17.73" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="5"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image6">
+    <wgtStyle width="23.64" imagePath="images/ic_ma1_022.svg" x="2.36" forcePaint="1" y="2.36" fill="rgb(70,70,70)" cx="11.81" cy="10.34" height="23.64"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd2" customType="Button">
+   <wgtStyle width="26" x="327" y="366" cx="13.01" cy="12.99" height="26"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image7" static="true">
+    <wgtStyle width="30.73" x="-4.13" y="-4.14" visibility="false" bdrImageSize="57.00,52.00" fill="rgb(127,127,127)" cx="15.09" cy="15.37" bdrSize="0.45,0.43,0.40,0.42" height="30.73" bdrEdges="0.13,0.13,0.13,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:btn; type:btn" id="buttonStd2">
+    <wgtStyle width="22.46" x="0" y="0" bdrImageSize="42.00,38.00" fill="rgb(192,192,192)" cx="10.16" form="standard" cy="10.83" bdrSize="0.40,0.43,0.38,0.35" height="22.46" type="momentary" value="0"/>
+    <links>
+     <action class="WriteTagAction" attribute="onMouseClick" event="onMouseClick" actionID="1" TagValue="2" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="short" attribute="tagSrc" tag="Help_FileBrowser" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+     <action pageName="help_filebrowser.jmx" class="ShowDialogAction" attribute="onMouseClick" event="onMouseClick" actionID="2" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label2" static="true">
+    <wgtStyle width="19.50" font-color="rgb(40,40,40)" x="0.59" font-sizepx="13" y="2.95" font-family="Arial" wrapping="true" cx="12.99" cy="11.24" height="17.73" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="5"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image8">
+    <wgtStyle width="23.64" imagePath="images/ic_ma1_022.svg" x="2.36" forcePaint="1" y="2.36" fill="rgb(70,70,70)" cx="11.81" cy="10.34" height="23.64"/>
+   </object>
+  </object>
+ </object>
+</wgtPage>

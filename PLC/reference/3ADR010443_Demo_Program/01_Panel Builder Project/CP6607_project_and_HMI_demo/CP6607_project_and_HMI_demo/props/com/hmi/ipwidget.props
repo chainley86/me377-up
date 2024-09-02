@@ -1,0 +1,9 @@
+﻿<defs>
+ <g id="custom_properties" showChildNodes="0" inherit="widget_properties" attributeName="IP-Widget">
+  <text display="Widget Background color" attributeType="color" editChild="true" defaultXform="ColorPaletteCustomXForm" attachTag="true" read_only="false" attributeName="ShapeWgt1.fill" isCompound="true">Fill Color</text>
+  <text display="Text" default="true" attributeType="mltext" layer="Header" editChild="true" attachTag="true" read_only="false" attributeName="LabelWgt1.text" isCompound="true">Text</text>
+  <text display="Text color" attributeType="color" layer="Header" editChild="true" defaultXform="ColorPaletteCustomXForm" attachTag="true" read_only="false" attributeName="LabelWgt1.fill" isCompound="true"/>
+  <text display="Background color" attributeType="color" layer="Header" editChild="true" defaultXform="ColorPaletteCustomXForm" attachTag="true" read_only="false" attributeName="LabelWgt1.frameFill" isCompound="true">Frame background color</text>
+  <text display="Visibility" attributeType="bool" layer="Header" editChild="true" attachTag="true" read_only="false" attributeName="LabelWgt1.visibility" isCompound="true"/>
+ </g>
+</defs>

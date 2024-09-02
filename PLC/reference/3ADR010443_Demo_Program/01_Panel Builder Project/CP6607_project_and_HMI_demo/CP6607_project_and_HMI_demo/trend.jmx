@@ -1,0 +1,1151 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="Trend" pageSize="800,480" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" templateFile="background.jmx" usedFonts="Arial,SimHei" id="Trend" staticOptEnable="false">
+  <wgtStyle width="800" x="0" y="0" height="480" ver="020800424" v="02.08.00.424"/>
+  <links>
+   <action class="WriteTagAction" attribute="onActivate" event="onActivate" actionID="1" TagValue="0" actionWgt="_TagMgr">
+    <dataLinks>
+     <dataLink readWrite="R" attribute="tagSrc" tag="TrendWindowWgt.y0" sourceType="Widget" tagIndex="-1" dataSource="RealtimeTrend"/>
+    </dataLinks>
+   </action>
+   <action class="WriteTagAction" attribute="onActivate" event="onActivate" actionID="2" TagValue="200" actionWgt="_TagMgr">
+    <dataLinks>
+     <dataLink readWrite="R" attribute="tagSrc" tag="TrendWindowWgt.y1" sourceType="Widget" tagIndex="-1" dataSource="RealtimeTrend"/>
+    </dataLinks>
+   </action>
+   <action class="WriteTagAction" attribute="onActivate" event="onActivate" actionID="3" TagValue="0" actionWgt="_TagMgr">
+    <dataLinks>
+     <dataLink readWrite="R" attribute="tagSrc" tag="TrendWindowWgt.y0" sourceType="Widget" tagIndex="-1" dataSource="GroupWgt6.HistoricTrend"/>
+    </dataLinks>
+   </action>
+   <action class="WriteTagAction" attribute="onActivate" event="onActivate" actionID="4" TagValue="200" actionWgt="_TagMgr">
+    <dataLinks>
+     <dataLink readWrite="R" attribute="tagSrc" tag="TrendWindowWgt.y1" sourceType="Widget" tagIndex="-1" dataSource="GroupWgt6.HistoricTrend"/>
+    </dataLinks>
+   </action>
+   <action BitIndex="0" class="SetBitAction" attribute="onActivate" event="onActivate" actionID="5" actionWgt="_TagMgr">
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_MotorCurrent_Sel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </action>
+   <action BitIndex="0" class="ResetBitAction" attribute="onActivate" event="onActivate" actionID="6" actionWgt="_TagMgr">
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_MotorSpeed_Sel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </action>
+   <action BitIndex="0" class="ResetBitAction" attribute="onActivate" event="onActivate" actionID="7" actionWgt="_TagMgr">
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_MotorTemp_Sel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </action>
+   <action BitIndex="0" class="SetBitAction" attribute="onActivate" event="onActivate" actionID="8" actionWgt="_TagMgr">
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_Real_EN" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </action>
+   <action BitIndex="0" class="ResetBitAction" attribute="onActivate" event="onActivate" actionID="9" actionWgt="_TagMgr">
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_History_EN" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </action>
+  </links>
+  <object class="GroupWgt" id="RealtimeTrend" customType="Trend">
+   <wgtStyle width="750" x="0" forcePaint="1024" y="70" cx="375" cy="147.50" height="295"/>
+   <links>
+    <attr attrName="gridX" alias="GridWgt.gridX;LabelsWgt2.labelFreq"/>
+    <attr attrName="gridY" alias="GridWgt.gridY;LabelsWgt1.labelFreq;TicksWgt1.labelFreq"/>
+    <attr attrName="labelFreq" alias="LabelsWgt1.labelFreq;TicksWgt1.labelFreq"/>
+   </links>
+   <object class="LabelWgt" id="RealtimeTrend.title">
+    <wgtStyle width="545.68" font-color="rgb(70,70,70)" x="162.92" forcePaint="1027" font-sizepx="16" y="0" font-family="Arial" cx="268.96" cy="12.76" height="26.95" alignment="center" vert-align="top" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="0"/>
+    </links>
+   </object>
+   <object class="TicksWgt" id="RealtimeTrend.yticks">
+    <wgtStyle width="49.13" reverseScale="true" x="118.96" forcePaint="1025" y="29.79" cx="41.37" form="vertical" labelFreq="6" cy="113.46" height="228.34" tickSize2="15" tickFreq="4" stroke="rgb(70,70,70)" tickSize="7" stroke-linecap="butt" max="100" stroke-width="2"/>
+   </object>
+   <object class="LabelsWgt" id="RealtimeTrend.vlbl">
+    <wgtStyle forcePaint="1033" font-family="Arial" font-sizepx="13" cx="51.72" startAngle="-20" cy="124.81" timeSpec="local" reverseScale="true" dataFormat="#.#" endAngle="185" x="0" useTextAlign="true" y="19.86" rotated="true" vert-align="top" max="200" align="1" font-color="rgb(70,70,70)" width="108.63" labelNames="" tickFreq="5" height="251.04" labelFreq="6" form="vertical" font-size="10"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="min" tag="y0" sourceType="Widget" tagIndex="-1" dataSource="RealtimeTrend.wnd"/>
+     <dataLink readWrite="R" attribute="max" tag="y1" sourceType="Widget" tagIndex="-1" dataSource="RealtimeTrend.wnd"/>
+    </dataLinks>
+   </object>
+   <object class="LabelsWgt" id="RealtimeTrend.hlbl">
+    <wgtStyle forcePaint="1033" font-family="Arial" font-sizepx="13" cx="315.52" startAngle="-20" cy="14.19" timeSpec="local" dataFormat="hh:mm:ss" endAngle="185" x="116.37" y="266.63" rotated="true" vert-align="top" max="100" font-color="rgb(70,70,70)" width="633.63" labelNames="" tickFreq="5" height="28.37" labelFreq="4" form="horizontal" dataType="Time" font-size="10"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="min" tag="min" sourceType="Data" dataSource="RealtimeTrend.wnd"/>
+     <dataLink readWrite="R" attribute="max" tag="max" sourceType="Data" dataSource="RealtimeTrend.wnd"/>
+    </dataLinks>
+   </object>
+   <object class="TrendWindowWgt" id="RealtimeTrend.wnd">
+    <wgtStyle width="548.28" x="165.52" forcePaint="1025" yPageSize="100" stopTime="1000" y="31.20" numCurves="3" fill="none" startPoint="0" height="226.93" frame="300" stroke="rgb(40,40,40)" pageDuration="60" y1="100" startTime="1.25024e+12" updateInterval="1000" trendType="1"/>
+   </object>
+   <object class="ImageWgt" id="RealtimeTrend.bg">
+    <wgtStyle width="545.68" imagePath="images/glass.svg" x="165.52" forcePaint="1024" y="31.20" visibility="false" cx="273.86" cy="56.01" height="112.04"/>
+   </object>
+   <object class="GridWgt" id="RealtimeTrend.grid">
+    <wgtStyle width="550.87" x="162.92" forcePaint="1033" y="29.79" grid="4" colorX="rgb(40,40,40)" height="228.34" colorY="rgb(40,40,40)" cursor-color="rgb(255,115,0)" max="40" gridY="6" cursor-width="2"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="min" tag="min" sourceType="Data" dataSource="RealtimeTrend.wnd"/>
+     <dataLink readWrite="R" attribute="max" tag="max" sourceType="Data" dataSource="RealtimeTrend.wnd"/>
+     <dataLink readWrite="R" attribute="y0" tag="y0" sourceType="Data" dataSource="RealtimeTrend.wnd"/>
+     <dataLink readWrite="R" attribute="y1" tag="y1" sourceType="Data" dataSource="RealtimeTrend.wnd"/>
+    </dataLinks>
+   </object>
+   <object class="TrendCurveWgt" id="RealtimeTrend.curve1">
+    <wgtStyle width="548.28" x="165.52" forcePaint="1033" drawType="0" y="31.20" cx="274.13" cy="113.46" height="226.93" frame="300" stroke="rgb(0,0,255)" type="line" max="40" y1="200" stroke-width="2"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="Value" sourceType="Data" dataSource="RealtimeTrend.buffer1"/>
+     <dataLink readWrite="R" attribute="min" tag="min" sourceType="Data" dataSource="RealtimeTrend.wnd"/>
+     <dataLink readWrite="R" attribute="max" tag="max" sourceType="Data" dataSource="RealtimeTrend.wnd"/>
+     <dataLink readWrite="R" attribute="y0" tag="y0" sourceType="Widget" tagIndex="-1" dataSource="RealtimeTrend.wnd"/>
+     <dataLink readWrite="R" attribute="y1" tag="y1" sourceType="Widget" tagIndex="-1" dataSource="RealtimeTrend.wnd"/>
+    </dataLinks>
+   </object>
+   <object PageDuration="300" StartTime="1249895711000" BufferType="1" class="TrendBufferWgt" StopTime="1249896011000" ReqSamples="1000" UpdateInterval="1000" samplingtime="1" UpdateType="0" id="RealtimeTrend.buffer1">
+    <wgtStyle width="81" x="620" forcePaint="1033" y="210" cx="40" cy="21" height="44"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="float" attribute="Value" tag="Trend_MotorCurrent" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object PageDuration="300" StartTime="0" BufferType="1" class="TrendBufferWgt" StopTime="0" ReqSamples="1000" UpdateInterval="1000" samplingtime="1" UpdateType="0" id="RealtimeTrend.buffer2">
+    <wgtStyle width="81" x="620" forcePaint="1033" y="210" cx="40" cy="21" height="44"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="int" attribute="Value" tag="Trend_MotorSpeed" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="TrendCurveWgt" id="RealtimeTrend.curve2">
+    <wgtStyle width="548.28" x="165.52" forcePaint="1033" drawType="0" y="31.20" cx="274.13" cy="113.46" height="226.93" frame="300" stroke="rgb(0,85,0)" type="line" max="40" y1="2000" stroke-width="2"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="Value" sourceType="Data" dataSource="RealtimeTrend.buffer2"/>
+     <dataLink readWrite="R" attribute="min" tag="min" sourceType="Data" dataSource="RealtimeTrend.wnd"/>
+     <dataLink readWrite="R" attribute="max" tag="max" sourceType="Data" dataSource="RealtimeTrend.wnd"/>
+     <dataLink readWrite="R" attribute="y0" tag="y0" sourceType="Widget" tagIndex="-1" dataSource="RealtimeTrend.wnd"/>
+     <dataLink readWrite="R" attribute="y1" tag="y1" sourceType="Widget" tagIndex="-1" dataSource="RealtimeTrend.wnd"/>
+    </dataLinks>
+   </object>
+   <object PageDuration="300" StartTime="0" BufferType="1" class="TrendBufferWgt" StopTime="0" ReqSamples="1000" UpdateInterval="1000" samplingtime="1" UpdateType="0" id="RealtimeTrend.buffer3">
+    <wgtStyle width="81" x="620" forcePaint="1033" y="210" cx="40" cy="21" height="44"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="int" attribute="Value" tag="Trend_MotorTemp" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="TrendCurveWgt" id="RealtimeTrend.curve3">
+    <wgtStyle width="548.28" x="165.52" forcePaint="1033" drawType="0" y="31.20" cx="274.13" cy="113.46" height="226.93" frame="300" stroke="rgb(128,0,128)" type="line" max="40" y1="100" stroke-width="2"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="Value" sourceType="Data" dataSource="RealtimeTrend.buffer3"/>
+     <dataLink readWrite="R" attribute="min" tag="min" sourceType="Data" dataSource="RealtimeTrend.wnd"/>
+     <dataLink readWrite="R" attribute="max" tag="max" sourceType="Data" dataSource="RealtimeTrend.wnd"/>
+     <dataLink readWrite="R" attribute="y0" tag="y0" sourceType="Widget" tagIndex="-1" dataSource="RealtimeTrend.wnd"/>
+     <dataLink readWrite="R" attribute="y1" tag="y1" sourceType="Widget" tagIndex="-1" dataSource="RealtimeTrend.wnd"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd7" customType="Button">
+   <wgtStyle width="26" x="587" forcePaint="1" y="65" cx="13.01" cy="12.99" height="26"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image16">
+    <wgtStyle width="30.73" x="-4.13" y="-4.14" visibility="false" bdrImageSize="57.00,52.00" fill="rgb(127,127,127)" cx="15.09" cy="15.37" bdrSize="0.45,0.43,0.40,0.42" height="30.73" bdrEdges="0.13,0.13,0.13,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:btn; type:btn" id="buttonStd20">
+    <wgtStyle width="22.46" x="0" forcePaint="1" y="0" bdrImageSize="42.00,38.00" fill="rgb(192,192,192)" cx="10.16" form="standard" cy="10.83" bdrSize="0.40,0.43,0.38,0.35" height="22.46" type="momentary" value="0"/>
+    <links>
+     <action pageName="help_trend_real.jmx" class="ShowDialogAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label8">
+    <wgtStyle width="19.50" font-color="rgb(40,40,40)" x="0.59" font-sizepx="13" y="2.95" font-family="Arial" wrapping="true" cx="12.99" cy="11.24" height="17.73" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image17">
+    <wgtStyle width="23.64" imagePath="images/ic_ma1_022.svg" x="2.36" forcePaint="1" y="2.36" fill="rgb(70,70,70)" cx="11.81" cy="10.34" height="23.64"/>
+   </object>
+  </object>
+  <object class="ShapeWgt" id="rect2">
+   <wgtStyle width="235" x="555" y="405" fill="none" cx="113.70" cy="32.50" height="65" nodeName="rect" stroke="rgb(220,220,220)"/>
+  </object>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="English" defaultFont="Arial"/>
+    <lang removable="false" langCode="it-IT" langId="L2" writingsystem="Any" name="Italian" defaultFont="Arial"/>
+    <lang removable="false" langCode="de-DE" langId="L3" writingsystem="Any" name="German" defaultFont="Arial"/>
+    <lang removable="false" langCode="fr-FR" langId="L4" writingsystem="Any" name="French" defaultFont="Arial"/>
+    <lang removable="false" langCode="zh-CN" langId="L5" writingsystem="Any" name="Chinese" defaultFont="SimHei"/>
+    <lang removable="false" langCode="grc" langId="L6" writingsystem="Any" name="Greek" defaultFont="Arial"/>
+    <lang removable="false" langCode="es-ES" langId="L7" writingsystem="Any" name="Spanish" defaultFont="Arial"/>
+    <lang removable="false" langCode="ru-RU" langId="L8" writingsystem="Any" name="Russian" defaultFont="Arial"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="" L2="" L3="" L4="" L5="" id="1" L6="" L7="" L8=""/>
+    <MLText L1="" L2="" L3="" L4="" L5="" id="1" L6="" L7="" L8=""/>
+    <MLText L1="Real-Time Trend" L2="Tendenza in tempo reale" L3="Echtzeit-Trend" L4="Tendance en temps réel" L5="实时趋势" id="0" L6="Τάση σε πραγματικό χρόνο" L7="Tendencia en tiempo real" L8="Тенденция в реальном времени"/>
+    <MLText L1="Motor Current (amp)" L2="Corrente motore (amp)" L3="Motorstrom (amp)" L4="Courant du moteur (amp)" L5="电机电流（amp）" id="2" L6="Ρεύμα κινητήρα (amp)" L7="Corriente del motor (amp)" L8="Ток двигателя (amp)"/>
+    <MLText L1="Motor Speed (rpm)" L2="Velocità del motore (rpm)" L3="Motordrehzahl (rpm)" L4="Vitesse du moteur (rpm)" L5="电机转速（rpm）" id="3" L6="Ταχύτητα κινητήρα (rpm)" L7="Velocidad del motor (rpm)" L8="Скорость двигателя (rpm)"/>
+    <MLText L1="Motor Temperature (°C)" L2="Temperatura del motore (°C)" L3="Motortemperatur (°C)" L4="Température du moteur (°C)" L5="电机温度（°C）" id="4" L6="Θερμοκρασία κινητήρα (°C)" L7="Temperatura del motor (°C)" L8="Температура двигателя (°C)"/>
+    <MLText L1="History Trend" L2="Tendenza della storia" L3="Historischer Trend" L4="Tendance historique" L5="历史趋势" id="5" L6="Ιστορία της τάσης" L7="Tendencia histórica" L8="История"/>
+    <MLText L1="Motor Current (amp)" L2="Corrente motore (amp)" L3="Motorstrom (amp)" L4="Courant du moteur (amp)" L5="电机电流（amp）" id="6" L6="Ρεύμα κινητήρα (amp)" L7="Corriente del motor (amp)" L8="Ток двигателя (amp)"/>
+    <MLText L1="Motor Speed (rpm)" L2="Velocità del motore (rpm)" L3="Motordrehzahl (rpm)" L4="Vitesse du moteur (rpm)" L5="电机转速（rpm）" id="7" L6="Ταχύτητα κινητήρα (rpm)" L7="Velocidad del motor (rpm)" L8="Скорость двигателя (rpm)"/>
+    <MLText L1="Motor Temperature (°C)" L2="Temperatura del motore (°C)" L3="Motortemperatur (°C)" L4="Température du moteur (°C)" L5="电机温度（°C）" id="8" L6="Θερμοκρασία κινητήρα (°C)" L7="Temperatura del motor (°C)" L8="Температура двигателя (°C)"/>
+    <MLText L1="Real-Time Trend" L2="Tendenza in tempo reale" L3="Echtzeit-Trend" L4="Tendance en temps réel" L5="实时趋势" id="9" L6="Τάση σε πραγματικό χρόνο" L7="Tendencia en tiempo real" L8="Тенденция в реальном времени"/>
+    <MLText L1="History Trend" L2="Tendenza della storia" L3="Historischer Trend" L4="Tendance historique" L5="历史趋势" id="10" L6="Ιστορία της τάσης" L7="Tendencia histórica" L8="История"/>
+    <MLText L1="Trend" L2="Tendenza" L3="Trend" L4="Tendance" L5="趋势" id="12" L6="Τάση" L7="Tendencia" L8="тенденция"/>
+    <MLText L1="Start" L2="Inizio" L3="Anfang" L4="Début" L5="开始" id="13" L6="Αρχή" L7="Comienzo" L8="Начало"/>
+    <MLText L1="Trend Simulation" L2="Tendenza simulazione" L3="Trend Simulation" L4="Simulation de tendance" L5="趋势模拟" id="14" L6="Προσομοίωση τάσης" L7="Simulación de tendencia" L8="Моделирование тенденций"/>
+    <MLText L1="Stop" L2="Stop" L3="Halt" L4="Arrêtez" L5="停止" id="15" L6="σταματήσει" L7="Detener" L8="Стоп"/>
+    <MLText L1="Cursor On" L2="Cursore acceso" L3="Cursor ein" L4="Curseur sur" L5="光标启用" id="16" L6="Δρομέας επί" L7="Cursor encendido" L8="Курсор вкл."/>
+    <MLText L1="Cursor Off" L2="Cursore spento" L3="Cursor aus" L4="Curseur désactivé" L5="光标关闭" id="19" L6="Δρομέας Κλείσιμο" L7="Cursor desactivado" L8="Курсор выключен"/>
+    <MLText L1="Cursor" L2="Cursore" L3="Mauszeiger" L4="Le curseur" L5="光标" id="20" L6="Δρομέας" L7="Cursor" L8="Курсор"/>
+    <MLText L1="Cursor" L2="Cursore" L3="Mauszeiger" L4="Le curseur" L5="光标" id="21" L6="Δρομέας" L7="Cursor" L8="Курсор"/>
+    <MLText L1="Motor Current (amp)" L2="Corrente motore (amp)" L3="Motorstrom (amp)" L4="Courant du moteur (amp)" L5="电机电流（amp）" id="22" L6="Ρεύμα κινητήρα (amp)" L7="Corriente del motor (amp)" L8="Ток двигателя (amp)"/>
+    <MLText L1="Motor Speed (rpm)" L2="Velocità del motore (rpm)" L3="Motordrehzahl (rpm)" L4="Vitesse du moteur (rpm)" L5="电机转速（rpm）" id="23" L6="Ταχύτητα κινητήρα (rpm)" L7="Velocidad del motor (rpm)" L8="Скорость двигателя (rpm)"/>
+    <MLText L1="Motor Temperature (°C)" L2="Temperatura del motore (°C)" L3="Motortemperatur (°C)" L4="Température du moteur (°C)" L5="电机温度（°C）" id="24" L6="Θερμοκρασία κινητήρα (°C)" L7="Temperatura del motor (°C)" L8="Температура двигателя (°C)"/>
+    <MLText L1="Actual" L2="Effettivo" L3="Tatsächlich" L4="Réel" L5="实际" id="25" L6="Πραγματικός" L7="Real" L8="фактический"/>
+    <MLText L1="Cursor On" L2="Cursore acceso" L3="Cursor ein" L4="Curseur sur" L5="光标启用" id="26" L6="Δρομέας επί" L7="Cursor encendido" L8="Курсор вкл."/>
+    <MLText L1="Cursor Off" L2="Cursore spento" L3="Cursor aus" L4="Curseur désactivé" L5="光标关闭" id="29" L6="Δρομέας Κλείσιμο" L7="Cursor desactivado" L8="Курсор выключен"/>
+   </MLTexts>
+  </object>
+  <object class="GroupSubscribeWgt" id="Trend@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="GroupWgt" id="GroupWgt1">
+   <wgtStyle width="20" x="40" forcePaint="1" y="120" cx="10" cy="90" height="180"/>
+   <object class="LabelWgt" id="GroupWgt1.label5">
+    <wgtStyle width="180" font-color="rgb(70,70,70)" x="0" forcePaint="11" font-sizepx="13" y="0" font-family="Arial" wrapping="true" cx="9.47" cy="90" height="20" alignment="center" vert-align="middle" mtx="0,-1,0,1,0,0,0,180,1" keypad-type="None" font-size="10"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="Trend_MotorCurrent_Sel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GroupWgt1.label6">
+    <wgtStyle width="180" font-color="rgb(70,70,70)" x="0" forcePaint="11" font-sizepx="13" y="0" font-family="Arial" wrapping="true" cx="9.47" cy="90" height="20" alignment="center" vert-align="middle" mtx="0,-1,0,1,0,0,0,180,1" keypad-type="None" font-size="10"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="Trend_MotorSpeed_Sel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="3"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GroupWgt2.label7">
+    <wgtStyle width="180" font-color="rgb(70,70,70)" x="0" forcePaint="11" font-sizepx="13" y="0" font-family="Arial" wrapping="true" cx="9.47" cy="90" height="20" alignment="center" vert-align="middle" mtx="0,-1,0,1,0,0,0,180,1" keypad-type="None" font-size="10"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="Trend_MotorTemp_Sel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="4"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt6">
+   <wgtStyle width="790" x="760" forcePaint="1024" y="65" cx="395" cy="150" height="300"/>
+   <object class="ShapeWgt" id="GroupWgt6.rect4">
+    <wgtStyle width="710" x="40" forcePaint="1025" y="0" fill="rgb(230,230,230)" cx="343.56" cy="147.50" height="295" nodeName="rect" stroke="rgb(230,230,230)"/>
+   </object>
+   <object class="GroupWgt" id="GroupWgt6.HistoricTrend" customType="Trend">
+    <wgtStyle width="750" x="0" forcePaint="1025" y="5" cx="375" cy="147.50" height="295"/>
+    <links>
+     <attr attrName="gridX" alias="GridWgt.gridX;LabelsWgt2.labelFreq"/>
+     <attr attrName="gridY" alias="GridWgt.gridY;LabelsWgt1.labelFreq;TicksWgt1.labelFreq"/>
+     <attr attrName="labelFreq" alias="LabelsWgt1.labelFreq;TicksWgt1.labelFreq"/>
+    </links>
+    <object class="LabelWgt" id="GroupWgt6.HistoricTrend.title">
+     <wgtStyle width="545.69" font-color="rgb(70,70,70)" x="162.93" forcePaint="1027" font-sizepx="16" y="0" font-family="Arial" cx="268.97" cy="12.77" height="26.95" alignment="center" vert-align="top" keypad-type="None" font-size="12"/>
+     <links>
+      <lang class="MLTextLink" textid="5"/>
+     </links>
+    </object>
+    <object class="TicksWgt" id="GroupWgt6.HistoricTrend.yticks">
+     <wgtStyle width="49.14" reverseScale="true" x="116.38" forcePaint="1025" y="29.79" cx="41.38" form="vertical" labelFreq="6" cy="113.46" height="228.34" tickSize2="15" tickFreq="4" stroke="rgb(70,70,70)" tickSize="7" stroke-linecap="butt" max="100" stroke-width="2"/>
+    </object>
+    <object class="LabelsWgt" id="GroupWgt6.HistoricTrend.vlbl">
+     <wgtStyle forcePaint="1033" font-family="Arial" font-sizepx="13" cx="51.72" startAngle="-20" cy="124.80" timeSpec="local" reverseScale="true" dataFormat="#.#" endAngle="185" x="0" useTextAlign="true" y="19.86" rotated="true" vert-align="top" max="100" align="1" font-color="rgb(70,70,70)" width="108.62" labelNames="" tickFreq="5" height="251.04" labelFreq="6" form="vertical" font-size="10"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="min" tag="y0" sourceType="Widget" tagIndex="-1" dataSource="GroupWgt6.HistoricTrend.wnd"/>
+      <dataLink readWrite="R" attribute="max" tag="y1" sourceType="Widget" tagIndex="-1" dataSource="GroupWgt6.HistoricTrend.wnd"/>
+     </dataLinks>
+    </object>
+    <object class="LabelsWgt" id="GroupWgt6.HistoricTrend.hlbl">
+     <wgtStyle forcePaint="1033" font-family="Arial" font-sizepx="13" cx="315.52" startAngle="-20" cy="14.18" timeSpec="local" dataFormat="hh:mm:ss" endAngle="185" x="116.38" y="266.63" rotated="true" vert-align="top" max="100" font-color="rgb(70,70,70)" width="633.62" labelNames="" tickFreq="5" height="28.37" labelFreq="4" form="horizontal" dataType="Time" font-size="10"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="min" tag="min" sourceType="Data" dataSource="GroupWgt6.HistoricTrend.wnd"/>
+      <dataLink readWrite="R" attribute="max" tag="max" sourceType="Data" dataSource="GroupWgt6.HistoricTrend.wnd"/>
+     </dataLinks>
+    </object>
+    <object class="TrendWindowWgt" id="GroupWgt6.HistoricTrend.wnd">
+     <wgtStyle width="548.28" x="165.52" forcePaint="1025" yPageSize="100" stopTime="1000" y="31.21" numCurves="3" fill="none" startPoint="2" height="226.92" frame="300" stroke="rgb(40,40,40)" pageDuration="300" y1="200" updateInterval="1000"/>
+    </object>
+    <object class="ImageWgt" id="GroupWgt6.HistoricTrend.bg">
+     <wgtStyle width="545.69" imagePath="images/glass.svg" x="165.52" forcePaint="1024" y="31.21" visibility="false" cx="292.71" cy="62.22" height="113.46"/>
+    </object>
+    <object class="GridWgt" id="GroupWgt6.HistoricTrend.grid">
+     <wgtStyle width="550.86" x="162.93" forcePaint="1033" y="29.79" grid="4" colorX="rgb(40,40,40)" height="228.34" colorY="rgb(40,40,40)" cursor-color="rgb(255,115,0)" max="40" gridY="6" cursor-width="2"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="min" tag="min" sourceType="Data" dataSource="GroupWgt6.HistoricTrend.wnd"/>
+      <dataLink readWrite="R" attribute="max" tag="max" sourceType="Data" dataSource="GroupWgt6.HistoricTrend.wnd"/>
+      <dataLink readWrite="R" attribute="y0" tag="y0" sourceType="Data" dataSource="GroupWgt6.HistoricTrend.wnd"/>
+      <dataLink readWrite="R" attribute="y1" tag="y1" sourceType="Data" dataSource="GroupWgt6.HistoricTrend.wnd"/>
+     </dataLinks>
+    </object>
+    <object class="TrendCurveWgt" id="GroupWgt6.HistoricTrend.curve1">
+     <wgtStyle width="548.28" x="165.52" forcePaint="1033" drawType="0" y="31.21" cx="271.55" cy="112.75" height="226.92" frame="300" stroke="rgb(0,0,255)" type="line" max="40" y1="200" stroke-width="2"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="Value" sourceType="Data" dataSource="GroupWgt6.HistoricTrend.buffer1"/>
+      <dataLink readWrite="R" attribute="min" tag="min" sourceType="Data" dataSource="GroupWgt6.HistoricTrend.wnd"/>
+      <dataLink readWrite="R" attribute="max" tag="max" sourceType="Data" dataSource="GroupWgt6.HistoricTrend.wnd"/>
+      <dataLink readWrite="R" attribute="y0" tag="y0" sourceType="Widget" tagIndex="-1" dataSource="GroupWgt6.HistoricTrend.wnd"/>
+      <dataLink readWrite="R" attribute="y1" tag="y1" sourceType="Widget" tagIndex="-1" dataSource="GroupWgt6.HistoricTrend.wnd"/>
+     </dataLinks>
+    </object>
+    <object PageDuration="300" StartTime="1249895711000" BufferType="0" class="TrendBufferWgt" StopTime="1249896011000" ReqSamples="1000" UpdateInterval="1000" samplingtime="1" UpdateType="0" id="GroupWgt6.HistoricTrend.buffer1">
+     <wgtStyle width="82" x="620" forcePaint="1033" y="211" cx="41" cy="22" height="45"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="Value" tag="Trend1.Motor_Current" sourceType="Widget" tagIndex="-1" dataSource="GroupWgt6.HistoricTrend.trend"/>
+     </dataLinks>
+    </object>
+    <object class="IdalTrendWgt" maxPoints="2000" id="GroupWgt6.HistoricTrend.trend">
+     <wgtStyle width="82" x="525" forcePaint="1025" y="209" height="45"/>
+    </object>
+    <object PageDuration="300" StartTime="0" BufferType="0" class="TrendBufferWgt" StopTime="0" ReqSamples="1000" UpdateInterval="1000" samplingtime="1" UpdateType="0" id="GroupWgt6.HistoricTrend.buffer2">
+     <wgtStyle width="82" x="620" forcePaint="1033" y="211" cx="41" cy="22" height="45"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="Value" tag="Trend1.Motor_Speed" sourceType="Widget" tagIndex="-1" dataSource="GroupWgt6.HistoricTrend.trend"/>
+     </dataLinks>
+    </object>
+    <object class="TrendCurveWgt" id="GroupWgt6.HistoricTrend.curve2">
+     <wgtStyle width="548.28" x="165.52" forcePaint="1033" drawType="0" y="31.21" cx="271.55" cy="112.75" height="226.92" frame="300" stroke="rgb(0,85,0)" type="line" max="40" y1="2000" stroke-width="2"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="Value" sourceType="Data" dataSource="GroupWgt6.HistoricTrend.buffer2"/>
+      <dataLink readWrite="R" attribute="min" tag="min" sourceType="Data" dataSource="GroupWgt6.HistoricTrend.wnd"/>
+      <dataLink readWrite="R" attribute="max" tag="max" sourceType="Data" dataSource="GroupWgt6.HistoricTrend.wnd"/>
+      <dataLink readWrite="R" attribute="y0" tag="y0" sourceType="Widget" tagIndex="-1" dataSource="GroupWgt6.HistoricTrend.wnd"/>
+      <dataLink readWrite="R" attribute="y1" tag="y1" sourceType="Widget" tagIndex="-1" dataSource="GroupWgt6.HistoricTrend.wnd"/>
+     </dataLinks>
+    </object>
+    <object PageDuration="300" StartTime="0" BufferType="0" class="TrendBufferWgt" StopTime="0" ReqSamples="1000" UpdateInterval="1000" samplingtime="1" UpdateType="0" id="GroupWgt6.HistoricTrend.buffer3">
+     <wgtStyle width="82" x="620" forcePaint="1033" y="211" cx="41" cy="22" height="45"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="Value" tag="Trend1.Motor_Temperature" sourceType="Widget" tagIndex="-1" dataSource="GroupWgt6.HistoricTrend.trend"/>
+     </dataLinks>
+    </object>
+    <object class="TrendCurveWgt" id="GroupWgt6.HistoricTrend.curve3">
+     <wgtStyle width="548.28" x="165.52" forcePaint="1033" drawType="0" y="31.21" cx="271.55" cy="112.75" height="226.92" frame="300" stroke="rgb(128,0,128)" type="line" max="40" y1="100" stroke-width="2"/>
+     <dataLinks>
+      <dataLink readWrite="R" attribute="Value" sourceType="Data" dataSource="GroupWgt6.HistoricTrend.buffer3"/>
+      <dataLink readWrite="R" attribute="min" tag="min" sourceType="Data" dataSource="GroupWgt6.HistoricTrend.wnd"/>
+      <dataLink readWrite="R" attribute="max" tag="max" sourceType="Data" dataSource="GroupWgt6.HistoricTrend.wnd"/>
+      <dataLink readWrite="R" attribute="y0" tag="y0" sourceType="Widget" tagIndex="-1" dataSource="GroupWgt6.HistoricTrend.wnd"/>
+      <dataLink readWrite="R" attribute="y1" tag="y1" sourceType="Widget" tagIndex="-1" dataSource="GroupWgt6.HistoricTrend.wnd"/>
+     </dataLinks>
+    </object>
+   </object>
+   <object class="GroupWgt" id="GroupWgt6.GroupWgt3">
+    <wgtStyle width="20" x="50" forcePaint="1025" y="55" cx="10" cy="90" height="180"/>
+    <object class="LabelWgt" id="GroupWgt6.GroupWgt3.label5">
+     <wgtStyle width="180" font-color="rgb(70,70,70)" x="0" forcePaint="1035" font-sizepx="13" y="0" font-family="Arial" wrapping="true" cx="9.47" cy="90" height="20" alignment="center" vert-align="middle" mtx="0,-1,0,1,0,0,0,180,1" keypad-type="None" font-size="10"/>
+     <dataLinks>
+      <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="Trend_MotorCurrent_Sel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="6"/>
+     </links>
+    </object>
+    <object class="LabelWgt" id="GroupWgt6.GroupWgt3.label6">
+     <wgtStyle width="180" font-color="rgb(70,70,70)" x="0" forcePaint="1035" font-sizepx="13" y="0" font-family="Arial" wrapping="true" cx="9.47" cy="90" height="20" alignment="center" vert-align="middle" mtx="0,-1,0,1,0,0,0,180,1" keypad-type="None" font-size="10"/>
+     <dataLinks>
+      <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="Trend_MotorSpeed_Sel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="7"/>
+     </links>
+    </object>
+    <object class="LabelWgt" id="GroupWgt2.label5">
+     <wgtStyle width="180" font-color="rgb(70,70,70)" x="0" forcePaint="1035" font-sizepx="13" y="0" font-family="Arial" wrapping="true" cx="9.47" cy="90" height="20" alignment="center" vert-align="middle" mtx="0,-1,0,1,0,0,0,180,1" keypad-type="None" font-size="10"/>
+     <dataLinks>
+      <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="Trend_MotorTemp_Sel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+     </dataLinks>
+     <links>
+      <lang class="MLTextLink" textid="8"/>
+     </links>
+    </object>
+   </object>
+   <object class="GroupWgt" id="GroupWgt6.GroupWgt4">
+    <wgtStyle width="40" x="750" forcePaint="1033" y="0" cx="20" cy="147.50" height="295"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="Trend_History_EN" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+    <object class="ShapeWgt" id="GroupWgt6.GroupWgt4.trapizoid">
+     <wgtStyle width="295" x="0" forcePaint="1025" y="0" fill="rgb(230,230,230)" points="36.061,28.424 0.061,28.424 8.061,0.424 29.061,0.424 " cx="20" cy="147.50" height="40" nodeName="polygon" stroke="rgb(230,230,230)" mtx="0,1,0,-1,0,0,40,0,1" stroke-width="1.00006"/>
+    </object>
+    <object class="LabelWgt" id="GroupWgt6.GroupWgt4.label3">
+     <wgtStyle width="160" font-color="rgb(70,70,70)" x="5" forcePaint="1027" font-sizepx="16" y="65" font-family="Arial" wrapping="true" cx="14.20" cy="80" height="30" alignment="center" vert-align="middle" mtx="0,-1,0,1,0,0,0,160,1" keypad-type="None" font-size="12"/>
+     <links>
+      <lang class="MLTextLink" textid="9"/>
+     </links>
+    </object>
+    <object class="ButtonWgt" hmiStyle="type:btn" id="GroupWgt6.GroupWgt4.hotspotbtn">
+     <wgtStyle width="40" x="0" forcePaint="1025" y="30" fill="rgb(160,160,164)" dx="1" cx="19.69" form="hotspot" dy="-1" cy="117.65" height="240" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+     <links>
+      <action slideLimit="true" speed="slow" class="SlideWidgetAction" attribute="onMousePress" dx="760" dy="0" event="onMouseDown" dir="0" actionID="1" imageWgtId="" toggleVisibility="false" widgetId="GroupWgt6" dyLimit="0" dxLimit="760" actionWgt="_WgtMgr"/>
+      <action BitIndex="0" class="ResetBitAction" attribute="onMousePress" event="onMouseDown" actionID="2" actionWgt="_TagMgr">
+       <dataLinks>
+        <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_History_EN" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+       </dataLinks>
+      </action>
+      <action BitIndex="0" class="SetBitAction" attribute="onMousePress" event="onMouseDown" actionID="3" actionWgt="_TagMgr">
+       <dataLinks>
+        <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_Real_EN" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+       </dataLinks>
+      </action>
+      <action BitIndex="0" class="ResetBitAction" attribute="onMousePress" event="onMouseDown" actionID="4" actionWgt="_TagMgr">
+       <dataLinks>
+        <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_History_CursorON" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+       </dataLinks>
+      </action>
+      <action BitIndex="0" class="SetBitAction" attribute="onMousePress" event="onMouseDown" actionID="5" actionWgt="_TagMgr">
+       <dataLinks>
+        <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_History_CursorOFF" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+       </dataLinks>
+      </action>
+      <action class="ShowTrendCursorAction" attribute="onMousePress" event="onMouseDown" actionID="6" trendName="GroupWgt6.HistoricTrend.wnd" showCursor="false" actionWgt="_TrendMgr"/>
+     </links>
+    </object>
+   </object>
+   <object class="GroupWgt" id="GroupWgt6.GroupWgt5">
+    <wgtStyle width="40" x="0" forcePaint="1033" y="0" cx="20" cy="147.50" height="295"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="Trend_Real_EN" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+    <object class="ShapeWgt" id="GroupWgt6.GroupWgt5.trapizoid">
+     <wgtStyle width="295" x="0" forcePaint="1025" y="0" fill="rgb(230,230,230)" points="36.061,28.424 0.061,28.424 8.061,0.424 29.061,0.424 " cx="20" cy="147.50" height="40" nodeName="polygon" stroke="rgb(230,230,230)" mtx="0,-1,0,1,0,0,0,295,1" stroke-width="1.00006"/>
+    </object>
+    <object class="LabelWgt" id="GroupWgt6.GroupWgt5.label3">
+     <wgtStyle width="160" font-color="rgb(70,70,70)" x="5" forcePaint="1027" font-sizepx="16" y="65" font-family="Arial" wrapping="true" cx="14.20" cy="80" height="30" alignment="center" vert-align="middle" mtx="0,-1,0,1,0,0,0,160,1" keypad-type="None" font-size="12"/>
+     <links>
+      <lang class="MLTextLink" textid="10"/>
+     </links>
+    </object>
+    <object class="ButtonWgt" hmiStyle="type:btn" id="GroupWgt6.GroupWgt5.hotspotbtn1">
+     <wgtStyle width="40" x="0" forcePaint="1025" y="30" fill="rgb(160,160,164)" dx="1" cx="19.69" form="hotspot" dy="-1" cy="117.65" height="240" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+     <links>
+      <action slideLimit="true" speed="slow" class="SlideWidgetAction" attribute="onMouseRelease" dx="-760" dy="0" event="onMouseUp" dir="0" actionID="1" imageWgtId="" toggleVisibility="false" widgetId="GroupWgt6" dyLimit="0" dxLimit="0" actionWgt="_WgtMgr"/>
+      <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" event="onMouseUp" actionID="2" actionWgt="_TagMgr">
+       <dataLinks>
+        <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_Real_EN" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+       </dataLinks>
+      </action>
+      <action BitIndex="0" class="SetBitAction" attribute="onMouseRelease" event="onMouseUp" actionID="3" actionWgt="_TagMgr">
+       <dataLinks>
+        <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_History_EN" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+       </dataLinks>
+      </action>
+      <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" event="onMouseUp" actionID="4" actionWgt="_TagMgr">
+       <dataLinks>
+        <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_Real_CursorON" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+       </dataLinks>
+      </action>
+      <action BitIndex="0" class="SetBitAction" attribute="onMouseRelease" event="onMouseUp" actionID="5" actionWgt="_TagMgr">
+       <dataLinks>
+        <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_Real_CursorOFF" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+       </dataLinks>
+      </action>
+      <action class="ShowTrendCursorAction" attribute="onMouseRelease" event="onMouseUp" actionID="6" trendName="RealtimeTrend.wnd" showCursor="false" actionWgt="_TrendMgr"/>
+      <action BitIndex="0" class="SetBitAction" attribute="onMouseRelease" event="onMouseUp" actionID="7" actionWgt="_TagMgr">
+       <dataLinks>
+        <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_History_CursorOFF" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+       </dataLinks>
+      </action>
+      <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" event="onMouseUp" actionID="8" actionWgt="_TagMgr">
+       <dataLinks>
+        <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_History_CursorON" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+       </dataLinks>
+      </action>
+     </links>
+    </object>
+   </object>
+   <object class="GroupWgt" id="GroupWgt6.BtnStd1" customType="Button">
+    <wgtStyle width="26" x="530" forcePaint="1" y="1" cx="13.01" cy="12.99" height="26"/>
+    <links>
+     <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+    </links>
+    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="GroupWgt6.image5">
+     <wgtStyle width="30.73" x="-4.13" y="-4.14" visibility="false" bdrImageSize="57.00,52.00" fill="rgb(127,127,127)" cx="15.09" cy="15.37" bdrSize="0.45,0.43,0.40,0.42" height="30.73" bdrEdges="0.13,0.13,0.13,0.13"/>
+    </object>
+    <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:btn; type:btn" id="GroupWgt6.buttonStd1">
+     <wgtStyle width="22.46" x="0" forcePaint="1" y="0" bdrImageSize="42.00,38.00" fill="rgb(192,192,192)" cx="10.16" form="standard" cy="10.83" bdrSize="0.40,0.43,0.38,0.35" height="22.46" type="momentary" value="0"/>
+     <links>
+      <action pageName="help_trend_history.jmx" class="ShowDialogAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+     </links>
+    </object>
+    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="GroupWgt6.label1">
+     <wgtStyle width="19.50" font-color="rgb(40,40,40)" x="0.59" font-sizepx="13" y="2.95" font-family="Arial" wrapping="true" cx="12.99" cy="11.24" height="17.73" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+     <links>
+      <lang class="MLTextLink" textid="1"/>
+     </links>
+    </object>
+    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="GroupWgt6.image6">
+     <wgtStyle width="23.64" imagePath="images/ic_ma1_022.svg" x="2.36" forcePaint="1" y="2.36" fill="rgb(70,70,70)" cx="11.81" cy="10.34" height="23.64"/>
+    </object>
+   </object>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label2">
+   <wgtStyle width="350" font-color="rgb(255,255,255)" x="118" forcePaint="2" font-sizepx="24" y="10" font-family="Arial" font-bold="true" wrapping="true" cx="175" cy="18.94" height="40" vert-align="middle" keypad-type="None" font-size="18"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="BtnRect" customType="Shape Button">
+   <wgtStyle width="110.08" x="560" y="414.42" cx="55.04" cy="23" height="46"/>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="BtnRect.btn">
+    <wgtStyle width="110" x="0" y="0.58" fill="rgb(220,220,220)" dx="1" form="rectangle" dy="-1" height="45" releasePath="images\win-like.svg" stroke="rgb(180,180,180)" needlePath="images\win-like-press.svg" type="momentary" value="0" pushColor="rgb(240,240,240)" needleColor="rgb(160,160,160)"/>
+    <links>
+     <action BitIndex="0" class="ResetBitAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_Motor_Stop" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+     <action BitIndex="0" class="ResetBitAction" attribute="onMouseClick" event="onMouseClick" actionID="2" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_Motor_Stopped" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+     <action BitIndex="0" class="SetBitAction" attribute="onMouseClick" event="onMouseClick" actionID="3" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_Motor_Start" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" id="BtnRect.txt">
+    <wgtStyle width="110" font-color="rgb(70,70,70)" x="0.08" forcePaint="3" font-sizepx="16" y="0" font-family="Arial" wrapping="true" cx="56.47" cy="23.93" height="46" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="13"/>
+    </links>
+   </object>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label3">
+   <wgtStyle width="229" font-color="rgb(70,70,70)" x="560" forcePaint="2" font-sizepx="16" y="385" font-family="Arial" font-bold="true" wrapping="true" cx="115" cy="9.47" height="19" vert-align="middle" keypad-type="None" font-size="12" frameColor="none"/>
+   <links>
+    <lang class="MLTextLink" textid="14"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="BtnRect1" customType="Shape Button">
+   <wgtStyle width="110.08" x="675" y="415" cx="55.04" cy="22.81" height="45.62"/>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="BtnRect1.btn">
+    <wgtStyle width="110" x="0" y="0" fill="rgb(220,220,220)" dx="1" form="rectangle" dy="-1" height="45" releasePath="images\win-like.svg" stroke="rgb(180,180,180)" needlePath="images\win-like-press.svg" type="momentary" value="0" pushColor="rgb(240,240,240)" needleColor="rgb(160,160,160)"/>
+    <links>
+     <action BitIndex="0" class="ResetBitAction" attribute="onMouseClick" event="onMouseClick" actionID="0" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_Motor_Start" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+     <action BitIndex="0" class="ResetBitAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_Motor_Started" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+     <action BitIndex="0" class="SetBitAction" attribute="onMouseClick" event="onMouseClick" actionID="2" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_Motor_Stop" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" id="BtnRect1.txt">
+    <wgtStyle width="110.08" font-color="rgb(70,70,70)" x="0" forcePaint="3" font-sizepx="16" y="0" font-family="Arial" wrapping="true" cx="56.51" cy="23.73" height="45.62" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="15"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt5.GroupWgt3">
+   <wgtStyle width="120.24" x="430" forcePaint="8" y="370" cx="60.12" cy="50" height="100"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="Trend_Real_EN" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+   <object class="GroupWgt" id="GroupWgt5.GroupWgt3.BtnKbd1" customType="Keyboard Button">
+    <wgtStyle width="120.16" x="0.08" forcePaint="9" y="0" cx="60.08" cy="25" height="50"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="Trend_Real_CursorOFF" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="GroupWgt5.GroupWgt3.BtnKbd1.frmImg">
+     <wgtStyle width="148.73" enableCache="true" x="-16.90" y="-17.31" visibility="false" bdrImageSize="80.00,40.00" cx="62.64" cy="59.85" bdrSize="0.19,0.18,0.17,0.17" height="84.62" bdrEdges="0.14,0.16,0.14,0.14"/>
+    </object>
+    <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="GroupWgt5.GroupWgt3.BtnKbd1.btn">
+     <wgtStyle width="120" x="0" forcePaint="1" y="0" fill="rgb(120,120,120)" dx="1" cx="59.15" form="standard" cy="25" height="50" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+     <links>
+      <action class="ShowTrendCursorAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" trendName="RealtimeTrend.wnd" showCursor="true" actionWgt="_TrendMgr"/>
+      <action BitIndex="0" class="SetBitAction" attribute="onMouseRelease" event="onMouseUp" actionID="2" actionWgt="_TagMgr">
+       <dataLinks>
+        <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_Real_CursorON" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+       </dataLinks>
+      </action>
+      <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" event="onMouseUp" actionID="3" actionWgt="_TagMgr">
+       <dataLinks>
+        <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_Real_CursorOFF" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+       </dataLinks>
+      </action>
+     </links>
+    </object>
+    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="GroupWgt5.GroupWgt3.BtnKbd1.lbl">
+     <wgtStyle width="120" font-color="rgb(70,70,70)" x="0.16" forcePaint="3" font-sizepx="16" y="0" font-family="Arial" wrapping="true" cx="52.63" cy="23.91" height="50" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+     <links>
+      <lang class="MLTextLink" textid="16"/>
+     </links>
+    </object>
+    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="GroupWgt5.GroupWgt3.BtnKbd1.icoImg">
+     <wgtStyle width="30.42" x="43.94" y="7.69" cx="18.59" cy="15.38" height="28.85"/>
+    </object>
+   </object>
+   <object class="GroupWgt" id="GroupWgt5.GroupWgt3.BtnKbd2" customType="Keyboard Button">
+    <wgtStyle width="60" x="60.08" forcePaint="9" y="50" cx="30" cy="25" height="50"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="Trend_Real_CursorON" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="GroupWgt5.GroupWgt3.BtnKbd2.frmImg">
+     <wgtStyle width="74.36" enableCache="true" x="-8.45" y="-17.31" visibility="false" bdrImageSize="80.00,40.00" cx="31.32" cy="59.84" bdrSize="0.19,0.18,0.17,0.17" height="84.62" bdrEdges="0.14,0.16,0.14,0.14"/>
+    </object>
+    <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="GroupWgt5.GroupWgt3.BtnKbd2.btn">
+     <wgtStyle width="60" x="0" forcePaint="1" y="0" fill="rgb(120,120,120)" dx="0" cx="29.58" form="standard" dy="0" cy="25" height="50" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+     <links>
+      <action class="ScrollTrendCursorAction" attribute="onMouseClick" event="onMouseClick" actionID="0" scrollUnit="1" scrollDirection="0" scrollTimesample="1" trendName="RealtimeTrend.wnd" actionWgt="_TrendMgr" scrollPercentage="1"/>
+     </links>
+    </object>
+    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="GroupWgt5.GroupWgt3.BtnKbd2.lbl">
+     <wgtStyle width="48.17" font-color="rgb(70,70,70)" x="5.07" font-sizepx="16" y="0" font-family="Arial" wrapping="true" cx="21.12" cy="21.14" height="44.23" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+     <links>
+      <lang class="MLTextLink" textid="1"/>
+     </links>
+    </object>
+    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="GroupWgt5.GroupWgt3.BtnKbd2.icoImg">
+     <wgtStyle width="15.21" imagePath="images/ic_pl1_021.svg" x="21.97" forcePaint="1" y="7.69" cx="9.30" cy="15.38" height="28.86"/>
+    </object>
+   </object>
+   <object class="GroupWgt" id="GroupWgt5.GroupWgt3.BtnKbd3" customType="Keyboard Button">
+    <wgtStyle width="60" x="0.08" forcePaint="9" y="50" cx="30" cy="25" height="50"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="Trend_Real_CursorON" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="GroupWgt5.GroupWgt3.BtnKbd3.frmImg">
+     <wgtStyle width="74.36" enableCache="true" x="-8.45" y="-17.31" visibility="false" bdrImageSize="80.00,40.00" cx="31.32" cy="59.84" bdrSize="0.19,0.18,0.17,0.17" height="84.62" bdrEdges="0.14,0.16,0.14,0.14"/>
+    </object>
+    <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="GroupWgt5.GroupWgt3.BtnKbd3.btn">
+     <wgtStyle width="60" x="0" forcePaint="1" y="0" fill="rgb(120,120,120)" dx="0" cx="29.58" form="standard" dy="0" cy="25" height="50" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+     <links>
+      <action class="ScrollTrendCursorAction" attribute="onMouseClick" event="onMouseClick" actionID="0" scrollUnit="1" scrollDirection="1" scrollTimesample="1" trendName="RealtimeTrend.wnd" actionWgt="_TrendMgr" scrollPercentage="1"/>
+     </links>
+    </object>
+    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="GroupWgt5.GroupWgt3.BtnKbd3.lbl">
+     <wgtStyle width="48.17" font-color="rgb(70,70,70)" x="5.07" font-sizepx="16" y="0" font-family="Arial" wrapping="true" cx="21.12" cy="21.14" height="44.23" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+     <links>
+      <lang class="MLTextLink" textid="1"/>
+     </links>
+    </object>
+    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="GroupWgt5.GroupWgt3.BtnKbd3.icoImg">
+     <wgtStyle width="15.21" imagePath="images/ic_pl1_020.svg" x="21.97" forcePaint="1" y="7.69" cx="9.30" cy="15.38" height="28.86"/>
+    </object>
+   </object>
+   <object class="GroupWgt" id="GroupWgt5.GroupWgt3.BtnKbd4" customType="Keyboard Button">
+    <wgtStyle width="120.16" x="0" forcePaint="9" y="0" cx="60.08" cy="25" height="50"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="Trend_Real_CursorON" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="GroupWgt5.GroupWgt3.BtnKbd4.frmImg">
+     <wgtStyle width="148.73" enableCache="true" x="-16.90" y="-17.31" visibility="false" bdrImageSize="80.00,40.00" cx="62.64" cy="59.85" bdrSize="0.19,0.18,0.17,0.17" height="84.62" bdrEdges="0.14,0.16,0.14,0.14"/>
+    </object>
+    <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="GroupWgt5.GroupWgt3.BtnKbd4.btn">
+     <wgtStyle width="120" x="0" forcePaint="1" y="0" fill="rgb(120,120,120)" dx="1" cx="59.15" form="standard" cy="25" height="50" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+     <links>
+      <action class="ShowTrendCursorAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" trendName="RealtimeTrend.wnd" showCursor="false" actionWgt="_TrendMgr"/>
+      <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" event="onMouseUp" actionID="5" actionWgt="_TagMgr">
+       <dataLinks>
+        <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_Real_CursorON" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+       </dataLinks>
+      </action>
+      <action BitIndex="0" class="SetBitAction" attribute="onMouseRelease" event="onMouseUp" actionID="6" actionWgt="_TagMgr">
+       <dataLinks>
+        <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_Real_CursorOFF" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+       </dataLinks>
+      </action>
+     </links>
+    </object>
+    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="GroupWgt5.GroupWgt3.BtnKbd4.lbl">
+     <wgtStyle width="120" font-color="rgb(70,70,70)" x="0.16" forcePaint="3" font-sizepx="16" y="0" font-family="Arial" wrapping="true" cx="52.63" cy="23.91" height="50" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+     <links>
+      <lang class="MLTextLink" textid="19"/>
+     </links>
+    </object>
+    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="GroupWgt5.GroupWgt3.BtnKbd4.icoImg">
+     <wgtStyle width="30.42" x="43.94" y="7.69" cx="18.59" cy="15.38" height="28.85"/>
+    </object>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt3.GroupWgt7">
+   <wgtStyle width="82" x="340" forcePaint="8" y="368" cx="41" cy="51" height="102"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="Trend_History_CursorON" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+   <object class="GroupWgt" id="GroupWgt3.GroupWgt7.GroupWgt8">
+    <wgtStyle width="82" x="0" forcePaint="1" y="0" cx="41" cy="51" height="102"/>
+    <object class="ShapeWgt" id="GroupWgt3.GroupWgt7.GroupWgt8.rect10">
+     <wgtStyle width="2" x="80" forcePaint="1" y="0" fill="rgb(220,220,220)" cx="0.97" cy="51" height="102" nodeName="rect" stroke="rgb(220,220,220)"/>
+    </object>
+    <object class="ShapeWgt" id="GroupWgt3.GroupWgt7.GroupWgt8.rect4">
+     <wgtStyle width="80" x="0" forcePaint="1" y="0" fill="rgb(240,240,240)" cx="38.71" cy="12.50" height="25" nodeName="rect" stroke="rgb(240,240,240)"/>
+    </object>
+    <object class="ShapeWgt" id="GroupWgt3.GroupWgt7.GroupWgt8.rect1">
+     <wgtStyle width="82" x="0" forcePaint="1" y="0" fill="rgb(200,200,200)" cx="39.77" cy="1" height="2" nodeName="rect" stroke="rgb(200,200,200)"/>
+    </object>
+    <object class="ShapeWgt" id="GroupWgt3.GroupWgt7.GroupWgt8.rect5">
+     <wgtStyle width="82" x="0" forcePaint="1" y="25" fill="rgb(220,220,220)" cx="39.77" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+    </object>
+    <object class="ShapeWgt" id="GroupWgt3.GroupWgt7.GroupWgt8.rect6">
+     <wgtStyle width="82" x="0" forcePaint="1" y="100" fill="rgb(220,220,220)" cx="39.77" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+    </object>
+    <object class="ShapeWgt" id="GroupWgt3.GroupWgt7.GroupWgt8.rect17">
+     <wgtStyle width="82" x="0" forcePaint="1" y="50" fill="rgb(220,220,220)" cx="39.77" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+    </object>
+    <object class="ShapeWgt" id="GroupWgt3.GroupWgt7.GroupWgt8.rect18">
+     <wgtStyle width="82" x="0" forcePaint="1" y="75" fill="rgb(220,220,220)" cx="39.77" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+    </object>
+   </object>
+   <object class="NumericWgt" id="GroupWgt3.GroupWgt7.field4">
+    <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="32.20" cy="9" step="1" timeSpec="local" alignment="right" x="6" y="30" vert-align="middle" text="" max="3.40282e+038" usingFormat="#.#" value="" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="70" numberFormat="6" height="20" form="Numeric" font-size="10"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="value" tag="TrendCurveWgt1.cursor-value" sourceType="Widget" tagIndex="-1" dataSource="GroupWgt6.HistoricTrend"/>
+    </dataLinks>
+   </object>
+   <object class="NumericWgt" id="GroupWgt3.GroupWgt7.field5">
+    <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="32.20" cy="9" step="1" timeSpec="local" alignment="right" x="6" y="55" vert-align="middle" text="" max="3.40282e+038" usingFormat="#.#" value="" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="70" numberFormat="6" height="20" form="Numeric" font-size="10"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="value" tag="TrendCurveWgt2.cursor-value" sourceType="Widget" tagIndex="-1" dataSource="GroupWgt6.HistoricTrend"/>
+    </dataLinks>
+   </object>
+   <object class="NumericWgt" id="GroupWgt3.GroupWgt7.field6">
+    <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="32.20" cy="9" step="1" timeSpec="local" alignment="right" x="6" y="80" vert-align="middle" text="" max="3.40282e+038" usingFormat="#.#" value="" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="70" numberFormat="6" height="20" form="Numeric" font-size="10"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="value" tag="TrendCurveWgt3.cursor-value" sourceType="Widget" tagIndex="-1" dataSource="GroupWgt6.HistoricTrend"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" id="GroupWgt3.GroupWgt7.label5">
+    <wgtStyle width="80" font-color="rgb(70,70,70)" x="1" forcePaint="3" font-sizepx="13" y="3" font-family="Arial" wrapping="true" cx="40" cy="9.47" height="20" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="20"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt3.GroupWgt2">
+   <wgtStyle width="82" x="340" forcePaint="73" y="368" cx="41" cy="51" height="102"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="Trend_Real_CursorON" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+   <object class="GroupWgt" id="GroupWgt3.GroupWgt2.GroupWgt8">
+    <wgtStyle width="82" x="0" forcePaint="65" y="0" cx="41" cy="51" height="102"/>
+    <object class="ShapeWgt" id="GroupWgt3.GroupWgt2.GroupWgt8.rect10">
+     <wgtStyle width="2" x="80" forcePaint="1" y="0" fill="rgb(220,220,220)" cx="0.97" cy="51" height="102" nodeName="rect" stroke="rgb(220,220,220)"/>
+    </object>
+    <object class="ShapeWgt" id="GroupWgt3.GroupWgt2.GroupWgt8.rect4">
+     <wgtStyle width="80" x="0" forcePaint="1" y="0" fill="rgb(240,240,240)" cx="38.71" cy="12.50" height="25" nodeName="rect" stroke="rgb(240,240,240)"/>
+    </object>
+    <object class="ShapeWgt" id="GroupWgt3.GroupWgt2.GroupWgt8.rect1">
+     <wgtStyle width="82" x="0" forcePaint="1" y="0" fill="rgb(200,200,200)" cx="39.77" cy="1" height="2" nodeName="rect" stroke="rgb(200,200,200)"/>
+    </object>
+    <object class="ShapeWgt" id="GroupWgt3.GroupWgt2.GroupWgt8.rect5">
+     <wgtStyle width="82" x="0" forcePaint="1" y="25" fill="rgb(220,220,220)" cx="39.77" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+    </object>
+    <object class="ShapeWgt" id="GroupWgt3.GroupWgt2.GroupWgt8.rect6">
+     <wgtStyle width="82" x="0" forcePaint="1" y="100" fill="rgb(220,220,220)" cx="39.77" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+    </object>
+    <object class="ShapeWgt" id="GroupWgt3.GroupWgt2.GroupWgt8.rect17">
+     <wgtStyle width="82" x="0" forcePaint="1" y="50" fill="rgb(220,220,220)" cx="39.77" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+    </object>
+    <object class="ShapeWgt" id="GroupWgt3.GroupWgt2.GroupWgt8.rect18">
+     <wgtStyle width="82" x="0" forcePaint="1" y="75" fill="rgb(220,220,220)" cx="39.77" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+    </object>
+   </object>
+   <object class="NumericWgt" id="GroupWgt3.GroupWgt2.field4">
+    <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="32.20" cy="9" step="1" timeSpec="local" alignment="right" x="6" y="30" vert-align="middle" text="" max="3.40282e+038" usingFormat="#.#" value="" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="70" numberFormat="6" height="20" form="Numeric" font-size="10"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="value" tag="TrendCurveWgt1.cursor-value" sourceType="Widget" tagIndex="-1" dataSource="RealtimeTrend"/>
+    </dataLinks>
+   </object>
+   <object class="NumericWgt" id="GroupWgt3.GroupWgt2.field5">
+    <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="32.20" cy="9" step="1" timeSpec="local" alignment="right" x="6" y="55" vert-align="middle" text="" max="3.40282e+038" usingFormat="#.#" value="" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="70" numberFormat="6" height="20" form="Numeric" font-size="10"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="value" tag="TrendCurveWgt2.cursor-value" sourceType="Widget" tagIndex="-1" dataSource="RealtimeTrend"/>
+    </dataLinks>
+   </object>
+   <object class="NumericWgt" id="GroupWgt3.GroupWgt2.field6">
+    <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="32.20" cy="9" step="1" timeSpec="local" alignment="right" x="6" y="80" vert-align="middle" text="" max="3.40282e+038" usingFormat="#.#" value="" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="70" numberFormat="6" height="20" form="Numeric" font-size="10"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="value" tag="TrendCurveWgt3.cursor-value" sourceType="Widget" tagIndex="-1" dataSource="RealtimeTrend"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" id="GroupWgt3.GroupWgt2.label5">
+    <wgtStyle width="80" font-color="rgb(70,70,70)" x="1" forcePaint="3" font-sizepx="13" y="3" font-family="Arial" wrapping="true" cx="40" cy="9.47" height="20" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="21"/>
+    </links>
+   </object>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt2.rect4">
+   <wgtStyle width="25" x="10" y="393" fill="rgb(0,0,255)" cx="12.10" cy="12.50" height="25" nodeName="rect"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt2.rect5">
+   <wgtStyle width="25" x="10" y="418" fill="rgb(0,85,0)" cx="12.10" cy="12.50" height="25" nodeName="rect"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt2.rect6">
+   <wgtStyle width="25" x="10" y="443" fill="rgb(128,0,128)" cx="12.10" cy="12.50" height="25" nodeName="rect"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt2.rect20">
+   <wgtStyle width="225" x="35" y="393" fill="rgb(240,240,240)" cx="108.87" cy="37.50" height="75" nodeName="rect" stroke="rgb(240,240,240)"/>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label3">
+   <wgtStyle width="170" font-color="rgb(70,70,70)" x="40" forcePaint="2" font-sizepx="13" y="397" font-family="Arial" wrapping="true" cx="85" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="22"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label1">
+   <wgtStyle width="170" font-color="rgb(70,70,70)" x="40" forcePaint="2" font-sizepx="13" y="422" font-family="Arial" wrapping="true" cx="85" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="23"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label2">
+   <wgtStyle width="170" font-color="rgb(70,70,70)" x="40" forcePaint="2" font-sizepx="13" y="447" font-family="Arial" wrapping="true" cx="85" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="24"/>
+   </links>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt2.rect13">
+   <wgtStyle width="332" x="10" forcePaint="1" y="393" fill="rgb(220,220,220)" cx="161.02" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt2.rect14">
+   <wgtStyle width="332" x="10" forcePaint="1" y="418" fill="rgb(220,220,220)" cx="161.02" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt2.rect15">
+   <wgtStyle width="332" x="10" forcePaint="1" y="443" fill="rgb(220,220,220)" cx="161.02" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt2.rect16">
+   <wgtStyle width="332" x="10" forcePaint="1" y="468" fill="rgb(220,220,220)" cx="161.02" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt2.rect8">
+   <wgtStyle width="2" x="35" forcePaint="1" y="393" fill="rgb(220,220,220)" cx="0.97" cy="37.50" height="75" nodeName="rect" stroke="rgb(220,220,220)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt2.rect3">
+   <wgtStyle width="2" x="10" forcePaint="1" y="393" fill="rgb(220,220,220)" cx="0.97" cy="37.50" height="75" nodeName="rect" stroke="rgb(220,220,220)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt2.rect2">
+   <wgtStyle width="80" x="260" y="368" fill="rgb(240,240,240)" cx="38.71" cy="12.50" height="25" nodeName="rect" stroke="rgb(240,240,240)"/>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label4">
+   <wgtStyle width="80" font-color="rgb(70,70,70)" x="261" forcePaint="3" font-sizepx="13" y="371" font-family="Arial" wrapping="true" cx="40" cy="9.47" height="20" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="25"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="GroupWgt2.field3">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="27.60" cy="9" step="1" timeSpec="local" alignment="right" x="266" y="448" vert-align="middle" text="9999.0" max="3.40282e+038" usingFormat="#.#" value="9999.0" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="60" numberFormat="6" height="20" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="float" attribute="value" tag="Trend_MotorTemp" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt2.field2">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="27.60" cy="9" step="1" timeSpec="local" alignment="right" x="266" y="423" vert-align="top" text="9999.0" max="3.40282e+038" usingFormat="#.#" value="9999.0" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="60" wrapping="true" numberFormat="6" height="20" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="float" attribute="value" tag="Trend_MotorSpeed" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt2.field1">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="27.60" cy="9" step="1" timeSpec="local" alignment="right" x="266" y="398" vert-align="middle" text="9999.0" max="3.40282e+038" usingFormat="#.#" value="9999.0" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="60" numberFormat="6" height="20" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="float" attribute="value" tag="Trend_MotorCurrent" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt2.rect7">
+   <wgtStyle width="2" x="340" forcePaint="1" y="368" fill="rgb(220,220,220)" cx="0.97" cy="51" height="102" nodeName="rect" stroke="rgb(220,220,220)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt2.rect12">
+   <wgtStyle width="82" x="260" forcePaint="1" y="368" fill="rgb(200,200,200)" cx="39.77" cy="1" height="2" nodeName="rect" stroke="rgb(200,200,200)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt2.rect9">
+   <wgtStyle width="2" x="260" forcePaint="1" y="368" fill="rgb(220,220,220)" cx="0.97" cy="50" height="100" nodeName="rect" stroke="rgb(220,220,220)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt2.GroupWgt7.rect10">
+   <wgtStyle width="25" x="228" y="396" fill="rgb(255,255,255)" cx="12.10" cy="10.50" height="21" nodeName="rect" stroke="rgb(70,70,70)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt2.GroupWgt7.rect22">
+   <wgtStyle width="25" x="228" y="421" fill="rgb(255,255,255)" cx="12.10" cy="10.50" height="21" nodeName="rect" stroke="rgb(70,70,70)"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt2.GroupWgt7.rect23">
+   <wgtStyle width="25" x="228" y="446" fill="rgb(255,255,255)" cx="12.10" cy="10.50" height="21" nodeName="rect" stroke="rgb(70,70,70)"/>
+  </object>
+  <object class="ImageWgt" id="GroupWgt2.GroupWgt7.plyrImg124">
+   <wgtStyle width="25" imagePath="images/ic_pl1_125.svg" x="228" forcePaint="8" y="396" cx="12.50" cy="10.50" height="21"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="Trend_MotorCurrent_Sel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ImageWgt" id="GroupWgt2.GroupWgt7.plyrImg1">
+   <wgtStyle width="25" imagePath="images/ic_pl1_125.svg" x="227" forcePaint="8" y="421" cx="12.50" cy="10.50" height="21"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="Trend_MotorSpeed_Sel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ImageWgt" id="GroupWgt2.GroupWgt7.plyrImg2">
+   <wgtStyle width="25" imagePath="images/ic_pl1_125.svg" x="228" forcePaint="8" y="446" cx="12.50" cy="10.50" height="21"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="Trend_MotorTemp_Sel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="GroupWgt2.GroupWgt7.hotspotbtn2">
+   <wgtStyle width="40" x="220" forcePaint="1" y="444" fill="rgb(160,160,164)" dx="1" cx="19.69" form="hotspot" dy="-1" cy="12.25" height="25" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action BitIndex="0" class="SetBitAction" attribute="onMousePress" event="onMouseDown" actionID="1" actionWgt="_TagMgr">
+     <dataLinks>
+      <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_MotorTemp_Sel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+     </dataLinks>
+    </action>
+    <action BitIndex="0" class="ResetBitAction" attribute="onMousePress" event="onMouseDown" actionID="2" actionWgt="_TagMgr">
+     <dataLinks>
+      <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_MotorCurrent_Sel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+     </dataLinks>
+    </action>
+    <action BitIndex="0" class="ResetBitAction" attribute="onMousePress" event="onMouseDown" actionID="3" actionWgt="_TagMgr">
+     <dataLinks>
+      <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_MotorSpeed_Sel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+     </dataLinks>
+    </action>
+    <action class="WriteTagAction" attribute="onMousePress" event="onMouseDown" actionID="4" TagValue="0" actionWgt="_TagMgr">
+     <dataLinks>
+      <dataLink readWrite="R" attribute="tagSrc" tag="TrendWindowWgt.y0" sourceType="Widget" tagIndex="-1" dataSource="RealtimeTrend"/>
+     </dataLinks>
+    </action>
+    <action class="WriteTagAction" attribute="onMousePress" event="onMouseDown" actionID="5" TagValue="100" actionWgt="_TagMgr">
+     <dataLinks>
+      <dataLink readWrite="R" attribute="tagSrc" tag="TrendWindowWgt.y1" sourceType="Widget" tagIndex="-1" dataSource="RealtimeTrend"/>
+     </dataLinks>
+    </action>
+    <action class="WriteTagAction" attribute="onMousePress" event="onMouseDown" actionID="6" TagValue="0" actionWgt="_TagMgr">
+     <dataLinks>
+      <dataLink readWrite="R" attribute="tagSrc" tag="TrendWindowWgt.y0" sourceType="Widget" tagIndex="-1" dataSource="GroupWgt6.HistoricTrend"/>
+     </dataLinks>
+    </action>
+    <action class="WriteTagAction" attribute="onMousePress" event="onMouseDown" actionID="7" TagValue="100" actionWgt="_TagMgr">
+     <dataLinks>
+      <dataLink readWrite="R" attribute="tagSrc" tag="TrendWindowWgt.y1" sourceType="Widget" tagIndex="-1" dataSource="GroupWgt6.HistoricTrend"/>
+     </dataLinks>
+    </action>
+   </links>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="GroupWgt2.GroupWgt7.hotspotbtn1">
+   <wgtStyle width="40" x="220" forcePaint="1" y="419" fill="rgb(160,160,164)" dx="1" cx="19.69" form="hotspot" dy="-1" cy="12.25" height="25" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action BitIndex="0" class="SetBitAction" attribute="onMousePress" event="onMouseDown" actionID="1" actionWgt="_TagMgr">
+     <dataLinks>
+      <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_MotorSpeed_Sel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+     </dataLinks>
+    </action>
+    <action BitIndex="0" class="ResetBitAction" attribute="onMousePress" event="onMouseDown" actionID="2" actionWgt="_TagMgr">
+     <dataLinks>
+      <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_MotorCurrent_Sel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+     </dataLinks>
+    </action>
+    <action BitIndex="0" class="ResetBitAction" attribute="onMousePress" event="onMouseDown" actionID="3" actionWgt="_TagMgr">
+     <dataLinks>
+      <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_MotorTemp_Sel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+     </dataLinks>
+    </action>
+    <action class="WriteTagAction" attribute="onMousePress" event="onMouseDown" actionID="4" TagValue="0" actionWgt="_TagMgr">
+     <dataLinks>
+      <dataLink readWrite="R" attribute="tagSrc" tag="TrendWindowWgt.y0" sourceType="Widget" tagIndex="-1" dataSource="RealtimeTrend"/>
+     </dataLinks>
+    </action>
+    <action class="WriteTagAction" attribute="onMousePress" event="onMouseDown" actionID="5" TagValue="2000" actionWgt="_TagMgr">
+     <dataLinks>
+      <dataLink readWrite="R" attribute="tagSrc" tag="TrendWindowWgt.y1" sourceType="Widget" tagIndex="-1" dataSource="RealtimeTrend"/>
+     </dataLinks>
+    </action>
+    <action class="WriteTagAction" attribute="onMousePress" event="onMouseDown" actionID="6" TagValue="0" actionWgt="_TagMgr">
+     <dataLinks>
+      <dataLink readWrite="R" attribute="tagSrc" tag="TrendWindowWgt.y0" sourceType="Widget" tagIndex="-1" dataSource="GroupWgt6.HistoricTrend"/>
+     </dataLinks>
+    </action>
+    <action class="WriteTagAction" attribute="onMousePress" event="onMouseDown" actionID="7" TagValue="2000" actionWgt="_TagMgr">
+     <dataLinks>
+      <dataLink readWrite="R" attribute="tagSrc" tag="TrendWindowWgt.y1" sourceType="Widget" tagIndex="-1" dataSource="GroupWgt6.HistoricTrend"/>
+     </dataLinks>
+    </action>
+   </links>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="GroupWgt2.GroupWgt7.hotspotbtn">
+   <wgtStyle width="40" x="220" forcePaint="1" y="394" fill="rgb(160,160,164)" dx="1" cx="19.69" form="hotspot" dy="-1" cy="12.25" height="25" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action BitIndex="0" class="SetBitAction" attribute="onMousePress" event="onMouseDown" actionID="1" actionWgt="_TagMgr">
+     <dataLinks>
+      <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_MotorCurrent_Sel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+     </dataLinks>
+    </action>
+    <action BitIndex="0" class="ResetBitAction" attribute="onMousePress" event="onMouseDown" actionID="2" actionWgt="_TagMgr">
+     <dataLinks>
+      <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_MotorSpeed_Sel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+     </dataLinks>
+    </action>
+    <action BitIndex="0" class="ResetBitAction" attribute="onMousePress" event="onMouseDown" actionID="3" actionWgt="_TagMgr">
+     <dataLinks>
+      <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_MotorTemp_Sel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+     </dataLinks>
+    </action>
+    <action class="WriteTagAction" attribute="onMousePress" event="onMouseDown" actionID="4" TagValue="0" actionWgt="_TagMgr">
+     <dataLinks>
+      <dataLink readWrite="R" attribute="tagSrc" tag="TrendWindowWgt.y0" sourceType="Widget" tagIndex="-1" dataSource="RealtimeTrend"/>
+     </dataLinks>
+    </action>
+    <action class="WriteTagAction" attribute="onMousePress" event="onMouseDown" actionID="5" TagValue="200" actionWgt="_TagMgr">
+     <dataLinks>
+      <dataLink readWrite="R" attribute="tagSrc" tag="TrendWindowWgt.y1" sourceType="Widget" tagIndex="-1" dataSource="RealtimeTrend"/>
+     </dataLinks>
+    </action>
+    <action class="WriteTagAction" attribute="onMousePress" event="onMouseDown" actionID="6" TagValue="0" actionWgt="_TagMgr">
+     <dataLinks>
+      <dataLink readWrite="R" attribute="tagSrc" tag="TrendWindowWgt.y0" sourceType="Widget" tagIndex="-1" dataSource="GroupWgt6.HistoricTrend"/>
+     </dataLinks>
+    </action>
+    <action class="WriteTagAction" attribute="onMousePress" event="onMouseDown" actionID="7" TagValue="200" actionWgt="_TagMgr">
+     <dataLinks>
+      <dataLink readWrite="R" attribute="tagSrc" tag="TrendWindowWgt.y1" sourceType="Widget" tagIndex="-1" dataSource="GroupWgt6.HistoricTrend"/>
+     </dataLinks>
+    </action>
+   </links>
+  </object>
+  <object class="GroupWgt" id="GroupWgt5.GroupWgt1">
+   <wgtStyle width="120.20" x="430" forcePaint="9" y="370" cx="60.10" cy="50" height="100"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="Trend_History_EN" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+   <object class="GroupWgt" id="GroupWgt5.GroupWgt1.BtnKbd1" customType="Keyboard Button">
+    <wgtStyle width="120.20" x="0" forcePaint="9" y="0" cx="60.10" cy="25" height="50"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="Trend_History_CursorOFF" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="GroupWgt5.GroupWgt1.BtnKbd1.frmImg">
+     <wgtStyle width="148.73" enableCache="true" x="-16.70" y="-17.31" visibility="false" bdrImageSize="80.00,40.00" cx="62.64" cy="59.85" bdrSize="0.19,0.18,0.17,0.17" height="84.62" bdrEdges="0.14,0.16,0.14,0.14"/>
+    </object>
+    <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="GroupWgt5.GroupWgt1.BtnKbd1.btn">
+     <wgtStyle width="120" x="0.20" forcePaint="1" y="0" fill="rgb(120,120,120)" dx="1" cx="59.15" form="standard" cy="25" height="50" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+     <links>
+      <action class="ShowTrendCursorAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" trendName="GroupWgt6.HistoricTrend.wnd" showCursor="true" actionWgt="_TrendMgr"/>
+      <action BitIndex="0" class="SetBitAction" attribute="onMouseRelease" event="onMouseUp" actionID="2" actionWgt="_TagMgr">
+       <dataLinks>
+        <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_History_CursorON" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+       </dataLinks>
+      </action>
+      <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" event="onMouseUp" actionID="3" actionWgt="_TagMgr">
+       <dataLinks>
+        <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_History_CursorOFF" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+       </dataLinks>
+      </action>
+     </links>
+    </object>
+    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="GroupWgt5.GroupWgt1.BtnKbd1.lbl">
+     <wgtStyle width="120" font-color="rgb(70,70,70)" x="0" forcePaint="3" font-sizepx="16" y="0" font-family="Arial" wrapping="true" cx="52.63" cy="23.91" height="50" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+     <links>
+      <lang class="MLTextLink" textid="26"/>
+     </links>
+    </object>
+    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="GroupWgt5.GroupWgt1.BtnKbd1.icoImg">
+     <wgtStyle width="30.42" x="44.14" y="7.69" cx="18.59" cy="15.38" height="28.85"/>
+    </object>
+   </object>
+   <object class="GroupWgt" id="GroupWgt5.GroupWgt1.BtnKbd2" customType="Keyboard Button">
+    <wgtStyle width="60" x="60.20" forcePaint="9" y="50" cx="30" cy="25" height="50"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="Trend_History_CursorON" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="GroupWgt5.GroupWgt1.BtnKbd2.frmImg">
+     <wgtStyle width="74.36" enableCache="true" x="-8.45" y="-17.31" visibility="false" bdrImageSize="80.00,40.00" cx="31.32" cy="59.84" bdrSize="0.19,0.18,0.17,0.17" height="84.62" bdrEdges="0.14,0.16,0.14,0.14"/>
+    </object>
+    <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="GroupWgt5.GroupWgt1.BtnKbd2.btn">
+     <wgtStyle width="60" x="0" forcePaint="1" y="0" fill="rgb(120,120,120)" dx="0" cx="29.58" form="standard" dy="0" cy="25" height="50" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+     <links>
+      <action class="ScrollTrendCursorAction" attribute="onMouseClick" event="onMouseClick" actionID="1" scrollUnit="1" scrollDirection="0" scrollTimesample="1" trendName="GroupWgt6.HistoricTrend.wnd" actionWgt="_TrendMgr" scrollPercentage="1"/>
+     </links>
+    </object>
+    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="GroupWgt5.GroupWgt1.BtnKbd2.lbl">
+     <wgtStyle width="48.17" font-color="rgb(70,70,70)" x="5.07" font-sizepx="16" y="0" font-family="Arial" wrapping="true" cx="21.12" cy="21.14" height="44.23" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+     <links>
+      <lang class="MLTextLink" textid="1"/>
+     </links>
+    </object>
+    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="GroupWgt5.GroupWgt1.BtnKbd2.icoImg">
+     <wgtStyle width="15.21" imagePath="images/ic_pl1_021.svg" x="21.97" forcePaint="1" y="7.69" cx="9.30" cy="15.38" height="28.86"/>
+    </object>
+   </object>
+   <object class="GroupWgt" id="GroupWgt5.GroupWgt1.BtnKbd3" customType="Keyboard Button">
+    <wgtStyle width="60" x="0.20" forcePaint="9" y="50" cx="30" cy="25" height="50"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="Trend_History_CursorON" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="GroupWgt5.GroupWgt1.BtnKbd3.frmImg">
+     <wgtStyle width="74.36" enableCache="true" x="-8.45" y="-17.31" visibility="false" bdrImageSize="80.00,40.00" cx="31.32" cy="59.84" bdrSize="0.19,0.18,0.17,0.17" height="84.62" bdrEdges="0.14,0.16,0.14,0.14"/>
+    </object>
+    <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="GroupWgt5.GroupWgt1.BtnKbd3.btn">
+     <wgtStyle width="60" x="0" forcePaint="1" y="0" fill="rgb(120,120,120)" dx="0" cx="29.58" form="standard" dy="0" cy="25" height="50" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+     <links>
+      <action class="ScrollTrendCursorAction" attribute="onMouseClick" event="onMouseClick" actionID="1" scrollUnit="1" scrollDirection="1" scrollTimesample="1" trendName="GroupWgt6.HistoricTrend.wnd" actionWgt="_TrendMgr" scrollPercentage="1"/>
+     </links>
+    </object>
+    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="GroupWgt5.GroupWgt1.BtnKbd3.lbl">
+     <wgtStyle width="48.17" font-color="rgb(70,70,70)" x="5.07" font-sizepx="16" y="0" font-family="Arial" wrapping="true" cx="21.12" cy="21.14" height="44.23" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+     <links>
+      <lang class="MLTextLink" textid="1"/>
+     </links>
+    </object>
+    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="GroupWgt5.GroupWgt1.BtnKbd3.icoImg">
+     <wgtStyle width="15.21" imagePath="images/ic_pl1_020.svg" x="21.97" forcePaint="1" y="7.69" cx="9.30" cy="15.38" height="28.86"/>
+    </object>
+   </object>
+   <object class="GroupWgt" id="GroupWgt5.GroupWgt1.BtnKbd4" customType="Keyboard Button">
+    <wgtStyle width="120.16" x="0.02" forcePaint="9" y="0" cx="60.08" cy="25" height="50"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="Trend_History_CursorON" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="GroupWgt5.GroupWgt1.BtnKbd4.frmImg">
+     <wgtStyle width="148.73" enableCache="true" x="-16.90" y="-17.31" visibility="false" bdrImageSize="80.00,40.00" cx="62.64" cy="59.85" bdrSize="0.19,0.18,0.17,0.17" height="84.62" bdrEdges="0.14,0.16,0.14,0.14"/>
+    </object>
+    <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="GroupWgt5.GroupWgt1.BtnKbd4.btn">
+     <wgtStyle width="120" x="0" forcePaint="1" y="0" fill="rgb(120,120,120)" dx="1" cx="59.15" form="standard" cy="25" height="50" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+     <links>
+      <action class="ShowTrendCursorAction" attribute="onMouseRelease" event="onMouseUp" actionID="1" trendName="GroupWgt6.HistoricTrend.wnd" showCursor="false" actionWgt="_TrendMgr"/>
+      <action BitIndex="0" class="ResetBitAction" attribute="onMouseRelease" event="onMouseUp" actionID="2" actionWgt="_TagMgr">
+       <dataLinks>
+        <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_History_CursorON" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+       </dataLinks>
+      </action>
+      <action BitIndex="0" class="SetBitAction" attribute="onMouseRelease" event="onMouseUp" actionID="3" actionWgt="_TagMgr">
+       <dataLinks>
+        <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_History_CursorOFF" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+       </dataLinks>
+      </action>
+     </links>
+    </object>
+    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="GroupWgt5.GroupWgt1.BtnKbd4.lbl">
+     <wgtStyle width="120" font-color="rgb(70,70,70)" x="0.16" forcePaint="3" font-sizepx="16" y="0" font-family="Arial" wrapping="true" cx="52.63" cy="23.91" height="50" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+     <links>
+      <lang class="MLTextLink" textid="29"/>
+     </links>
+    </object>
+    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="GroupWgt5.GroupWgt1.BtnKbd4.icoImg">
+     <wgtStyle width="30.42" x="43.94" y="7.69" cx="18.59" cy="15.38" height="28.85"/>
+    </object>
+   </object>
+  </object>
+ </object>
+</wgtPage>

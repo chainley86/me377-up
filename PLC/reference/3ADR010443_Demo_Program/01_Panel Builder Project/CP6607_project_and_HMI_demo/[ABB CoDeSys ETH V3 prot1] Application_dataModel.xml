@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data_tree name="root" nodeIDField="0" protocolName="CDS3" type="container">
+  <config filename_source1="C:\Users\DEU214980\Desktop\Folders\Projekte\Training Case V3\00_V3 Fertig\F850_TA512_PNIO_DA501_20190123.PLC_AC500_V3.Application.xml" />
+  <property_alias>
+    <property display="Tag name" name="tagName" />
+    <property display="Device data type" name="typeName" />
+    <property display="Array size" name="arraySize" />
+    <property display="Data type" name="icomType" />
+    <property display="Tag URI" name="tagURI" />
+  </property_alias>
+  <data_type name="Application" protocolName="CDS3" type="container">
+    <data_type name="GVL" protocolName="CDS3" type="container">
+      <data_type name="Pot_AI1" typeName="INT" tagName="Application/Application/GVL/Pot_AI1" protocolName="CDS3" icomType="short" tagURI="unknownID?M?Application/Application/GVL/Pot_AI1?short" type="basic" />
+      <data_type name="Pot_AI2" typeName="INT" tagName="Application/Application/GVL/Pot_AI2" protocolName="CDS3" icomType="short" tagURI="unknownID?M?Application/Application/GVL/Pot_AI2?short" type="basic" />
+    </data_type>
+    <data_type name="IoConfig_Globals_Mapping" protocolName="CDS3" type="container">
+      <data_type name="xDI_08_CI502" typeName="BIT" tagName="Application/Application/IoConfig_Globals_Mapping/xDI_08_CI502" protocolName="CDS3" icomType="boolean" tagURI="unknownID?M?Application/Application/IoConfig_Globals_Mapping/xDI_08_CI502?boolean" type="basic" />
+      <data_type name="xDI_08_DA501" typeName="BIT" tagName="Application/Application/IoConfig_Globals_Mapping/xDI_08_DA501" protocolName="CDS3" icomType="boolean" tagURI="unknownID?M?Application/Application/IoConfig_Globals_Mapping/xDI_08_DA501?boolean" type="basic" />
+      <data_type name="xDI_09_CI502" typeName="BIT" tagName="Application/Application/IoConfig_Globals_Mapping/xDI_09_CI502" protocolName="CDS3" icomType="boolean" tagURI="unknownID?M?Application/Application/IoConfig_Globals_Mapping/xDI_09_CI502?boolean" type="basic" />
+      <data_type name="xDI_09_DA501" typeName="BIT" tagName="Application/Application/IoConfig_Globals_Mapping/xDI_09_DA501" protocolName="CDS3" icomType="boolean" tagURI="unknownID?M?Application/Application/IoConfig_Globals_Mapping/xDI_09_DA501?boolean" type="basic" />
+      <data_type name="xDI_10_CI502" typeName="BIT" tagName="Application/Application/IoConfig_Globals_Mapping/xDI_10_CI502" protocolName="CDS3" icomType="boolean" tagURI="unknownID?M?Application/Application/IoConfig_Globals_Mapping/xDI_10_CI502?boolean" type="basic" />
+      <data_type name="xDI_10_DA501" typeName="BIT" tagName="Application/Application/IoConfig_Globals_Mapping/xDI_10_DA501" protocolName="CDS3" icomType="boolean" tagURI="unknownID?M?Application/Application/IoConfig_Globals_Mapping/xDI_10_DA501?boolean" type="basic" />
+      <data_type name="xDI_11_CI502" typeName="BIT" tagName="Application/Application/IoConfig_Globals_Mapping/xDI_11_CI502" protocolName="CDS3" icomType="boolean" tagURI="unknownID?M?Application/Application/IoConfig_Globals_Mapping/xDI_11_CI502?boolean" type="basic" />
+      <data_type name="xDI_11_DA501" typeName="BIT" tagName="Application/Application/IoConfig_Globals_Mapping/xDI_11_DA501" protocolName="CDS3" icomType="boolean" tagURI="unknownID?M?Application/Application/IoConfig_Globals_Mapping/xDI_11_DA501?boolean" type="basic" />
+      <data_type name="xDO_08_CI502" typeName="BIT" tagName="Application/Application/IoConfig_Globals_Mapping/xDO_08_CI502" protocolName="CDS3" icomType="boolean" tagURI="unknownID?M?Application/Application/IoConfig_Globals_Mapping/xDO_08_CI502?boolean" type="basic" />
+      <data_type name="xDO_09_CI502" typeName="BIT" tagName="Application/Application/IoConfig_Globals_Mapping/xDO_09_CI502" protocolName="CDS3" icomType="boolean" tagURI="unknownID?M?Application/Application/IoConfig_Globals_Mapping/xDO_09_CI502?boolean" type="basic" />
+      <data_type name="xDO_10_CI502" typeName="BIT" tagName="Application/Application/IoConfig_Globals_Mapping/xDO_10_CI502" protocolName="CDS3" icomType="boolean" tagURI="unknownID?M?Application/Application/IoConfig_Globals_Mapping/xDO_10_CI502?boolean" type="basic" />
+      <data_type name="xDO_11_CI502" typeName="BIT" tagName="Application/Application/IoConfig_Globals_Mapping/xDO_11_CI502" protocolName="CDS3" icomType="boolean" tagURI="unknownID?M?Application/Application/IoConfig_Globals_Mapping/xDO_11_CI502?boolean" type="basic" />
+      <data_type name="xDO_13_CI502" typeName="BIT" tagName="Application/Application/IoConfig_Globals_Mapping/xDO_13_CI502" protocolName="CDS3" icomType="boolean" tagURI="unknownID?M?Application/Application/IoConfig_Globals_Mapping/xDO_13_CI502?boolean" type="basic" />
+      <data_type name="xDO_14_CI502" typeName="BIT" tagName="Application/Application/IoConfig_Globals_Mapping/xDO_14_CI502" protocolName="CDS3" icomType="boolean" tagURI="unknownID?M?Application/Application/IoConfig_Globals_Mapping/xDO_14_CI502?boolean" type="basic" />
+      <data_type name="xDO_15_CI502" typeName="BIT" tagName="Application/Application/IoConfig_Globals_Mapping/xDO_15_CI502" protocolName="CDS3" icomType="boolean" tagURI="unknownID?M?Application/Application/IoConfig_Globals_Mapping/xDO_15_CI502?boolean" type="basic" />
+      <data_type name="xDO_16_DA501" typeName="BIT" tagName="Application/Application/IoConfig_Globals_Mapping/xDO_16_DA501" protocolName="CDS3" icomType="boolean" tagURI="unknownID?M?Application/Application/IoConfig_Globals_Mapping/xDO_16_DA501?boolean" type="basic" />
+      <data_type name="xDO_17_DA501" typeName="BIT" tagName="Application/Application/IoConfig_Globals_Mapping/xDO_17_DA501" protocolName="CDS3" icomType="boolean" tagURI="unknownID?M?Application/Application/IoConfig_Globals_Mapping/xDO_17_DA501?boolean" type="basic" />
+      <data_type name="xDO_18_DA501" typeName="BIT" tagName="Application/Application/IoConfig_Globals_Mapping/xDO_18_DA501" protocolName="CDS3" icomType="boolean" tagURI="unknownID?M?Application/Application/IoConfig_Globals_Mapping/xDO_18_DA501?boolean" type="basic" />
+      <data_type name="xDO_19_DA501" typeName="BIT" tagName="Application/Application/IoConfig_Globals_Mapping/xDO_19_DA501" protocolName="CDS3" icomType="boolean" tagURI="unknownID?M?Application/Application/IoConfig_Globals_Mapping/xDO_19_DA501?boolean" type="basic" />
+      <data_type name="xDO_21_DA501" typeName="BIT" tagName="Application/Application/IoConfig_Globals_Mapping/xDO_21_DA501" protocolName="CDS3" icomType="boolean" tagURI="unknownID?M?Application/Application/IoConfig_Globals_Mapping/xDO_21_DA501?boolean" type="basic" />
+      <data_type name="xDO_22_DA501" typeName="BIT" tagName="Application/Application/IoConfig_Globals_Mapping/xDO_22_DA501" protocolName="CDS3" icomType="boolean" tagURI="unknownID?M?Application/Application/IoConfig_Globals_Mapping/xDO_22_DA501?boolean" type="basic" />
+      <data_type name="xDO_23_DA501" typeName="BIT" tagName="Application/Application/IoConfig_Globals_Mapping/xDO_23_DA501" protocolName="CDS3" icomType="boolean" tagURI="unknownID?M?Application/Application/IoConfig_Globals_Mapping/xDO_23_DA501?boolean" type="basic" />
+    </data_type>
+  </data_type>
+</data_tree>

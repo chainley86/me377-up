@@ -1,0 +1,451 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="Users" pageSize="800,480" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" templateFile="background.jmx" usedFonts="Arial,SimHei" staticFile="opt/users.png" id="Users" staticOptEnable="true">
+  <wgtStyle width="800" x="0" y="0" height="480" ver="020800424" v="02.08.00.424"/>
+  <object class="GroupWgt" id="GroupWgt1">
+   <wgtStyle width="292" x="20" y="70" cx="146" cy="41" height="82"/>
+   <object class="ShapeWgt" id="GroupWgt1.GroupWgt2.rect20" static="true">
+    <wgtStyle width="170" x="0" y="0" fill="rgb(240,240,240)" cx="82.26" cy="40" height="80" nodeName="rect" stroke="rgb(240,240,240)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.GroupWgt2.rect3" static="true">
+    <wgtStyle width="2" x="0" y="0" fill="rgb(220,220,220)" cx="0.97" cy="40" height="80" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.GroupWgt2.rect8" static="true">
+    <wgtStyle width="2" x="170" y="0" fill="rgb(220,220,220)" cx="0.97" cy="40" height="80" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.GroupWgt2.rect11" static="true">
+    <wgtStyle width="2" x="290" y="0" fill="rgb(220,220,220)" cx="0.97" cy="41" height="82" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.GroupWgt2.rect12" static="true">
+    <wgtStyle width="290" x="0" y="0" fill="rgb(200,200,200)" cx="140.65" cy="1" height="2" nodeName="rect" stroke="rgb(200,200,200)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.GroupWgt2.rect13" static="true">
+    <wgtStyle width="290" x="0" y="40" fill="rgb(220,220,220)" cx="140.65" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.GroupWgt2.rect14" static="true">
+    <wgtStyle width="290" x="0" y="80" fill="rgb(220,220,220)" cx="140.65" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+  </object>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="English" defaultFont="Arial"/>
+    <lang removable="false" langCode="it-IT" langId="L2" writingsystem="Any" name="Italian" defaultFont="Arial"/>
+    <lang removable="false" langCode="de-DE" langId="L3" writingsystem="Any" name="German" defaultFont="Arial"/>
+    <lang removable="false" langCode="fr-FR" langId="L4" writingsystem="Any" name="French" defaultFont="Arial"/>
+    <lang removable="false" langCode="zh-CN" langId="L5" writingsystem="Any" name="Chinese" defaultFont="SimHei"/>
+    <lang removable="false" langCode="grc" langId="L6" writingsystem="Any" name="Greek" defaultFont="Arial"/>
+    <lang removable="false" langCode="es-ES" langId="L7" writingsystem="Any" name="Spanish" defaultFont="Arial"/>
+    <lang removable="false" langCode="ru-RU" langId="L8" writingsystem="Any" name="Russian" defaultFont="Arial"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="" L2="" L3="" L4="" L5="" id="2" L6="" L7="" L8=""/>
+    <MLText L1="User Management" L2="Gestione degli utenti" L3="Benutzerverwaltung" L4="Gestion des utilisateurs" L5="用户管理" id="0" L6="Διαχείριση χρηστών" L7="Gestión de usuario" L8="Управление пользователями"/>
+    <MLText L1="Switch User" L2="Cambia utente" L3="Benutzer wechseln" L4="Changer d'utilisateur" L5="切换用户" id="5" L6="Αλλαγή χρήστη" L7="Cambiar de usuario" L8="Поменять пользователя"/>
+    <MLText L1="Add User" L2="Aggiungi utente" L3="Benutzer hinzufügen" L4="Ajouter un utilisateur" L5="添加用户" id="6" L6="Πρόσθεσε χρήστη" L7="Agregar usuario" L8="Добавить пользователя"/>
+    <MLText L1="Delete User" L2="Elimina utente" L3="Benutzer löschen" L4="Supprimer l'utilisateur" L5="删除用户" id="7" L6="Διαγραφή χρήστη" L7="Borrar usuario" L8="Удалить пользователя"/>
+    <MLText L1="User Group" L2="Gruppo di utenti" L3="Benutzergruppe" L4="Groupe d'utilisateurs" L5="用户组" id="8" L6="Ομάδα χρηστών" L7="Grupo de usuario" L8="Группа пользователей"/>
+    <MLText L1="Access Right" L2="Diritto di accesso" L3="Zugangsberechtigung" L4="Droit d'accès" L5="访问权" id="9" L6="Δικαίωμα προσπέλασης" L7="Acceso correcto" L8="Право доступа"/>
+    <MLText L1="Operator " L2="Operator " L3="Operator " L4="Operator " L5="Operator " id="13" L6="Operator " L7="Operator " L8="Operator "/>
+    <MLText L1="PowerUser (View Only For Operator)" L2="PowerUser (solo visualizzazione per operatore)" L3="PowerUser (nur für Operator anzeigen)" L4="PowerUser (affichage uniquement pour l'opérateur)" L5="PowerUser（仅供操作员查看）" id="14" L6="PowerUser (Προβολή μόνο για χειριστή)" L7="PowerUser (solo ver para el operador)" L8="PowerUser (просмотр только для оператора)"/>
+    <MLText L1="Admin (Hide For Others)" L2="Admin (nascondi per altri)" L3="Admin (Ausblenden für andere)" L4="Admin (Cacher pour les autres)" L5="Admin（隐藏）" id="15" L6="Admin (Απόκρυψη για άλλους)" L7="Admin (Ocultar para otros)" L8="Admin (Скрыть для других)"/>
+    <MLText L1="Current User Group" L2="Gruppo di utenti corrente" L3="Aktuelle Benutzergruppe" L4="Groupe d'utilisateurs actuel" L5="当前用户组" id="16" L6="Τρέχουσα ομάδα χρηστών" L7="Grupo de usuarios actual" L8="Текущая группа пользователей"/>
+    <MLText L1="Current User" L2="Utente attuale" L3="Aktueller Benutzer" L4="Utilisateur actuel" L5="当前用户" id="17" L6="Τρέχων χρήστης" L7="Usuario actual" L8="Текущий пользователь"/>
+    <MLText L1="Admin" L2="Admin" L3="Admin" L4="Admin" L5="Admin" id="18" L6="Admin" L7="Admin" L8="Admin"/>
+    <MLText L1="George" L2="George" L3="George" L4="George" L5="George" id="19" L6="George" L7="George" L8="George"/>
+    <MLText L1="User Group" L2="Gruppo di utenti" L3="Benutzergruppe" L4="Groupe d'utilisateurs" L5="用户组" id="20" L6="Ομάδα χρηστών" L7="Grupo de usuario" L8="Группа пользователей"/>
+    <MLText L1="Username" L2="Nome utente" L3="Nutzername" L4="Nom d'utilisateur" L5="用户名" id="21" L6="Όνομα χρήστη" L7="Nombre de usuario" L8="имя пользователя"/>
+    <MLText L1="Password" L2="Parola d'ordine" L3="Passwort" L4="Mot de passe" L5="密码" id="22" L6="Κωδικός πρόσβασης" L7="Contraseña" L8="пароль"/>
+    <MLText L1="Admin" L2="Admin" L3="Admin" L4="Admin" L5="Admin" id="23" L6="Admin" L7="Admin" L8="Admin"/>
+    <MLText L1="George" L2="George" L3="George" L4="George" L5="George" id="24" L6="George" L7="George" L8="George"/>
+    <MLText L1="1234" L2="1234" L3="1234" L4="1234" L5="1234" id="25" L6="1234" L7="1234" L8="1234"/>
+    <MLText L1="PowerUser" L2="PowerUser" L3="PowerUser" L4="PowerUser" L5="PowerUser" id="26" L6="PowerUser" L7="PowerUser" L8="PowerUser"/>
+    <MLText L1="Tina" L2="Tina" L3="Tina" L4="Tina" L5="Tina" id="27" L6="Tina" L7="Tina" L8="Tina"/>
+    <MLText L1="1234" L2="1234" L3="1234" L4="1234" L5="1234" id="28" L6="1234" L7="1234" L8="1234"/>
+    <MLText L1="Operator" L2="Operator" L3="Operator" L4="Operator" L5="Operator" id="29" L6="Operator" L7="Operator" L8="Operator"/>
+    <MLText L1="Sam" L2="Sam" L3="Sam" L4="Sam" L5="Sam" id="30" L6="Sam" L7="Sam" L8="Sam"/>
+    <MLText L1="1234" L2="1234" L3="1234" L4="1234" L5="1234" id="31" L6="1234" L7="1234" L8="1234"/>
+   </MLTexts>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label2">
+   <wgtStyle width="350" font-color="rgb(255,255,255)" x="118" forcePaint="2" font-sizepx="24" y="10" font-family="Arial" font-bold="true" wrapping="true" cx="175" cy="18.94" height="40" vert-align="middle" keypad-type="None" font-size="18"/>
+   <links>
+    <lang class="MLTextLink" textid="0"/>
+   </links>
+  </object>
+  <object class="GroupSubscribeWgt" id="Users@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="GroupWgt" id="GroupWgt1.BtnKbd2" customType="Keyboard Button">
+   <wgtStyle width="120" x="190" y="160" cx="60" cy="25" height="50"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="GroupWgt1.BtnKbd2.frmImg" static="true">
+    <wgtStyle width="148.73" enableCache="true" x="-16.90" y="-17.31" visibility="false" bdrImageSize="80.00,40.00" cx="62.64" cy="59.85" bdrSize="0.19,0.18,0.17,0.17" height="84.62" bdrEdges="0.14,0.16,0.14,0.14"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="GroupWgt1.BtnKbd2.btn">
+    <wgtStyle width="120" x="0" y="0" fill="rgb(120,120,120)" dx="1" cx="59.15" form="standard" cy="25" height="50" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+    <links>
+     <action class="SwitchUserAction" attribute="onMousePress" event="onMouseDown" actionID="1" actionWgt="_UserMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="GroupWgt1.BtnKbd2.lbl" static="true">
+    <wgtStyle width="96.34" font-color="rgb(192,192,192)" x="10.14" font-sizepx="13" y="0" font-family="Arial" wrapping="true" cx="42.25" cy="21.15" height="44.23" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="GroupWgt1.BtnKbd2.icoImg">
+    <wgtStyle width="30.42" imagePath="images/UI_Group_24.png" x="43.94" forcePaint="1" y="7.69" cx="18.59" cy="15.38" height="28.85"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt1.BtnKbd1" customType="Keyboard Button">
+   <wgtStyle width="120" x="190" y="220" cx="60" cy="25" height="50"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="GroupWgt1.BtnKbd1.frmImg" static="true">
+    <wgtStyle width="148.73" enableCache="true" x="-16.90" y="-17.31" visibility="false" bdrImageSize="80.00,40.00" cx="62.64" cy="59.85" bdrSize="0.19,0.18,0.17,0.17" height="84.62" bdrEdges="0.14,0.16,0.14,0.14"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="GroupWgt1.BtnKbd1.btn">
+    <wgtStyle width="120" x="0" y="0" fill="rgb(120,120,120)" dx="1" cx="59.15" form="standard" cy="25" height="50" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+    <links>
+     <action class="AddUserAction" attribute="onMousePress" event="onMouseDown" actionID="1" actionWgt="_UserMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="GroupWgt1.BtnKbd1.lbl" static="true">
+    <wgtStyle width="96.34" font-color="rgb(192,192,192)" x="10.14" font-sizepx="13" y="0" font-family="Arial" wrapping="true" cx="42.25" cy="21.15" height="44.23" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="GroupWgt1.BtnKbd1.icoImg">
+    <wgtStyle width="30.42" imagePath="images/UI_AddUser_24.png" x="43.94" forcePaint="1" y="7.69" cx="18.59" cy="15.38" height="28.85"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt1.BtnKbd3" customType="Keyboard Button">
+   <wgtStyle width="120" x="190" y="280" cx="60" cy="25" height="50"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="GroupWgt1.BtnKbd3.frmImg" static="true">
+    <wgtStyle width="148.73" enableCache="true" x="-16.90" y="-17.31" visibility="false" bdrImageSize="80.00,40.00" cx="62.64" cy="59.85" bdrSize="0.19,0.18,0.17,0.17" height="84.62" bdrEdges="0.14,0.16,0.14,0.14"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="GroupWgt1.BtnKbd3.btn">
+    <wgtStyle width="120" x="0" y="0" fill="rgb(120,120,120)" dx="1" cx="59.15" form="standard" cy="25" height="50" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+    <links>
+     <action class="DeleteUserAction" attribute="onMousePress" event="onMouseDown" actionID="1" actionWgt="_UserMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="GroupWgt1.BtnKbd3.lbl" static="true">
+    <wgtStyle width="96.34" font-color="rgb(192,192,192)" x="10.14" font-sizepx="13" y="0" font-family="Arial" wrapping="true" cx="42.25" cy="21.15" height="44.23" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="GroupWgt1.BtnKbd3.icoImg">
+    <wgtStyle width="30.42" imagePath="images/UI_DelUser_24.png" x="43.94" forcePaint="1" y="7.69" cx="18.59" cy="15.38" height="28.85"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label7">
+   <wgtStyle width="160" font-color="rgb(70,70,70)" x="28" forcePaint="2" font-sizepx="13" y="175" font-family="Arial" wrapping="true" cx="80" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="5"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label1">
+   <wgtStyle width="160" font-color="rgb(70,70,70)" x="28" forcePaint="2" font-sizepx="13" y="235" font-family="Arial" wrapping="true" cx="80" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="6"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label3">
+   <wgtStyle width="160" font-color="rgb(70,70,70)" x="28" forcePaint="2" font-sizepx="13" y="295" font-family="Arial" wrapping="true" cx="80" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="7"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="GroupWgt3">
+   <wgtStyle width="752" x="20" y="340" cx="376" cy="61" height="122"/>
+   <object class="ShapeWgt" id="GroupWgt3.rect20" static="true">
+    <wgtStyle width="180" x="0" y="0" fill="rgb(240,240,240)" cx="87.09" cy="60" height="120" nodeName="rect" stroke="rgb(240,240,240)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt3.rect3" static="true">
+    <wgtStyle width="2" x="0" y="0" fill="rgb(220,220,220)" cx="0.97" cy="60" height="120" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt3.rect7" static="true">
+    <wgtStyle width="2" x="560" y="0" fill="rgb(220,220,220)" cx="0.97" cy="60" height="120" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt3.rect8" static="true">
+    <wgtStyle width="2" x="180" y="0" fill="rgb(220,220,220)" cx="0.97" cy="60" height="120" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt3.rect9" static="true">
+    <wgtStyle width="2" x="370" y="0" fill="rgb(220,220,220)" cx="0.97" cy="60" height="120" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt3.rect11" static="true">
+    <wgtStyle width="2" x="750" y="0" fill="rgb(220,220,220)" cx="0.97" cy="61" height="122" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt3.rect12" static="true">
+    <wgtStyle width="750" x="0" y="0" fill="rgb(200,200,200)" cx="363.75" cy="1" height="2" nodeName="rect" stroke="rgb(200,200,200)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt3.rect13" static="true">
+    <wgtStyle width="750" x="0" y="50" fill="rgb(220,220,220)" cx="363.75" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt3.rect14" static="true">
+    <wgtStyle width="750" x="0" y="120" fill="rgb(220,220,220)" cx="363.75" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label4">
+   <wgtStyle width="160" font-color="rgb(70,70,70)" x="28" forcePaint="2" font-sizepx="13" y="346" font-family="Arial" wrapping="true" cx="80" cy="18.94" height="40" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="8"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label5">
+   <wgtStyle width="160" font-color="rgb(70,70,70)" x="28" forcePaint="2" font-sizepx="13" y="415" font-family="Arial" wrapping="true" cx="80" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="9"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="GroupWgt2.BtnKbd4" customType="Keyboard Button">
+   <wgtStyle width="120" x="240" y="400" cx="60" cy="25" height="50"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="GroupWgt2.BtnKbd4.frmImg" static="true">
+    <wgtStyle width="148.73" enableCache="true" x="-16.90" y="-17.31" visibility="false" bdrImageSize="80.00,40.00" cx="62.64" cy="59.85" bdrSize="0.19,0.18,0.17,0.17" height="84.62" bdrEdges="0.14,0.16,0.14,0.14"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="GroupWgt2.BtnKbd4.btn">
+    <wgtStyle width="120" x="0" y="0" fill="rgb(120,120,120)" dx="1" cx="59.15" form="standard" cy="25" height="50" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+    <links>
+     <action pageName="userright.jmx" class="ShowDialogAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="GroupWgt2.BtnKbd4.lbl" static="true">
+    <wgtStyle width="96.34" font-color="rgb(192,192,192)" x="10.14" font-sizepx="13" y="0" font-family="Arial" wrapping="true" cx="42.25" cy="21.15" height="44.23" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="GroupWgt2.BtnKbd4.icoImg">
+    <wgtStyle width="30.42" imagePath="images/UI_InformationCircle2_24.png" x="43.94" forcePaint="1" y="7.69" cx="18.59" cy="15.38" height="28.85"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt2.BtnKbd5" customType="Keyboard Button">
+   <wgtStyle width="120" x="430" y="400" cx="60" cy="25" height="50"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="GroupWgt2.BtnKbd5.frmImg" static="true">
+    <wgtStyle width="148.73" enableCache="true" x="-16.90" y="-17.31" visibility="false" bdrImageSize="80.00,40.00" cx="62.64" cy="59.85" bdrSize="0.19,0.18,0.17,0.17" height="84.62" bdrEdges="0.14,0.16,0.14,0.14"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="GroupWgt2.BtnKbd5.btn">
+    <wgtStyle width="120" x="0" y="0" fill="rgb(120,120,120)" dx="1" cx="59.15" form="standard" cy="25" height="50" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+    <links>
+     <action pageName="userright.jmx" class="ShowDialogAction" attribute="onMouseClick" event="onMouseClick" actionID="0" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="GroupWgt2.BtnKbd5.lbl" static="true">
+    <wgtStyle width="96.34" font-color="rgb(192,192,192)" x="10.14" font-sizepx="13" y="0" font-family="Arial" wrapping="true" cx="42.25" cy="21.15" height="44.23" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="GroupWgt2.BtnKbd5.icoImg">
+    <wgtStyle width="30.42" imagePath="images/UI_InformationCircle2_24.png" x="43.94" forcePaint="1" y="7.69" cx="18.59" cy="15.38" height="28.85"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt2.BtnKbd6" customType="Keyboard Button">
+   <wgtStyle width="120" x="620" forcePaint="4" y="400" cx="60" cy="25" height="50"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="GroupWgt2.BtnKbd6.frmImg">
+    <wgtStyle width="148.73" enableCache="true" x="-16.90" forcePaint="4" y="-17.31" visibility="false" bdrImageSize="80.00,40.00" cx="62.64" cy="59.85" bdrSize="0.19,0.18,0.17,0.17" height="84.62" bdrEdges="0.14,0.16,0.14,0.14"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="GroupWgt2.BtnKbd6.btn">
+    <wgtStyle width="120" x="0" forcePaint="5" y="0" fill="rgb(120,120,120)" dx="1" cx="59.15" form="standard" cy="25" height="50" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+    <links>
+     <action pageName="userright.jmx" class="ShowDialogAction" attribute="onMouseClick" event="onMouseClick" actionID="0" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="GroupWgt2.BtnKbd6.lbl">
+    <wgtStyle width="96.34" font-color="rgb(192,192,192)" x="10.14" forcePaint="4" font-sizepx="13" y="0" font-family="Arial" wrapping="true" cx="42.25" cy="21.15" height="44.23" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="GroupWgt2.BtnKbd6.icoImg">
+    <wgtStyle width="30.42" imagePath="images/UI_InformationCircle2_24.png" x="43.94" forcePaint="5" y="7.69" cx="18.59" cy="15.38" height="28.85"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label6">
+   <wgtStyle width="150" font-color="rgb(70,70,70)" x="220" forcePaint="2" font-sizepx="13" y="346" font-family="Arial" wrapping="true" cx="75" cy="18.94" height="40" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="13"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label8">
+   <wgtStyle width="180" font-color="rgb(70,70,70)" x="395" forcePaint="2" font-sizepx="13" y="346" font-family="Arial" wrapping="true" cx="90" cy="18.94" height="40" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="14"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label9">
+   <wgtStyle width="150" font-color="rgb(70,70,70)" x="600" forcePaint="3" font-sizepx="13" y="346" font-family="Arial" wrapping="true" cx="75" cy="18.94" height="40" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="15"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label2">
+   <wgtStyle width="160" font-color="rgb(70,70,70)" x="28" forcePaint="2" font-sizepx="13" y="76" font-family="Arial" wrapping="true" cx="80" cy="14.20" height="30" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="16"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label14">
+   <wgtStyle width="160" font-color="rgb(70,70,70)" x="28" forcePaint="2" font-sizepx="13" y="116" font-family="Arial" wrapping="true" cx="80" cy="14.20" height="30" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="17"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label15">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="200" forcePaint="10" font-sizepx="13" y="76" font-family="Arial" wrapping="true" cx="50" cy="14.20" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="string" attribute="text" tag="This Client Group-Name" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="18"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label16">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="200" forcePaint="10" font-sizepx="13" y="116" font-family="Arial" wrapping="true" cx="50" cy="14.20" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="string" attribute="text" tag="This Client User-Name" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="19"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="GroupWgt2">
+   <wgtStyle width="422" x="350" y="70" cx="211" cy="130" height="260"/>
+   <object class="ImageWgt" id="GroupWgt2.image5" static="true">
+    <wgtStyle width="422" imagePath="images/users2.png" x="0" y="0" cx="211" cy="67.50" height="135"/>
+   </object>
+   <object class="GroupWgt" id="GroupWgt2.GroupWgt4">
+    <wgtStyle width="422" x="0" y="138" cx="211" cy="61" height="122"/>
+    <object class="GroupWgt" id="GroupWgt2.GroupWgt4.GroupWgt2">
+     <wgtStyle width="422" x="0" y="0" cx="211" cy="61" height="122"/>
+     <object class="ShapeWgt" id="GroupWgt2.GroupWgt4.GroupWgt2.rect20" static="true">
+      <wgtStyle width="120" x="0" y="0" fill="rgb(240,240,240)" cx="58.06" cy="60" height="120" nodeName="rect" stroke="rgb(240,240,240)"/>
+     </object>
+     <object class="ShapeWgt" id="GroupWgt2.GroupWgt4.GroupWgt2.rect3" static="true">
+      <wgtStyle width="2" x="0" y="0" fill="rgb(220,220,220)" cx="0.97" cy="60" height="120" nodeName="rect" stroke="rgb(220,220,220)"/>
+     </object>
+     <object class="ShapeWgt" id="GroupWgt2.GroupWgt4.GroupWgt2.rect8" static="true">
+      <wgtStyle width="2" x="120" y="0" fill="rgb(220,220,220)" cx="0.97" cy="60" height="120" nodeName="rect" stroke="rgb(220,220,220)"/>
+     </object>
+     <object class="ShapeWgt" id="GroupWgt2.GroupWgt4.GroupWgt2.rect9" static="true">
+      <wgtStyle width="2" x="220" y="0" fill="rgb(220,220,220)" cx="0.97" cy="60" height="120" nodeName="rect" stroke="rgb(220,220,220)"/>
+     </object>
+     <object class="ShapeWgt" id="GroupWgt2.GroupWgt4.GroupWgt2.rect10" static="true">
+      <wgtStyle width="2" x="320" y="0" fill="rgb(220,220,220)" cx="0.97" cy="60" height="120" nodeName="rect" stroke="rgb(220,220,220)"/>
+     </object>
+     <object class="ShapeWgt" id="GroupWgt2.GroupWgt4.GroupWgt2.rect11" static="true">
+      <wgtStyle width="2" x="420" y="0" fill="rgb(220,220,220)" cx="0.97" cy="61" height="122" nodeName="rect" stroke="rgb(220,220,220)"/>
+     </object>
+     <object class="ShapeWgt" id="GroupWgt2.GroupWgt4.GroupWgt2.rect12" static="true">
+      <wgtStyle width="420" x="0" y="0" fill="rgb(200,200,200)" cx="203.70" cy="1" height="2" nodeName="rect" stroke="rgb(200,200,200)"/>
+     </object>
+     <object class="ShapeWgt" id="GroupWgt2.GroupWgt4.GroupWgt2.rect13" static="true">
+      <wgtStyle width="420" x="0" y="40" fill="rgb(220,220,220)" cx="203.70" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+     </object>
+     <object class="ShapeWgt" id="GroupWgt2.GroupWgt4.GroupWgt2.rect14" static="true">
+      <wgtStyle width="420" x="0" y="80" fill="rgb(220,220,220)" cx="203.70" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+     </object>
+     <object class="ShapeWgt" id="GroupWgt2.GroupWgt4.GroupWgt2.rect15" static="true">
+      <wgtStyle width="420" x="0" y="120" fill="rgb(220,220,220)" cx="203.70" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+     </object>
+    </object>
+    <object class="LabelWgt" id="GroupWgt2.GroupWgt4.label7">
+     <wgtStyle width="100" font-color="rgb(70,70,70)" x="8" forcePaint="2" font-sizepx="13" y="6" font-family="Arial" wrapping="true" cx="50" cy="14.20" height="30" vert-align="middle" keypad-type="None" font-size="10"/>
+     <links>
+      <lang class="MLTextLink" textid="20"/>
+     </links>
+    </object>
+    <object class="LabelWgt" id="GroupWgt2.GroupWgt4.label8">
+     <wgtStyle width="100" font-color="rgb(70,70,70)" x="8" forcePaint="2" font-sizepx="13" y="46" font-family="Arial" wrapping="true" cx="50" cy="14.20" height="30" vert-align="middle" keypad-type="None" font-size="10"/>
+     <links>
+      <lang class="MLTextLink" textid="21"/>
+     </links>
+    </object>
+    <object class="LabelWgt" id="GroupWgt2.GroupWgt4.label12">
+     <wgtStyle width="100" font-color="rgb(70,70,70)" x="8" forcePaint="2" font-sizepx="13" y="86" font-family="Arial" wrapping="true" cx="50" cy="14.20" height="30" vert-align="middle" keypad-type="None" font-size="10"/>
+     <links>
+      <lang class="MLTextLink" textid="22"/>
+     </links>
+    </object>
+    <object class="LabelWgt" id="GroupWgt2.GroupWgt4.label1">
+     <wgtStyle width="90" font-color="rgb(70,70,70)" x="126" forcePaint="2" font-sizepx="13" y="6" font-family="Arial" wrapping="true" cx="45" cy="14.20" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+     <links>
+      <lang class="MLTextLink" textid="23"/>
+     </links>
+    </object>
+    <object class="LabelWgt" id="GroupWgt2.GroupWgt4.label3">
+     <wgtStyle width="90" font-color="rgb(70,70,70)" x="126" forcePaint="2" font-sizepx="13" y="46" font-family="Arial" wrapping="true" cx="45" cy="14.20" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+     <links>
+      <lang class="MLTextLink" textid="24"/>
+     </links>
+    </object>
+    <object class="LabelWgt" id="GroupWgt2.GroupWgt4.label4">
+     <wgtStyle width="90" font-color="rgb(70,70,70)" x="126" forcePaint="2" font-sizepx="13" y="86" font-family="Arial" wrapping="true" cx="45" cy="14.20" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+     <links>
+      <lang class="MLTextLink" textid="25"/>
+     </links>
+    </object>
+    <object class="LabelWgt" id="GroupWgt2.GroupWgt4.label5">
+     <wgtStyle width="90" font-color="rgb(70,70,70)" x="226" forcePaint="2" font-sizepx="13" y="6" font-family="Arial" wrapping="true" cx="45" cy="14.20" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+     <links>
+      <lang class="MLTextLink" textid="26"/>
+     </links>
+    </object>
+    <object class="LabelWgt" id="GroupWgt2.GroupWgt4.label6">
+     <wgtStyle width="90" font-color="rgb(70,70,70)" x="226" forcePaint="2" font-sizepx="13" y="46" font-family="Arial" wrapping="true" cx="45" cy="14.20" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+     <links>
+      <lang class="MLTextLink" textid="27"/>
+     </links>
+    </object>
+    <object class="LabelWgt" id="GroupWgt2.GroupWgt4.label9">
+     <wgtStyle width="90" font-color="rgb(70,70,70)" x="226" forcePaint="2" font-sizepx="13" y="86" font-family="Arial" wrapping="true" cx="45" cy="14.20" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+     <links>
+      <lang class="MLTextLink" textid="28"/>
+     </links>
+    </object>
+    <object class="LabelWgt" id="GroupWgt2.GroupWgt4.label10">
+     <wgtStyle width="90" font-color="rgb(70,70,70)" x="326" forcePaint="2" font-sizepx="13" y="6" font-family="Arial" wrapping="true" cx="45" cy="14.20" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+     <links>
+      <lang class="MLTextLink" textid="29"/>
+     </links>
+    </object>
+    <object class="LabelWgt" id="GroupWgt2.GroupWgt4.label11">
+     <wgtStyle width="90" font-color="rgb(70,70,70)" x="326" forcePaint="2" font-sizepx="13" y="46" font-family="Arial" wrapping="true" cx="45" cy="14.20" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+     <links>
+      <lang class="MLTextLink" textid="30"/>
+     </links>
+    </object>
+    <object class="LabelWgt" id="GroupWgt2.GroupWgt4.label13">
+     <wgtStyle width="90" font-color="rgb(70,70,70)" x="326" forcePaint="2" font-sizepx="13" y="86" font-family="Arial" wrapping="true" cx="45" cy="14.20" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+     <links>
+      <lang class="MLTextLink" textid="31"/>
+     </links>
+    </object>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd7" customType="Button">
+   <wgtStyle width="26" x="750" y="85" cx="13.01" cy="12.99" height="26"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image16" static="true">
+    <wgtStyle width="30.73" x="-4.13" y="-4.14" visibility="false" bdrImageSize="57.00,52.00" fill="rgb(127,127,127)" cx="15.09" cy="15.37" bdrSize="0.45,0.43,0.40,0.42" height="30.73" bdrEdges="0.13,0.13,0.13,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:btn; type:btn" id="buttonStd20">
+    <wgtStyle width="22.46" x="0" y="0" bdrImageSize="42.00,38.00" fill="rgb(192,192,192)" cx="10.16" form="standard" cy="10.83" bdrSize="0.40,0.43,0.38,0.35" height="22.46" type="momentary" value="0"/>
+    <links>
+     <action pageName="help_usermanagement.jmx" class="ShowDialogAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label8" static="true">
+    <wgtStyle width="19.50" font-color="rgb(40,40,40)" x="0.59" font-sizepx="13" y="2.95" font-family="Arial" wrapping="true" cx="12.99" cy="11.24" height="17.73" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image17">
+    <wgtStyle width="23.64" imagePath="images/ic_ma1_022.svg" x="2.36" forcePaint="1" y="2.36" fill="rgb(70,70,70)" cx="11.81" cy="10.34" height="23.64"/>
+   </object>
+  </object>
+ </object>
+</wgtPage>

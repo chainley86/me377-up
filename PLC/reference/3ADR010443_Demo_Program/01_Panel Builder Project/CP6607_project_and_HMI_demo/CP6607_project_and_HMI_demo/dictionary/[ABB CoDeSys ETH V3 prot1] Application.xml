@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tag_dictionary>
+    <name>[ABB CoDeSys ETH V3 prot1] Application</name>
+    <protocol>CDS3</protocol>
+    <tag_importer_version>ImportCDS2 v1.0</tag_importer_version>
+    <importfile>C:\Users\DEU214980\Desktop\Folders\Projekte\Training Case V3\00_V3 Fertig\F850_TA512_PNIO_DA501_20190123.PLC_AC500_V3.Application.xml</importfile>
+    <tag_locator>
+        <locator>tagName</locator>
+    </tag_locator>
+    <hasDataModel>true</hasDataModel>
+</tag_dictionary>

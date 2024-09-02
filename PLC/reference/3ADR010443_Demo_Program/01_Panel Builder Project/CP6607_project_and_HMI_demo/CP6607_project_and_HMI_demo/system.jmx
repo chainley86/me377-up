@@ -1,0 +1,914 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="System" pageSize="800,480" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" templateFile="background.jmx" usedFonts="Arial,SimHei,Tahoma" staticFile="opt/system.png" id="System" staticOptEnable="true">
+  <wgtStyle width="800" x="0" y="0" height="480" ver="020800424" v="02.08.00.424"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="English" defaultFont="Arial"/>
+    <lang removable="false" langCode="it-IT" langId="L2" writingsystem="Any" name="Italian" defaultFont="Arial"/>
+    <lang removable="false" langCode="de-DE" langId="L3" writingsystem="Any" name="German" defaultFont="Arial"/>
+    <lang removable="false" langCode="fr-FR" langId="L4" writingsystem="Any" name="French" defaultFont="Arial"/>
+    <lang removable="false" langCode="zh-CN" langId="L5" writingsystem="Any" name="Chinese" defaultFont="SimHei"/>
+    <lang removable="false" langCode="grc" langId="L6" writingsystem="Any" name="Greek" defaultFont="Arial"/>
+    <lang removable="false" langCode="es-ES" langId="L7" writingsystem="Any" name="Spanish" defaultFont="Arial"/>
+    <lang removable="false" langCode="ru-RU" langId="L8" writingsystem="Any" name="Russian" defaultFont="Arial"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="" L2="" L3="" L4="" L5="" id="2" L6="" L7="" L8=""/>
+    <MLText L1="System" L2="Sistema" L3="System" L4="Système" L5="系统" id="1" L6="Σύστημα" L7="Sistema" L8="система"/>
+    <MLText L1="Day" L2="Giorno" L3="Tag" L4="Journée" L5="日" id="5" L6="Ημέρα" L7="Día" L8="День"/>
+    <MLText L1="Month" L2="Mese" L3="Monat" L4="Mois" L5="月" id="6" L6="Μήνας" L7="Mes" L8="Месяц"/>
+    <MLText L1="Year" L2="Anno" L3="Jahr" L4="An" L5="年" id="7" L6="Ετος" L7="Año" L8="Год"/>
+    <MLText L1="Hour" L2="Ora" L3="Stunde" L4="Heure" L5="小时" id="8" L6="Ωρα" L7="Hora" L8="Час"/>
+    <MLText L1="Minute" L2="minuto" L3="Minute" L4="Minute" L5="分钟" id="9" L6="Λεπτό" L7="Minuto" L8="минут"/>
+    <MLText L1="Seconds" L2="secondi" L3="Sekunden" L4="Secondes" L5="秒" id="10" L6="Δευτερόλεπτα" L7="Segundos" L8="секунд"/>
+    <MLText L1="Day" L2="Giorno" L3="Tag" L4="Journée" L5="日" id="11" L6="Ημέρα" L7="Día" L8="День"/>
+    <MLText L1="Month" L2="Mese" L3="Monat" L4="Mois" L5="月" id="12" L6="Μήνας" L7="Mes" L8="Месяц"/>
+    <MLText L1="Year" L2="Anno" L3="Jahr" L4="An" L5="年" id="13" L6="Ετος" L7="Año" L8="Год"/>
+    <MLText L1="Hour" L2="Ora" L3="Stunde" L4="Heure" L5="小时" id="14" L6="Ωρα" L7="Hora" L8="Час"/>
+    <MLText L1="Minute" L2="minuto" L3="Minute" L4="Minute" L5="分钟" id="15" L6="Λεπτό" L7="Minuto" L8="минут"/>
+    <MLText L1="Seconds" L2="secondi" L3="Sekunden" L4="Secondes" L5="秒" id="16" L6="Δευτερόλεπτα" L7="Segundos" L8="секунд"/>
+    <MLText L1="Date &amp; Time from PLC or Manual Input" L2="Date &amp; Time from PLC or Manual Input" L3="Date &amp; Time from PLC or Manual Input" L4="Date &amp; Time from PLC or Manual Input" L5="Date &amp; Time from PLC or Manual Input" id="17" L6="Date &amp; Time from PLC or Manual Input" L7="Date &amp; Time from PLC or Manual Input" L8="Date &amp; Time from PLC or Manual Input"/>
+    <MLText L1="CP600 Local Date &amp; Time" L2="CP600 Local Date &amp; Time" L3="CP600 Local Date &amp; Time" L4="CP600 Local Date &amp; Time" L5="CP600 Local Date &amp; Time" id="18" L6="CP600 Local Date &amp; Time" L7="CP600 Local Date &amp; Time" L8="CP600 Local Date &amp; Time"/>
+    <MLText L1="Main OS Version:" L2="Main OS Version:" L3="Main OS Version:" L4="Main OS Version:" L5="Main OS Version:" id="19" L6="Main OS Version:" L7="Main OS Version:" L8="Main OS Version:"/>
+    <MLText L1="Runtime Version:" L2="Runtime Version:" L3="Runtime Version:" L4="Runtime Version:" L5="Runtime Version:" id="20" L6="Runtime Version:" L7="Runtime Version:" L8="Runtime Version:"/>
+    <MLText L1="Manufacturer Code:" L2="Manufacturer Code:" L3="Manufacturer Code:" L4="Manufacturer Code:" L5="Manufacturer Code:" id="21" L6="Manufacturer Code:" L7="Manufacturer Code:" L8="Manufacturer Code:"/>
+    <MLText L1="System mode:" L2="System mode:" L3="System mode:" L4="System mode:" L5="System mode:" id="22" L6="System mode:" L7="System mode:" L8="System mode:"/>
+    <MLText L1="System Up Time" L2="System Up Time" L3="System Up Time" L4="System Up Time" L5="System Up Time" id="23" L6="System Up Time" L7="System Up Time" L8="System Up Time"/>
+    <MLText L1="Backlight Time:" L2="Backlight Time:" L3="Backlight Time:" L4="Backlight Time:" L5="Backlight Time:" id="24" L6="Backlight Time:" L7="Backlight Time:" L8="Backlight Time:"/>
+    <MLText L1="Available System Memory:" L2="Available System Memory:" L3="Available System Memory:" L4="Available System Memory:" L5="Available System Memory:" id="25" L6="Available System Memory:" L7="Available System Memory:" L8="Available System Memory:"/>
+    <MLText L1="Available Flash Memory:" L2="Available Flash Memory:" L3="Available Flash Memory:" L4="Available Flash Memory:" L5="Available Flash Memory:" id="26" L6="Available Flash Memory:" L7="Available Flash Memory:" L8="Available Flash Memory:"/>
+    <MLText L1="UN60HSXXM00000041&#xa;" L2="UN60HSXXM00000041&#xa;" L3="UN60HSXXM00000041&#xa;" L4="UN60HSXXM00000041&#xa;" L5="UN60HSXXM00000041&#xa;" id="27" L6="UN60HSXXM00000041&#xa;" L7="UN60HSXXM00000041&#xa;" L8="UN60HSXXM00000041&#xa;"/>
+    <MLText L1="1.92(0)-Build(579)" L2="1.92(0)-Build(579)" L3="1.92(0)-Build(579)" L4="1.92(0)-Build(579)" L5="1.92(0)-Build(579)" id="28" L6="1.92(0)-Build(579)" L7="1.92(0)-Build(579)" L8="1.92(0)-Build(579)"/>
+    <MLText L1="509" L2="509" L3="509" L4="509" L5="509" id="29" L6="509" L7="509" L8="509"/>
+    <MLText L1="2 = Configuration Mode" L2="2 = Configuration Mode" L3="2 = Configuration Mode" L4="2 = Configuration Mode" L5="2 = Configuration Mode" id="30" L6="2 = Configuration Mode" L7="2 = Configuration Mode" L8="2 = Configuration Mode"/>
+    <MLText L1="3 = Operating Mode" L2="3 = Operating Mode" L3="3 = Operating Mode" L4="3 = Operating Mode" L5="3 = Operating Mode" id="31" L6="3 = Operating Mode" L7="3 = Operating Mode" L8="3 = Operating Mode"/>
+    <MLText L1="4 = Restart" L2="4 = Restart" L3="4 = Restart" L4="4 = Restart" L5="4 = Restart" id="32" L6="4 = Restart" L7="4 = Restart" L8="4 = Restart"/>
+    <MLText L1="5 = Shutdown" L2="5 = Shutdown" L3="5 = Shutdown" L4="5 = Shutdown" L5="5 = Shutdown" id="33" L6="5 = Shutdown" L7="5 = Shutdown" L8="5 = Shutdown"/>
+    <MLText L1="1 = Booting" L2="1 = Booting" L3="1 = Booting" L4="1 = Booting" L5="1 = Booting" id="34" L6="1 = Booting" L7="1 = Booting" L8="1 = Booting"/>
+    <MLText L1="Hours" L2="Hours" L3="Hours" L4="Hours" L5="Hours" id="35" L6="Hours" L7="Hours" L8="Hours"/>
+    <MLText L1="Hours" L2="Hours" L3="Hours" L4="Hours" L5="Hours" id="36" L6="Hours" L7="Hours" L8="Hours"/>
+    <MLText L1="KBytes" L2="KBytes" L3="KBytes" L4="KBytes" L5="KBytes" id="37" L6="KBytes" L7="KBytes" L8="KBytes"/>
+    <MLText L1="KBytes" L2="KBytes" L3="KBytes" L4="KBytes" L5="KBytes" id="38" L6="KBytes" L7="KBytes" L8="KBytes"/>
+    <MLText L1="USB Drive Status:" L2="USB Drive Status:" L3="USB Drive Status:" L4="USB Drive Status:" L5="USB Drive Status:" id="39" L6="USB Drive Status:" L7="USB Drive Status:" L8="USB Drive Status:"/>
+    <MLText L1="1 = USB Drive Connected" L2="1 = USB Drive Connected" L3="1 = USB Drive Connected" L4="1 = USB Drive Connected" L5="1 = USB Drive Connected" id="40" L6="1 = USB Drive Connected" L7="1 = USB Drive Connected" L8="1 = USB Drive Connected"/>
+    <MLText L1="0 = USB Drive Unplugged" L2="0 = USB Drive Unplugged" L3="0 = USB Drive Unplugged" L4="0 = USB Drive Unplugged" L5="0 = USB Drive Unplugged" id="41" L6="0 = USB Drive Unplugged" L7="0 = USB Drive Unplugged" L8="0 = USB Drive Unplugged"/>
+    <MLText L1="Current Project:" L2="Current Project:" L3="Current Project:" L4="Current Project:" L5="Current Project:" id="42" L6="Current Project:" L7="Current Project:" L8="Current Project:"/>
+    <MLText L1="Project Load Time:" L2="Project Load Time:" L3="Project Load Time:" L4="Project Load Time:" L5="Project Load Time:" id="43" L6="Project Load Time:" L7="Project Load Time:" L8="Project Load Time:"/>
+    <MLText L1="Sample.project" L2="Sample.project" L3="Sample.project" L4="Sample.project" L5="Sample.project" id="44" L6="Sample.project" L7="Sample.project" L8="Sample.project"/>
+    <MLText L1="Brightness:" L2="Brightness:" L3="Brightness:" L4="Brightness:" L5="Brightness:" id="45" L6="Brightness:" L7="Brightness:" L8="Brightness:"/>
+    <MLText L1="Protocol Communication Status:" L2="Protocol Communication Status:" L3="Protocol Communication Status:" L4="Protocol Communication Status:" L5="Protocol Communication Status:" id="48" L6="Protocol Communication Status:" L7="Protocol Communication Status:" L8="Protocol Communication Status:"/>
+    <MLText L1="Error Count:" L2="Error Count:" L3="Error Count:" L4="Error Count:" L5="Error Count:" id="49" L6="Error Count:" L7="Error Count:" L8="Error Count:"/>
+    <MLText L1="1 = Protocols loaded and started, no communication error." L2="1 = Protocols loaded and started, no communication error." L3="1 = Protocols loaded and started, no communication error." L4="1 = Protocols loaded and started, no communication error." L5="1 = Protocols loaded and started, no communication error." id="50" L6="1 = Protocols loaded and started, no communication error." L7="1 = Protocols loaded and started, no communication error." L8="1 = Protocols loaded and started, no communication error."/>
+    <MLText L1="2 = At least one communication protocol is reporting an error." L2="2 = At least one communication protocol is reporting an error." L3="2 = At least one communication protocol is reporting an error." L4="2 = At least one communication protocol is reporting an error." L5="2 = At least one communication protocol is reporting an error." id="51" L6="2 = At least one communication protocol is reporting an error." L7="2 = At least one communication protocol is reporting an error." L8="2 = At least one communication protocol is reporting an error."/>
+    <MLText L1="0 = No protocol running, might not have been properly downloaded." L2="0 = No protocol running, might not have been properly downloaded." L3="0 = No protocol running, might not have been properly downloaded." L4="0 = No protocol running, might not have been properly downloaded." L5="0 = No protocol running, might not have been properly downloaded." id="53" L6="0 = No protocol running, might not have been properly downloaded." L7="0 = No protocol running, might not have been properly downloaded." L8="0 = No protocol running, might not have been properly downloaded."/>
+    <MLText L1="Printing Status:" L2="Printing Status:" L3="Printing Status:" L4="Printing Status:" L5="Printing Status:" id="55" L6="Printing Status:" L7="Printing Status:" L8="Printing Status:"/>
+    <MLText L1="Idle" L2="Idle" L3="Idle" L4="Idle" L5="Idle" id="56" L6="Idle" L7="Idle" L8="Idle"/>
+    <MLText L1="Last Error:" L2="Last Error:" L3="Last Error:" L4="Last Error:" L5="Last Error:" id="57" L6="Last Error:" L7="Last Error:" L8="Last Error:"/>
+    <MLText L1="Last printing error message" L2="Last printing error message" L3="Last printing error message" L4="Last printing error message" L5="Last printing error message" id="58" L6="Last printing error message" L7="Last printing error message" L8="Last printing error message"/>
+    <MLText L1="USB Drive Name:" L2="USB Drive Name:" L3="USB Drive Name:" L4="USB Drive Name:" L5="USB Drive Name:" id="59" L6="USB Drive Name:" L7="USB Drive Name:" L8="USB Drive Name:"/>
+    <MLText L1="USB Drive Size:" L2="USB Drive Size:" L3="USB Drive Size:" L4="USB Drive Size:" L5="USB Drive Size:" id="60" L6="USB Drive Size:" L7="USB Drive Size:" L8="USB Drive Size:"/>
+    <MLText L1="USB Drive Free Space:" L2="USB Drive Free Space:" L3="USB Drive Free Space:" L4="USB Drive Free Space:" L5="USB Drive Free Space:" id="61" L6="USB Drive Free Space:" L7="USB Drive Free Space:" L8="USB Drive Free Space:"/>
+    <MLText L1="USBMemory Stick" L2="USBMemory Stick" L3="USBMemory Stick" L4="USBMemory Stick" L5="USBMemory Stick" id="62" L6="USBMemory Stick" L7="USBMemory Stick" L8="USBMemory Stick"/>
+    <MLText L1="MBytes" L2="MBytes" L3="MBytes" L4="MBytes" L5="MBytes" id="102" L6="MBytes" L7="MBytes" L8="MBytes"/>
+    <MLText L1="MBytes" L2="MBytes" L3="MBytes" L4="MBytes" L5="MBytes" id="108" L6="MBytes" L7="MBytes" L8="MBytes"/>
+   </MLTexts>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label2">
+   <wgtStyle width="350" font-color="rgb(255,255,255)" x="118" forcePaint="2" font-sizepx="24" y="10" font-family="Arial" font-bold="true" wrapping="true" cx="175" cy="18.94" height="40" vert-align="middle" keypad-type="None" font-size="18"/>
+   <links>
+    <lang class="MLTextLink" textid="1"/>
+   </links>
+  </object>
+  <object class="GroupSubscribeWgt" id="System@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="GroupWgt" id="BtnKbd16" customType="Keyboard Button">
+   <wgtStyle width="120" x="340" y="160" cx="60" cy="25" height="50"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnKbd16.frmImg" static="true">
+    <wgtStyle width="148.73" enableCache="true" x="-16.90" y="-17.31" visibility="false" bdrImageSize="80.00,40.00" cx="62.64" cy="59.85" bdrSize="0.19,0.18,0.17,0.17" height="84.62" bdrEdges="0.14,0.16,0.14,0.14"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="BtnKbd16.btn">
+    <wgtStyle width="120" x="0" forcePaint="8" y="0" fill="rgb(120,120,120)" dx="1" cx="59.15" form="standard" cy="25" height="50" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="value" tag="DT_Manual_Sync_EN" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnKbd16.lbl" static="true">
+    <wgtStyle width="96.34" font-color="rgb(192,192,192)" x="10.14" font-sizepx="13" y="0" font-family="Arial" wrapping="true" cx="42.25" cy="21.15" height="44.23" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnKbd16.icoImg">
+    <wgtStyle width="30.42" imagePath="images/UI_LeftArrow_24.png" x="43.94" forcePaint="1" y="7.69" cx="18.59" cy="15.38" height="28.85"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnKbd2" customType="Keyboard Button">
+   <wgtStyle width="120" x="340" y="90" cx="60" cy="25" height="50"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnKbd2.frmImg" static="true">
+    <wgtStyle width="148.73" enableCache="true" x="-16.90" y="-17.31" visibility="false" bdrImageSize="80.00,40.00" cx="62.64" cy="59.85" bdrSize="0.19,0.18,0.17,0.17" height="84.62" bdrEdges="0.14,0.16,0.14,0.14"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="BtnKbd2.btn">
+    <wgtStyle width="120" x="0" y="0" fill="rgb(120,120,120)" dx="1" cx="59.15" form="standard" cy="25" height="50" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+    <links>
+     <action class="DataTransferAction" attribute="onMouseClick" NumValues="1" event="onMouseClick" actionID="1" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="unsignedByte" attribute="SrcTag" tag="DT_Manual_Day" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+       <dataLink readWrite="R" tagType="int" attribute="DestTag" tag="Day Of Month" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+      </dataLinks>
+     </action>
+     <action class="DataTransferAction" attribute="onMouseClick" NumValues="1" event="onMouseClick" actionID="2" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="unsignedByte" attribute="SrcTag" tag="DT_Manual_Month" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+       <dataLink readWrite="R" tagType="int" attribute="DestTag" tag="Month" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+      </dataLinks>
+     </action>
+     <action class="DataTransferAction" attribute="onMouseClick" NumValues="1" event="onMouseClick" actionID="3" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="unsignedShort" attribute="SrcTag" tag="DT_Manual_Year" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+       <dataLink readWrite="R" tagType="int" attribute="DestTag" tag="Year" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+      </dataLinks>
+     </action>
+     <action class="DataTransferAction" attribute="onMouseClick" NumValues="1" event="onMouseClick" actionID="4" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="unsignedByte" attribute="SrcTag" tag="DT_Manual_Hour" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+       <dataLink readWrite="R" tagType="int" attribute="DestTag" tag="Hour" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+      </dataLinks>
+     </action>
+     <action class="DataTransferAction" attribute="onMouseClick" NumValues="1" event="onMouseClick" actionID="5" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="unsignedByte" attribute="SrcTag" tag="DT_Manual_Minute" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+       <dataLink readWrite="R" tagType="int" attribute="DestTag" tag="Minute" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+      </dataLinks>
+     </action>
+     <action class="DataTransferAction" attribute="onMouseClick" NumValues="1" event="onMouseClick" actionID="6" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="unsignedByte" attribute="SrcTag" tag="DT_Manual_Second" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+       <dataLink readWrite="R" tagType="int" attribute="DestTag" tag="Second" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnKbd2.lbl" static="true">
+    <wgtStyle width="96.34" font-color="rgb(192,192,192)" x="10.14" font-sizepx="13" y="0" font-family="Arial" wrapping="true" cx="42.25" cy="21.15" height="44.23" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnKbd2.icoImg">
+    <wgtStyle width="30.42" imagePath="images/UI_RightArrow_24.png" x="43.94" forcePaint="1" y="7.69" cx="18.59" cy="15.38" height="28.85"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt1.GroupWgt1">
+   <wgtStyle width="302" x="480" y="90" cx="151" cy="61" height="122"/>
+   <object class="ShapeWgt" id="GroupWgt1.GroupWgt1.rect1" static="true">
+    <wgtStyle width="300" x="0" y="60" fill="rgb(240,240,240)" cx="145.16" cy="15" height="30" nodeName="rect" stroke="rgb(240,240,240)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.GroupWgt1.rect20" static="true">
+    <wgtStyle width="300" x="0" y="0" fill="rgb(240,240,240)" cx="145.16" cy="15" height="30" nodeName="rect" stroke="rgb(240,240,240)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.GroupWgt1.rect3" static="true">
+    <wgtStyle width="2" x="0" y="0" fill="rgb(220,220,220)" cx="0.97" cy="60" height="120" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.GroupWgt1.rect7" static="true">
+    <wgtStyle width="2" x="200" y="0" fill="rgb(220,220,220)" cx="0.97" cy="60" height="120" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.GroupWgt1.rect8" static="true">
+    <wgtStyle width="2" x="100" y="0" fill="rgb(220,220,220)" cx="0.97" cy="60" height="120" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.GroupWgt1.rect11" static="true">
+    <wgtStyle width="2" x="300" y="0" fill="rgb(220,220,220)" cx="0.97" cy="61" height="122" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.GroupWgt1.rect12" static="true">
+    <wgtStyle width="302" x="0" y="0" fill="rgb(200,200,200)" cx="146.47" cy="1" height="2" nodeName="rect" stroke="rgb(200,200,200)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.GroupWgt1.rect13" static="true">
+    <wgtStyle width="300" x="0" y="30" fill="rgb(220,220,220)" cx="145.50" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.GroupWgt1.rect14" static="true">
+    <wgtStyle width="300" x="0" y="60" fill="rgb(220,220,220)" cx="145.50" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.GroupWgt1.rect15" static="true">
+    <wgtStyle width="300" x="0" y="90" fill="rgb(220,220,220)" cx="145.50" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.GroupWgt1.rect16" static="true">
+    <wgtStyle width="300" x="0" y="120" fill="rgb(220,220,220)" cx="145.50" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label6">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="480" forcePaint="2" font-sizepx="13" y="96" font-family="Arial" font-bold="true" wrapping="true" cx="50" cy="9.47" height="20" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="5"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label1">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="580" forcePaint="2" font-sizepx="13" y="96" font-family="Arial" font-bold="true" wrapping="true" cx="50" cy="9.47" height="20" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="6"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label3">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="680" forcePaint="2" font-sizepx="13" y="96" font-family="Arial" font-bold="true" wrapping="true" cx="50" cy="9.47" height="20" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="7"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label4">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="480" forcePaint="2" font-sizepx="13" y="156" font-family="Arial" font-bold="true" wrapping="true" cx="50" cy="9.47" height="20" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="8"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label5">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="580" forcePaint="2" font-sizepx="13" y="156" font-family="Arial" font-bold="true" wrapping="true" cx="50" cy="9.47" height="20" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="9"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label7">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="680" forcePaint="2" font-sizepx="13" y="156" font-family="Arial" font-bold="true" wrapping="true" cx="50" cy="9.47" height="20" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="10"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.field1">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="16" cx="36.80" cy="13.50" step="1" timeSpec="local" alignment="center" x="490" y="120" vert-align="middle" text="31" max="31" usingFormat="#" value="31" keypad-type="Numeric" font-color="rgb(70,70,70)" min="1" width="80" numberFormat="6" height="30" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="int" attribute="value" tag="Day Of Month" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.field2">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="16" cx="36.80" cy="13.50" step="1" timeSpec="local" alignment="center" x="590" y="120" vert-align="middle" text="12" max="12" usingFormat="#" value="12" keypad-type="Numeric" font-color="rgb(70,70,70)" min="1" width="80" numberFormat="6" height="30" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="int" attribute="value" tag="Month" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.field3">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="16" cx="36.80" cy="13.50" step="1" timeSpec="local" alignment="center" x="690" y="120" vert-align="middle" text="2017" max="2999" usingFormat="#" value="2017" keypad-type="Numeric" font-color="rgb(70,70,70)" min="1970" width="80" numberFormat="6" height="30" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="int" attribute="value" tag="Year" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.field4">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="16" cx="36.80" cy="13.50" step="1" timeSpec="local" alignment="center" x="490" y="180" vert-align="middle" text="23" max="23" usingFormat="#" value="23" keypad-type="Numeric" font-color="rgb(70,70,70)" min="0" width="80" numberFormat="6" height="30" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="int" attribute="value" tag="Hour" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.field5">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="16" cx="36.80" cy="13.50" step="1" timeSpec="local" alignment="center" x="590" y="180" vert-align="middle" text="59" max="59" usingFormat="#" value="59" keypad-type="Numeric" font-color="rgb(70,70,70)" min="0" width="80" numberFormat="6" height="30" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="int" attribute="value" tag="Minute" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.field6">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="16" cx="36.80" cy="13.50" step="1" timeSpec="local" alignment="center" x="690" y="180" vert-align="middle" text="59" max="59" usingFormat="#" value="59" keypad-type="Numeric" font-color="rgb(70,70,70)" min="0" width="80" numberFormat="6" height="30" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="int" attribute="value" tag="Second" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+  </object>
+  <object class="GroupWgt" id="GroupWgt2.GroupWgt1">
+   <wgtStyle width="302" x="20" y="90" cx="151" cy="61" height="122"/>
+   <object class="ShapeWgt" id="GroupWgt2.GroupWgt1.rect1" static="true">
+    <wgtStyle width="300" x="0" y="60" fill="rgb(240,240,240)" cx="145.16" cy="15" height="30" nodeName="rect" stroke="rgb(240,240,240)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt2.GroupWgt1.rect20" static="true">
+    <wgtStyle width="300" x="0" y="0" fill="rgb(240,240,240)" cx="145.16" cy="15" height="30" nodeName="rect" stroke="rgb(240,240,240)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt2.GroupWgt1.rect3" static="true">
+    <wgtStyle width="2" x="0" y="0" fill="rgb(220,220,220)" cx="0.97" cy="60" height="120" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt2.GroupWgt1.rect7" static="true">
+    <wgtStyle width="2" x="200" y="0" fill="rgb(220,220,220)" cx="0.97" cy="60" height="120" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt2.GroupWgt1.rect8" static="true">
+    <wgtStyle width="2" x="100" y="0" fill="rgb(220,220,220)" cx="0.97" cy="60" height="120" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt2.GroupWgt1.rect11" static="true">
+    <wgtStyle width="2" x="300" y="0" fill="rgb(220,220,220)" cx="0.97" cy="61" height="122" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt2.GroupWgt1.rect12" static="true">
+    <wgtStyle width="302" x="0" y="0" fill="rgb(200,200,200)" cx="146.47" cy="1" height="2" nodeName="rect" stroke="rgb(200,200,200)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt2.GroupWgt1.rect13" static="true">
+    <wgtStyle width="300" x="0" y="30" fill="rgb(220,220,220)" cx="145.50" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt2.GroupWgt1.rect14" static="true">
+    <wgtStyle width="300" x="0" y="60" fill="rgb(220,220,220)" cx="145.50" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt2.GroupWgt1.rect15" static="true">
+    <wgtStyle width="300" x="0" y="90" fill="rgb(220,220,220)" cx="145.50" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt2.GroupWgt1.rect16" static="true">
+    <wgtStyle width="300" x="0" y="120" fill="rgb(220,220,220)" cx="145.50" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label6">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="20" forcePaint="2" font-sizepx="13" y="96" font-family="Arial" font-bold="true" wrapping="true" cx="50" cy="9.47" height="20" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="11"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label1">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="120" forcePaint="2" font-sizepx="13" y="96" font-family="Arial" font-bold="true" wrapping="true" cx="50" cy="9.47" height="20" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label2">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="220" forcePaint="2" font-sizepx="13" y="96" font-family="Arial" font-bold="true" wrapping="true" cx="50" cy="9.47" height="20" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="13"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label3">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="20" forcePaint="2" font-sizepx="13" y="156" font-family="Arial" font-bold="true" wrapping="true" cx="50" cy="9.47" height="20" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="14"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label4">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="120" forcePaint="2" font-sizepx="13" y="156" font-family="Arial" font-bold="true" wrapping="true" cx="50" cy="9.47" height="20" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="15"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label5">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="220" forcePaint="2" font-sizepx="13" y="156" font-family="Arial" font-bold="true" wrapping="true" cx="50" cy="9.47" height="20" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="16"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="GroupWgt2.field1">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="16" cx="36.80" cy="13.50" step="1" timeSpec="local" alignment="center" x="30" y="120" vert-align="middle" text="31" max="31" usingFormat="#" value="31" keypad-type="Numeric" font-color="rgb(70,70,70)" min="1" width="80" numberFormat="6" readWrite="true" height="30" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedByte" attribute="value" tag="DT_Manual_Day" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt2.field2">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="16" cx="36.80" cy="13.50" step="1" timeSpec="local" alignment="center" x="130" y="120" vert-align="middle" text="12" max="12" usingFormat="#" value="12" keypad-type="Numeric" font-color="rgb(70,70,70)" min="1" width="80" numberFormat="6" readWrite="true" height="30" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedByte" attribute="value" tag="DT_Manual_Month" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt2.field3">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="16" cx="36.80" cy="13.50" step="1" timeSpec="local" alignment="center" x="230" y="120" vert-align="middle" text="2017" max="2999" usingFormat="#" value="2017" keypad-type="Numeric" font-color="rgb(70,70,70)" min="1970" width="80" numberFormat="6" readWrite="true" height="30" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedShort" attribute="value" tag="DT_Manual_Year" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt2.field4">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="16" cx="36.80" cy="13.50" step="1" timeSpec="local" alignment="center" x="30" y="180" vert-align="middle" text="23" max="23" usingFormat="#" value="23" keypad-type="Numeric" font-color="rgb(70,70,70)" min="0" width="80" numberFormat="6" readWrite="true" height="30" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedByte" attribute="value" tag="DT_Manual_Hour" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt2.field5">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="16" cx="36.80" cy="13.50" step="1" timeSpec="local" alignment="center" x="130" y="180" vert-align="middle" text="59" max="59" usingFormat="#" value="59" keypad-type="Numeric" font-color="rgb(70,70,70)" min="0" width="80" numberFormat="6" readWrite="true" height="30" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedByte" attribute="value" tag="DT_Manual_Minute" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt2.field6">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="16" cx="36.80" cy="13.50" step="1" timeSpec="local" alignment="center" x="230" y="180" vert-align="middle" text="59" max="59" usingFormat="#" value="59" keypad-type="Numeric" font-color="rgb(70,70,70)" min="0" width="80" numberFormat="6" readWrite="true" height="30" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedByte" attribute="value" tag="DT_Manual_Second" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label8">
+   <wgtStyle width="300" font-color="rgb(70,70,70)" x="20" forcePaint="2" font-sizepx="13" y="70" font-family="Arial" wrapping="true" cx="150" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="17">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label9">
+   <wgtStyle width="300" font-color="rgb(70,70,70)" x="480" forcePaint="2" font-sizepx="13" y="70" font-family="Arial" wrapping="true" cx="150" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="18">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label10">
+   <wgtStyle width="190" font-color="rgb(70,70,70)" x="20" forcePaint="2" font-sizepx="13" y="220" font-family="Arial" wrapping="true" cx="95" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="19">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label11">
+   <wgtStyle width="190" font-color="rgb(70,70,70)" x="20" forcePaint="2" font-sizepx="13" y="240" font-family="Arial" wrapping="true" cx="95" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="20">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label12">
+   <wgtStyle width="190" font-color="rgb(70,70,70)" x="20" forcePaint="2" font-sizepx="13" y="260" font-family="Arial" wrapping="true" cx="95" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="21">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label13">
+   <wgtStyle width="190" font-color="rgb(70,70,70)" x="20" forcePaint="2" font-sizepx="13" y="280" font-family="Arial" wrapping="true" cx="95" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="22">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label12">
+   <wgtStyle width="190" font-color="rgb(70,70,70)" x="20" forcePaint="2" font-sizepx="13" y="300" font-family="Arial" wrapping="true" cx="95" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="23">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label13">
+   <wgtStyle width="190" font-color="rgb(70,70,70)" x="20" forcePaint="2" font-sizepx="13" y="320" font-family="Arial" wrapping="true" cx="95" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="24">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt3.label12">
+   <wgtStyle width="190" font-color="rgb(70,70,70)" x="20" forcePaint="2" font-sizepx="13" y="340" font-family="Arial" wrapping="true" cx="95" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="25">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt3.label13">
+   <wgtStyle width="190" font-color="rgb(70,70,70)" x="20" forcePaint="2" font-sizepx="13" y="360" font-family="Arial" wrapping="true" cx="95" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="26">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label1">
+   <wgtStyle width="150" font-color="rgb(70,70,70)" x="210" forcePaint="10" font-sizepx="13" y="222" font-family="Arial" wrapping="true" cx="75" cy="9.47" height="20" vert-align="top" keypad-type="None" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="string" attribute="text" tag="Main OS Version" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="27">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label2">
+   <wgtStyle width="150" font-color="rgb(70,70,70)" x="210" forcePaint="11" font-sizepx="13" y="240" font-family="Arial" wrapping="true" cx="75" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="string" attribute="text" tag="Runtime Version" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="28">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label3">
+   <wgtStyle width="150" font-color="rgb(70,70,70)" x="210" forcePaint="10" font-sizepx="13" y="260" font-family="Arial" wrapping="true" cx="75" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="int" attribute="text" tag="Manufacturer Code" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="29">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="GroupWgt1.msgtext1">
+   <wgtStyle forcePaint="10" font-family="Arial" font-sizepx="13" cx="73.73" cy="9.47" x="210" y="280" viewindex="false" vert-align="middle" text="" max="5" value="1" keypad-type="None" font-color="rgb(70,70,70)" min="1" width="150" continous="true" height="20" font-size="10">
+    <msgtxt>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+     <msg index="4"/>
+     <msg index="5"/>
+    </msgtxt>
+   </wgtStyle>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="int" attribute="value" tag="System Mode" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLMsgLink:messages:">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+     <textid idx="1" val="34"/>
+     <textid idx="2" val="30"/>
+     <textid idx="3" val="31"/>
+     <textid idx="4" val="32"/>
+     <textid idx="5" val="33"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label7">
+   <wgtStyle width="60" font-color="rgb(70,70,70)" x="250" forcePaint="2" font-sizepx="13" y="300" font-family="Arial" wrapping="true" cx="30" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="35">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label8">
+   <wgtStyle width="60" font-color="rgb(70,70,70)" x="250" forcePaint="2" font-sizepx="13" y="320" font-family="Arial" wrapping="true" cx="30" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="36">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label9">
+   <wgtStyle width="60" font-color="rgb(70,70,70)" x="265" forcePaint="2" font-sizepx="13" y="340" font-family="Arial" wrapping="true" cx="30" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="37">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label10">
+   <wgtStyle width="60" font-color="rgb(70,70,70)" x="265" forcePaint="2" font-sizepx="13" y="360" font-family="Arial" wrapping="true" cx="30" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="38">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field1">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="23" cy="9" step="1" timeSpec="local" x="210" y="340" vert-align="middle" text="1234567" max="32767" usingFormat="#" value="1234567" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-32768" width="50" numberFormat="6" height="20" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="long" attribute="value" tag="Available System Memory" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr">
+     <xForms>
+      <xForm Offset="0" class="ScaleXForm" Scale="1" name="Scale" Mod="1024"/>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field2">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="23" cy="9" step="1" timeSpec="local" x="210" y="360" vert-align="middle" text="1234567" max="32767" usingFormat="#" value="1234567" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-32768" width="50" numberFormat="6" height="20" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="int" attribute="value" tag="Flash Free Space" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr">
+     <xForms>
+      <xForm Offset="0" class="ScaleXForm" Scale="1" name="Scale" Mod="1024"/>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field3">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="18.40" cy="9" step="1" timeSpec="local" x="210" y="300" vert-align="middle" text="12345" max="32767" usingFormat="#" value="12345" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-32768" width="40" numberFormat="6" height="20" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="long" attribute="value" tag="System UpTime" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field4">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="18.40" cy="9" step="1" timeSpec="local" x="210" y="320" vert-align="middle" text="12345" max="32767" usingFormat="#" value="12345" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-32768" width="40" numberFormat="6" height="20" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="long" attribute="value" tag="Backlight Time" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="GroupWgt3.label17">
+   <wgtStyle width="190" font-color="rgb(70,70,70)" x="20" forcePaint="2" font-sizepx="13" y="385" font-family="Arial" wrapping="true" cx="95" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="39">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="GroupWgt3.msgtext2">
+   <wgtStyle forcePaint="10" font-family="Arial" font-sizepx="13" cx="88.48" cy="9.47" x="210" y="385" viewindex="false" vert-align="middle" text="" max="1" value="0" keypad-type="None" font-color="rgb(70,70,70)" min="0" width="180" continous="true" height="20" font-size="10">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+    </msgtxt>
+   </wgtStyle>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="int" attribute="value" tag="USB Drive Status" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLMsgLink:messages:">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+     <textid idx="0" val="41"/>
+     <textid idx="1" val="40"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label14">
+   <wgtStyle width="140" font-color="rgb(70,70,70)" x="400" forcePaint="2" font-sizepx="13" y="220" font-family="Arial" wrapping="true" cx="70" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="42">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label15">
+   <wgtStyle width="140" font-color="rgb(70,70,70)" x="400" forcePaint="2" font-sizepx="13" y="240" font-family="Arial" wrapping="true" cx="70" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="43">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label4">
+   <wgtStyle width="180" font-color="rgb(70,70,70)" x="550" forcePaint="10" font-sizepx="13" y="220" font-family="Arial" wrapping="true" cx="90" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="string" attribute="text" tag="Current project" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="44">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="NumericWgt" id="GroupWgt2.timedate3">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="70.07" cy="10" step="1" timeSpec="local" x="550" y="240" vert-align="middle" text="-1" max="4096" usingFormat="DD/MMM/YYYY - hh:mm:ss" value="-1" keypad-type="None" font-color="rgb(70,70,70)" min="0" width="150" numberFormat="0" height="20" form="date-time" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="value" tag="Project load time" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label16">
+   <wgtStyle width="70" font-color="rgb(70,70,70)" x="400" forcePaint="2" font-sizepx="13" y="270" font-family="Arial" wrapping="true" cx="35" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="45">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="GroupWgt" id="GroupWgt1.SldrHrz1" customType="Slider">
+   <wgtStyle width="138.64" x="550" y="270" cx="100" cy="10" height="21" mtx="1.44259,0,0,0,0.952381,0,0,0,1" groupStyle="xform-scaling"/>
+   <links>
+    <attr attrName="min" alias="NeedleWgt.min;LabelsWgt.min;ScaleWgt.min"/>
+    <attr attrName="max" alias="NeedleWgt.max;LabelsWgt.max;ScaleWgt.max"/>
+    <attr attrName="visibility2" alias="TicksWgt.visibility2;ScaleWgt.visibility2;LabelsWgt.visibility2"/>
+    <attr attrName="align" alias="TicksWgt.align;ScaleWgt.align;LabelsWgt.align"/>
+    <attr attrName="reverseScale" alias="NeedleWgt.reverseScale;ScaleWgt.reverseScale;LabelsWgt.reverseScale;TicksWgt.startAngle"/>
+    <attr attrName="labelFreq" alias="TicksWgt.labelFreq;LabelsWgt.labelFreq"/>
+    <attr attrName="tickSize2" alias="TicksWgt.tickSize2; ScaleWgt.tickSize2"/>
+   </links>
+   <object class="LabelsWgt" id="GroupWgt1.SldrHrz1.lbl" static="true">
+    <wgtStyle font-family="Tahoma" font-sizepx="10" cx="60" startAngle="-20" cy="9" timeSpec="local" endAngle="185" x="9.39" y="-19" visibility="false" rotated="true" vert-align="top" max="255" min="15" width="119" labelNames="" tickFreq="4" height="61" labelFreq="6" form="horizontal" font-size="8"/>
+   </object>
+   <object class="ScaleWgt" id="GroupWgt1.SldrHrz1.scale" static="true">
+    <wgtStyle alarmMin="207" cx="46" startAngle="-20" cy="16.81" reverseScale="false" endAngle="185" x="17.39" y="-7" visibility="false" max="255" autoAdjust="true" min="15" stroke-width="10" width="104" Color="none" fill="none" size="99" alarmMax="255" height="40" stroke="rgb(255,0,0)" form="horizontal"/>
+   </object>
+   <object class="TicksWgt" id="GroupWgt1.SldrHrz1.ticks" static="true">
+    <wgtStyle cx="52" cy="18" endAngle="200" reverseScale="true" tickSize2="10" x="17.39" y="-7" visibility="false" max="10" stroke-width="2" width="104" stroke-linecap="butt" tickSize="8" tickFreq="1" height="36" labelFreq="6" stroke="rgb(128,128,128)" form="horizontal"/>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:metal; hmi-shape:rrect_1; hmi-type:bkgd-hsldr" id="GroupWgt1.SldrHrz1.img" static="true">
+    <wgtStyle width="113" imagePath="images/hslbk_thin_none_rev1.svg" enableCache="true" x="11.39" y="0" fill="none" cx="56.36" cy="8.04" height="21"/>
+   </object>
+   <object class="NeedleWgt" hmiStyle="hmi-name:black plastic; hmi-shape:rect_1; hmi-type:top-hthmb" id="GroupWgt1.SldrHrz1.ndl">
+    <wgtStyle forcePaint="8" cx="11.01" cy="10.86" acceptClick="true" moveStep="1" x="0" y="0.95" imagePath="../../shared/gallery/images/sldrs_std1/hthmb_whpl_rect_1_rev2.svg" discrete="false" max="255" min="15" width="138.64" toolTipFontSize="12" toolTipFontName="Arial" toolTipTextColor="rgb(0,0,0)" writeMode="0" height="19.09" toolTipBgColor="rgb(255,255,255)" form="horizontal"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="int" attribute="value" tag="Display Brightness" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+    </dataLinks>
+    <object class="ImageWgt" hmiStyle="hmi-type:---" id="GroupWgt1.SldrHrz1.ndl.img">
+     <wgtStyle width="21" imagePath="images/hthmb_whpl_rect_1_rev2.svg" x="102" forcePaint="65" y="-1" fill="rgb(40,40,40)" cx="10" cy="12" height="24" stroke="none" stroke-width="3"/>
+    </object>
+   </object>
+  </object>
+  <object class="NumericWgt" id="field5">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="13.80" cy="9" step="1" timeSpec="local" x="520" y="270" vert-align="middle" text="255" max="255" usingFormat="#" value="255" keypad-type="Numeric" font-color="rgb(70,70,70)" min="0" width="30" numberFormat="6" height="20" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="int" attribute="value" tag="Display Brightness" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+  </object>
+  <object class="GroupWgt" id="GroupWgt1.BtnKbd4" customType="Keyboard Button">
+   <wgtStyle width="110" x="400" y="305" cx="55" cy="25" height="50"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="GroupWgt1.BtnKbd4.frmImg" static="true">
+    <wgtStyle width="136.34" enableCache="true" x="-15.49" y="-17.31" visibility="false" bdrImageSize="80.00,40.00" cx="57.42" cy="59.85" bdrSize="0.19,0.18,0.17,0.17" height="84.62" bdrEdges="0.14,0.16,0.14,0.14"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="GroupWgt1.BtnKbd4.btn">
+    <wgtStyle width="110" x="0" y="0" fill="rgb(120,120,120)" dx="1" cx="54.22" form="standard" cy="25" height="50" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+    <links>
+     <action pageName="network.jmx" class="ShowDialogAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="GroupWgt1.BtnKbd4.lbl" static="true">
+    <wgtStyle width="88.31" font-color="rgb(192,192,192)" x="9.30" font-sizepx="13" y="0" font-family="Arial" wrapping="true" cx="38.73" cy="21.15" height="44.23" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="GroupWgt1.BtnKbd4.icoImg">
+    <wgtStyle width="27.89" imagePath="images/UI_Network_24.png" x="40.28" forcePaint="1" y="7.69" cx="17.04" cy="15.38" height="28.85"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label17">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="520" forcePaint="2" font-sizepx="13" y="305" font-family="Arial" wrapping="true" cx="50" cy="23.68" height="50" vert-align="top" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="48">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label18">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="520" forcePaint="2" font-sizepx="13" y="355" font-family="Arial" wrapping="true" cx="50" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="49">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field6">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="18.40" cy="9" step="1" timeSpec="local" x="620" y="355" vert-align="middle" text="12345" max="32767" usingFormat="#" value="12345" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-32768" width="40" numberFormat="6" height="20" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="int" attribute="value" tag="Protocol Error Count" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+  </object>
+  <object class="MsgTextWgt" id="GroupWgt3.msgtext1">
+   <wgtStyle forcePaint="10" font-family="Arial" font-sizepx="13" cx="78.65" cy="23.68" x="620" y="305" viewindex="false" vert-align="top" text="" max="2" value="2" keypad-type="None" font-color="rgb(70,70,70)" min="0" width="160" wrapping="true" continous="true" height="50" font-size="10">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+    </msgtxt>
+   </wgtStyle>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="int" attribute="value" tag="Protocol Communication Status" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLMsgLink:messages:">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+     <textid idx="0" val="53"/>
+     <textid idx="1" val="50"/>
+     <textid idx="2" val="51"/>
+    </lang>
+   </links>
+  </object>
+  <object class="GroupWgt" id="GroupWgt2.BtnKbd1" customType="Keyboard Button">
+   <wgtStyle width="110" x="400" y="385" cx="55" cy="25" height="50"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="GroupWgt2.BtnKbd1.frmImg" static="true">
+    <wgtStyle width="136.34" enableCache="true" x="-15.49" y="-17.31" visibility="false" bdrImageSize="80.00,40.00" cx="57.42" cy="59.85" bdrSize="0.19,0.18,0.17,0.17" height="84.62" bdrEdges="0.14,0.16,0.14,0.14"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="GroupWgt2.BtnKbd1.btn">
+    <wgtStyle width="110" x="0" y="0" fill="rgb(120,120,120)" dx="1" cx="54.22" form="standard" cy="25" height="50" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+    <links>
+     <action class="PrintGraphicReportAction" attribute="onMouseClick" event="onMouseClick" reportName="Graphic Report 1" silent="1" actionID="1" folderPath="" fileName="" actionWgt="_PrintMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="GroupWgt2.BtnKbd1.lbl" static="true">
+    <wgtStyle width="88.31" font-color="rgb(192,192,192)" x="9.30" font-sizepx="13" y="0" font-family="Arial" wrapping="true" cx="38.73" cy="21.15" height="44.23" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="GroupWgt2.BtnKbd1.icoImg">
+    <wgtStyle width="27.89" imagePath="images/UI_Reports_24.png" x="40.28" forcePaint="1" y="7.69" cx="17.04" cy="15.38" height="28.85"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label14">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="520" forcePaint="2" font-sizepx="13" y="385" font-family="Arial" wrapping="true" cx="50" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="55">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label5">
+   <wgtStyle width="140" font-color="rgb(70,70,70)" x="620" forcePaint="10" font-sizepx="13" y="385" font-family="Arial" wrapping="true" cx="70" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="string" attribute="text" tag="Status" class="PrintMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_PrintMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="56">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label15">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="520" forcePaint="2" font-sizepx="13" y="410" font-family="Arial" wrapping="true" cx="50" cy="16.57" height="35" vert-align="top" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="57">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label6">
+   <wgtStyle width="170" font-color="rgb(70,70,70)" x="620" forcePaint="10" font-sizepx="13" y="410" font-family="Arial" wrapping="true" cx="85" cy="28.41" height="60" vert-align="top" keypad-type="None" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="string" attribute="text" tag="Last error message" class="PrintMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_PrintMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="58">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="GroupWgt" id="GroupWgt3">
+   <wgtStyle width="370" x="20" forcePaint="8" y="405" cx="185" cy="30" height="60"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="int" attribute="visibility" tag="USB Drive Status" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr">
+     <xForms>
+      <xForm BitIndex="0" class="BitIndexXForm" name="BitIndex"/>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+   <object class="LabelWgt" id="GroupWgt3.GroupWgt1.label18">
+    <wgtStyle width="190" font-color="rgb(70,70,70)" x="0" forcePaint="3" font-sizepx="13" y="0" font-family="Arial" wrapping="true" cx="95" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="59">
+      <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+     </lang>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GroupWgt3.GroupWgt1.label19">
+    <wgtStyle width="190" font-color="rgb(70,70,70)" x="0" forcePaint="3" font-sizepx="13" y="20" font-family="Arial" wrapping="true" cx="95" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="60">
+      <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+     </lang>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GroupWgt3.GroupWgt1.label20">
+    <wgtStyle width="190" font-color="rgb(70,70,70)" x="0" forcePaint="3" font-sizepx="13" y="40" font-family="Arial" wrapping="true" cx="95" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="61">
+      <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+     </lang>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GroupWgt3.label5">
+    <wgtStyle width="180" font-color="rgb(70,70,70)" x="190" forcePaint="11" font-sizepx="13" y="0" font-family="Arial" wrapping="true" cx="90" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="string" attribute="text" tag="USB Drive Name" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="62">
+      <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+     </lang>
+    </links>
+   </object>
+   <object class="LabelWgt" id="GroupWgt3.label11">
+    <wgtStyle width="60" font-color="rgb(70,70,70)" x="245" forcePaint="3" font-sizepx="13" y="20" font-family="Arial" wrapping="true" cx="30" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="102">
+      <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+     </lang>
+    </links>
+   </object>
+   <object class="NumericWgt" id="GroupWgt3.field6">
+    <wgtStyle forcePaint="9" font-family="Arial" font-sizepx="13" cx="23" cy="9" step="1" timeSpec="local" x="190" y="20" vert-align="middle" text="1234567" max="32767" usingFormat="#" value="1234567" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-32768" width="50" numberFormat="6" height="20" form="Numeric" font-size="10"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="long" attribute="value" tag="USB Drive Size" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr">
+      <xForms>
+       <xForm Offset="0" class="ScaleXForm" Scale="1" name="Scale" Mod="1.04858e+06"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" id="GroupWgt3.GroupWgt1.label21">
+    <wgtStyle width="60" font-color="rgb(70,70,70)" x="245" forcePaint="3" font-sizepx="13" y="40" font-family="Arial" wrapping="true" cx="30" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="108">
+      <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+     </lang>
+    </links>
+   </object>
+   <object class="NumericWgt" id="GroupWgt3.GroupWgt1.field7">
+    <wgtStyle forcePaint="9" font-family="Arial" font-sizepx="13" cx="23" cy="9" step="1" timeSpec="local" x="190" y="40" vert-align="middle" text="1234567" max="32767" usingFormat="#" value="1234567" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-32768" width="50" numberFormat="6" height="20" form="Numeric" font-size="10"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="long" attribute="value" tag="USB Drive FreeSpace" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr">
+      <xForms>
+       <xForm Offset="0" class="ScaleXForm" Scale="1" name="Scale" Mod="1.04858e+06"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd7" customType="Button">
+   <wgtStyle width="26" x="760" y="380" cx="13.01" cy="12.99" height="26"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image16" static="true">
+    <wgtStyle width="30.73" x="-4.13" y="-4.14" visibility="false" bdrImageSize="57.00,52.00" fill="rgb(127,127,127)" cx="15.09" cy="15.37" bdrSize="0.45,0.43,0.40,0.42" height="30.73" bdrEdges="0.13,0.13,0.13,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:btn; type:btn" id="buttonStd20">
+    <wgtStyle width="22.46" x="0" y="0" bdrImageSize="42.00,38.00" fill="rgb(192,192,192)" cx="10.16" form="standard" cy="10.83" bdrSize="0.40,0.43,0.38,0.35" height="22.46" type="momentary" value="0"/>
+    <links>
+     <action pageName="help_report.jmx" class="ShowDialogAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label8" static="true">
+    <wgtStyle width="19.50" font-color="rgb(40,40,40)" x="0.59" font-sizepx="13" y="2.95" font-family="Arial" wrapping="true" cx="12.99" cy="11.24" height="17.73" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image17">
+    <wgtStyle width="23.64" imagePath="images/ic_ma1_022.svg" x="2.36" forcePaint="1" y="2.36" fill="rgb(70,70,70)" cx="11.81" cy="10.34" height="23.64"/>
+   </object>
+  </object>
+ </object>
+</wgtPage>

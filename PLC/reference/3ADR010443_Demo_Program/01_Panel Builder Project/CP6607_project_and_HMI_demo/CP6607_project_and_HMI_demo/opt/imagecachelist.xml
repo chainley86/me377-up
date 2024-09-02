@@ -1,0 +1,114 @@
+<files>
+ <file fill="rgb(70,70,70)" strokeSize="3" imgSize="36,24" stroke="none" numUses="4" isSvgFile="true" dynamic="true" file="images/hthmb_blkpl_rect_2_rev1.svg" numSizes="1"/>
+ <file imgSize="100,70" numUses="8" isSvgFile="true" dynamic="true" file="images/btn_plastic_rect_2_rev2.svg" numSizes="1"/>
+ <file imgSize="100,70" numUses="8" isSvgFile="true" dynamic="true" file="images/btn_plastic_rect_1.svg" numSizes="1"/>
+ <file fill="rgb(0,150,224)" imgSize="80,5" stroke="none" numUses="8" isSvgFile="true" dynamic="true" file="images/li_shape_rect.svg" numSizes="1"/>
+ <file fill="rgb(40,40,40)" strokeSize="3" imgSize="21,24" stroke="none" numUses="1" isSvgFile="true" dynamic="true" file="images/hthmb_whpl_rect_1_rev2.svg" numSizes="1"/>
+ <file fill="rgb(255,0,0)" strokeSize="3" imgSize="73,72" stroke="none" numUses="8" isSvgFile="true" dynamic="true" file="images/knob_chrome_4.svg" numSizes="1"/>
+ <file fill="rgb(120,120,120)" imgSize="15,15" stroke="rgb(255,251,240)" numUses="8" isSvgFile="true" dynamic="true" file="images/li_round_shiney1_rev2.svg" numSizes="1"/>
+ <file fill="rgb(255,0,0)" strokeSize="0" imgSize="63,13" stroke="rgb(255,0,0)" numUses="2" isSvgFile="true" dynamic="true" file="images/ne_2line_1.svg" numSizes="1"/>
+ <file fill="rgb(255,0,0)" strokeSize="3" imgSize="14,31" stroke="none" numUses="2" isSvgFile="true" dynamic="true" file="images/ne_pointed_horiz.svg" numSizes="1"/>
+ <file fill="rgb(246,246,246)" imgSize="43,40" stroke="none" numUses="56" isSvgFile="true" file="images/btn_kbdwht_std_2_rev1.svg" numSizes="16" prePath="keypads"/>
+ <file fill="rgb(246,246,246)" imgSize="43,40" stroke="none" numUses="56" isSvgFile="true" file="images/btn_kbdwht_std_1_rev1.svg" numSizes="16" prePath="keypads"/>
+ <file imgSize="150,40" numUses="41" file="images/button_down_120x50.png" numSizes="27"/>
+ <file imgSize="150,40" numUses="41" file="images/button_up_120x50.png" numSizes="27"/>
+ <file fill="rgb(70,70,70)" imgSize="24,24" stroke="none" numUses="22" isSvgFile="true" file="images/ic_ma1_022.svg" numSizes="1"/>
+ <file imgSize="53,48" numUses="20" file="images/numeric_key_down.png" numSizes="1" prePath="keypads"/>
+ <file imgSize="53,48" numUses="20" file="images/numeric_key_up.png" numSizes="1" prePath="keypads"/>
+ <file fill="rgb(220,220,220)" imgSize="100,45" stroke="none" numUses="17" isSvgFile="true" file="images/win-like-press.svg" numSizes="12"/>
+ <file fill="rgb(220,220,220)" imgSize="100,45" stroke="none" numUses="17" isSvgFile="true" file="images/win-like.svg" numSizes="12"/>
+ <file fill="rgb(0,0,0)" imgSize="20,20" stroke="none" numUses="8" isSvgFile="true" file="images/frame_round_chrome.svg" numSizes="1"/>
+ <file fill="rgb(246,246,246)" imgSize="80,40" stroke="none" numUses="5" isSvgFile="true" file="images/btn_kbdwht_wide_2_rev1.svg" numSizes="5" prePath="keypads"/>
+ <file fill="rgb(246,246,246)" imgSize="80,40" stroke="none" numUses="5" isSvgFile="true" file="images/btn_kbdwht_wide_1_rev1.svg" numSizes="5" prePath="keypads"/>
+ <file fill="rgb(0,0,0)" imgSize="150,25" stroke="none" numUses="4" isSvgFile="true" file="images/hslbk_rrect1_metal.svg" numSizes="1"/>
+ <file fill="rgb(192,192,192)" imgSize="30,30" stroke="none" numUses="4" isSvgFile="true" file="images/btn_shiney_rrect_2_rev2.svg" numSizes="1"/>
+ <file fill="rgb(192,192,192)" imgSize="30,30" stroke="none" numUses="4" isSvgFile="true" file="images/btn_shiney_rrect_1.svg" numSizes="1"/>
+ <file imgSize="40,40" numUses="4" file="images/arrowleft_down_40x40.png" numSizes="1"/>
+ <file imgSize="40,40" numUses="4" file="images/arrowleft_up_40x40.png" numSizes="1"/>
+ <file imgSize="40,40" numUses="4" file="images/arrowright_down_40x40.png" numSizes="1"/>
+ <file imgSize="40,40" numUses="4" file="images/arrowright_up_40x40.png" numSizes="1"/>
+ <file fill="rgb(120,120,120)" imgSize="132,63" stroke="none" numUses="4" isSvgFile="true" file="images/knobs_w_buttons_button_b.svg" numSizes="3"/>
+ <file fill="rgb(120,120,120)" imgSize="132,63" stroke="none" numUses="4" isSvgFile="true" file="images/knobs_w_buttons_button_a.svg" numSizes="3"/>
+ <file fill="none" imgSize="45,41" stroke="none" numUses="4" isSvgFile="true" file="images/btn_kbdwht_long_2_rev1.svg" numSizes="4" prePath="keypads"/>
+ <file fill="none" imgSize="45,41" stroke="none" numUses="4" isSvgFile="true" file="images/btn_kbdwht_long_1_rev1.svg" numSizes="4" prePath="keypads"/>
+ <file fill="rgb(230,230,230)" imgSize="120,45" stroke="none" numUses="4" isSvgFile="true" file="images/win-like-press.svg" numSizes="4"/>
+ <file fill="rgb(230,230,230)" imgSize="120,45" stroke="none" numUses="4" isSvgFile="true" file="images/win-like.svg" numSizes="4"/>
+ <file fill="rgb(0,0,0)" imgSize="25,21" stroke="none" numUses="3" isSvgFile="true" file="images/ic_pl1_125.svg" numSizes="1"/>
+ <file imgSize="30,29" numUses="3" file="images/ui_informationcircle2_24.png" numSizes="1"/>
+ <file imgSize="53,48" numUses="3" file="images/ui_leftarrow_24.png" numSizes="3" prePath="keypads"/>
+ <file imgSize="53,48" numUses="3" file="images/ui_rightarrow_24.png" numSizes="3" prePath="keypads"/>
+ <file fill="rgb(0,0,0)" imgSize="15,29" stroke="none" numUses="2" isSvgFile="true" file="images/ic_pl1_021.svg" numSizes="1"/>
+ <file fill="rgb(0,0,0)" imgSize="15,29" stroke="none" numUses="2" isSvgFile="true" file="images/ic_pl1_020.svg" numSizes="1"/>
+ <file fill="rgb(170,170,170)" imgSize="93,55" stroke="none" numUses="2" isSvgFile="true" file="images/btn_gray_down_rev1.svg" numSizes="1"/>
+ <file fill="rgb(170,170,170)" imgSize="93,55" stroke="none" numUses="2" isSvgFile="true" file="images/btn_gray_up_rev1.svg" numSizes="1"/>
+ <file fill="rgb(0,0,0)" imgSize="20,23" stroke="none" numUses="2" isSvgFile="true" file="images/gau_center_blk2.svg" numSizes="1"/>
+ <file fill="rgb(40,40,40)" imgSize="14,14" stroke="none" numUses="2" isSvgFile="true" file="images/ic_pl1_035.svg" numSizes="1"/>
+ <file fill="rgb(40,40,40)" imgSize="14,14" stroke="none" numUses="2" isSvgFile="true" file="images/ic_pl1_034.svg" numSizes="1"/>
+ <file imgSize="24,24" numUses="2" file="images/ui_refresh_24.png" numSizes="1"/>
+ <file imgSize="20,20" numUses="2" file="images/ui_right_20.png" numSizes="1"/>
+ <file fill="rgb(23,30,40)" imgSize="41,35" stroke="none" numUses="2" isSvgFile="true" file="images/ic_cn2_03.svg" numSizes="2" prePath="keypads"/>
+ <file fill="rgb(0,0,0)" imgSize="546,112" stroke="none" numUses="2" isSvgFile="true" file="images/glass.svg" numSizes="2"/>
+ <file fill="rgb(246,246,246)" imgSize="205,40" stroke="none" numUses="1" isSvgFile="true" file="images/btn_kbdwht_long_2_rev1.svg" numSizes="1" prePath="keypads"/>
+ <file fill="rgb(246,246,246)" imgSize="205,40" stroke="none" numUses="1" isSvgFile="true" file="images/btn_kbdwht_long_1_rev1.svg" numSizes="1" prePath="keypads"/>
+ <file fill="rgb(23,30,40)" imgSize="43,40" stroke="none" numUses="1" isSvgFile="true" file="images/ic_pl2_114.svg" numSizes="1" prePath="keypads"/>
+ <file fill="rgb(23,30,40)" imgSize="43,40" stroke="none" numUses="1" isSvgFile="true" file="images/ic_pl2_115.svg" numSizes="1" prePath="keypads"/>
+ <file fill="rgb(255,0,0)" imgSize="30,30" stroke="none" numUses="1" isSvgFile="true" file="images/ic_au2_076.svg" numSizes="1"/>
+ <file fill="rgb(120,120,120)" imgSize="77,74" stroke="none" numUses="1" isSvgFile="true" file="images/btn_shiney_round_2.svg" numSizes="1"/>
+ <file fill="rgb(120,120,120)" imgSize="77,74" stroke="none" numUses="1" isSvgFile="true" file="images/btn_shiney_round_1.svg" numSizes="1"/>
+ <file fill="rgb(102,102,102)" imgSize="37,35" stroke="none" numUses="1" isSvgFile="true" file="images/ic_au1_001.svg" numSizes="1"/>
+ <file fill="rgb(102,102,102)" imgSize="30,29" stroke="none" numUses="1" isSvgFile="true" file="images/ic_pl1_004.svg" numSizes="1"/>
+ <file patternFile="images\ic_flag_rect_ita_rev1.svg" imgSize="100,70" numUses="1" isSvgFile="true" file="images/btn_plastic_rect_2_rev2.svg" numSizes="1"/>
+ <file patternFile="images\ic_flag_rect_ita_rev1.svg" imgSize="100,70" numUses="1" isSvgFile="true" file="images/btn_plastic_rect_1.svg" numSizes="1"/>
+ <file patternFile="images\ic_flag_rect_deu_rev1.svg" imgSize="100,70" numUses="1" isSvgFile="true" file="images/btn_plastic_rect_2_rev2.svg" numSizes="1"/>
+ <file patternFile="images\ic_flag_rect_deu_rev1.svg" imgSize="100,70" numUses="1" isSvgFile="true" file="images/btn_plastic_rect_1.svg" numSizes="1"/>
+ <file patternFile="images\ic_flag_rect_fra_rev1.svg" imgSize="100,70" numUses="1" isSvgFile="true" file="images/btn_plastic_rect_2_rev2.svg" numSizes="1"/>
+ <file patternFile="images\ic_flag_rect_fra_rev1.svg" imgSize="100,70" numUses="1" isSvgFile="true" file="images/btn_plastic_rect_1.svg" numSizes="1"/>
+ <file patternFile="images\ic_flag_rect_chn_rev1.svg" imgSize="100,70" numUses="1" isSvgFile="true" file="images/btn_plastic_rect_2_rev2.svg" numSizes="1"/>
+ <file patternFile="images\ic_flag_rect_chn_rev1.svg" imgSize="100,70" numUses="1" isSvgFile="true" file="images/btn_plastic_rect_1.svg" numSizes="1"/>
+ <file patternFile="images\ic_flag_rect_grc_rev1.svg" imgSize="100,70" numUses="1" isSvgFile="true" file="images/btn_plastic_rect_2_rev2.svg" numSizes="1"/>
+ <file patternFile="images\ic_flag_rect_grc_rev1.svg" imgSize="100,70" numUses="1" isSvgFile="true" file="images/btn_plastic_rect_1.svg" numSizes="1"/>
+ <file patternFile="images\ic_flag_rect_usa_rev1.svg" imgSize="100,70" numUses="1" isSvgFile="true" file="images/btn_plastic_rect_2_rev2.svg" numSizes="1"/>
+ <file patternFile="images\ic_flag_rect_usa_rev1.svg" imgSize="100,70" numUses="1" isSvgFile="true" file="images/btn_plastic_rect_1.svg" numSizes="1"/>
+ <file patternFile="images\ic_flag_rect_esp_rev1.svg" imgSize="100,70" numUses="1" isSvgFile="true" file="images/btn_plastic_rect_2_rev2.svg" numSizes="1"/>
+ <file patternFile="images\ic_flag_rect_esp_rev1.svg" imgSize="100,70" numUses="1" isSvgFile="true" file="images/btn_plastic_rect_1.svg" numSizes="1"/>
+ <file patternFile="images\ic_flag_rect_rus_rev1.svg" imgSize="100,70" numUses="1" isSvgFile="true" file="images/btn_plastic_rect_2_rev2.svg" numSizes="1"/>
+ <file patternFile="images\ic_flag_rect_rus_rev1.svg" imgSize="100,70" numUses="1" isSvgFile="true" file="images/btn_plastic_rect_1.svg" numSizes="1"/>
+ <file imgSize="53,48" numUses="1" file="images/ui_uparrow_24.png" numSizes="1" prePath="keypads"/>
+ <file imgSize="53,48" numUses="1" file="images/ui_downarrow_24.png" numSizes="1" prePath="keypads"/>
+ <file imgSize="44,44" numUses="1" file="images/ui_calculator_24.png" numSizes="1" prePath="keypads"/>
+ <file imgSize="190,190" numUses="1" file="images/abb_pic_11.jpg" numSizes="1"/>
+ <file imgSize="30,29" numUses="1" file="images/ui_key_24.png" numSizes="1"/>
+ <file imgSize="370,270" numUses="1" file="images/abb_pic_01.jpg" numSizes="1"/>
+ <file imgSize="370,270" numUses="1" file="images/abb_pic_02.jpg" numSizes="1"/>
+ <file imgSize="370,270" numUses="1" file="images/abb_pic_03.jpg" numSizes="1"/>
+ <file imgSize="370,270" numUses="1" file="images/abb_pic_04.jpg" numSizes="1"/>
+ <file imgSize="370,270" numUses="1" file="images/abb_pic_05.jpg" numSizes="1"/>
+ <file imgSize="370,270" numUses="1" file="images/abb_pic_06.jpg" numSizes="1"/>
+ <file imgSize="370,270" numUses="1" file="images/abb_pic_07.jpg" numSizes="1"/>
+ <file imgSize="370,270" numUses="1" file="images/abb_pic_08.jpg" numSizes="1"/>
+ <file imgSize="370,270" numUses="1" file="images/abb_pic_09.jpg" numSizes="1"/>
+ <file imgSize="370,270" numUses="1" file="images/abb_pic_10.jpg" numSizes="1"/>
+ <file imgSize="500,305" numUses="1" file="images/action.png" numSizes="1"/>
+ <file imgSize="237,53" numUses="1" file="images/dwn.jpg" numSizes="1"/>
+ <file imgSize="30,29" numUses="1" file="images/ui_group_24.png" numSizes="1"/>
+ <file imgSize="30,29" numUses="1" file="images/ui_adduser_24.png" numSizes="1"/>
+ <file imgSize="30,29" numUses="1" file="images/ui_deluser_24.png" numSizes="1"/>
+ <file imgSize="24,24" numUses="1" file="images/ui_trash_24.png" numSizes="1"/>
+ <file imgSize="24,24" numUses="1" file="images/ui_copy_24.png" numSizes="1"/>
+ <file imgSize="28,29" numUses="1" file="images/ui_network_24.png" numSizes="1"/>
+ <file imgSize="28,29" numUses="1" file="images/ui_reports_24.png" numSizes="1"/>
+ <file imgSize="350,391" numUses="1" file="images/gesture_ack1.png" numSizes="1"/>
+ <file imgSize="350,391" numUses="1" file="images/gesture_ack2.png" numSizes="1"/>
+ <file imgSize="350,391" numUses="1" file="images/gesture_ack3.png" numSizes="1"/>
+ <file imgSize="420,390" numUses="1" file="images/js_drop.jpg" numSizes="1"/>
+ <file imgSize="420,390" numUses="1" file="images/js_move.jpg" numSizes="1"/>
+ <file imgSize="420,390" numUses="1" file="images/js_swap.jpg" numSizes="1"/>
+ <file imgSize="380,380" numUses="1" file="images/trend_his_1.jpg" numSizes="1"/>
+ <file imgSize="380,380" numUses="1" file="images/trend_his_2.jpg" numSizes="1"/>
+ <file imgSize="380,380" numUses="1" file="images/trend_his_3.jpg" numSizes="1"/>
+ <file imgSize="600,245" numUses="1" file="images/file_reload.jpg" numSizes="1"/>
+ <file imgSize="600,245" numUses="1" file="images/file_delete.jpg" numSizes="1"/>
+ <file imgSize="600,245" numUses="1" file="images/file_copy.jpg" numSizes="1"/>
+ <file imgSize="370,380" numUses="1" file="images/table_datasource.jpg" numSizes="1"/>
+ <file imgSize="370,380" numUses="1" file="images/table_javascript.jpg" numSizes="1"/>
+</files>

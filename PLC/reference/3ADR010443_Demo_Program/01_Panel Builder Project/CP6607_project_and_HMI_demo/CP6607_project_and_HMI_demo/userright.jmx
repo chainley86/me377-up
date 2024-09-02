@@ -1,0 +1,95 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="UserRight" singleInstance="true" pageType="modal" pageSize="280,190" class="DialogWgt" dataWndSize="0,70" downloadPrepDone="true" px="0" usedFonts="Arial,SimHei" py="0" titlebar="false" staticFile="opt/userright.png" dynPosition="false" id="UserRight" titleName="" staticOptEnable="true">
+  <wgtStyle width="280" x="0" y="0" height="190" ver="020800424" v="02.08.00.424"/>
+  <object class="LabelWgt" id="GroupWgt1.label7">
+   <wgtStyle font-bold="true" forcePaint="2" font-family="SimHei" font-sizepx="16" cx="105" cy="14.20" x="20" y="10" vert-align="middle" frameFill="rgb(255,255,255)" keypad-type="None" font-color="rgb(70,70,70)" width="209" wrapping="true" height="29" frame="true" font-size="12" frameColor="rgb(255,255,255)"/>
+   <links>
+    <lang class="MLTextLink" textid="0"/>
+   </links>
+  </object>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="English" defaultFont="Arial"/>
+    <lang removable="false" langCode="it-IT" langId="L2" writingsystem="Any" name="Italian" defaultFont="Arial"/>
+    <lang removable="false" langCode="de-DE" langId="L3" writingsystem="Any" name="German" defaultFont="Arial"/>
+    <lang removable="false" langCode="fr-FR" langId="L4" writingsystem="Any" name="French" defaultFont="Arial"/>
+    <lang removable="false" langCode="zh-CN" langId="L5" writingsystem="Any" name="Chinese" defaultFont="SimHei"/>
+    <lang removable="false" langCode="grc" langId="L6" writingsystem="Any" name="Greek" defaultFont="Arial"/>
+    <lang removable="false" langCode="es-ES" langId="L7" writingsystem="Any" name="Spanish" defaultFont="Arial"/>
+    <lang removable="false" langCode="ru-RU" langId="L8" writingsystem="Any" name="Russian" defaultFont="Arial"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="User Management" L2="Gestione degli utenti" L3="Benutzerverwaltung" L4="Gestion des utilisateurs" L5="用户管理" id="0" L6="Διαχείριση χρηστών" L7="Gestión de usuario" L8="Управление пользователями"/>
+    <MLText L1="You have login as " L2="Hai effettuato il login come" L3="Sie haben sich als eingeloggt" L4="Vous vous connectez en tant que" L5="您已经登录" id="6" L6="Έχετε σύνδεση ως" L7="Usted tiene login como" L8="У вас есть логин как"/>
+    <MLText L1="User Group:" L2="Gruppo di utenti:" L3="Benutzergruppe:" L4="Groupe d'utilisateurs:" L5="用户组:" id="2" L6="Ομάδα χρηστών:" L7="Grupo de usuario:" L8="Группа пользователей:"/>
+    <MLText L1="Username:" L2="Nome utente:" L3="Nutzername:" L4="Nom d'utilisateur:" L5="用户名:" id="3" L6="Όνομα χρήστη:" L7="Nombre de usuario:" L8="имя пользователя:"/>
+    <MLText L1="Admin" L2="Admin" L3="Admin" L4="Admin" L5="Admin" id="4" L6="Admin" L7="Admin" L8="Admin"/>
+    <MLText L1="George" L2="George" L3="George" L4="George" L5="George" id="5" L6="George" L7="George" L8="George"/>
+   </MLTexts>
+  </object>
+  <object class="ImageWgt" id="image1" static="true">
+   <wgtStyle width="24" imagePath="images/UI_Close_24.png" x="246" y="13" cx="12" cy="12" height="24"/>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="hotspotbtn">
+   <wgtStyle width="40" x="237" y="3" fill="rgb(160,160,164)" dx="1" cx="19.69" form="hotspot" dy="-1" cy="19.61" height="40" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action pageName="" class="CloseDialogAction" attribute="onMouseClick" event="onMouseClick" actionID="0" closeParam="Selected" actionWgt="_PageMgr"/>
+   </links>
+  </object>
+  <object class="ShapeWgt" id="rect7" static="true">
+   <wgtStyle width="280" x="0" y="0" fill="rgb(180,180,180)" cx="135.80" cy="1" height="2" nodeName="rect" stroke="rgb(180,180,180)"/>
+  </object>
+  <object class="ShapeWgt" id="rect1" static="true">
+   <wgtStyle width="280" x="0" y="188" fill="rgb(180,180,180)" cx="135.80" cy="1" height="2" nodeName="rect" stroke="rgb(180,180,180)"/>
+  </object>
+  <object class="ShapeWgt" id="rect6" static="true">
+   <wgtStyle width="2" x="0" y="0" fill="rgb(180,180,180)" cx="0.97" cy="95" height="190" nodeName="rect" stroke="rgb(180,180,180)"/>
+  </object>
+  <object class="ShapeWgt" id="rect2" static="true">
+   <wgtStyle width="2" x="278" y="0" fill="rgb(180,180,180)" cx="0.97" cy="95" height="190" nodeName="rect" stroke="rgb(180,180,180)"/>
+  </object>
+  <object class="ImageWgt" id="image2" static="true">
+   <wgtStyle width="24" imagePath="images/UI_InformationCircle2_24.png" x="20" y="57" cx="12" cy="12" height="24"/>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label1">
+   <wgtStyle width="220" font-color="rgb(70,70,70)" x="50" forcePaint="2" font-sizepx="13" y="60" font-family="SimHei" wrapping="true" cx="110" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="6"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.GroupWgt1.label2">
+   <wgtStyle width="140" font-color="rgb(70,70,70)" x="50" forcePaint="2" font-sizepx="13" y="110" font-family="SimHei" wrapping="true" cx="70" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="2"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.GroupWgt1.label14">
+   <wgtStyle width="140" font-color="rgb(70,70,70)" x="50" forcePaint="2" font-sizepx="13" y="85" font-family="SimHei" wrapping="true" cx="70" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="3"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.GroupWgt1.label15">
+   <wgtStyle width="80" font-color="rgb(70,70,70)" x="195" forcePaint="10" font-sizepx="13" y="110" font-family="SimHei" wrapping="true" cx="40" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="string" attribute="text" tag="This Client Group-Name" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="4"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.GroupWgt1.label16">
+   <wgtStyle width="80" font-color="rgb(70,70,70)" x="195" forcePaint="10" font-sizepx="13" y="85" font-family="SimHei" wrapping="true" cx="40" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="string" attribute="text" tag="This Client User-Name" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="5"/>
+   </links>
+  </object>
+  <object class="GroupSubscribeWgt" id="UserRight@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+ </object>
+</wgtPage>

@@ -1,0 +1,417 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="Web_Main" pageType="mobile" pageSize="1280,720" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" templateFile="webtemplate.jmx" usedFonts="Arial,SimHei" staticFile="opt/web_main.png" id="Web_Main" staticOptEnable="true">
+  <wgtStyle width="1280" x="0" y="0" height="720" fitToSize="1" ver="020800424" v="02.08.00.424"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="English" defaultFont="Arial"/>
+    <lang removable="false" langCode="it-IT" langId="L2" writingsystem="Any" name="Italian" defaultFont="Arial"/>
+    <lang removable="false" langCode="de-DE" langId="L3" writingsystem="Any" name="German" defaultFont="Arial"/>
+    <lang removable="false" langCode="fr-FR" langId="L4" writingsystem="Any" name="French" defaultFont="Arial"/>
+    <lang removable="false" langCode="zh-CN" langId="L5" writingsystem="Any" name="Chinese" defaultFont="SimHei"/>
+    <lang removable="false" langCode="grc" langId="L6" writingsystem="Any" name="Greek" defaultFont="Arial"/>
+    <lang removable="false" langCode="es-ES" langId="L7" writingsystem="Any" name="Spanish" defaultFont="Arial"/>
+    <lang removable="false" langCode="ru-RU" langId="L8" writingsystem="Any" name="Russian" defaultFont="Arial"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="Engineering suite" L2="Engineering suite" L3="Engineering suite" L4="Engineering suite" L5="Engineering suite" id="2" L6="Engineering suite" L7="Engineering suite" L8="Engineering suite"/>
+    <MLText L1="Visualization" L2="Visualization" L3="Visualization" L4="Visualization" L5="Visualization" id="3" L6="Visualization" L7="Visualization" L8="Visualization"/>
+    <MLText L1="• The economical CP600-eCo control panel is aimed for standard functions and high usability for clear interaction with the operation process." L2="• The economical CP600-eCo control panel is aimed for standard functions and high usability for clear interaction with the operation process." L3="• The economical CP600-eCo control panel is aimed for standard functions and high usability for clear interaction with the operation process." L4="• The economical CP600-eCo control panel is aimed for standard functions and high usability for clear interaction with the operation process." L5="• The economical CP600-eCo control panel is aimed for standard functions and high usability for clear interaction with the operation process." id="4" L6="• The economical CP600-eCo control panel is aimed for standard functions and high usability for clear interaction with the operation process." L7="• The economical CP600-eCo control panel is aimed for standard functions and high usability for clear interaction with the operation process." L8="• The economical CP600-eCo control panel is aimed for standard functions and high usability for clear interaction with the operation process."/>
+    <MLText L1="CP600-eCo" L2="CP600-eCo" L3="CP600-eCo" L4="CP600-eCo" L5="CP600-eCo" id="5" L6="CP600-eCo" L7="CP600-eCo" L8="CP600-eCo"/>
+    <MLText L1="• The CP600-Pro HMI portfolio comes with high end visualization performance, multi-touch operation, versatile trendsetting communication and representative design." L2="• The CP600-Pro HMI portfolio comes with high end visualization performance, multi-touch operation, versatile trendsetting communication and representative design." L3="• The CP600-Pro HMI portfolio comes with high end visualization performance, multi-touch operation, versatile trendsetting communication and representative design." L4="• The CP600-Pro HMI portfolio comes with high end visualization performance, multi-touch operation, versatile trendsetting communication and representative design." L5="• The CP600-Pro HMI portfolio comes with high end visualization performance, multi-touch operation, versatile trendsetting communication and representative design." id="6" L6="• The CP600-Pro HMI portfolio comes with high end visualization performance, multi-touch operation, versatile trendsetting communication and representative design." L7="• The CP600-Pro HMI portfolio comes with high end visualization performance, multi-touch operation, versatile trendsetting communication and representative design." L8="• The CP600-Pro HMI portfolio comes with high end visualization performance, multi-touch operation, versatile trendsetting communication and representative design."/>
+    <MLText L1="CP600-Pro" L2="CP600-Pro" L3="CP600-Pro" L4="CP600-Pro" L5="CP600-Pro" id="8" L6="CP600-Pro" L7="CP600-Pro" L8="CP600-Pro"/>
+    <MLText L1="• Automation Builder connects the engineering tools for PLC, safety, control panels, SCADA, drives and motion.&#xa;• Automation Builder combines the tools required for configuring, programming, debugging and maintaining automation projects from one common intuitive interface." L2="• Automation Builder connects the engineering tools for PLC, safety, control panels, SCADA, drives and motion.&#xa;• Automation Builder combines the tools required for configuring, programming, debugging and maintaining automation projects from one common intuitive interface." L3="• Automation Builder connects the engineering tools for PLC, safety, control panels, SCADA, drives and motion.&#xa;• Automation Builder combines the tools required for configuring, programming, debugging and maintaining automation projects from one common intuitive interface." L4="• Automation Builder connects the engineering tools for PLC, safety, control panels, SCADA, drives and motion.&#xa;• Automation Builder combines the tools required for configuring, programming, debugging and maintaining automation projects from one common intuitive interface." L5="• Automation Builder connects the engineering tools for PLC, safety, control panels, SCADA, drives and motion.&#xa;• Automation Builder combines the tools required for configuring, programming, debugging and maintaining automation projects from one common intuitive interface." id="9" L6="• Automation Builder connects the engineering tools for PLC, safety, control panels, SCADA, drives and motion.&#xa;• Automation Builder combines the tools required for configuring, programming, debugging and maintaining automation projects from one common intuitive interface." L7="• Automation Builder connects the engineering tools for PLC, safety, control panels, SCADA, drives and motion.&#xa;• Automation Builder combines the tools required for configuring, programming, debugging and maintaining automation projects from one common intuitive interface." L8="• Automation Builder connects the engineering tools for PLC, safety, control panels, SCADA, drives and motion.&#xa;• Automation Builder combines the tools required for configuring, programming, debugging and maintaining automation projects from one common intuitive interface."/>
+    <MLText L1="Automation Builder" L2="Automation Builder" L3="Automation Builder" L4="Automation Builder" L5="Automation Builder" id="10" L6="Automation Builder" L7="Automation Builder" L8="Automation Builder"/>
+    <MLText L1="• For efficient engineering of demanding&#xa;applications.&#xa;• Easy-to-use application examples." L2="• For efficient engineering of demanding&#xa;applications.&#xa;• Easy-to-use application examples." L3="• For efficient engineering of demanding&#xa;applications.&#xa;• Easy-to-use application examples." L4="• For efficient engineering of demanding&#xa;applications.&#xa;• Easy-to-use application examples." L5="• For efficient engineering of demanding&#xa;applications.&#xa;• Easy-to-use application examples." id="11" L6="• For efficient engineering of demanding&#xa;applications.&#xa;• Easy-to-use application examples." L7="• For efficient engineering of demanding&#xa;applications.&#xa;• Easy-to-use application examples." L8="• For efficient engineering of demanding&#xa;applications.&#xa;• Easy-to-use application examples."/>
+    <MLText L1="Library packages" L2="Library packages" L3="Library packages" L4="Library packages" L5="Library packages" id="12" L6="Library packages" L7="Library packages" L8="Library packages"/>
+    <MLText L1="Details" L2="Details" L3="Details" L4="Details" L5="Details" id="13" L6="Details" L7="Details" L8="Details"/>
+    <MLText L1="Details" L2="Details" L3="Details" L4="Details" L5="Details" id="14" L6="Details" L7="Details" L8="Details"/>
+    <MLText L1="Details" L2="Details" L3="Details" L4="Details" L5="Details" id="15" L6="Details" L7="Details" L8="Details"/>
+    <MLText L1="Programmable Logic Controllers PLCs" L2="Programmable Logic Controllers PLCs" L3="Programmable Logic Controllers PLCs" L4="Programmable Logic Controllers PLCs" L5="Programmable Logic Controllers PLCs" id="16" L6="Programmable Logic Controllers PLCs" L7="Programmable Logic Controllers PLCs" L8="Programmable Logic Controllers PLCs"/>
+    <MLText L1="I/O modules" L2="I/O modules" L3="I/O modules" L4="I/O modules" L5="I/O modules" id="17" L6="I/O modules" L7="I/O modules" L8="I/O modules"/>
+    <MLText L1="• Integrated safety PLC (SIL3, PL e) designed for safety applications involved in factory, machinery or process automation area.&#xa;• For complex safety solutions." L2="• Integrated safety PLC (SIL3, PL e) designed for safety applications involved in factory, machinery or process automation area.&#xa;• For complex safety solutions." L3="• Integrated safety PLC (SIL3, PL e) designed for safety applications involved in factory, machinery or process automation area.&#xa;• For complex safety solutions." L4="• Integrated safety PLC (SIL3, PL e) designed for safety applications involved in factory, machinery or process automation area.&#xa;• For complex safety solutions." L5="• Integrated safety PLC (SIL3, PL e) designed for safety applications involved in factory, machinery or process automation area.&#xa;• For complex safety solutions." id="43" L6="• Integrated safety PLC (SIL3, PL e) designed for safety applications involved in factory, machinery or process automation area.&#xa;• For complex safety solutions." L7="• Integrated safety PLC (SIL3, PL e) designed for safety applications involved in factory, machinery or process automation area.&#xa;• For complex safety solutions." L8="• Integrated safety PLC (SIL3, PL e) designed for safety applications involved in factory, machinery or process automation area.&#xa;• For complex safety solutions."/>
+    <MLText L1="AC500-S" L2="AC500-S" L3="AC500-S" L4="AC500-S" L5="AC500-S" id="44" L6="AC500-S" L7="AC500-S" L8="AC500-S"/>
+    <MLText L1="• Safety variant of the S500 I/O system.&#xa;• Extreme condition variants available." L2="• Safety variant of the S500 I/O system.&#xa;• Extreme condition variants available." L3="• Safety variant of the S500 I/O system.&#xa;• Extreme condition variants available." L4="• Safety variant of the S500 I/O system.&#xa;• Extreme condition variants available." L5="• Safety variant of the S500 I/O system.&#xa;• Extreme condition variants available." id="45" L6="• Safety variant of the S500 I/O system.&#xa;• Extreme condition variants available." L7="• Safety variant of the S500 I/O system.&#xa;• Extreme condition variants available." L8="• Safety variant of the S500 I/O system.&#xa;• Extreme condition variants available."/>
+    <MLText L1="S500-S" L2="S500-S" L3="S500-S" L4="S500-S" L5="S500-S" id="46" L6="S500-S" L7="S500-S" L8="S500-S"/>
+    <MLText L1="• Extreme condition PLC variant of the AC500 platform.&#xa;• With extended operating temperature, immunity to vibration and hazardous gases, use at high altitudes and in humid environments." L2="• Extreme condition PLC variant of the AC500 platform.&#xa;• With extended operating temperature, immunity to vibration and hazardous gases, use at high altitudes and in humid environments." L3="• Extreme condition PLC variant of the AC500 platform.&#xa;• With extended operating temperature, immunity to vibration and hazardous gases, use at high altitudes and in humid environments." L4="• Extreme condition PLC variant of the AC500 platform.&#xa;• With extended operating temperature, immunity to vibration and hazardous gases, use at high altitudes and in humid environments." L5="• Extreme condition PLC variant of the AC500 platform.&#xa;• With extended operating temperature, immunity to vibration and hazardous gases, use at high altitudes and in humid environments." id="47" L6="• Extreme condition PLC variant of the AC500 platform.&#xa;• With extended operating temperature, immunity to vibration and hazardous gases, use at high altitudes and in humid environments." L7="• Extreme condition PLC variant of the AC500 platform.&#xa;• With extended operating temperature, immunity to vibration and hazardous gases, use at high altitudes and in humid environments." L8="• Extreme condition PLC variant of the AC500 platform.&#xa;• With extended operating temperature, immunity to vibration and hazardous gases, use at high altitudes and in humid environments."/>
+    <MLText L1="AC500-XC" L2="AC500-XC" L3="AC500-XC" L4="AC500-XC" L5="AC500-XC" id="48" L6="AC500-XC" L7="AC500-XC" L8="AC500-XC"/>
+    <MLText L1="• Powerful PLC featuring a wide range of performance, communications and I/O capabilities for industrial applications.&#xa;• The ideal choice for complex, high-speed machinery and networking solutions." L2="• Powerful PLC featuring a wide range of performance, communications and I/O capabilities for industrial applications.&#xa;• The ideal choice for complex, high-speed machinery and networking solutions." L3="• Powerful PLC featuring a wide range of performance, communications and I/O capabilities for industrial applications.&#xa;• The ideal choice for complex, high-speed machinery and networking solutions." L4="• Powerful PLC featuring a wide range of performance, communications and I/O capabilities for industrial applications.&#xa;• The ideal choice for complex, high-speed machinery and networking solutions." L5="• Powerful PLC featuring a wide range of performance, communications and I/O capabilities for industrial applications.&#xa;• The ideal choice for complex, high-speed machinery and networking solutions." id="49" L6="• Powerful PLC featuring a wide range of performance, communications and I/O capabilities for industrial applications.&#xa;• The ideal choice for complex, high-speed machinery and networking solutions." L7="• Powerful PLC featuring a wide range of performance, communications and I/O capabilities for industrial applications.&#xa;• The ideal choice for complex, high-speed machinery and networking solutions." L8="• Powerful PLC featuring a wide range of performance, communications and I/O capabilities for industrial applications.&#xa;• The ideal choice for complex, high-speed machinery and networking solutions."/>
+    <MLText L1="AC500" L2="AC500" L3="AC500" L4="AC500" L5="AC500" id="50" L6="AC500" L7="AC500" L8="AC500"/>
+    <MLText L1="• Integrated safety PLC (SIL3, PL e) designed for safety applications involved in factory, machinery or process automation area.&#xa;• For complex safety solutions." L2="• Integrated safety PLC (SIL3, PL e) designed for safety applications involved in factory, machinery or process automation area.&#xa;• For complex safety solutions." L3="• Integrated safety PLC (SIL3, PL e) designed for safety applications involved in factory, machinery or process automation area.&#xa;• For complex safety solutions." L4="• Integrated safety PLC (SIL3, PL e) designed for safety applications involved in factory, machinery or process automation area.&#xa;• For complex safety solutions." L5="• Integrated safety PLC (SIL3, PL e) designed for safety applications involved in factory, machinery or process automation area.&#xa;• For complex safety solutions." id="51" L6="• Integrated safety PLC (SIL3, PL e) designed for safety applications involved in factory, machinery or process automation area.&#xa;• For complex safety solutions." L7="• Integrated safety PLC (SIL3, PL e) designed for safety applications involved in factory, machinery or process automation area.&#xa;• For complex safety solutions." L8="• Integrated safety PLC (SIL3, PL e) designed for safety applications involved in factory, machinery or process automation area.&#xa;• For complex safety solutions."/>
+    <MLText L1="AC500-S" L2="AC500-S" L3="AC500-S" L4="AC500-S" L5="AC500-S" id="52" L6="AC500-S" L7="AC500-S" L8="AC500-S"/>
+    <MLText L1="• Safety variant of the S500 I/O system.&#xa;• Extreme condition variants available." L2="• Safety variant of the S500 I/O system.&#xa;• Extreme condition variants available." L3="• Safety variant of the S500 I/O system.&#xa;• Extreme condition variants available." L4="• Safety variant of the S500 I/O system.&#xa;• Extreme condition variants available." L5="• Safety variant of the S500 I/O system.&#xa;• Extreme condition variants available." id="53" L6="• Safety variant of the S500 I/O system.&#xa;• Extreme condition variants available." L7="• Safety variant of the S500 I/O system.&#xa;• Extreme condition variants available." L8="• Safety variant of the S500 I/O system.&#xa;• Extreme condition variants available."/>
+    <MLText L1="S500-S" L2="S500-S" L3="S500-S" L4="S500-S" L5="S500-S" id="54" L6="S500-S" L7="S500-S" L8="S500-S"/>
+    <MLText L1="PLC Automation Product Family" L2="PLC Automation Product Family" L3="PLC Automation Product Family" L4="PLC Automation Product Family" L5="PLC Automation Product Family" id="55" L6="PLC Automation Product Family" L7="PLC Automation Product Family" L8="PLC Automation Product Family"/>
+    <MLText L1="S500-S" L2="S500-S" L3="S500-S" L4="S500-S" L5="S500-S" id="69" L6="S500-S" L7="S500-S" L8="S500-S"/>
+    <MLText L1="• Safety variant of the S500 I/O system.&#xa;• Extreme condition variants available." L2="• Safety variant of the S500 I/O system.&#xa;• Extreme condition variants available." L3="• Safety variant of the S500 I/O system.&#xa;• Extreme condition variants available." L4="• Safety variant of the S500 I/O system.&#xa;• Extreme condition variants available." L5="• Safety variant of the S500 I/O system.&#xa;• Extreme condition variants available." id="77" L6="• Safety variant of the S500 I/O system.&#xa;• Extreme condition variants available." L7="• Safety variant of the S500 I/O system.&#xa;• Extreme condition variants available." L8="• Safety variant of the S500 I/O system.&#xa;• Extreme condition variants available."/>
+    <MLText L1="S500-XC" L2="S500-XC" L3="S500-XC" L4="S500-XC" L5="S500-XC" id="87" L6="S500-XC" L7="S500-XC" L8="S500-XC"/>
+    <MLText L1="• Extreme condition variant of the S500 I/O system.&#xa;• With extended operating temperature, immunity to vibration and hazardous gases, use at high altitudes and in humid environments." L2="• Extreme condition variant of the S500 I/O system.&#xa;• With extended operating temperature, immunity to vibration and hazardous gases, use at high altitudes and in humid environments." L3="• Extreme condition variant of the S500 I/O system.&#xa;• With extended operating temperature, immunity to vibration and hazardous gases, use at high altitudes and in humid environments." L4="• Extreme condition variant of the S500 I/O system.&#xa;• With extended operating temperature, immunity to vibration and hazardous gases, use at high altitudes and in humid environments." L5="• Extreme condition variant of the S500 I/O system.&#xa;• With extended operating temperature, immunity to vibration and hazardous gases, use at high altitudes and in humid environments." id="99" L6="• Extreme condition variant of the S500 I/O system.&#xa;• With extended operating temperature, immunity to vibration and hazardous gases, use at high altitudes and in humid environments." L7="• Extreme condition variant of the S500 I/O system.&#xa;• With extended operating temperature, immunity to vibration and hazardous gases, use at high altitudes and in humid environments." L8="• Extreme condition variant of the S500 I/O system.&#xa;• With extended operating temperature, immunity to vibration and hazardous gases, use at high altitudes and in humid environments."/>
+    <MLText L1="AC500" L2="AC500" L3="AC500" L4="AC500" L5="AC500" id="107" L6="AC500" L7="AC500" L8="AC500"/>
+    <MLText L1="• Powerful PLC featuring a wide range of performance, communications and I/O capabilities for industrial applications.&#xa;• The ideal choice for complex, high-speed machinery and networking solutions." L2="• Powerful PLC featuring a wide range of performance, communications and I/O capabilities for industrial applications.&#xa;• The ideal choice for complex, high-speed machinery and networking solutions." L3="• Powerful PLC featuring a wide range of performance, communications and I/O capabilities for industrial applications.&#xa;• The ideal choice for complex, high-speed machinery and networking solutions." L4="• Powerful PLC featuring a wide range of performance, communications and I/O capabilities for industrial applications.&#xa;• The ideal choice for complex, high-speed machinery and networking solutions." L5="• Powerful PLC featuring a wide range of performance, communications and I/O capabilities for industrial applications.&#xa;• The ideal choice for complex, high-speed machinery and networking solutions." id="114" L6="• Powerful PLC featuring a wide range of performance, communications and I/O capabilities for industrial applications.&#xa;• The ideal choice for complex, high-speed machinery and networking solutions." L7="• Powerful PLC featuring a wide range of performance, communications and I/O capabilities for industrial applications.&#xa;• The ideal choice for complex, high-speed machinery and networking solutions." L8="Label"/>
+   </MLTexts>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label7">
+   <wgtStyle width="500" font-color="rgb(255,255,255)" x="118" forcePaint="2" font-sizepx="24" y="10" font-family="Arial" font-bold="true" wrapping="true" cx="250" cy="18.94" height="40" vert-align="middle" keypad-type="None" font-size="18"/>
+   <links>
+    <lang class="MLTextLink" textid="55"/>
+   </links>
+  </object>
+  <object class="ImageWgt" id="ImageWgt1" static="true">
+   <wgtStyle width="150" imagePath="images/Automation Builder Small.bmp" x="20" y="120" cx="75" cy="77.50" height="155"/>
+  </object>
+  <object class="ImageWgt" id="ImageWgt2" static="true">
+   <wgtStyle width="100" imagePath="images/Library.jpg" x="30" y="433" cx="50" cy="70" height="140"/>
+  </object>
+  <object class="ImageWgt" id="ImageWgt5" static="true">
+   <wgtStyle width="84" imagePath="images/CP600-eCo_1.jpg" x="280" y="95" cx="42" discrete="false" cy="37.50" height="75"/>
+  </object>
+  <object class="LabelWgt" id="label3">
+   <wgtStyle width="120" font-color="rgb(70,70,70)" x="20" forcePaint="2" font-sizepx="13" y="90" font-family="Arial" font-bold="true" wrapping="true" cx="60" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="2">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label2">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="280" forcePaint="2" font-sizepx="13" y="70" font-family="Arial" font-bold="true" wrapping="true" cx="50" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="3">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt9.label1">
+   <wgtStyle width="230" font-color="rgb(23,30,40)" x="280" forcePaint="2" font-sizepx="10" y="200" font-family="Arial" wrapping="true" cx="115" cy="28.41" height="60" vert-align="top" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="4">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt9.label6">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="280" forcePaint="2" font-sizepx="12" y="180" font-family="Arial" font-bold="true" wrapping="true" cx="50" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="9"/>
+   <links>
+    <lang class="MLTextLink" textid="5">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="ImageWgt" id="GroupWgt1.ImageWgt3" static="true">
+   <wgtStyle width="83" imagePath="images/CP600_1.jpg" x="530" y="90" cx="41.50" discrete="false" cy="40" height="80"/>
+  </object>
+  <object class="ImageWgt" id="GroupWgt2.ImageWgt4" static="true">
+   <wgtStyle width="102" imagePath="images/CP600-Pro_1.jpg" x="780" y="90" cx="51" discrete="false" cy="42.50" height="85"/>
+  </object>
+  <object class="LabelWgt" id="GroupWgt7.label1">
+   <wgtStyle width="230" font-color="rgb(23,30,40)" x="780" forcePaint="2" font-sizepx="10" y="200" font-family="Arial" wrapping="true" cx="115" cy="28.41" height="60" vert-align="top" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="6">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt7.label6">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="780" forcePaint="2" font-sizepx="12" y="180" font-family="Arial" font-bold="true" wrapping="true" cx="50" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="9"/>
+   <links>
+    <lang class="MLTextLink" textid="8">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label4">
+   <wgtStyle width="180" font-color="rgb(23,30,40)" x="20" forcePaint="2" font-sizepx="10" y="310" font-family="Arial" wrapping="true" cx="90" cy="56.82" height="120" vert-align="top" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="9">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label5">
+   <wgtStyle width="150" font-color="rgb(70,70,70)" x="20" forcePaint="2" font-sizepx="12" y="290" font-family="Arial" font-bold="true" wrapping="true" cx="75" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="9"/>
+   <links>
+    <lang class="MLTextLink" textid="10">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label7">
+   <wgtStyle width="180" font-color="rgb(23,30,40)" x="20" forcePaint="2" font-sizepx="10" y="600" font-family="Arial" wrapping="true" cx="90" cy="28.41" height="60" vert-align="top" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="11">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label8">
+   <wgtStyle width="150" font-color="rgb(70,70,70)" x="20" forcePaint="2" font-sizepx="12" y="580" font-family="Arial" font-bold="true" wrapping="true" cx="75" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="9"/>
+   <links>
+    <lang class="MLTextLink" textid="12">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="ShapeWgt" id="circle1" static="true">
+   <wgtStyle width="10" x="140" y="96" fill="rgb(255,0,0)" cx="5" cy="5" rx="22" height="10" nodeName="ellipse" ry="19" stroke="rgb(255,0,0)"/>
+  </object>
+  <object class="ShapeWgt" id="rect2" static="true">
+   <wgtStyle width="80" x="149" y="99" fill="rgb(255,0,0)" cx="38.71" cy="1.50" height="3" nodeName="rect" stroke="rgb(255,0,0)"/>
+  </object>
+  <object class="ShapeWgt" id="rect3" static="true">
+   <wgtStyle width="3" x="226" y="100" fill="rgb(255,0,0)" cx="1.45" cy="253.50" height="507" nodeName="rect" stroke="rgb(255,0,0)"/>
+  </object>
+  <object class="ShapeWgt" id="circle2" static="true">
+   <wgtStyle width="10" x="260" y="184" fill="rgb(255,0,0)" cx="5" cy="5" rx="22" height="10" nodeName="ellipse" ry="19" stroke="rgb(255,0,0)"/>
+  </object>
+  <object class="ShapeWgt" id="circle3" static="true">
+   <wgtStyle width="10" x="260" y="392" fill="rgb(255,0,0)" cx="5" cy="5" rx="22" height="10" nodeName="ellipse" ry="19" stroke="rgb(255,0,0)"/>
+  </object>
+  <object class="ShapeWgt" id="circle4" static="true">
+   <wgtStyle width="10" x="260" y="601" fill="rgb(255,0,0)" cx="5" cy="5" rx="22" height="10" nodeName="ellipse" ry="19" stroke="rgb(255,0,0)"/>
+  </object>
+  <object class="ShapeWgt" id="rect7" static="true">
+   <wgtStyle width="35" x="228" y="187" fill="rgb(255,0,0)" cx="16.94" cy="1.50" height="3" nodeName="rect" stroke="rgb(255,0,0)"/>
+  </object>
+  <object class="ShapeWgt" id="rect8" static="true">
+   <wgtStyle width="35" x="228" y="395" fill="rgb(255,0,0)" cx="16.94" cy="1.50" height="3" nodeName="rect" stroke="rgb(255,0,0)"/>
+  </object>
+  <object class="ShapeWgt" id="rect9" static="true">
+   <wgtStyle width="35" x="228" y="604" fill="rgb(255,0,0)" cx="16.94" cy="1.50" height="3" nodeName="rect" stroke="rgb(255,0,0)"/>
+  </object>
+  <object class="GroupWgt" id="BtnRect" customType="Shape Button">
+   <wgtStyle width="60" x="360" forcePaint="1" y="178.73" cx="30" cy="9" height="18"/>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="BtnRect.btn">
+    <wgtStyle width="60" x="0" forcePaint="1" y="0" fill="rgb(230,230,230)" dx="1" form="rectangle" dy="-1" height="17.27" releasePath="images\win-like.svg" stroke="rgb(180,180,180)" needlePath="images\win-like-press.svg" type="momentary" value="0" pushColor="rgb(214,241,255)" needleColor="rgb(10,174,255)"/>
+    <links>
+     <action pageName="web_cp600eco.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="0" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="BtnRect.txt">
+    <wgtStyle width="60" font-color="rgb(70,70,70)" x="0" forcePaint="3" font-sizepx="10" y="2" font-family="Arial" wrapping="true" cx="30" cy="0" height="16" alignment="center" vert-align="middle" keypad-type="None" font-size="8"/>
+    <links>
+     <lang class="MLTextLink" textid="13"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnRect1" customType="Shape Button">
+   <wgtStyle width="60" x="610" y="178.74" cx="30" cy="9" height="18"/>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="BtnRect1.btn">
+    <wgtStyle width="60" x="0" y="0" fill="rgb(230,230,230)" dx="1" form="rectangle" dy="-1" height="17.26" releasePath="images\win-like.svg" stroke="rgb(180,180,180)" needlePath="images\win-like-press.svg" type="momentary" value="0" pushColor="rgb(214,241,255)" needleColor="rgb(10,174,255)"/>
+    <links>
+     <action pageName="web_cp600.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="0" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="BtnRect1.txt">
+    <wgtStyle width="60" font-color="rgb(70,70,70)" x="0" forcePaint="3" font-sizepx="10" y="2" font-family="Arial" wrapping="true" cx="30" cy="7.11" height="16" alignment="center" vert-align="middle" keypad-type="None" font-size="8"/>
+    <links>
+     <lang class="MLTextLink" textid="14"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnRect2" customType="Shape Button">
+   <wgtStyle width="60" x="860" forcePaint="1" y="178.74" cx="30" cy="9" height="18"/>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="BtnRect2.btn">
+    <wgtStyle width="60" x="0" forcePaint="1" y="0" fill="rgb(230,230,230)" dx="1" form="rectangle" dy="-1" height="17.26" releasePath="images\win-like.svg" stroke="rgb(180,180,180)" needlePath="images\win-like-press.svg" type="momentary" value="0" pushColor="rgb(214,241,255)" needleColor="rgb(10,174,255)"/>
+    <links>
+     <action pageName="web_cp600pro.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="0" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="BtnRect2.txt">
+    <wgtStyle width="60" font-color="rgb(70,70,70)" x="0" forcePaint="3" font-sizepx="10" y="2" font-family="Arial" wrapping="true" cx="30" cy="7.11" height="16" alignment="center" vert-align="middle" keypad-type="None" font-size="8"/>
+    <links>
+     <lang class="MLTextLink" textid="15"/>
+    </links>
+   </object>
+  </object>
+  <object class="LineWgt" id="GroupWgt2.line" static="true">
+   <wgtStyle width="980" x="280" y="265" cx="15" cy="10" height="0" stroke="rgb(120,120,120)" anchorIdx="1"/>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label4">
+   <wgtStyle width="250" font-color="rgb(70,70,70)" x="280" forcePaint="2" font-sizepx="13" y="267" font-family="Arial" font-bold="true" wrapping="true" cx="125" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="16">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label5">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="280" forcePaint="2" font-sizepx="13" y="487" font-family="Arial" font-bold="true" wrapping="true" cx="50" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="17">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label1">
+   <wgtStyle width="230" font-color="rgb(23,30,40)" x="280" forcePaint="2" font-sizepx="10" y="407" font-family="Arial" wrapping="true" cx="115" cy="35.51" height="75" vert-align="top" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="43">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label6">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="280" forcePaint="2" font-sizepx="12" y="387" font-family="Arial" font-bold="true" wrapping="true" cx="50" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="9"/>
+   <links>
+    <lang class="MLTextLink" textid="44">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label2">
+   <wgtStyle width="230" font-color="rgb(23,30,40)" x="280" forcePaint="2" font-sizepx="10" y="617" font-family="Arial" wrapping="true" cx="115" cy="47.35" height="100" vert-align="top" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="45">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label3">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="280" forcePaint="2" font-sizepx="12" y="597" font-family="Arial" font-bold="true" wrapping="true" cx="50" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="9"/>
+   <links>
+    <lang class="MLTextLink" textid="46">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label1">
+   <wgtStyle width="230" font-color="rgb(23,30,40)" x="530" forcePaint="2" font-sizepx="10" y="407" font-family="Arial" wrapping="true" cx="115" cy="35.51" height="75" vert-align="top" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="114">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label6">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="530" forcePaint="2" font-sizepx="12" y="387" font-family="Arial" font-bold="true" wrapping="true" cx="50" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="9"/>
+   <links>
+    <lang class="MLTextLink" textid="107">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label2">
+   <wgtStyle width="230" font-color="rgb(23,30,40)" x="530" forcePaint="2" font-sizepx="10" y="617" font-family="Arial" wrapping="true" cx="115" cy="52.09" height="110" vert-align="top" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="53">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label3">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="530" forcePaint="2" font-sizepx="12" y="597" font-family="Arial" font-bold="true" wrapping="true" cx="50" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="9"/>
+   <links>
+    <lang class="MLTextLink" textid="54">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label1">
+   <wgtStyle width="230" font-color="rgb(23,30,40)" x="780" forcePaint="2" font-sizepx="10" y="407" font-family="Arial" wrapping="true" cx="115" cy="35.51" height="75" vert-align="top" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="47">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label6">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="780" forcePaint="2" font-sizepx="12" y="387" font-family="Arial" font-bold="true" wrapping="true" cx="50" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="9"/>
+   <links>
+    <lang class="MLTextLink" textid="48">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label2">
+   <wgtStyle width="230" font-color="rgb(23,30,40)" x="780" forcePaint="2" font-sizepx="10" y="617" font-family="Arial" wrapping="true" cx="115" cy="47.35" height="100" vert-align="top" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="99">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label3">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="780" forcePaint="2" font-sizepx="12" y="597" font-family="Arial" font-bold="true" wrapping="true" cx="50" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="9"/>
+   <links>
+    <lang class="MLTextLink" textid="87">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label1">
+   <wgtStyle width="230" font-color="rgb(23,30,40)" x="1030" forcePaint="2" font-sizepx="10" y="407" font-family="Arial" wrapping="true" cx="115" cy="35.51" height="75" vert-align="top" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="51">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label6">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="1030" forcePaint="2" font-sizepx="12" y="387" font-family="Arial" font-bold="true" wrapping="true" cx="50" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="9"/>
+   <links>
+    <lang class="MLTextLink" textid="52">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label2">
+   <wgtStyle width="230" font-color="rgb(23,30,40)" x="1030" forcePaint="2" font-sizepx="10" y="617" font-family="Arial" wrapping="true" cx="115" cy="47.35" height="100" vert-align="top" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="77">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label3">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="1030" forcePaint="2" font-sizepx="12" y="597" font-family="Arial" font-bold="true" wrapping="true" cx="50" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="9"/>
+   <links>
+    <lang class="MLTextLink" textid="69">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="ImageWgt" id="GroupWgt2.ImageWgt3" static="true">
+   <wgtStyle width="100" imagePath="images/AC500-eCo_Small.bmp" x="280" y="292" cx="50" discrete="false" cy="42.50" height="85"/>
+  </object>
+  <object class="ImageWgt" id="GroupWgt1.ImageWgt4" static="true">
+   <wgtStyle width="118" imagePath="images/AC500_Small.bmp" x="530" y="292" cx="59" discrete="false" cy="42.50" height="85"/>
+  </object>
+  <object class="ImageWgt" id="GroupWgt2.ImageWgt6" static="true">
+   <wgtStyle width="170" imagePath="images/AC500-S_Small.bmp" x="1030" y="292" cx="85" discrete="false" cy="42.50" height="85"/>
+  </object>
+  <object class="ImageWgt" id="GroupWgt2.ImageWgt8" static="true">
+   <wgtStyle width="68" imagePath="images/AC500-XC_Small.bmp" x="780" y="292" cx="34" discrete="false" cy="42.50" height="85"/>
+  </object>
+  <object class="ImageWgt" id="GroupWgt2.ImageWgt7" static="true">
+   <wgtStyle width="130" imagePath="images/S500_Small.bmp" x="530" y="507" cx="65" discrete="false" cy="42.50" height="85"/>
+  </object>
+  <object class="ImageWgt" id="GroupWgt2.ImageWgt9" static="true">
+   <wgtStyle width="170" imagePath="images/S500-eCo_Small.bmp" x="280" y="507" cx="85" discrete="false" cy="42.50" height="85"/>
+  </object>
+  <object class="ImageWgt" id="GroupWgt2.ImageWgt10" static="true">
+   <wgtStyle width="148" imagePath="images/S500-S_Small.bmp" x="1030" y="507" cx="74" discrete="false" cy="42.50" height="85"/>
+  </object>
+  <object class="ImageWgt" id="GroupWgt2.ImageWgt11" static="true">
+   <wgtStyle width="76" imagePath="images/S500-XC_Small.bmp" x="780" y="507" cx="38" discrete="false" cy="42.50" height="85"/>
+  </object>
+  <object class="LineWgt" id="GroupWgt2.line1">
+   <wgtStyle width="980" x="280" forcePaint="1" y="485" cx="15" cy="10" height="0" stroke="rgb(120,120,120)" anchorIdx="1"/>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label1">
+   <wgtStyle width="230" font-color="rgb(23,30,40)" x="530" forcePaint="2" font-sizepx="10" y="200" font-family="Arial" wrapping="true" cx="115" cy="28.41" height="60" vert-align="top" keypad-type="None" font-size="8"/>
+   <links>
+    <lang class="MLTextLink" textid="49">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label6">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="530" forcePaint="3" font-sizepx="12" y="180" font-family="Arial" font-bold="true" wrapping="true" cx="50" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="9"/>
+   <links>
+    <lang class="MLTextLink" textid="50">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+ </object>
+</wgtPage>

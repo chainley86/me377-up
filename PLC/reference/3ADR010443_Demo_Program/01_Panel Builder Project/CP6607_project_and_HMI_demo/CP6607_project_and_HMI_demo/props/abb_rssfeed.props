@@ -1,0 +1,15 @@
+<defs>
+ <g id="custom_properties" showChildNodes="0" inherit="basicgroup_properties" attributeName="ABB_RSSFeed">
+  <info></info>
+  <text display="RSS Source" attributeType="rssfeed" read_only="false" attributeName="*.RSSFeed.RSSSource" isCompound="true">RSS Source</text>
+  <text display="UpdateRate" attributeType="list:15,30" editChild="true" read_only="false" attributeName="*.RSSFeed.UpdateRate">Update Rate in mins</text>
+  <text display="Browser" attributeType="listidx:Default Browser,Widget" read_only="false" updateProps="true" attributeName="*.RSSFeed.actionType" isCompound="true">Select whether to show in default browser or widget</text>
+  <text display="Current Item" default="true" attributeType="float" alias="*.CurItem.value" attributeName="*.CurItem.value"/>
+  <text display="Title Font" attributeType="fontList" adv="true" read_only="false" attributeName="*.Title.font-family"/>
+  <text display="Title Color" attributeType="color" editChild="true" defaultXform="ColorPaletteCustomXForm" attachTag="true" adv="true" read_only="false" attributeName="*.Title.fill"/>
+  <text display="Title Size" attributeType="integer" editChild="true" attachTag="true" adv="true" read_only="false" attributeName="*.Title.font-size"/>
+  <text display="Text Font" attributeType="fontList" adv="true" read_only="false" attributeName="*.Desc.font-family"/>
+  <text display="Text Color" attributeType="color" editChild="true" defaultXform="ColorPaletteCustomXForm" attachTag="true" adv="true" read_only="false" attributeName="*.Desc.fill"/>
+  <text display="Text Size" attributeType="integer" attachTag="true" adv="true" read_only="false" attributeName="*.Desc.font-size"/>
+ </g>
+</defs>

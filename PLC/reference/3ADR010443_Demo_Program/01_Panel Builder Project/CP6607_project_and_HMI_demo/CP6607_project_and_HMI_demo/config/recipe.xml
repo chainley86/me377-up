@@ -1,0 +1,15 @@
+<recipes location="" deviceType="0">
+ <version/>
+ <recipe enableAudit="false" auditBuff="" setSize="3" subT="1" eventT="18" id="1" name="Latte" labels="Mild,Normal,Extra">
+  <Element tag="Recipe_01" name="Espresso"/>
+  <Element tag="Recipe_02" name="Milk"/>
+  <Element tag="Recipe_03" name="Water"/>
+  <Element tag="Recipe_04" name="Sugar"/>
+ </recipe>
+ <recipe enableAudit="false" auditBuff="" setSize="3" subT="1" eventT="18" id="2" name="Chocolate" labels="Mild,Normal,Extra">
+  <Element tag="Recipe_11" name="Cocoa"/>
+  <Element tag="Recipe_12" name="Milk"/>
+  <Element tag="Recipe_13" name="Water"/>
+  <Element tag="Recipe_14" name="Sugar"/>
+ </recipe>
+</recipes>

@@ -1,0 +1,93 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="Help_Table" singleInstance="true" pageType="modal" pageSize="700,400" class="DialogWgt" dataWndSize="0,70" downloadPrepDone="true" px="0" usedFonts="Arial,SimHei" py="0" titlebar="false" staticFile="opt/help_table.png" dynPosition="false" id="Help_Table" titleName="" staticOptEnable="true">
+  <wgtStyle width="700" x="0" y="0" height="400" ver="020800424" v="02.08.00.424"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="English" defaultFont="Arial"/>
+    <lang removable="false" langCode="it-IT" langId="L2" writingsystem="Any" name="Italian" defaultFont="Arial"/>
+    <lang removable="false" langCode="de-DE" langId="L3" writingsystem="Any" name="German" defaultFont="Arial"/>
+    <lang removable="false" langCode="fr-FR" langId="L4" writingsystem="Any" name="French" defaultFont="Arial"/>
+    <lang removable="false" langCode="zh-CN" langId="L5" writingsystem="Any" name="Chinese" defaultFont="SimHei"/>
+    <lang removable="false" langCode="grc" langId="L6" writingsystem="Any" name="Greek" defaultFont="Arial"/>
+    <lang removable="false" langCode="es-ES" langId="L7" writingsystem="Any" name="Spanish" defaultFont="Arial"/>
+    <lang removable="false" langCode="ru-RU" langId="L8" writingsystem="Any" name="Russian" defaultFont="Arial"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="Table: JavaScript" L2="Message" L3="Message" L4="Message" L5="Message" id="0" L6="Message" L7="Message" L8="Message"/>
+    <MLText L1="Table: Data Source" L2="Message" L3="Message" L4="Message" L5="Message" id="4" L6="Message" L7="Message" L8="Message"/>
+    <MLText L1="As an alternative to the &quot;TableDataSrcWgt&quot;, data to fill the table can be provided by JavaScript code. In this case, we have to fill an array called &quot;model&quot; and apply this model to the table widget. &#xa;&#xa;The table, in this case, have only one row type that is a &quot;Label&quot; widget and we will modify the property &quot;text&quot; by JavaScript.&#xa;The rows content will come from an array called &quot;alarms&quot; so using a for loop we are filling the model array with alarm array content." L2="Message" L3="Message" L4="Message" L5="Message" id="2" L6="Message" L7="Message" L8="Message"/>
+    <MLText L1="Table data source can be the widget called &quot;TableDataSrcWgt&quot;. &#xa;&#xa;Into this example the table have two types of rows:&#xa;&#xa;1. The header, containing &quot;Description&quot; and &quot;Value&quot; labels. For this reason the first row of TableDataSrcWgt is empty (Row type 0)&#xa;&#xa;2. The main row template (Row type 1) defined by a &quot;Label&quot; and a &quot;Field&quot;. The TableDataSrcWgt will fill the &quot;Field&quot; attaching to a tag called &quot;curve1, curve2, and &quot;Label&quot; with the description of the tag.&#xa;&#xa;" L2="Message" L3="Message" L4="Message" L5="Message" id="3" L6="Message" L7="Message" L8="Message"/>
+   </MLTexts>
+  </object>
+  <object class="GroupWgt" id="GroupWgt1">
+   <wgtStyle width="700" x="0" y="0" cx="350" cy="200" height="400" lock="true"/>
+   <object class="ImageWgt" id="GroupWgt1.image1" static="true">
+    <wgtStyle width="24" imagePath="images/UI_Close_24.png" x="666" y="10" cx="12" cy="12" height="24"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="GroupWgt1.hotspotbtn">
+    <wgtStyle width="40" x="658" y="2" fill="rgb(160,160,164)" dx="1" cx="19.69" form="hotspot" dy="-1" cy="19.61" height="40" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+    <links>
+     <action pageName="" class="CloseDialogAction" attribute="onMouseClick" event="onMouseClick" actionID="0" closeParam="Selected" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.rect6" static="true">
+    <wgtStyle width="2" x="0" y="0" fill="rgb(180,180,180)" cx="0.97" cy="200" height="400" nodeName="rect" stroke="rgb(180,180,180)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.rect7" static="true">
+    <wgtStyle width="700" x="0" y="0" fill="rgb(180,180,180)" cx="339.50" cy="1" height="2" nodeName="rect" stroke="rgb(180,180,180)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.rect1" static="true">
+    <wgtStyle width="2" x="698" y="0" fill="rgb(180,180,180)" cx="0.97" cy="200" height="400" nodeName="rect" stroke="rgb(180,180,180)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.rect2" static="true">
+    <wgtStyle width="700" x="0" y="398" fill="rgb(180,180,180)" cx="339.50" cy="1" height="2" nodeName="rect" stroke="rgb(180,180,180)"/>
+   </object>
+  </object>
+  <object class="MsgTextWgt" id="msgtext1">
+   <wgtStyle font-bold="true" forcePaint="10" font-family="SimHei" font-sizepx="16" cx="98.30" cy="9.47" x="400" y="10" viewindex="false" vert-align="middle" text="" max="1" value="0" keypad-type="None" font-color="rgb(70,70,70)" min="0" width="200" continous="true" height="20" font-size="12">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+    </msgtxt>
+   </wgtStyle>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="short" attribute="value" tag="Help_Table" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLMsgLink:messages:">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="SimHei" L6="Arial" L7="Arial" L8="Arial"/>
+     <textid idx="0" val="4"/>
+     <textid idx="1" val="0"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MsgTextWgt" id="msgtext2">
+   <wgtStyle forcePaint="10" font-family="SimHei" font-sizepx="13" cx="142.54" cy="151.58" x="400" y="50" viewindex="false" vert-align="top" text="" max="1" value="1" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="290" wrapping="true" continous="true" height="320" font-size="10">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+    </msgtxt>
+   </wgtStyle>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="short" attribute="value" tag="Help_Table" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLMsgLink:messages:">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="SimHei" L6="Arial" L7="Arial" L8="Arial"/>
+     <textid idx="0" val="3"/>
+     <textid idx="1" val="2"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MultiStateImageWgt" id="MultistateImage1">
+   <wgtStyle width="370" imagePath="images/Table_DataSource.jpg,images/Table_JavaScript.jpg" x="12" forcePaint="8" y="9" cx="185" discrete="false" cy="190" height="380" frame="1"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="short" attribute="frame" tag="Help_Table" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="GroupSubscribeWgt" id="Help_Table@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+ </object>
+</wgtPage>

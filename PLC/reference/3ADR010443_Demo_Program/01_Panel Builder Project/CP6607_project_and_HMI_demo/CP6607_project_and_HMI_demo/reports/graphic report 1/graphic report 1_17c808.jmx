@@ -1,0 +1,59 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="graphic report 1_17c808" pageType="report" pageSize="744,1052" class="ReportPageWgt" dataWndSize="0,70" downloadPrepDone="false" report-cover-page="0" templateFile="graphic report 1 header footer.jmx" report-header-height="0" usedFonts="Arial" staticFile="opt/graphic report 1_17c808.png" report-name="Graphic Report 1" id="graphic report 1_17c808" report-footer-height="0" staticOptEnable="false">
+  <wgtStyle width="744" x="0" y="0" height="1052" ver="020800424" v="02.08.00.424"/>
+  <object class="ImageWgt" id="image1">
+   <wgtStyle width="710" imagePath="images/Reports.jpg" x="19" forcePaint="1" y="330" cx="355" cy="256" height="512"/>
+  </object>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="English" defaultFont="Arial"/>
+    <lang removable="false" langCode="it-IT" langId="L2" writingsystem="Any" name="Italian" defaultFont="Arial"/>
+    <lang removable="false" langCode="de-DE" langId="L3" writingsystem="Any" name="German" defaultFont="Arial"/>
+    <lang removable="false" langCode="fr-FR" langId="L4" writingsystem="Any" name="French" defaultFont="Arial"/>
+    <lang removable="false" langCode="zh-CN" langId="L5" writingsystem="Any" name="Chinese" defaultFont="SimHei"/>
+    <lang removable="false" langCode="grc" langId="L6" writingsystem="Any" name="Greek" defaultFont="Arial"/>
+    <lang removable="false" langCode="es-ES" langId="L7" writingsystem="Any" name="Spanish" defaultFont="Arial"/>
+    <lang removable="false" langCode="ru-RU" langId="L8" writingsystem="Any" name="Russian" defaultFont="Arial"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="—&#xa;Various options for tailor made HMI solutions:&#xa;• PB610 Panel Builder 600 HMI applications&#xa;• Visualization of AC500 web servers&#xa;• Mobile remote access to HMI applications&#xa;• PB610-R PC runtime for Windows platforms" L2="—&#xa;Various options for tailor made HMI solutions:&#xa;• PB610 Panel Builder 600 HMI applications&#xa;• Visualization of AC500 web servers&#xa;• Mobile remote access to HMI applications&#xa;• PB610-R PC runtime for Windows platforms" L3="—&#xa;Various options for tailor made HMI solutions:&#xa;• PB610 Panel Builder 600 HMI applications&#xa;• Visualization of AC500 web servers&#xa;• Mobile remote access to HMI applications&#xa;• PB610-R PC runtime for Windows platforms" L4="—&#xa;Various options for tailor made HMI solutions:&#xa;• PB610 Panel Builder 600 HMI applications&#xa;• Visualization of AC500 web servers&#xa;• Mobile remote access to HMI applications&#xa;• PB610-R PC runtime for Windows platforms" L5="—&#xa;Various options for tailor made HMI solutions:&#xa;• PB610 Panel Builder 600 HMI applications&#xa;• Visualization of AC500 web servers&#xa;• Mobile remote access to HMI applications&#xa;• PB610-R PC runtime for Windows platforms" id="5" L6="—&#xa;Various options for tailor made HMI solutions:&#xa;• PB610 Panel Builder 600 HMI applications&#xa;• Visualization of AC500 web servers&#xa;• Mobile remote access to HMI applications&#xa;• PB610-R PC runtime for Windows platforms" L7="—&#xa;Various options for tailor made HMI solutions:&#xa;• PB610 Panel Builder 600 HMI applications&#xa;• Visualization of AC500 web servers&#xa;• Mobile remote access to HMI applications&#xa;• PB610-R PC runtime for Windows platforms" L8="—&#xa;Various options for tailor made HMI solutions:&#xa;• PB610 Panel Builder 600 HMI applications&#xa;• Visualization of AC500 web servers&#xa;• Mobile remote access to HMI applications&#xa;• PB610-R PC runtime for Windows platforms"/>
+    <MLText L1="—&#xa;• Brilliant colored display&#xa;• Seven different screen sizes" L2="—&#xa;• Brilliant colored display&#xa;• Seven different screen sizes" L3="—&#xa;• Brilliant colored display&#xa;• Seven different screen sizes" L4="—&#xa;• Brilliant colored display&#xa;• Seven different screen sizes" L5="—&#xa;• Brilliant colored display&#xa;• Seven different screen sizes" id="9" L6="—&#xa;• Brilliant colored display&#xa;• Seven different screen sizes" L7="—&#xa;• Brilliant colored display&#xa;• Seven different screen sizes" L8="—&#xa;• Brilliant colored display&#xa;• Seven different screen sizes"/>
+    <MLText L1="—&#xa;• Multi-touch&#xa;• Brilliant true glass screen&#xa;• Fast ETH 10/100/1000&#xa;• Operating temp.: -20...+60 °C&#xa;• Screen sizes from 5&quot; to 21.5&quot;" L2="—&#xa;• Multi-touch&#xa;• Brilliant true glass screen&#xa;• Fast ETH 10/100/1000&#xa;• Operating temp.: -20...+60 °C&#xa;• Screen sizes from 5&quot; to 21.5&quot;" L3="—&#xa;• Multi-touch&#xa;• Brilliant true glass screen&#xa;• Fast ETH 10/100/1000&#xa;• Operating temp.: -20...+60 °C&#xa;• Screen sizes from 5&quot; to 21.5&quot;" L4="—&#xa;• Multi-touch&#xa;• Brilliant true glass screen&#xa;• Fast ETH 10/100/1000&#xa;• Operating temp.: -20...+60 °C&#xa;• Screen sizes from 5&quot; to 21.5&quot;" L5="—&#xa;• Multi-touch&#xa;• Brilliant true glass screen&#xa;• Fast ETH 10/100/1000&#xa;• Operating temp.: -20...+60 °C&#xa;• Screen sizes from 5&quot; to 21.5&quot;" id="10" L6="—&#xa;• Multi-touch&#xa;• Brilliant true glass screen&#xa;• Fast ETH 10/100/1000&#xa;• Operating temp.: -20...+60 °C&#xa;• Screen sizes from 5&quot; to 21.5&quot;" L7="—&#xa;• Multi-touch&#xa;• Brilliant true glass screen&#xa;• Fast ETH 10/100/1000&#xa;• Operating temp.: -20...+60 °C&#xa;• Screen sizes from 5&quot; to 21.5&quot;" L8="—&#xa;• Multi-touch&#xa;• Brilliant true glass screen&#xa;• Fast ETH 10/100/1000&#xa;• Operating temp.: -20...+60 °C&#xa;• Screen sizes from 5&quot; to 21.5&quot;"/>
+    <MLText L1="—&#xa;• Slim design for easy installation&#xa;even in compact spaces&#xa;• Robust plastic housing" L2="—&#xa;• Slim design for easy installation&#xa;even in compact spaces&#xa;• Robust plastic housing" L3="—&#xa;• Slim design for easy installation&#xa;even in compact spaces&#xa;• Robust plastic housing" L4="—&#xa;• Slim design for easy installation&#xa;even in compact spaces&#xa;• Robust plastic housing" L5="—&#xa;• Slim design for easy installation&#xa;even in compact spaces&#xa;• Robust plastic housing" id="11" L6="—&#xa;• Slim design for easy installation&#xa;even in compact spaces&#xa;• Robust plastic housing" L7="—&#xa;• Slim design for easy installation&#xa;even in compact spaces&#xa;• Robust plastic housing" L8="—&#xa;• Slim design for easy installation&#xa;even in compact spaces&#xa;• Robust plastic housing"/>
+   </MLTexts>
+  </object>
+  <object class="LabelWgt" id="label3">
+   <wgtStyle width="350" font-color="rgb(23,30,40)" x="30" forcePaint="2" font-sizepx="16" y="190" font-family="Arial" wrapping="true" cx="175" cy="60" height="120" vert-align="top" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="5">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label4">
+   <wgtStyle width="250" font-color="rgb(23,30,40)" x="450" forcePaint="3" font-sizepx="16" y="300" font-family="Arial" wrapping="true" cx="125" cy="30" height="60" vert-align="top" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="9">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label5">
+   <wgtStyle width="240" font-color="rgb(23,30,40)" x="50" forcePaint="3" font-sizepx="16" y="760" font-family="Arial" wrapping="true" cx="120" cy="60" height="120" vert-align="top" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="10">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label6">
+   <wgtStyle width="260" font-color="rgb(23,30,40)" x="400" forcePaint="3" font-sizepx="16" y="840" font-family="Arial" wrapping="true" cx="130" cy="40" height="80" vert-align="top" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="11">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+ </object>
+</wgtPage>

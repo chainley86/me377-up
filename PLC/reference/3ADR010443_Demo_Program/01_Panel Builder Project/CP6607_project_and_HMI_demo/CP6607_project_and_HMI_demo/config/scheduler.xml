@@ -1,0 +1,320 @@
+<scheduledActions>
+ <multiLangs>
+  <langs defLangId="L1" curLangId="L1">
+   <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="English" defaultFont="Arial"/>
+   <lang removable="false" langCode="it-IT" langId="L2" writingsystem="Any" name="Italian" defaultFont="Arial"/>
+   <lang removable="false" langCode="de-DE" langId="L3" writingsystem="Any" name="German" defaultFont="Arial"/>
+   <lang removable="false" langCode="fr-FR" langId="L4" writingsystem="Any" name="French" defaultFont="Arial"/>
+   <lang removable="false" langCode="zh-CN" langId="L5" writingsystem="Any" name="Chinese" defaultFont="SimHei"/>
+   <lang removable="false" langCode="grc" langId="L6" writingsystem="Any" name="Greek" defaultFont="Arial"/>
+   <lang removable="false" langCode="es-ES" langId="L7" writingsystem="Any" name="Spanish" defaultFont="Arial"/>
+   <lang removable="false" langCode="ru-RU" langId="L8" writingsystem="Any" name="Russian" defaultFont="Arial"/>
+  </langs>
+  <MLTexts/>
+ </multiLangs>
+ <timedAction>
+  <id>Schedule_Every</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone place="" longitude="" utc="" latitude=""/>
+  <second>01</second>
+  <minute>00</minute>
+  <hour>00</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Every</schType>
+  <actions enable="1" id="1">
+   <macroAction actionFunction="toggleTag" parameters="Schedule_Every;0" actionID="0"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Schedule_Hourly</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone place="" longitude="" utc="" latitude=""/>
+  <second>0</second>
+  <minute>00</minute>
+  <hour>*</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Hourly</schType>
+  <actions enable="1" id="2">
+   <macroAction actionFunction="toggleTag" parameters="Schedule_Hours;0" actionID="1"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Schedule_Daily</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone place="" longitude="" utc="" latitude=""/>
+  <second>0</second>
+  <minute>00</minute>
+  <hour>00</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Daily</schType>
+  <actions enable="1" id="3">
+   <macroAction actionFunction="toggleTag" parameters="Schedule_Daily;0" actionID="2"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Schedule_Condition</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition>Schedule_Condition</condition>
+  <mode>Time</mode>
+  <timezone place="" longitude="" utc="" latitude=""/>
+  <second>01</second>
+  <minute>00</minute>
+  <hour>00</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Every</schType>
+  <actions enable="1" id="4">
+   <macroAction actionFunction="toggleTag" parameters="Schedule_Every2;0" actionID="3"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Trend_Temperature1</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition>Trend_MotorTemp_EN1</condition>
+  <mode>Time</mode>
+  <timezone place="" longitude="" utc="" latitude=""/>
+  <second>00</second>
+  <minute>01</minute>
+  <hour>00</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Every</schType>
+  <actions enable="1" id="5">
+   <macroAction actionFunction="stepTag" StepOverLimit="true" DataSource="_TagMgr" parameters="Trend_MotorTemp;0.33;true;42" SrcType="Tag" actionID="4" Step="0.33" StepLimit="42" TagName="Trend_MotorTemp"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Trend_Temperature2</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition>Trend_MotorTemp_EN2</condition>
+  <mode>Time</mode>
+  <timezone place="" longitude="" utc="" latitude=""/>
+  <second>00</second>
+  <minute>01</minute>
+  <hour>00</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Every</schType>
+  <actions enable="1" id="6">
+   <macroAction actionFunction="stepTag" StepOverLimit="true" DataSource="_TagMgr" parameters="Trend_MotorTemp;-0.29;true;26" SrcType="Tag" actionID="5" Step="-0.29" StepLimit="26" TagName="Trend_MotorTemp"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Trend_TemperatureEN</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone place="" longitude="" utc="" latitude=""/>
+  <second>00</second>
+  <minute>30</minute>
+  <hour>00</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Every</schType>
+  <actions enable="1" id="7">
+   <macroAction actionFunction="toggleTag" parameters="Trend_MotorTemp_EN1;0" actionID="6"/>
+   <macroAction actionFunction="toggleTag" parameters="Trend_MotorTemp_EN2;0" actionID="7"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Trend_MotorStarting1</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition>Trend_Motor_Start</condition>
+  <mode>Time</mode>
+  <timezone place="" longitude="" utc="" latitude=""/>
+  <second>01</second>
+  <minute>00</minute>
+  <hour>00</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Every</schType>
+  <actions enable="1" id="10">
+   <macroAction actionFunction="stepTag" StepOverLimit="true" DataSource="_TagMgr" parameters="Trend_MotorCurrent;43.33;true;142.5" SrcType="Tag" actionID="9" Step="43.33" StepLimit="142.5" TagName="Trend_MotorCurrent"/>
+   <macroAction actionFunction="stepTag" StepOverLimit="true" DataSource="_TagMgr" parameters="Trend_MotorSpeed;299;true;1485" SrcType="Tag" actionID="13" Step="299" StepLimit="1485" TagName="Trend_MotorSpeed"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Trend_MotorStarting2</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition>Trend_Motor_Start</condition>
+  <mode>Time</mode>
+  <timezone place="" longitude="" utc="" latitude=""/>
+  <second>05</second>
+  <minute>00</minute>
+  <hour>00</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Every</schType>
+  <actions enable="1" id="8">
+   <macroAction actionFunction="setBit" parameters="Trend_Motor_Started;0" actionID="8"/>
+   <macroAction actionFunction="resetBit" parameters="Trend_Motor_Start;0" actionID="12"/>
+   <macroAction actionFunction="stepTag" StepOverLimit="true" DataSource="_TagMgr" parameters="Trend_MotorSpeed;299;true;1485" SrcType="Tag" actionID="17" Step="299" StepLimit="1485" TagName="Trend_MotorSpeed"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Trend_MotorStarted</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition>Trend_Motor_Started</condition>
+  <mode>Time</mode>
+  <timezone place="" longitude="" utc="" latitude=""/>
+  <second>01</second>
+  <minute>00</minute>
+  <hour>00</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Every</schType>
+  <actions enable="1" id="9">
+   <macroAction actionFunction="stepTag" StepOverLimit="true" DataSource="_TagMgr" parameters="Trend_MotorCurrent;-55;true;75.7" SrcType="Tag" actionID="10" Step="-55" StepLimit="75.7" TagName="Trend_MotorCurrent"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Trend_MotorStoping1</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition>Trend_Motor_Stop</condition>
+  <mode>Time</mode>
+  <timezone place="" longitude="" utc="" latitude=""/>
+  <second>01</second>
+  <minute>00</minute>
+  <hour>00</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Every</schType>
+  <actions enable="1" id="11">
+   <macroAction actionFunction="stepTag" StepOverLimit="true" DataSource="_TagMgr" parameters="Trend_MotorCurrent;35.8;true;155.3" SrcType="Tag" actionID="11" Step="35.8" StepLimit="155.3" TagName="Trend_MotorCurrent"/>
+   <macroAction actionFunction="stepTag" StepOverLimit="true" DataSource="_TagMgr" parameters="Trend_MotorSpeed;-299;true;0" SrcType="Tag" actionID="16" Step="-299" StepLimit="0" TagName="Trend_MotorSpeed"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Trend_MotorStoping2</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition>Trend_Motor_Stop</condition>
+  <mode>Time</mode>
+  <timezone place="" longitude="" utc="" latitude=""/>
+  <second>03</second>
+  <minute>00</minute>
+  <hour>00</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Every</schType>
+  <actions enable="1" id="12">
+   <macroAction actionFunction="setBit" parameters="Trend_Motor_Stopped;0" actionID="14"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Trend_MotorStopped</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition>Trend_Motor_Stopped</condition>
+  <mode>Time</mode>
+  <timezone place="" longitude="" utc="" latitude=""/>
+  <second>01</second>
+  <minute>00</minute>
+  <hour>00</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Every</schType>
+  <actions enable="1" id="13">
+   <macroAction actionFunction="stepTag" StepOverLimit="true" DataSource="_TagMgr" parameters="Trend_MotorCurrent;-70;true;0" SrcType="Tag" actionID="15" Step="-70" StepLimit="0" TagName="Trend_MotorCurrent"/>
+  </actions>
+ </timedAction>
+ <timedAction>
+  <id>Table_Simulation</id>
+  <enable>true</enable>
+  <onstartup>false</onstartup>
+  <executeonlyatstartup>false</executeonlyatstartup>
+  <condition></condition>
+  <mode>Time</mode>
+  <timezone place="" longitude="" utc="" latitude=""/>
+  <second>01</second>
+  <minute>00</minute>
+  <hour>00</hour>
+  <dayOfMonth>*</dayOfMonth>
+  <month>*</month>
+  <year>*</year>
+  <dayOfWeek>*</dayOfWeek>
+  <priority>1</priority>
+  <schType>Every</schType>
+  <actions enable="1" id="14">
+   <macroAction actionFunction="stepTag" StepOverLimit="false" DataSource="_TagMgr" parameters="Table_Data01;2;false;0" SrcType="Tag" actionID="18" Step="2" StepLimit="0" TagName="Table_Data01"/>
+   <macroAction actionFunction="stepTag" StepOverLimit="false" DataSource="_TagMgr" parameters="Table_Data02;5;false;0" SrcType="Tag" actionID="19" Step="5" StepLimit="0" TagName="Table_Data02"/>
+   <macroAction actionFunction="stepTag" StepOverLimit="false" DataSource="_TagMgr" parameters="Table_Data03;10;false;0" SrcType="Tag" actionID="20" Step="10" StepLimit="0" TagName="Table_Data03"/>
+   <macroAction actionFunction="stepTag" StepOverLimit="false" DataSource="_TagMgr" parameters="Table_Data04;1;false;0" SrcType="Tag" actionID="21" Step="1" StepLimit="0" TagName="Table_Data04"/>
+   <macroAction actionFunction="stepTag" StepOverLimit="false" DataSource="_TagMgr" parameters="Table_Data05;7;false;0" SrcType="Tag" actionID="22" Step="7" StepLimit="0" TagName="Table_Data05"/>
+   <macroAction actionFunction="stepTag" StepOverLimit="false" DataSource="_TagMgr" parameters="Table_Data06;8;false;0" SrcType="Tag" actionID="23" Step="8" StepLimit="0" TagName="Table_Data06"/>
+   <macroAction actionFunction="stepTag" StepOverLimit="false" DataSource="_TagMgr" parameters="Table_Data07;4;false;0" SrcType="Tag" actionID="24" Step="4" StepLimit="0" TagName="Table_Data07"/>
+  </actions>
+ </timedAction>
+</scheduledActions>

@@ -1,0 +1,264 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="Table" pageSize="800,480" class="PageWgt" scriptFile="table.js" dataWndSize="0,70" downloadPrepDone="true" templateFile="background.jmx" usedFonts="Arial,SimHei" staticFile="opt/table.png" id="Table" staticOptEnable="true">
+  <wgtStyle width="800" x="0" y="0" height="480" ver="020800424" v="02.08.00.424"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="English" defaultFont="Arial"/>
+    <lang removable="false" langCode="it-IT" langId="L2" writingsystem="Any" name="Italian" defaultFont="Arial"/>
+    <lang removable="false" langCode="de-DE" langId="L3" writingsystem="Any" name="German" defaultFont="Arial"/>
+    <lang removable="false" langCode="fr-FR" langId="L4" writingsystem="Any" name="French" defaultFont="Arial"/>
+    <lang removable="false" langCode="zh-CN" langId="L5" writingsystem="Any" name="Chinese" defaultFont="SimHei"/>
+    <lang removable="false" langCode="grc" langId="L6" writingsystem="Any" name="Greek" defaultFont="Arial"/>
+    <lang removable="false" langCode="es-ES" langId="L7" writingsystem="Any" name="Spanish" defaultFont="Arial"/>
+    <lang removable="false" langCode="ru-RU" langId="L8" writingsystem="Any" name="Russian" defaultFont="Arial"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="" L2="" L3="" L4="" L5="" id="8" L6="" L7="" L8=""/>
+    <MLText L1="Table" L2="Tabella" L3="Tabelle" L4="Tableau" L5="表格" id="0" L6="Πίνακας " L7="Tabla" L8="Таблица"/>
+    <MLText L1="Description" L2="Descrizione" L3="Beschreibung" L4="La description" L5="描述" id="1" L6="Περιγραφή" L7="Descripción" L8="Описание"/>
+    <MLText L1="Value" L2="Valore" L3="Wert" L4="Valeur" L5="值" id="2" L6="αξία" L7="Valor" L8="Стоимость"/>
+    <MLText L1="Label" L2="Label" L3="Label" L4="Label" L5="Label" id="4" L6="Label" L7="Label" L8="Label"/>
+    <MLText L1="Table: Filled by Data Source" L2="Tabella: Riempita da origine dati" L3="Tabelle: Nach Datenquelle gefüllt" L4="Tableau: Renseigné par source de données" L5="表：由数据源填充" id="5" L6="Πίνακας: Καταγεγραμμένος από την προέλευση δεδομένων" L7="Tabla: llenado por origen de datos" L8="Таблица: заполняется источником данных."/>
+    <MLText L1="Table: Filled by JavaScript" L2="Tabella: Riempita da JavaScript" L3="Tabelle: Gefüllt mit JavaScript" L4="Tableau: Rempli par JavaScript" L5="表：由JavaScript填充" id="6" L6="Πίνακας: Γεμίζεται με JavaScript" L7="Tabla: llena de JavaScript." L8="Таблица: заполняется JavaScript"/>
+    <MLText L1="Label" L2="Label" L3="Label" L4="Label" L5="Label" id="7" L6="Label" L7="Label" L8="Label"/>
+   </MLTexts>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label2">
+   <wgtStyle width="350" font-color="rgb(255,255,255)" x="118" forcePaint="2" font-sizepx="24" y="10" font-family="Arial" font-bold="true" wrapping="true" cx="175" cy="18.94" height="40" vert-align="middle" keypad-type="None" font-size="18"/>
+   <links>
+    <lang class="MLTextLink" textid="0"/>
+   </links>
+  </object>
+  <object class="TableGroupWgt" id="Table_Datasource">
+   <wgtStyle width="330" x="30" forcePaint="24" y="150" cx="165" cy="150" wgtStaticOpt="dynamic" height="300">
+    <gridGroupLayout gridVerUnderFlow="1" gridGlobalStrokeMode="0" gridScrollAutohide="1" gridGlobalStrokeCollapsed="1" gridNRows="2" gridScrollBgColor="rgb(240,240,240)" gridGlobalStrokeWidth="2" gridScrollImage="" gridVerOverFlow="1" gridNCols="2" gridHorOverFlow="2" gridGlobalStrokeColor="rgb(70,70,70)" gridScrollColor="rgb(192,192,192)" gridScrollSize="10" gridScrollOffset="-10" gridHorUnderFlow="2">
+     <colProperties>
+      <colProperty rightStrokeColor="rgb(0,0,0)" leftMargin="0" rightMargin="0" minWidth="0" stretch="1" leftStroke="1" maxWidth="100000" rightStroke="1" leftStrokeColor="rgb(0,0,0)"/>
+      <colProperty rightStrokeColor="rgb(0,0,0)" leftMargin="0" rightMargin="0" minWidth="0" stretch="1" leftStroke="1" maxWidth="100000" rightStroke="1" leftStrokeColor="rgb(0,0,0)"/>
+     </colProperties>
+     <rowProperties>
+      <rowProperty selBackColor="none" selForColor="none" selStrokeColor="none" stretch="2" maxHeight="40" backColor="none" topMargin="0" bottonMargin="0" topStrokeColor="rgb(0,0,0)" minHeight="40" bottonStrokeColor="rgb(0,0,0)" bottonStroke="1" topStroke="1"/>
+      <rowProperty selBackColor="none" selForColor="none" selStrokeColor="none" stretch="2" maxHeight="40" backColor="none" topMargin="0" bottonMargin="0" topStrokeColor="rgb(0,0,0)" minHeight="40" bottonStrokeColor="rgb(0,0,0)" bottonStroke="1" topStroke="1"/>
+     </rowProperties>
+    </gridGroupLayout>
+   </wgtStyle>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="tableModel" tag="model" sourceType="Widget" tagIndex="-1" dataSource="TableDataSrcWgt"/>
+   </dataLinks>
+   <object class="LabelWgt" id="Table_Datasource.label4">
+    <wgtStyle forcePaint="19" preserveAspectRatio="0" font-family="Arial" cx="81.50" minWidth="0" font-sizepx="16" cy="17.99" alignment="center" bottonMargin="0" x="1" colOcc="1" y="1" wgtStaticOpt="dynamic" vert-align="middle" frameFill="rgb(240,240,240)" rowOcc="1" horItemUnderflow="0" leftMargin="0" maxWidth="100000" keypad-type="None" rowSpan="1" horItemOverflow="0" font-color="rgb(70,70,70)" rightMargin="0" width="162" minHeight="0" aspectRatio="5:1" wrapping="true" verItemOverflow="0" topMargin="0" verItemUnderflow="0" height="37" maxHeight="100000" font-size="12" frame="true" colSpan="1" frameColor="none"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="Table_Datasource.label1">
+    <wgtStyle forcePaint="19" preserveAspectRatio="0" font-family="Arial" cx="82" minWidth="0" font-sizepx="16" cy="17.99" alignment="center" bottonMargin="0" x="165" colOcc="2" y="1" wgtStaticOpt="dynamic" vert-align="middle" frameFill="rgb(240,240,240)" rowOcc="1" horItemUnderflow="0" leftMargin="0" maxWidth="100000" keypad-type="None" rowSpan="1" horItemOverflow="0" font-color="rgb(70,70,70)" rightMargin="0" width="163" minHeight="0" aspectRatio="5:1" wrapping="true" verItemOverflow="0" topMargin="0" verItemUnderflow="0" height="37" maxHeight="100000" font-size="12" frame="true" colSpan="1" frameColor="none"/>
+    <links>
+     <lang class="MLTextLink" textid="2"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="Table_Datasource.label2">
+    <wgtStyle forcePaint="27" preserveAspectRatio="0" font-family="Arial" cx="81.50" minWidth="0" font-sizepx="16" cy="18.47" alignment="center" bottonMargin="0" x="1" colOcc="1" y="40" wgtStaticOpt="dynamic" vert-align="middle" rowOcc="2" horItemUnderflow="0" leftMargin="0" maxWidth="100000" keypad-type="None" rowSpan="1" horItemOverflow="0" font-color="rgb(70,70,70)" rightMargin="0" width="163" minHeight="0" aspectRatio="5:1" wrapping="true" verItemOverflow="0" topMargin="0" verItemUnderflow="0" height="39" maxHeight="100000" font-size="12" colSpan="1"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="text" tag="Column1" sourceType="Widget" tagIndex="-1" dataSource="TableDataSrcWgt"/>
+    </dataLinks>
+    <links>
+     <lang class="MLTextLink" textid="4"/>
+    </links>
+   </object>
+   <object class="NumericWgt" id="Table_Datasource.field2">
+    <wgtStyle font-sizepx="16" bottonMargin="0" font-color="rgb(70,70,70)" horItemUnderflow="0" rightMargin="0" min="-32768" width="164" font-size="12" font-family="Arial" leftMargin="0" verItemOverflow="0" topMargin="0" wgtStaticOpt="dynamic" alignment="center" minHeight="0" cx="75.44" max="32767" cy="17.55" colOcc="2" vert-align="middle" step="1" forcePaint="25" timeSpec="local" maxHeight="100000" usingFormat="#" rowSpan="1" height="39" preserveAspectRatio="0" form="Numeric" colSpan="1" numberFormat="6" aspectRatio="5:1" verItemUnderflow="0" keypad-type="Numeric" value="99999" rowOcc="2" maxWidth="100000" x="165" y="40" minWidth="0" horItemOverflow="0" text="99999"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="value" tag="Column2" sourceType="Widget" tagIndex="-1" dataSource="TableDataSrcWgt"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="LabelWgt" id="label5">
+   <wgtStyle width="300" font-color="rgb(70,70,70)" x="30" forcePaint="2" font-sizepx="16" y="90" font-family="Arial" wrapping="true" cx="150" cy="18.94" height="40" vert-align="top" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="5"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label1">
+   <wgtStyle width="300" font-color="rgb(70,70,70)" x="430" forcePaint="2" font-sizepx="16" y="90" font-family="Arial" wrapping="true" cx="150" cy="18.94" height="40" vert-align="top" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="6"/>
+   </links>
+  </object>
+  <object class="TableGroupWgt" id="Table_Javascript">
+   <wgtStyle width="330" x="430" forcePaint="16" y="150" cx="165" cy="150" wgtStaticOpt="dynamic" height="300">
+    <gridGroupLayout gridVerUnderFlow="1" gridGlobalStrokeMode="0" gridScrollAutohide="1" gridGlobalStrokeCollapsed="1" gridNRows="1" gridScrollBgColor="rgb(240,240,240)" gridGlobalStrokeWidth="2" gridScrollImage="" gridVerOverFlow="1" gridNCols="1" gridHorOverFlow="2" gridGlobalStrokeColor="rgb(70,70,70)" gridScrollColor="rgb(192,192,192)" gridScrollSize="10" gridScrollOffset="-10" gridHorUnderFlow="2">
+     <colProperties>
+      <colProperty rightStrokeColor="rgb(0,0,0)" leftMargin="0" rightMargin="0" minWidth="0" stretch="1" leftStroke="1" maxWidth="100000" rightStroke="1" leftStrokeColor="rgb(0,0,0)"/>
+     </colProperties>
+     <rowProperties>
+      <rowProperty selBackColor="none" selForColor="none" selStrokeColor="none" stretch="2" maxHeight="40" backColor="none" topMargin="0" bottonMargin="0" topStrokeColor="rgb(0,0,0)" minHeight="40" bottonStrokeColor="rgb(0,0,0)" bottonStroke="1" topStroke="1"/>
+     </rowProperties>
+    </gridGroupLayout>
+   </wgtStyle>
+   <object class="LabelWgt" id="Table_Javascript.label1">
+    <wgtStyle forcePaint="19" preserveAspectRatio="0" font-family="Arial" cx="164" minWidth="0" font-sizepx="16" cy="17.99" alignment="center" bottonMargin="0" x="1" colOcc="1" y="1" wgtStaticOpt="dynamic" vert-align="middle" frameFill="rgb(240,240,240)" rowOcc="1" horItemUnderflow="0" leftMargin="0" maxWidth="100000" keypad-type="None" rowSpan="1" horItemOverflow="0" font-color="rgb(70,70,70)" rightMargin="0" width="327" minHeight="0" aspectRatio="169:38" wrapping="true" verItemOverflow="0" topMargin="0" verItemUnderflow="0" height="37" maxHeight="100000" font-size="12" frame="true" colSpan="1" frameColor="none"/>
+    <links>
+     <lang class="MLTextLink" textid="7"/>
+    </links>
+   </object>
+  </object>
+  <object class="TableDataSrcWgt" id="TableDataSrcWgt">
+   <wgtStyle width="80" x="160" forcePaint="16" y="247" modelFilePath="" hasStaticHeader="0" wgtStaticOpt="dynamic" height="60">
+    <header>
+     <text text="Column1"/>
+     <text text="Column2"/>
+    </header>
+    <data>
+     <rowType type="0">
+      <colData>
+       <value text=""/>
+      </colData>
+      <colData>
+       <value text=""/>
+      </colData>
+     </rowType>
+     <rowType type="1">
+      <colData>
+       <value text="Temperature:"/>
+      </colData>
+      <colData>
+       <dataLink readWrite="R" tagType="unsignedShort" tag="Table_Data01" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </colData>
+     </rowType>
+     <rowType type="1">
+      <colData>
+       <value text="Pressure:"/>
+      </colData>
+      <colData>
+       <dataLink readWrite="R" tagType="unsignedShort" tag="Table_Data02" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </colData>
+     </rowType>
+     <rowType type="1">
+      <colData>
+       <value text="Speed:"/>
+      </colData>
+      <colData>
+       <dataLink readWrite="R" tagType="unsignedShort" tag="Table_Data03" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </colData>
+     </rowType>
+     <rowType type="1">
+      <colData>
+       <value text="Voltage:"/>
+      </colData>
+      <colData>
+       <dataLink readWrite="R" tagType="unsignedByte" tag="Table_Data04" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </colData>
+     </rowType>
+     <rowType type="1">
+      <colData>
+       <value text="Current:"/>
+      </colData>
+      <colData>
+       <dataLink readWrite="R" tagType="unsignedByte" tag="Table_Data05" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </colData>
+     </rowType>
+     <rowType type="1">
+      <colData>
+       <value text="Rotation:"/>
+      </colData>
+      <colData>
+       <dataLink readWrite="R" tagType="unsignedByte" tag="Table_Data06" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </colData>
+     </rowType>
+     <rowType type="1">
+      <colData>
+       <value text="Angle:"/>
+      </colData>
+      <colData>
+       <dataLink readWrite="R" tagType="unsignedByte" tag="Table_Data07" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </colData>
+     </rowType>
+     <rowType type="1">
+      <colData>
+       <value text="Intensity:"/>
+      </colData>
+      <colData>
+       <dataLink readWrite="R" tagType="unsignedShort" tag="Table_Data01" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </colData>
+     </rowType>
+     <rowType type="1">
+      <colData>
+       <value text="Volume:"/>
+      </colData>
+      <colData>
+       <dataLink readWrite="R" tagType="unsignedShort" tag="Table_Data02" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </colData>
+     </rowType>
+     <rowType type="1">
+      <colData>
+       <value text="Flow:"/>
+      </colData>
+      <colData>
+       <dataLink readWrite="R" tagType="unsignedShort" tag="Table_Data03" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </colData>
+     </rowType>
+    </data>
+   </wgtStyle>
+  </object>
+  <object class="GroupWgt" id="BtnStd7" customType="Button">
+   <wgtStyle width="26" x="330" y="87" cx="13.01" cy="12.99" height="26"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image16" static="true">
+    <wgtStyle width="30.73" x="-4.13" y="-4.14" visibility="false" bdrImageSize="57.00,52.00" fill="rgb(127,127,127)" cx="15.09" cy="15.37" bdrSize="0.45,0.43,0.40,0.42" height="30.73" bdrEdges="0.13,0.13,0.13,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:btn; type:btn" id="buttonStd20">
+    <wgtStyle width="22.46" x="0" y="0" bdrImageSize="42.00,38.00" fill="rgb(192,192,192)" cx="10.16" form="standard" cy="10.83" bdrSize="0.40,0.43,0.38,0.35" height="22.46" type="momentary" value="0"/>
+    <links>
+     <action class="WriteTagAction" attribute="onMouseClick" event="onMouseClick" actionID="1" TagValue="0" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="short" attribute="tagSrc" tag="Help_Table" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+     <action pageName="help_table.jmx" class="ShowDialogAction" attribute="onMouseClick" event="onMouseClick" actionID="2" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label8" static="true">
+    <wgtStyle width="19.50" font-color="rgb(40,40,40)" x="0.59" font-sizepx="13" y="2.95" font-family="Arial" wrapping="true" cx="12.99" cy="11.24" height="17.73" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image17">
+    <wgtStyle width="23.64" imagePath="images/ic_ma1_022.svg" x="2.36" forcePaint="1" y="2.36" fill="rgb(70,70,70)" cx="11.81" cy="10.34" height="23.64"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd1" customType="Button">
+   <wgtStyle width="26" x="730" y="87" cx="13.01" cy="12.99" height="26"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image5" static="true">
+    <wgtStyle width="30.73" x="-4.13" y="-4.14" visibility="false" bdrImageSize="57.00,52.00" fill="rgb(127,127,127)" cx="15.09" cy="15.37" bdrSize="0.45,0.43,0.40,0.42" height="30.73" bdrEdges="0.13,0.13,0.13,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:btn; type:btn" id="buttonStd1">
+    <wgtStyle width="22.46" x="0" y="0" bdrImageSize="42.00,38.00" fill="rgb(192,192,192)" cx="10.16" form="standard" cy="10.83" bdrSize="0.40,0.43,0.38,0.35" height="22.46" type="momentary" value="0"/>
+    <links>
+     <action class="WriteTagAction" attribute="onMouseClick" event="onMouseClick" actionID="1" TagValue="1" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="short" attribute="tagSrc" tag="Help_Table" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+     <action pageName="help_table.jmx" class="ShowDialogAction" attribute="onMouseClick" event="onMouseClick" actionID="2" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label2" static="true">
+    <wgtStyle width="19.50" font-color="rgb(40,40,40)" x="0.59" font-sizepx="13" y="2.95" font-family="Arial" wrapping="true" cx="12.99" cy="11.24" height="17.73" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="8"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image6">
+    <wgtStyle width="23.64" imagePath="images/ic_ma1_022.svg" x="2.36" forcePaint="1" y="2.36" fill="rgb(70,70,70)" cx="11.81" cy="10.34" height="23.64"/>
+   </object>
+  </object>
+ </object>
+</wgtPage>

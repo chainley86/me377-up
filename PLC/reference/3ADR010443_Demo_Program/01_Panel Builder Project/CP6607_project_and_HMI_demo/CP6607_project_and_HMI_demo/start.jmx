@@ -1,0 +1,463 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="Start" pageSize="800,480" class="PageWgt" scriptFile="start.js" dataWndSize="0,70" downloadPrepDone="true" usedFonts="Arial,SimHei" staticFile="opt/start.png" id="Start" staticOptEnable="true">
+  <wgtStyle width="800" x="0" y="0" height="480" ver="020800424" v="02.08.00.424"/>
+  <links>
+   <action f="Start_onActivate" class="JavaScriptAction" attribute="onActivate" event="onActivate" actionID="1" actionWgt="_WgtMgr"/>
+   <action class="WriteTagAction" attribute="onActivate" event="onActivate" actionID="2" TagValue="35.2" actionWgt="_TagMgr">
+    <dataLinks>
+     <dataLink readWrite="R" tagType="float" attribute="tagSrc" tag="Trend_MotorTemp" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </action>
+   <action BitIndex="0" class="SetBitAction" attribute="onActivate" event="onActivate" actionID="3" actionWgt="_TagMgr">
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_MotorTemp_EN1" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </action>
+   <action BitIndex="0" class="ResetBitAction" attribute="onActivate" event="onActivate" actionID="4" actionWgt="_TagMgr">
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_MotorTemp_EN2" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </action>
+   <action BitIndex="0" class="SetBitAction" attribute="onActivate" event="onActivate" actionID="5" actionWgt="_TagMgr">
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_Real_CursorOFF" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </action>
+   <action BitIndex="0" class="ResetBitAction" attribute="onActivate" event="onActivate" actionID="6" actionWgt="_TagMgr">
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="Trend_Real_CursorON" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </action>
+   <action class="WriteTagAction" attribute="onActivate" event="onActivate" actionID="7" TagValue="50" actionWgt="_TagMgr">
+    <dataLinks>
+     <dataLink readWrite="R" tagType="int" attribute="tagSrc" tag="Alarm_03" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </action>
+   <action class="WriteTagAction" attribute="onActivate" event="onActivate" actionID="8" TagValue="60" actionWgt="_TagMgr">
+    <dataLinks>
+     <dataLink readWrite="R" tagType="float" attribute="tagSrc" tag="Alarm_04" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </action>
+  </links>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="English" defaultFont="Arial"/>
+    <lang removable="false" langCode="it-IT" langId="L2" writingsystem="Any" name="Italian" defaultFont="Arial"/>
+    <lang removable="false" langCode="de-DE" langId="L3" writingsystem="Any" name="German" defaultFont="Arial"/>
+    <lang removable="false" langCode="fr-FR" langId="L4" writingsystem="Any" name="French" defaultFont="Arial"/>
+    <lang removable="false" langCode="zh-CN" langId="L5" writingsystem="Any" name="Chinese" defaultFont="SimHei"/>
+    <lang removable="false" langCode="grc" langId="L6" writingsystem="Any" name="Greek" defaultFont="Arial"/>
+    <lang removable="false" langCode="es-ES" langId="L7" writingsystem="Any" name="Spanish" defaultFont="Arial"/>
+    <lang removable="false" langCode="ru-RU" langId="L8" writingsystem="Any" name="Russian" defaultFont="Arial"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="CP600-Pro Demo Project" L2="Progetto dimostrativo CP600-Pro" L3="CP600-Pro Demo-Projekt" L4="Projet de démonstration CP600-Pro" L5="CP600-Pro 演示项目" id="0" L6="CP600-Pro Demo Project" L7="Proyecto de demostración CP600-Pro" L8="Демо-проект CP600-Pro"/>
+    <MLText L1="JavaScript" L2="JavaScript" L3="JavaScript" L4="JavaScript" L5="JAVA 脚本" id="3" L6="JavaScript" L7="JavaScript" L8="JavaScript"/>
+    <MLText L1="Trend" L2="Tendenza" L3="Trend" L4="Tendance" L5="趋势" id="4" L6="Τάση" L7="Tendencia" L8="тенденция"/>
+    <MLText L1="Alarms" L2="Allarmi" L3="Alarms" L4="Alarmes" L5="报警" id="5" L6="Συναγερμός" L7="Alarmas" L8="сигнализация"/>
+    <MLText L1="Scheduler" L2="Scheduler" L3="Planer" L4="Planificateur" L5="调度" id="6" L6="Scheduler" L7="Programador" L8="планировщик"/>
+    <MLText L1="File Browser" L2="Browser di file" L3="Dateibrowser" L4="Navigateur de fichiers" L5="文件浏览器" id="7" L6="Αρχείο περιήγησης αρχείων" L7="Explorador de archivos" L8="Браузер файлов"/>
+    <MLText L1="Recipes" L2="Ricette" L3="Rezepte" L4="Recettes" L5="食谱" id="8" L6="Συνταγές" L7="Recetas" L8="Рецепты"/>
+    <MLText L1="Email" L2="E-mail" L3="Email" L4="Email" L5="电子邮件" id="9" L6="ΗΛΕΚΤΡΟΝΙΚΗ ΔΙΕΥΘΥΝΣΗ" L7="Email" L8="Эл. адрес"/>
+    <MLText L1="RSS Feed" L2="RSS Feed" L3="RSS Feed" L4="Flux RSS" L5="RSS 订阅" id="10" L6="Τροφοδοσία RSS" L7="RSS Feed" L8="Новостная лента"/>
+    <MLText L1="User" L2="Indossare" L3="Benutzer" L4="Utilisateur" L5="用户" id="11" L6="Ο χρήστης" L7="Usuario" L8="пользователь"/>
+    <MLText L1="IP Camera" L2="Telecamera IP" L3="IP Kamera" L4="Caméra IP" L5="IP 摄像机" id="12" L6="IP κάμερα" L7="Cámara IP" L8="IP камера"/>
+    <MLText L1="Language" L2="Linguaggio" L3="Sprache" L4="La langue" L5="语言" id="14" L6="Γλώσσα" L7="Idioma" L8="язык"/>
+    <MLText L1="IT" L2="IT" L3="IT" L4="IT" L5="IT" id="16" L6="IT" L7="IT" L8="IT"/>
+    <MLText L1="DE" L2="DE" L3="DE" L4="DE" L5="DE" id="18" L6="DE" L7="DE" L8="DE"/>
+    <MLText L1="FR" L2="FR" L3="FR" L4="FR" L5="FR" id="19" L6="FR" L7="FR" L8="FR"/>
+    <MLText L1="ZH" L2="ZH" L3="ZH" L4="ZH" L5="ZH" id="20" L6="ZH" L7="ZH" L8="ZH"/>
+    <MLText L1="GRC" L2="GRC" L3="GRC" L4="GRC" L5="GRC" id="21" L6="GRC" L7="GRC" L8="GRC"/>
+    <MLText L1="ES" L2="ES" L3="ES" L4="ES" L5="ES" id="22" L6="ES" L7="ES" L8="ES"/>
+    <MLText L1="RU" L2="RU" L3="RU" L4="RU" L5="RU" id="23" L6="RU" L7="RU" L8="RU"/>
+    <MLText L1="EN" L2="EN" L3="EN" L4="EN" L5="EN" id="24" L6="EN" L7="EN" L8="EN"/>
+    <MLText L1="Table" L2="Tabella" L3="Tabelle" L4="Tableau" L5="表格" id="25" L6="Πίνακας " L7="Tabla" L8="Таблица"/>
+    <MLText L1="System" L2="Sistema" L3="System" L4="Système" L5="系统" id="26" L6="Σύστημα" L7="Sistema" L8="система"/>
+    <MLText L1="Gestures" L2="Gesti" L3="Gesten" L4="Gestes" L5="手势" id="28" L6="Χειρονομίες" L7="Gestos" L8="жесты"/>
+    <MLText L1="Training Case" L2="Valigia di dimostrazione" L3="Trainingskoffer" L4="Valise de démonstration" L5="培訓案例" id="30" L6="Κιτ επίδειξης " L7="Equipo de demostración" L8="Демонстрационный чемодан "/>
+   </MLTexts>
+  </object>
+  <object class="ShapeWgt" id="rect1" static="true">
+   <wgtStyle width="800" x="0" y="0" fill="rgb(36,36,36)" cx="387.10" cy="30" height="60" nodeName="rect" stroke="rgb(36,36,36)"/>
+  </object>
+  <object class="GroupSubscribeWgt" id="Start@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="NumericWgt" id="timedate1">
+   <wgtStyle font-bold="true" forcePaint="8" font-family="Arial" font-sizepx="13" cx="37.37" cy="10" step="1" timeSpec="local" alignment="right" x="700" y="10" vert-align="middle" text="-1" max="4096" usingFormat="hh:mm:ss" value="-1" keypad-type="None" font-color="rgb(180,180,180)" min="0" width="80" numberFormat="0" height="20" form="date-time" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="value" tag="System Time" class="SysPropMgrWgt" widgetType="Project" sourceType="System" dataSource="_SysPropMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ImageWgt" id="image1" static="true">
+   <wgtStyle width="82" imagePath="images/ABB_Logo_Screen_RGB_15px_white_@2x.png" x="18" y="15" cx="41" cy="15" height="30"/>
+  </object>
+  <object class="NumericWgt" id="timedate2">
+   <wgtStyle font-bold="true" forcePaint="8" font-family="Arial" font-sizepx="13" cx="37.37" cy="100" step="1" timeSpec="local" alignment="right" x="700" y="30" vert-align="middle" text="-1" max="4096" usingFormat="DD mmm YYYY" value="-1" keypad-type="None" font-color="rgb(180,180,180)" min="0" width="80" numberFormat="0" height="20" form="date-time" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="value" tag="System Time" class="SysPropMgrWgt" widgetType="Project" sourceType="System" dataSource="_SysPropMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label7">
+   <wgtStyle width="500" font-color="rgb(255,255,255)" x="118" forcePaint="2" font-sizepx="24" y="10" font-family="Arial" font-bold="true" wrapping="true" cx="250" cy="18.94" height="40" vert-align="middle" keypad-type="None" font-size="18"/>
+   <links>
+    <lang class="MLTextLink" textid="0"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="BtnKbd2" customType="Keyboard Button">
+   <wgtStyle width="150.35" x="470" y="70" cx="75.18" cy="20" height="40"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnKbd2.frmImg" static="true">
+    <wgtStyle width="185.91" enableCache="true" x="-20.77" y="-13.85" visibility="false" bdrImageSize="80.00,40.00" cx="78.30" cy="47.88" bdrSize="0.19,0.18,0.17,0.17" height="67.70" bdrEdges="0.14,0.16,0.14,0.14"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="BtnKbd2.btn">
+    <wgtStyle width="150" x="0.35" y="0" fill="rgb(120,120,120)" dx="1" cx="73.94" form="standard" cy="20" height="40" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+    <links>
+     <action pageName="gestures.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnKbd2.lbl">
+    <wgtStyle width="150" font-color="rgb(70,70,70)" x="0" forcePaint="3" font-sizepx="16" y="0" font-family="Arial" wrapping="true" cx="65.78" cy="19.13" height="40" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="28"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnKbd2.icoImg" static="true">
+    <wgtStyle width="38.02" x="55.27" y="6.15" cx="23.24" cy="12.30" height="23.08"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnKbd1" customType="Keyboard Button">
+   <wgtStyle width="150" x="630" y="70" cx="75.18" cy="20" height="40"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnKbd1.frmImg" static="true">
+    <wgtStyle width="185.48" enableCache="true" x="-20.72" y="-13.85" visibility="false" bdrImageSize="80.00,40.00" cx="78.12" cy="47.88" bdrSize="0.19,0.18,0.17,0.17" height="67.70" bdrEdges="0.14,0.16,0.14,0.14"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="BtnKbd1.btn">
+    <wgtStyle width="149.65" x="0.35" y="0" fill="rgb(120,120,120)" dx="1" cx="73.77" form="standard" cy="20" height="40" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+    <links>
+     <action pageName="javascript.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="0" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnKbd1.lbl">
+    <wgtStyle width="149.65" font-color="rgb(70,70,70)" x="0" forcePaint="3" font-sizepx="16" y="0" font-family="Arial" wrapping="true" cx="65.63" cy="19.13" height="40" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="3"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnKbd1.icoImg" static="true">
+    <wgtStyle width="37.93" x="55.14" y="6.15" cx="23.19" cy="12.30" height="23.08"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnKbd3" customType="Keyboard Button">
+   <wgtStyle width="150.35" x="470" y="115" cx="75.18" cy="20" height="40"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnKbd3.frmImg" static="true">
+    <wgtStyle width="185.91" enableCache="true" x="-20.77" y="-13.85" visibility="false" bdrImageSize="80.00,40.00" cx="78.30" cy="47.88" bdrSize="0.19,0.18,0.17,0.17" height="67.70" bdrEdges="0.14,0.16,0.14,0.14"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="BtnKbd3.btn">
+    <wgtStyle width="150" x="0.35" y="0" fill="rgb(120,120,120)" dx="1" cx="73.94" form="standard" cy="20" height="40" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+    <links>
+     <action pageName="trend.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnKbd3.lbl">
+    <wgtStyle width="150" font-color="rgb(70,70,70)" x="0" forcePaint="3" font-sizepx="16" y="0" font-family="Arial" wrapping="true" cx="65.78" cy="19.13" height="40" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="4"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnKbd3.icoImg" static="true">
+    <wgtStyle width="38.02" x="55.27" y="6.15" cx="23.24" cy="12.30" height="23.08"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnKbd4" customType="Keyboard Button">
+   <wgtStyle width="150.35" x="630" y="115" cx="75.18" cy="20" height="40"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnKbd4.frmImg" static="true">
+    <wgtStyle width="185.91" enableCache="true" x="-20.77" y="-13.85" visibility="false" bdrImageSize="80.00,40.00" cx="78.30" cy="47.88" bdrSize="0.19,0.18,0.17,0.17" height="67.70" bdrEdges="0.14,0.16,0.14,0.14"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="BtnKbd4.btn">
+    <wgtStyle width="150" x="0.35" y="0" fill="rgb(120,120,120)" dx="1" cx="73.94" form="standard" cy="20" height="40" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+    <links>
+     <action pageName="alarms.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnKbd4.lbl">
+    <wgtStyle width="150" font-color="rgb(70,70,70)" x="0" forcePaint="3" font-sizepx="16" y="0" font-family="Arial" wrapping="true" cx="65.78" cy="19.13" height="40" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="5"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnKbd4.icoImg" static="true">
+    <wgtStyle width="38.02" x="55.27" y="6.15" cx="23.24" cy="12.30" height="23.08"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnKbd5" customType="Keyboard Button">
+   <wgtStyle width="150.35" x="470" y="160" cx="75.18" cy="20" height="40"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnKbd5.frmImg" static="true">
+    <wgtStyle width="185.91" enableCache="true" x="-20.77" y="-13.85" visibility="false" bdrImageSize="80.00,40.00" cx="78.30" cy="47.88" bdrSize="0.19,0.18,0.17,0.17" height="67.70" bdrEdges="0.14,0.16,0.14,0.14"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="BtnKbd5.btn">
+    <wgtStyle width="150" x="0.35" y="0" fill="rgb(120,120,120)" dx="1" cx="73.94" form="standard" cy="20" height="40" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+    <links>
+     <action pageName="scheduler.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnKbd5.lbl">
+    <wgtStyle width="150" font-color="rgb(70,70,70)" x="0" forcePaint="3" font-sizepx="16" y="0" font-family="Arial" wrapping="true" cx="65.78" cy="19.13" height="40" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="6"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnKbd5.icoImg" static="true">
+    <wgtStyle width="38.02" x="55.27" y="6.15" cx="23.24" cy="12.30" height="23.08"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnKbd6" customType="Keyboard Button">
+   <wgtStyle width="150.35" x="630" y="160" cx="75.18" cy="20" height="40"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnKbd6.frmImg" static="true">
+    <wgtStyle width="185.91" enableCache="true" x="-20.77" y="-13.85" visibility="false" bdrImageSize="80.00,40.00" cx="78.30" cy="47.88" bdrSize="0.19,0.18,0.17,0.17" height="67.70" bdrEdges="0.14,0.16,0.14,0.14"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="BtnKbd6.btn">
+    <wgtStyle width="150" x="0.35" y="0" fill="rgb(120,120,120)" dx="1" cx="73.94" form="standard" cy="20" height="40" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+    <links>
+     <action pageName="recipes.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnKbd6.lbl">
+    <wgtStyle width="150" font-color="rgb(70,70,70)" x="0" forcePaint="3" font-sizepx="16" y="0" font-family="Arial" wrapping="true" cx="65.78" cy="19.13" height="40" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="8"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnKbd6.icoImg" static="true">
+    <wgtStyle width="38.02" x="55.27" y="6.15" cx="23.24" cy="12.30" height="23.08"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnKbd7" customType="Keyboard Button">
+   <wgtStyle width="150.35" x="470" y="205" cx="75.18" cy="20" height="40"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnKbd7.frmImg" static="true">
+    <wgtStyle width="185.91" enableCache="true" x="-20.77" y="-13.85" visibility="false" bdrImageSize="80.00,40.00" cx="78.30" cy="47.88" bdrSize="0.19,0.18,0.17,0.17" height="67.70" bdrEdges="0.14,0.16,0.14,0.14"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="BtnKbd7.btn">
+    <wgtStyle width="150" x="0.35" y="0" fill="rgb(120,120,120)" dx="1" cx="73.94" form="standard" cy="20" height="40" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+    <links>
+     <action pageName="email.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnKbd7.lbl">
+    <wgtStyle width="150" font-color="rgb(70,70,70)" x="0" forcePaint="3" font-sizepx="16" y="0" font-family="Arial" wrapping="true" cx="65.78" cy="19.13" height="40" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="9"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnKbd7.icoImg" static="true">
+    <wgtStyle width="38.02" x="55.27" y="6.15" cx="23.24" cy="12.30" height="23.08"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnKbd8" customType="Keyboard Button">
+   <wgtStyle width="150.35" x="630" y="205" cx="75.18" cy="20" height="40"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnKbd8.frmImg" static="true">
+    <wgtStyle width="185.91" enableCache="true" x="-20.77" y="-13.85" visibility="false" bdrImageSize="80.00,40.00" cx="78.30" cy="47.88" bdrSize="0.19,0.18,0.17,0.17" height="67.70" bdrEdges="0.14,0.16,0.14,0.14"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="BtnKbd8.btn">
+    <wgtStyle width="150" x="0.35" y="0" fill="rgb(120,120,120)" dx="1" cx="73.94" form="standard" cy="20" height="40" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+    <links>
+     <action pageName="rssfeed.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnKbd8.lbl">
+    <wgtStyle width="150" font-color="rgb(70,70,70)" x="0" forcePaint="3" font-sizepx="16" y="0" font-family="Arial" wrapping="true" cx="65.78" cy="19.13" height="40" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="10"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnKbd8.icoImg" static="true">
+    <wgtStyle width="38.02" x="55.27" y="6.15" cx="23.24" cy="12.30" height="23.08"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnKbd9" customType="Keyboard Button">
+   <wgtStyle width="150.35" x="470" y="250" cx="75.18" cy="20" height="40"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnKbd9.frmImg" static="true">
+    <wgtStyle width="185.91" enableCache="true" x="-20.77" y="-13.85" visibility="false" bdrImageSize="80.00,40.00" cx="78.30" cy="47.88" bdrSize="0.19,0.18,0.17,0.17" height="67.70" bdrEdges="0.14,0.16,0.14,0.14"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="BtnKbd9.btn">
+    <wgtStyle width="150" x="0.35" y="0" fill="rgb(120,120,120)" dx="1" cx="73.94" form="standard" cy="20" height="40" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+    <links>
+     <action pageName="users.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnKbd9.lbl">
+    <wgtStyle width="150" font-color="rgb(70,70,70)" x="0" forcePaint="3" font-sizepx="16" y="0" font-family="Arial" wrapping="true" cx="65.78" cy="19.13" height="40" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="11"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnKbd9.icoImg" static="true">
+    <wgtStyle width="38.02" x="55.27" y="6.15" cx="23.24" cy="12.30" height="23.08"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnKbd10" customType="Keyboard Button">
+   <wgtStyle width="150.35" x="630" y="250" cx="75.18" cy="20" height="40"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnKbd10.frmImg" static="true">
+    <wgtStyle width="185.91" enableCache="true" x="-20.77" y="-13.85" visibility="false" bdrImageSize="80.00,40.00" cx="78.30" cy="47.88" bdrSize="0.19,0.18,0.17,0.17" height="67.70" bdrEdges="0.14,0.16,0.14,0.14"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="BtnKbd10.btn">
+    <wgtStyle width="150" x="0.35" y="0" fill="rgb(120,120,120)" dx="1" cx="73.94" form="standard" cy="20" height="40" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+    <links>
+     <action pageName="ipcamera.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnKbd10.lbl">
+    <wgtStyle width="150" font-color="rgb(70,70,70)" x="0" forcePaint="3" font-sizepx="16" y="0" font-family="Arial" wrapping="true" cx="65.78" cy="19.13" height="40" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="12"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnKbd10.icoImg" static="true">
+    <wgtStyle width="38.02" x="55.27" y="6.15" cx="23.24" cy="12.30" height="23.08"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnKbd11" customType="Keyboard Button">
+   <wgtStyle width="150.35" x="470" y="295" cx="75.18" cy="20" height="40"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnKbd11.frmImg" static="true">
+    <wgtStyle width="185.91" enableCache="true" x="-20.77" y="-13.85" visibility="false" bdrImageSize="80.00,40.00" cx="78.30" cy="47.88" bdrSize="0.19,0.18,0.17,0.17" height="67.70" bdrEdges="0.14,0.16,0.14,0.14"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="BtnKbd11.btn">
+    <wgtStyle width="150" x="0.35" y="0" fill="rgb(120,120,120)" dx="1" cx="73.94" form="standard" cy="20" height="40" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+    <links>
+     <action pageName="language.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnKbd11.lbl">
+    <wgtStyle width="150" font-color="rgb(70,70,70)" x="0" forcePaint="3" font-sizepx="16" y="0" font-family="Arial" wrapping="true" cx="65.78" cy="19.13" height="40" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="14"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnKbd11.icoImg" static="true">
+    <wgtStyle width="38.02" x="55.27" y="6.15" cx="23.24" cy="12.30" height="23.08"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnKbd12" customType="Keyboard Button">
+   <wgtStyle width="150.35" x="630" y="295" cx="75.18" cy="20" height="40"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnKbd12.frmImg" static="true">
+    <wgtStyle width="185.91" enableCache="true" x="-20.77" y="-13.85" visibility="false" bdrImageSize="80.00,40.00" cx="78.30" cy="47.88" bdrSize="0.19,0.18,0.17,0.17" height="67.70" bdrEdges="0.14,0.16,0.14,0.14"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="BtnKbd12.btn">
+    <wgtStyle width="150" x="0.35" y="0" fill="rgb(120,120,120)" dx="1" cx="73.94" form="standard" cy="20" height="40" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+    <links>
+     <action pageName="filebrowser.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnKbd12.lbl">
+    <wgtStyle width="150" font-color="rgb(70,70,70)" x="0" forcePaint="3" font-sizepx="16" y="0" font-family="Arial" wrapping="true" cx="65.78" cy="19.13" height="40" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="7"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnKbd12.icoImg" static="true">
+    <wgtStyle width="38.02" x="55.27" y="6.15" cx="23.24" cy="12.30" height="23.08"/>
+   </object>
+  </object>
+  <object class="ShapeWgt" id="rect2" static="true">
+   <wgtStyle width="2" x="689" y="5" cx="0.97" cy="25" height="50" nodeName="rect"/>
+  </object>
+  <object class="ShapeWgt" id="rect3" static="true">
+   <wgtStyle width="2" x="640" y="5" cx="0.97" cy="25" height="50" nodeName="rect"/>
+  </object>
+  <object class="MsgTextWgt" id="msgtext1">
+   <wgtStyle font-bold="true" forcePaint="10" font-family="Arial" font-sizepx="16" cx="24.58" cy="9.47" alignment="center" x="640" y="20" viewindex="false" vert-align="middle" text="" max="7" value="5" keypad-type="None" font-color="rgb(180,180,180)" min="0" width="50" continous="true" height="20" font-size="12">
+    <msgtxt>
+     <msg index="0"/>
+     <msg index="1"/>
+     <msg index="2"/>
+     <msg index="3"/>
+     <msg index="4"/>
+     <msg index="5"/>
+     <msg index="6"/>
+     <msg index="7"/>
+    </msgtxt>
+   </wgtStyle>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="unsignedInt" attribute="value" tag="Languages" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLMsgLink:messages:">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="SimHei" L6="Arial" L7="Arial" L8="Arial"/>
+     <textid idx="0" val="24"/>
+     <textid idx="1" val="16"/>
+     <textid idx="2" val="18"/>
+     <textid idx="3" val="19"/>
+     <textid idx="4" val="20"/>
+     <textid idx="5" val="21"/>
+     <textid idx="6" val="22"/>
+     <textid idx="7" val="23"/>
+    </lang>
+   </links>
+  </object>
+  <object class="ImageWgt" id="ImageWgt1" static="true">
+   <wgtStyle width="455" imagePath="images/CP600Pro_All_Small.jpg" x="8" y="105" cx="227.50" cy="155" height="310"/>
+  </object>
+  <object class="GroupWgt" id="BtnKbd13" customType="Keyboard Button">
+   <wgtStyle width="150.35" x="470" y="340" cx="75.18" cy="20" height="40"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnKbd13.frmImg" static="true">
+    <wgtStyle width="185.91" enableCache="true" x="-20.77" y="-13.85" visibility="false" bdrImageSize="80.00,40.00" cx="78.30" cy="47.88" bdrSize="0.19,0.18,0.17,0.17" height="67.70" bdrEdges="0.14,0.16,0.14,0.14"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="BtnKbd13.btn">
+    <wgtStyle width="150" x="0.35" y="0" fill="rgb(120,120,120)" dx="1" cx="73.94" form="standard" cy="20" height="40" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+    <links>
+     <action pageName="table.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnKbd13.lbl">
+    <wgtStyle width="150" font-color="rgb(70,70,70)" x="0" forcePaint="3" font-sizepx="16" y="0" font-family="Arial" wrapping="true" cx="65.78" cy="19.13" height="40" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="25"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnKbd13.icoImg" static="true">
+    <wgtStyle width="38.02" x="55.27" y="6.15" cx="23.24" cy="12.30" height="23.08"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnKbd14" customType="Keyboard Button">
+   <wgtStyle width="150.35" x="630" y="340" cx="75.18" cy="20" height="40"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnKbd14.frmImg" static="true">
+    <wgtStyle width="185.91" enableCache="true" x="-20.77" y="-13.85" visibility="false" bdrImageSize="80.00,40.00" cx="78.30" cy="47.88" bdrSize="0.19,0.18,0.17,0.17" height="67.70" bdrEdges="0.14,0.16,0.14,0.14"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="BtnKbd14.btn">
+    <wgtStyle width="150" x="0.35" y="0" fill="rgb(120,120,120)" dx="1" cx="73.94" form="standard" cy="20" height="40" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+    <links>
+     <action pageName="system.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnKbd14.lbl">
+    <wgtStyle width="150" font-color="rgb(70,70,70)" x="0" forcePaint="3" font-sizepx="16" y="0" font-family="Arial" wrapping="true" cx="65.78" cy="19.13" height="40" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="26"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnKbd14.icoImg" static="true">
+    <wgtStyle width="38.02" x="55.27" y="6.15" cx="23.24" cy="12.30" height="23.08"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnKbd15" customType="Keyboard Button">
+   <wgtStyle width="150.35" x="470" y="385" cx="75.18" cy="20" height="40"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnKbd15.frmImg" static="true">
+    <wgtStyle width="185.91" enableCache="true" x="-20.77" y="-13.85" visibility="false" bdrImageSize="80.00,40.00" cx="78.30" cy="47.88" bdrSize="0.19,0.18,0.17,0.17" height="67.70" bdrEdges="0.14,0.16,0.14,0.14"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="BtnKbd15.btn">
+    <wgtStyle width="150" x="0.35" y="0" fill="rgb(120,120,120)" dx="1" cx="73.94" form="standard" cy="20" height="40" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+    <links>
+     <action pageName="ac500_v3.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnKbd15.lbl">
+    <wgtStyle width="150" font-color="rgb(70,70,70)" x="0" forcePaint="3" font-sizepx="16" y="0" font-family="Arial" wrapping="true" cx="65.78" cy="19.13" height="40" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="30"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnKbd15.icoImg" static="true">
+    <wgtStyle width="38.02" x="55.27" y="6.15" cx="23.24" cy="12.30" height="23.08"/>
+   </object>
+  </object>
+ </object>
+</wgtPage>

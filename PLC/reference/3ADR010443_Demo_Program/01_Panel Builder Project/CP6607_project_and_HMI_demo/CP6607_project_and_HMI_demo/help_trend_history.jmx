@@ -1,0 +1,123 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="Help_Trend_History" singleInstance="true" pageType="modal" pageSize="700,400" class="DialogWgt" dataWndSize="0,70" downloadPrepDone="true" px="0" usedFonts="Arial,SimHei" py="0" titlebar="false" staticFile="opt/help_trend_history.png" dynPosition="false" id="Help_Trend_History" titleName="" staticOptEnable="true">
+  <wgtStyle width="700" x="0" y="0" height="400" ver="020800424" v="02.08.00.424"/>
+  <object class="GroupWgt" id="GroupWgt1">
+   <wgtStyle width="700" x="0" y="0" cx="350" cy="200" height="400" lock="true"/>
+   <object class="ImageWgt" id="GroupWgt1.image1" static="true">
+    <wgtStyle width="24" imagePath="images/UI_Close_24.png" x="666" y="10" cx="12" cy="12" height="24"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="GroupWgt1.hotspotbtn">
+    <wgtStyle width="40" x="658" y="2" fill="rgb(160,160,164)" dx="1" cx="19.69" form="hotspot" dy="-1" cy="19.61" height="40" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+    <links>
+     <action pageName="" class="CloseDialogAction" attribute="onMouseClick" event="onMouseClick" actionID="0" closeParam="Selected" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.rect6" static="true">
+    <wgtStyle width="2" x="0" y="0" fill="rgb(180,180,180)" cx="0.97" cy="200" height="400" nodeName="rect" stroke="rgb(180,180,180)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.rect7" static="true">
+    <wgtStyle width="700" x="0" y="0" fill="rgb(180,180,180)" cx="339.50" cy="1" height="2" nodeName="rect" stroke="rgb(180,180,180)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.rect1" static="true">
+    <wgtStyle width="2" x="698" y="0" fill="rgb(180,180,180)" cx="0.97" cy="200" height="400" nodeName="rect" stroke="rgb(180,180,180)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.rect2" static="true">
+    <wgtStyle width="700" x="0" y="398" fill="rgb(180,180,180)" cx="339.50" cy="1" height="2" nodeName="rect" stroke="rgb(180,180,180)"/>
+   </object>
+  </object>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="English" defaultFont="Arial"/>
+    <lang removable="false" langCode="it-IT" langId="L2" writingsystem="Any" name="Italian" defaultFont="Arial"/>
+    <lang removable="false" langCode="de-DE" langId="L3" writingsystem="Any" name="German" defaultFont="Arial"/>
+    <lang removable="false" langCode="fr-FR" langId="L4" writingsystem="Any" name="French" defaultFont="Arial"/>
+    <lang removable="false" langCode="zh-CN" langId="L5" writingsystem="Any" name="Chinese" defaultFont="SimHei"/>
+    <lang removable="false" langCode="grc" langId="L6" writingsystem="Any" name="Greek" defaultFont="Arial"/>
+    <lang removable="false" langCode="es-ES" langId="L7" writingsystem="Any" name="Spanish" defaultFont="Arial"/>
+    <lang removable="false" langCode="ru-RU" langId="L8" writingsystem="Any" name="Russian" defaultFont="Arial"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="History Trend can be used if you want to analyze/view the data at a later time. &#xa;Data information are stored into a Trend Buffer that must be defined first.&#xa;&#xa;Embedded gestures: &#xa;Pinch to zoom and pan to move the Trend widget." L2="History Trend can be used if you want to analyze/view the data at a later time. &#xa;Data information are stored into a Trend Buffer that must be defined first.&#xa;&#xa;Embedded gestures: &#xa;Pinch to zoom and pan to move the Trend widget." L3="History Trend can be used if you want to analyze/view the data at a later time. &#xa;Data information are stored into a Trend Buffer that must be defined first.&#xa;&#xa;Embedded gestures: &#xa;Pinch to zoom and pan to move the Trend widget." L4="History Trend can be used if you want to analyze/view the data at a later time. &#xa;Data information are stored into a Trend Buffer that must be defined first.&#xa;&#xa;Embedded gestures: &#xa;Pinch to zoom and pan to move the Trend widget." L5="History Trend can be used if you want to analyze/view the data at a later time. &#xa;Data information are stored into a Trend Buffer that must be defined first.&#xa;&#xa;Embedded gestures: &#xa;Pinch to zoom and pan to move the Trend widget." id="0" L6="History Trend can be used if you want to analyze/view the data at a later time. &#xa;Data information are stored into a Trend Buffer that must be defined first.&#xa;&#xa;Embedded gestures: &#xa;Pinch to zoom and pan to move the Trend widget." L7="History Trend can be used if you want to analyze/view the data at a later time. &#xa;Data information are stored into a Trend Buffer that must be defined first.&#xa;&#xa;Embedded gestures: &#xa;Pinch to zoom and pan to move the Trend widget." L8="History Trend can be used if you want to analyze/view the data at a later time. &#xa;Data information are stored into a Trend Buffer that must be defined first.&#xa;&#xa;Embedded gestures: &#xa;Pinch to zoom and pan to move the Trend widget."/>
+    <MLText L1="History Trend" L2="History Trend" L3="History Trend" L4="History Trend" L5="History Trend" id="1" L6="History Trend" L7="History Trend" L8="History Trend"/>
+    <MLText L1="" L2="" L3="" L4="" L5="" id="3" L6="" L7="" L8=""/>
+    <MLText L1="" L2="" L3="" L4="" L5="" id="4" L6="" L7="" L8=""/>
+   </MLTexts>
+  </object>
+  <object class="LabelWgt" id="label1">
+   <wgtStyle width="280" font-color="rgb(23,30,40)" x="390" forcePaint="2" font-sizepx="13" y="50" font-family="Arial" wrapping="true" cx="140" cy="71.05" height="150" vert-align="top" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="0">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label3">
+   <wgtStyle width="150" font-color="rgb(70,70,70)" x="390" forcePaint="2" font-sizepx="16" y="10" font-family="Arial" font-bold="true" wrapping="true" cx="75" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="1">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="MultiStateImageWgt" id="MultistateImage1">
+   <wgtStyle width="380" imagePath="images/Trend_His_1.jpg,images/Trend_His_2.jpg,images/Trend_His_3.jpg" x="5" forcePaint="1024" y="5" cx="190" discrete="false" cy="190" height="380" frame="1"/>
+  </object>
+  <object class="GroupWgt" id="BtnStd2" customType="Button">
+   <wgtStyle width="30" x="335" forcePaint="1" y="360" cx="15" cy="15" height="30"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrect; hmi-type:bkgd" id="image1" static="true">
+    <wgtStyle width="40.71" imagePath="images/frame_rrect_chrome.svg" x="-5.48" y="-5.53" visibility="false" bdrImageSize="58.00,55.00" cx="19.65" cy="20.16" bdrSize="0.24,0.24,0.21,0.19" height="41.05" bdrEdges="0.13,0.13,0.13,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rrect; hmi-type:btn; type:btn" id="buttonStd2">
+    <wgtStyle width="30" x="0" forcePaint="1" y="0" bdrImageSize="42.00,40.00" fill="rgb(192,192,192)" dx="1" cx="14.87" form="standard" dy="-1" cy="13.91" bdrSize="0.17,0.15,0.15,0.14" height="30" releasePath="images\btn_shiney_rrect_1.svg" needlePath="images\btn_shiney_rrect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action StepOverLimit="true" class="StepTagAction" attribute="onMouseClick" event="onMouseClick" actionID="1" Step="1" StepLimit="2" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" attribute="tagSrc" tag="frame" sourceType="Widget" tagIndex="-1" dataSource="MultistateImage1"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label2" static="true">
+    <wgtStyle width="27.40" font-color="rgb(40,40,40)" x="0.78" font-sizepx="13" y="1.58" font-family="SimHei" wrapping="true" cx="18.44" cy="17.09" height="26.84" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="3"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-shape:none; hmi-type:icon" id="image2">
+    <wgtStyle width="14.09" imagePath="images/ic_pl1_035.svg" x="7.83" forcePaint="1" y="7.89" fill="rgb(40,40,40)" cx="7.05" cy="6.32" height="14.21"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd3" customType="Button">
+   <wgtStyle width="30" x="15" forcePaint="1" y="360" cx="15" cy="15" height="30"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrect; hmi-type:bkgd" id="image3" static="true">
+    <wgtStyle width="40.71" imagePath="images/frame_rrect_chrome.svg" x="-5.48" y="-5.53" visibility="false" bdrImageSize="58.00,55.00" cx="19.65" cy="20.16" bdrSize="0.24,0.24,0.21,0.19" height="41.05" bdrEdges="0.13,0.13,0.13,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:rrect; hmi-type:btn; type:btn" id="buttonStd3">
+    <wgtStyle width="30" x="0" forcePaint="1" y="0" bdrImageSize="42.00,40.00" fill="rgb(192,192,192)" dx="1" cx="14.87" form="standard" dy="-1" cy="13.91" bdrSize="0.17,0.15,0.15,0.14" height="30" releasePath="images\btn_shiney_rrect_1.svg" needlePath="images\btn_shiney_rrect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action StepOverLimit="true" class="StepTagAction" attribute="onMouseClick" event="onMouseClick" actionID="1" Step="-1" StepLimit="0" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" attribute="tagSrc" tag="frame" sourceType="Widget" tagIndex="-1" dataSource="MultistateImage1"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label4" static="true">
+    <wgtStyle width="27.40" font-color="rgb(40,40,40)" x="0.78" font-sizepx="13" y="1.58" font-family="SimHei" wrapping="true" cx="18.44" cy="17.09" height="26.84" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="4"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-shape:none; hmi-type:icon" id="image4">
+    <wgtStyle width="14.09" imagePath="images/ic_pl1_034.svg" x="7.83" forcePaint="1" y="7.89" fill="rgb(40,40,40)" cx="7.05" cy="6.32" height="14.21"/>
+   </object>
+  </object>
+ </object>
+</wgtPage>

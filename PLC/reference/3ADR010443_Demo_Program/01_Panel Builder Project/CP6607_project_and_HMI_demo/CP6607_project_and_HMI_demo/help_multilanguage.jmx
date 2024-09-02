@@ -1,0 +1,65 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="Help_Multilanguage" singleInstance="true" pageType="modal" pageSize="700,400" class="DialogWgt" dataWndSize="0,70" downloadPrepDone="true" px="0" usedFonts="Arial" py="0" titlebar="false" staticFile="opt/help_multilanguage.png" dynPosition="false" id="Help_Multilanguage" titleName="" staticOptEnable="true">
+  <wgtStyle width="700" x="0" y="0" height="400" ver="020800424" v="02.08.00.424"/>
+  <object class="GroupWgt" id="GroupWgt1">
+   <wgtStyle width="700" x="0" y="0" cx="350" cy="200" height="400" lock="true"/>
+   <object class="ImageWgt" id="GroupWgt1.image1" static="true">
+    <wgtStyle width="24" imagePath="images/UI_Close_24.png" x="666" y="10" cx="12" cy="12" height="24"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="GroupWgt1.hotspotbtn">
+    <wgtStyle width="40" x="658" y="2" fill="rgb(160,160,164)" dx="1" cx="19.69" form="hotspot" dy="-1" cy="19.61" height="40" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+    <links>
+     <action pageName="" class="CloseDialogAction" attribute="onMouseClick" event="onMouseClick" actionID="0" closeParam="Selected" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.rect6" static="true">
+    <wgtStyle width="2" x="0" y="0" fill="rgb(180,180,180)" cx="0.97" cy="200" height="400" nodeName="rect" stroke="rgb(180,180,180)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.rect7" static="true">
+    <wgtStyle width="700" x="0" y="0" fill="rgb(180,180,180)" cx="339.50" cy="1" height="2" nodeName="rect" stroke="rgb(180,180,180)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.rect1" static="true">
+    <wgtStyle width="2" x="698" y="0" fill="rgb(180,180,180)" cx="0.97" cy="200" height="400" nodeName="rect" stroke="rgb(180,180,180)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt1.rect2" static="true">
+    <wgtStyle width="700" x="0" y="398" fill="rgb(180,180,180)" cx="339.50" cy="1" height="2" nodeName="rect" stroke="rgb(180,180,180)"/>
+   </object>
+  </object>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="English" defaultFont="Arial"/>
+    <lang removable="false" langCode="it-IT" langId="L2" writingsystem="Any" name="Italian" defaultFont="Arial"/>
+    <lang removable="false" langCode="de-DE" langId="L3" writingsystem="Any" name="German" defaultFont="Arial"/>
+    <lang removable="false" langCode="fr-FR" langId="L4" writingsystem="Any" name="French" defaultFont="Arial"/>
+    <lang removable="false" langCode="zh-CN" langId="L5" writingsystem="Any" name="Chinese" defaultFont="SimHei"/>
+    <lang removable="false" langCode="grc" langId="L6" writingsystem="Any" name="Greek" defaultFont="Arial"/>
+    <lang removable="false" langCode="es-ES" langId="L7" writingsystem="Any" name="Spanish" defaultFont="Arial"/>
+    <lang removable="false" langCode="ru-RU" langId="L8" writingsystem="Any" name="Russian" defaultFont="Arial"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="Multilanguage feature allow users to provide different strings for different languages. &#xa;Into Multilanguage editor, using [+] button is possible to add a new language defining:&#xa;- Language Name &amp; Code: name identifying the language in the project, ISO 639 language code identifier&#xa;- Writing system: a way to filter fonts that support a specific writing system&#xa;- Default font: as default font applied to texts&#xa;- Fonts &amp; Size: number of fonts associated with the selected language, Memory used to store font files&#xa;- Storage: location of file fonts is a removable external memory&#xa;&quot;Save Font&quot; button allow to copy the fonts you marked as Removable on an external memory.&#xa;&#xa;One language must be the default and will be loaded by the system first time. Example above &quot;English&quot; is the default." L2="Multilanguage feature allow users to provide different strings for different languages. &#xa;Into Multilanguage editor, using [+] button is possible to add a new language defining:&#xa;- Language Name &amp; Code: name identifying the language in the project, ISO 639 language code identifier&#xa;- Writing system: a way to filter fonts that support a specific writing system&#xa;- Default font: as default font applied to texts&#xa;- Fonts &amp; Size: number of fonts associated with the selected language, Memory used to store font files&#xa;- Storage: location of file fonts is a removable external memory&#xa;&quot;Save Font&quot; button allow to copy the fonts you marked as Removable on an external memory.&#xa;&#xa;One language must be the default and will be loaded by the system first time. Example above &quot;English&quot; is the default." L3="Multilanguage feature allow users to provide different strings for different languages. &#xa;Into Multilanguage editor, using [+] button is possible to add a new language defining:&#xa;- Language Name &amp; Code: name identifying the language in the project, ISO 639 language code identifier&#xa;- Writing system: a way to filter fonts that support a specific writing system&#xa;- Default font: as default font applied to texts&#xa;- Fonts &amp; Size: number of fonts associated with the selected language, Memory used to store font files&#xa;- Storage: location of file fonts is a removable external memory&#xa;&quot;Save Font&quot; button allow to copy the fonts you marked as Removable on an external memory.&#xa;&#xa;One language must be the default and will be loaded by the system first time. Example above &quot;English&quot; is the default." L4="Multilanguage feature allow users to provide different strings for different languages. &#xa;Into Multilanguage editor, using [+] button is possible to add a new language defining:&#xa;- Language Name &amp; Code: name identifying the language in the project, ISO 639 language code identifier&#xa;- Writing system: a way to filter fonts that support a specific writing system&#xa;- Default font: as default font applied to texts&#xa;- Fonts &amp; Size: number of fonts associated with the selected language, Memory used to store font files&#xa;- Storage: location of file fonts is a removable external memory&#xa;&quot;Save Font&quot; button allow to copy the fonts you marked as Removable on an external memory.&#xa;&#xa;One language must be the default and will be loaded by the system first time. Example above &quot;English&quot; is the default." L5="Multilanguage feature allow users to provide different strings for different languages. &#xa;Into Multilanguage editor, using [+] button is possible to add a new language defining:&#xa;- Language Name &amp; Code: name identifying the language in the project, ISO 639 language code identifier&#xa;- Writing system: a way to filter fonts that support a specific writing system&#xa;- Default font: as default font applied to texts&#xa;- Fonts &amp; Size: number of fonts associated with the selected language, Memory used to store font files&#xa;- Storage: location of file fonts is a removable external memory&#xa;&quot;Save Font&quot; button allow to copy the fonts you marked as Removable on an external memory.&#xa;&#xa;One language must be the default and will be loaded by the system first time. Example above &quot;English&quot; is the default." id="0" L6="Multilanguage feature allow users to provide different strings for different languages. &#xa;Into Multilanguage editor, using [+] button is possible to add a new language defining:&#xa;- Language Name &amp; Code: name identifying the language in the project, ISO 639 language code identifier&#xa;- Writing system: a way to filter fonts that support a specific writing system&#xa;- Default font: as default font applied to texts&#xa;- Fonts &amp; Size: number of fonts associated with the selected language, Memory used to store font files&#xa;- Storage: location of file fonts is a removable external memory&#xa;&quot;Save Font&quot; button allow to copy the fonts you marked as Removable on an external memory.&#xa;&#xa;One language must be the default and will be loaded by the system first time. Example above &quot;English&quot; is the default." L7="Multilanguage feature allow users to provide different strings for different languages. &#xa;Into Multilanguage editor, using [+] button is possible to add a new language defining:&#xa;- Language Name &amp; Code: name identifying the language in the project, ISO 639 language code identifier&#xa;- Writing system: a way to filter fonts that support a specific writing system&#xa;- Default font: as default font applied to texts&#xa;- Fonts &amp; Size: number of fonts associated with the selected language, Memory used to store font files&#xa;- Storage: location of file fonts is a removable external memory&#xa;&quot;Save Font&quot; button allow to copy the fonts you marked as Removable on an external memory.&#xa;&#xa;One language must be the default and will be loaded by the system first time. Example above &quot;English&quot; is the default." L8="Multilanguage feature allow users to provide different strings for different languages. &#xa;Into Multilanguage editor, using [+] button is possible to add a new language defining:&#xa;- Language Name &amp; Code: name identifying the language in the project, ISO 639 language code identifier&#xa;- Writing system: a way to filter fonts that support a specific writing system&#xa;- Default font: as default font applied to texts&#xa;- Fonts &amp; Size: number of fonts associated with the selected language, Memory used to store font files&#xa;- Storage: location of file fonts is a removable external memory&#xa;&quot;Save Font&quot; button allow to copy the fonts you marked as Removable on an external memory.&#xa;&#xa;One language must be the default and will be loaded by the system first time. Example above &quot;English&quot; is the default."/>
+    <MLText L1="Multi-Language" L2="Multi-Language" L3="Multi-Language" L4="Multi-Language" L5="Multi-Language" id="2" L6="Multi-Language" L7="Multi-Language" L8="Multi-Language"/>
+   </MLTexts>
+  </object>
+  <object class="LabelWgt" id="label1">
+   <wgtStyle width="680" font-color="rgb(23,30,40)" x="15" forcePaint="2" font-sizepx="13" y="230" font-family="Arial" wrapping="true" cx="340" cy="80.51" height="170" vert-align="top" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="0">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label3">
+   <wgtStyle width="150" font-color="rgb(70,70,70)" x="15" forcePaint="2" font-sizepx="16" y="200" font-family="Arial" font-bold="true" wrapping="true" cx="75" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="2">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="ImageWgt" id="ImageWgt1" static="true">
+   <wgtStyle width="606" imagePath="images/Multilanguage.jpg" x="5" y="5" cx="303" discrete="false" cy="92.50" height="185"/>
+  </object>
+ </object>
+</wgtPage>

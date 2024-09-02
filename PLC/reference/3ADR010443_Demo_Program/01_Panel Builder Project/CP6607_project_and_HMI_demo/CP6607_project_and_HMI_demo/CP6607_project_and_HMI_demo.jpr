@@ -1,0 +1,252 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object ServerSynchEnable="disable" holdTime="2000" diskSizes="128MB" maxBandwidth="0" webConnectionMode="auto" browserOpt="1" staticOptEnable="true" class="ProjectWgt" autoRepeatPeriod="250" webInactivityTimeout="600" UserMgmtTmplType="Large" screenSaverTimeout="0" enableUserMgmt="true" IncludeVNC="false" downloadPrepDone="true" pageName="CP6607_project_and_HMI_demo" screenSaverPage="0" qtft="true" IncludePDFReader="false" IncludeWebKit="true" pageCacheLowMemMin="8" id="CP6607_project_and_HMI_demo" ContextMenu="0" pageType="project" targetName="CP6607" gesturePassthruEnabled="0" startPage="Start.jmx" pageSize="640,480" orientation="0" debugIP="127.0.0.1" dataWndSize="0,70" TouchBuzzerTime="200" pageCacheLowMemMax="16" maxOpenDlgs="5" gesturePassthruDelay="200" onAccessDenied="0" panelMemory="2GB" bgColorOption="0" targetType="Linux OE/un65" screenSaverDisplayTime="0" defaultPageSize="800,480" refreshTime="100" manufacturerCode="509" KeyPadTmplType="KeyPadTemplates_medium">
+  <wgtStyle width="640" x="0" y="0" height="480" ver="020800424" v="02.08.00.424"/>
+  <object class="MultiLangMgrWgt" id="_MultiLangMgr" fileName="multilang.xml">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="PageMgrWgt" id="_PageMgr">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <pages>
+    <page class="PageWgt" size="800,480" exportType="255" type="normal" precache="false" name="Start" file="start.jmx"/>
+    <page class="PageWgt" size="800,480" exportType="255" type="normal" precache="false" name="Gestures" file="gestures.jmx"/>
+    <page class="PageWgt" size="800,480" exportType="255" type="normal" precache="false" name="JavaScript" file="javascript.jmx"/>
+    <page class="PageWgt" size="800,480" exportType="255" type="normal" precache="false" name="Trend" file="trend.jmx"/>
+    <page class="PageWgt" size="800,480" exportType="255" type="normal" precache="false" name="Alarms" file="alarms.jmx"/>
+    <page class="PageWgt" size="800,480" exportType="255" type="normal" precache="false" name="Scheduler" file="scheduler.jmx"/>
+    <page class="PageWgt" size="800,480" exportType="255" type="normal" precache="false" name="Recipes" file="recipes.jmx"/>
+    <page class="PageWgt" size="800,480" exportType="255" type="normal" precache="false" name="Email" file="email.jmx"/>
+    <page class="PageWgt" size="800,480" exportType="255" type="normal" precache="false" name="RSSFeed" file="rssfeed.jmx"/>
+    <page class="PageWgt" size="800,480" exportType="255" type="normal" precache="false" name="Users" file="users.jmx"/>
+    <page class="PageWgt" size="800,480" exportType="255" type="normal" precache="false" name="IPCamera" file="ipcamera.jmx"/>
+    <page class="PageWgt" size="800,480" exportType="255" type="normal" precache="false" name="Language" file="language.jmx"/>
+    <page class="PageWgt" size="800,480" exportType="255" type="normal" precache="false" name="FileBrowser" file="filebrowser.jmx"/>
+    <page class="PageWgt" size="800,480" exportType="255" type="normal" precache="false" name="Table" file="table.jmx"/>
+    <page class="PageWgt" size="800,480" exportType="255" type="normal" precache="false" name="System" file="system.jmx"/>
+    <page class="PageWgt" size="800,480" exportType="255" type="normal" precache="false" name="AC500_V3" file="ac500_v3.jmx"/>
+    <page class="DialogWgt" size="280,190" exportType="255" type="dialog" precache="false" name="UserRight" file="userright.jmx"/>
+    <page class="DialogWgt" size="280,290" exportType="255" type="dialog" precache="false" name="Network" file="network.jmx"/>
+    <page class="DialogWgt" size="700,400" exportType="255" type="dialog" precache="false" name="Help_Gestures_Swipe" file="help_gestures_swipe.jmx"/>
+    <page class="DialogWgt" size="700,400" exportType="255" type="dialog" precache="false" name="Help_Gestures_Pinch" file="help_gestures_pinch.jmx"/>
+    <page class="DialogWgt" size="700,400" exportType="255" type="dialog" precache="false" name="Help_Gestures_Security" file="help_gestures_security.jmx"/>
+    <page class="DialogWgt" size="700,400" exportType="255" type="dialog" precache="false" name="Help_JavaScript" file="help_javascript.jmx"/>
+    <page class="DialogWgt" size="700,400" exportType="255" type="dialog" precache="false" name="Help_Trend_Real" file="help_trend_real.jmx"/>
+    <page class="DialogWgt" size="700,400" exportType="255" type="dialog" precache="false" name="Help_Trend_History" file="help_trend_history.jmx"/>
+    <page class="DialogWgt" size="700,400" exportType="255" type="dialog" precache="false" name="Help_Alarm_Simulation" file="help_alarm_simulation.jmx"/>
+    <page class="DialogWgt" size="700,400" exportType="255" type="dialog" precache="false" name="Help_Alarm_Banner" file="help_alarm_banner.jmx"/>
+    <page class="DialogWgt" size="700,400" exportType="255" type="dialog" precache="false" name="Help_Scheduler" file="help_scheduler.jmx"/>
+    <page class="DialogWgt" size="700,400" exportType="255" type="dialog" precache="false" name="Help_Recipes" file="help_recipes.jmx"/>
+    <page class="DialogWgt" size="700,400" exportType="255" type="dialog" precache="false" name="Help_Email" file="help_email.jmx"/>
+    <page class="DialogWgt" size="700,400" exportType="255" type="dialog" precache="false" name="Help_UserManagement" file="help_usermanagement.jmx"/>
+    <page class="DialogWgt" size="700,400" exportType="255" type="dialog" precache="false" name="Help_IPCamera" file="help_ipcamera.jmx"/>
+    <page class="DialogWgt" size="700,400" exportType="255" type="dialog" precache="false" name="Help_Multilanguage" file="help_multilanguage.jmx"/>
+    <page class="DialogWgt" size="700,400" exportType="255" type="dialog" precache="false" name="Help_FileBrowser" file="help_filebrowser.jmx"/>
+    <page class="DialogWgt" size="700,400" exportType="255" type="dialog" precache="false" name="Help_Table" file="help_table.jmx"/>
+    <page class="DialogWgt" size="700,400" exportType="255" type="dialog" precache="false" name="Help_Report" file="help_report.jmx"/>
+    <page class="PageWgt" size="1280,720" exportType="3855" type="mobile" precache="false" name="Web_Main" file="web_main.jmx"/>
+    <page class="PageWgt" size="1280,720" exportType="15" type="mobile" precache="false" name="Web_CP600eCo" file="web_cp600eco.jmx"/>
+    <page class="PageWgt" size="1280,720" exportType="15" type="mobile" precache="false" name="Web_CP600" file="web_cp600.jmx"/>
+    <page class="PageWgt" size="1280,720" exportType="15" type="mobile" precache="false" name="Web_CP600Pro" file="web_cp600pro.jmx"/>
+   </pages>
+   <templatePages>
+    <templatePage class="TemplatePageWgt" type="template" name="Background" file="background.jmx"/>
+    <templatePage class="TemplatePageWgt" type="mobile-template" name="WebTemplate" file="webtemplate.jmx"/>
+   </templatePages>
+  </object>
+  <object class="PageMLTextMgrWgt" id="_ProjectMLTextMgr" mgrType="Project" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="English" defaultFont="Arial"/>
+    <lang removable="false" langCode="it-IT" langId="L2" writingsystem="Any" name="Italian" defaultFont="Arial"/>
+    <lang removable="false" langCode="de-DE" langId="L3" writingsystem="Any" name="German" defaultFont="Arial"/>
+    <lang removable="false" langCode="fr-FR" langId="L4" writingsystem="Any" name="French" defaultFont="Arial"/>
+    <lang removable="false" langCode="zh-CN" langId="L5" writingsystem="Any" name="Chinese" defaultFont="SimHei"/>
+    <lang removable="false" langCode="grc" langId="L6" writingsystem="Any" name="Greek" defaultFont="Arial"/>
+    <lang removable="false" langCode="es-ES" langId="L7" writingsystem="Any" name="Spanish" defaultFont="Arial"/>
+    <lang removable="false" langCode="ru-RU" langId="L8" writingsystem="Any" name="Russian" defaultFont="Arial"/>
+   </langs>
+   <MLTexts/>
+  </object>
+  <object class="PLCMgrWgt" id="_PLCMgr" fileName="protocols.xml">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="TagMgrWgt" id="_TagMgr" fileName="tags.xml">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="GroupSource" sourceType="Data" dataSource="_IdalGrpSrc"/>
+    <dataLink readWrite="R/W" attribute="TagSource" sourceType="Data" dataSource="_IdalTagSrc"/>
+   </dataLinks>
+  </object>
+  <object class="IdalItemsWgt" threadEnable="true" retryCount="1" id="_IdalTagSrc" debugEnable="false">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="IdalGroupWgt" threadEnable="false" retryCount="1" id="_IdalGrpSrc" debugEnable="false">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="TrendMgrWgt" id="_TrendMgr" fileName="trends.xml">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="ReportMgrWgt" id="_ReportMgr" fileName="reports.xml">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="ReportPageMgrWgt" id="_ReportPageMgr">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="DictionaryMgrWgt" id="_DictionaryMgr" fileName="dictionaries.xml">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="PageMLTextMgrWgt" id="_AlarmMLTextMgr" mgrType="Alarm" mlFileName="alarms.xml">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="AlarmsMgrWgt" nCustomFields="2" id="_AlarmsMgr" fileName="alarms.xml">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="AlarmSource" sourceType="Data" dataSource="_IdalAlarms"/>
+   </dataLinks>
+  </object>
+  <object class="EventMgrWgt" id="_EventMgr" fileName="eventconfig.xml">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="PageMLTextMgrWgt" id="_ScheduleMLTextMgr" mgrType="Scheduler" mlFileName="scheduler.xml">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="ScheduleMgrWgt" id="_ScheduleMgr" fileName="scheduler.xml">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="IdalAlarmsWgt" threadEnable="false" retryCount="1" id="_IdalAlarms" debugEnable="false">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="IdalUserMgmtWgt" id="_IdalUserMgmt">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="IdalMgrWgt" id="_IdalMgr">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="RecipeMgrWgt" id="_RecipeMgr">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" attribute="recipeIOSrc" sourceType="Recipe" dataSource="_IdalRecipe"/>
+   </dataLinks>
+  </object>
+  <object class="AuditTrailMgrWgt" id="_AuditTrailMgr">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="DataTransferMgrWgt" syncOnInit="true" id="_DataTransferMgr">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <object direction="0" enable="true" class="DataXferWgt" highLimit="0" transferMode="1" syncOnInit="0" lowLimit="0" type="1" r="0" id="data1" name="data1" h3="data1.a;data1.b,data2.a;data2.b,data3.a;data3.b,data4.a;data4.b,data5.a;data5.b,data6.a;data6.b">
+    <wgtStyle width="0" x="0" y="0" height="0"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="int" attribute="srcA" tag="Day Of Month" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+     <dataLink readWrite="R" tagType="unsignedByte" attribute="srcB" tag="DT_Manual_Day" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+     <dataLink readWrite="R" tagType="boolean" attribute="trigger" tag="DT_Manual_Sync_EN" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object direction="0" enable="true" class="DataXferWgt" highLimit="0" transferMode="1" syncOnInit="0" lowLimit="0" type="1" r="1" id="data2" name="data2">
+    <wgtStyle width="0" x="0" y="0" height="0"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="int" attribute="srcA" tag="Month" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+     <dataLink readWrite="R" tagType="unsignedByte" attribute="srcB" tag="DT_Manual_Month" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+     <dataLink readWrite="R" tagType="boolean" attribute="trigger" tag="DT_Manual_Sync_EN" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object direction="0" enable="true" class="DataXferWgt" highLimit="0" transferMode="1" syncOnInit="0" lowLimit="0" type="1" r="2" id="data3" name="data3">
+    <wgtStyle width="0" x="0" y="0" height="0"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="int" attribute="srcA" tag="Year" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+     <dataLink readWrite="R" tagType="unsignedShort" attribute="srcB" tag="DT_Manual_Year" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+     <dataLink readWrite="R" tagType="boolean" attribute="trigger" tag="DT_Manual_Sync_EN" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object direction="0" enable="true" class="DataXferWgt" highLimit="0" transferMode="1" syncOnInit="0" lowLimit="0" type="1" r="3" id="data4" name="data4">
+    <wgtStyle width="0" x="0" y="0" height="0"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="int" attribute="srcA" tag="Hour" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+     <dataLink readWrite="R" tagType="unsignedByte" attribute="srcB" tag="DT_Manual_Hour" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+     <dataLink readWrite="R" tagType="boolean" attribute="trigger" tag="DT_Manual_Sync_EN" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object direction="0" enable="true" class="DataXferWgt" highLimit="0" transferMode="1" syncOnInit="0" lowLimit="0" type="1" r="4" id="data5" name="data5">
+    <wgtStyle width="0" x="0" y="0" height="0"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="int" attribute="srcA" tag="Minute" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+     <dataLink readWrite="R" tagType="unsignedByte" attribute="srcB" tag="DT_Manual_Minute" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+     <dataLink readWrite="R" tagType="boolean" attribute="trigger" tag="DT_Manual_Sync_EN" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object direction="0" enable="true" class="DataXferWgt" highLimit="0" transferMode="1" syncOnInit="0" lowLimit="0" type="1" r="5" id="data6" name="data6">
+    <wgtStyle width="0" x="0" y="0" height="0"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="int" attribute="srcA" tag="Second" class="SysPropMgrWgt" widgetType="Project" sourceType="System" tagIndex="-1" dataSource="_SysPropMgr"/>
+     <dataLink readWrite="R" tagType="unsignedByte" attribute="srcB" tag="DT_Manual_Second" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+     <dataLink readWrite="R" tagType="boolean" attribute="trigger" tag="DT_Manual_Sync_EN" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="IndexedTagSetMgrWgt" id="_IndexedTagSetMgr">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="DBConnectorMgrWgt" id="_DBConnectorMgr">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="IdalDBConnectorWgt" id="_IdalDBConnector">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="UserGroupMgrWgt" id="_UserGroupMgr">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="UserMgrWgt" id="_UserMgr">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="userSource" sourceType="Data" dataSource="_IdalUserMgmt"/>
+    <dataLink readWrite="W" attribute="userSource" sourceType="Data" dataSource="_IdalUserMgmt"/>
+   </dataLinks>
+  </object>
+  <object class="PrintMgrWgt" id="_PrintMgr">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="ThreadMgrWgt" id="_ThreadMgr">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <dataLinks>
+    <dataLink readWrite="W" attribute="WriteSource" sourceType="Data" dataSource="_IdalItems"/>
+   </dataLinks>
+  </object>
+  <object class="IdalItemsWgt" threadEnable="false" retryCount="1" id="_IdalItems" debugEnable="false">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="VariablesWgt" id="_VariablesWgt">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="RemoteClientMgrWgt" id="_RemoteClientMgr">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="SysPropMgrWgt" id="_SysPropMgr">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" attribute="sysIOSrc" sourceType="Data" dataSource="_IdalSysProp"/>
+   </dataLinks>
+  </object>
+  <object class="ScreenMgrWgt" TimeOutInterval="60" id="_ScreenMgr">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="IdalRecipeWgt" id="_IdalRecipe">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="IdalSysPropWgt" id="_IdalSysProp">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="KeypadMgrWgt" id="_KeypadMgr">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="KeyExtMgrWgt" id="_KeyExtMgr">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="OPCUAMgrWgt" id="_OPCUAMgr">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="SignatureMgrWgt" id="_SignatureMgr">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="GroupSubscribeWgt" id="CP6607_project_and_HMI_demo@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+ </object>
+</wgtPage>

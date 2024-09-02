@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<protocols xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <protocol>
+    <id>prot1</id>
+    <name>CDS3</name>
+    <nodes>
+      <prefix>PLC_AC500_V3</prefix>
+      <cfgVer>1</cfgVer>
+      <ipAddress>192.168.0.10</ipAddress>
+      <timeout>1000</timeout>
+      <fullAddress>false</fullAddress>
+      <maxVarList>225</maxVarList>
+      <dictionaryName>[ABB CoDeSys ETH V3 prot1] Application</dictionaryName>
+      <dictionaryPath>C:\Users\DEU214980\AppData\Local\Temp\PanelBuilder600\BC5CB62B5CAF3FD74ACF40CE59C2656C__F850_TA512_PNIO_DA501_20190123__Panel_CP600\[ABB CoDeSys ETH V3 prot1] Application.xml</dictionaryPath>
+    </nodes>
+  </protocol>
+</protocols>

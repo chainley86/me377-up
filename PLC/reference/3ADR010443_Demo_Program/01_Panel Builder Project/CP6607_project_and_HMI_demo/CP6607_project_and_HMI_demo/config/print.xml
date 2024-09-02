@@ -1,0 +1,5 @@
+<printdetails ramquota="16000000" maxpixmapsize="16000000" spoolMediaType="1" spoolFolder="USBMemory/" diskquota="-1">
+ <printerPorts>
+  <port>File</port>
+ </printerPorts>
+</printdetails>

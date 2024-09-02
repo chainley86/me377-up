@@ -1,0 +1,376 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="rssfeed" pageSize="800,480" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" templateFile="background.jmx" usedFonts="Arial,SimHei" staticFile="opt/rssfeed.png" id="rssfeed" staticOptEnable="true">
+  <wgtStyle width="800" x="0" y="0" height="480" ver="020800424" v="02.08.00.424"/>
+  <object class="ShapeWgt" id="GroupWgt2.GroupWgt5.rect1" static="true">
+   <wgtStyle width="250" x="10" y="70" fill="rgb(255,255,255)" cx="120.97" cy="200" height="400" nodeName="rect" stroke="rgb(70,70,70)"/>
+  </object>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="English" defaultFont="Arial"/>
+    <lang removable="false" langCode="it-IT" langId="L2" writingsystem="Any" name="Italian" defaultFont="Arial"/>
+    <lang removable="false" langCode="de-DE" langId="L3" writingsystem="Any" name="German" defaultFont="Arial"/>
+    <lang removable="false" langCode="fr-FR" langId="L4" writingsystem="Any" name="French" defaultFont="Arial"/>
+    <lang removable="false" langCode="zh-CN" langId="L5" writingsystem="Any" name="Chinese" defaultFont="SimHei"/>
+    <lang removable="false" langCode="grc" langId="L6" writingsystem="Any" name="Greek" defaultFont="Arial"/>
+    <lang removable="false" langCode="es-ES" langId="L7" writingsystem="Any" name="Spanish" defaultFont="Arial"/>
+    <lang removable="false" langCode="ru-RU" langId="L8" writingsystem="Any" name="Russian" defaultFont="Arial"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="" L2="" L3="" L4="" L5="" id="1" L6="" L7="" L8=""/>
+    <MLText L1="RSS Feed" L2="RSS Feed" L3="RSS Feed" L4="Flux RSS" L5="RSS 订阅" id="5" L6="Τροφοδοσία RSS" L7="RSS Feed" L8="Новостная лента"/>
+   </MLTexts>
+  </object>
+  <object class="GroupWgt" id="GroupWgt3.BtnKbd2" customType="Keyboard Button">
+   <wgtStyle width="40" x="315" forcePaint="8" y="395" visibility="false" cx="20" cy="20" height="40"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="visibility" tag="ButtonWgt.value" sourceType="Widget" tagIndex="-1" dataSource="GroupWgt3.BtnKbd1"/>
+   </dataLinks>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="GroupWgt3.BtnKbd2.frmImg" static="true">
+    <wgtStyle width="49.58" enableCache="true" x="-5.63" y="-13.85" visibility="false" bdrImageSize="80.00,40.00" cx="20.88" cy="47.88" bdrSize="0.19,0.18,0.17,0.17" height="67.70" bdrEdges="0.14,0.16,0.14,0.14"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="GroupWgt3.BtnKbd2.btn">
+    <wgtStyle width="40" x="0" forcePaint="1" y="0" fill="rgb(120,120,120)" dx="1" cx="19.72" form="standard" cy="20" height="40" releasePath="images\ArrowLeft_Up_40x40.png" needlePath="images\ArrowLeft_Down_40x40.png" type="momentary" value="0"/>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="GroupWgt3.BtnKbd2.lbl" static="true">
+    <wgtStyle width="32.11" font-color="rgb(192,192,192)" x="3.38" font-sizepx="13" y="0" font-family="Arial" wrapping="true" cx="14.08" cy="16.92" height="35.38" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="GroupWgt3.BtnKbd2.icoImg" static="true">
+    <wgtStyle width="10.14" x="14.65" y="6.15" cx="6.20" cy="12.30" height="23.08"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt3.BtnKbd1" customType="Keyboard Button">
+   <wgtStyle width="40" x="365" forcePaint="8" y="395" visibility="false" cx="20" cy="20" height="40"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="visibility" tag="ButtonWgt.value" sourceType="Widget" tagIndex="-1" dataSource="GroupWgt3.BtnKbd1"/>
+   </dataLinks>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="GroupWgt3.BtnKbd1.frmImg" static="true">
+    <wgtStyle width="49.58" enableCache="true" x="-5.63" y="-13.85" visibility="false" bdrImageSize="80.00,40.00" cx="20.88" cy="47.88" bdrSize="0.19,0.18,0.17,0.17" height="67.70" bdrEdges="0.14,0.16,0.14,0.14"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="GroupWgt3.BtnKbd1.btn">
+    <wgtStyle width="40" x="0" forcePaint="1" y="0" fill="rgb(120,120,120)" dx="1" cx="19.72" form="standard" cy="20" height="40" releasePath="images\ArrowRight_Up_40x40.png" needlePath="images\ArrowRight_Down_40x40.png" type="momentary" value="0"/>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="GroupWgt3.BtnKbd1.lbl" static="true">
+    <wgtStyle width="32.11" font-color="rgb(192,192,192)" x="3.38" font-sizepx="13" y="0" font-family="Arial" wrapping="true" cx="14.08" cy="16.92" height="35.38" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="GroupWgt3.BtnKbd1.icoImg" static="true">
+    <wgtStyle width="10.14" x="14.65" y="6.15" cx="6.20" cy="12.30" height="23.08"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="ABB_RSSFeed1" customType="ABB_RSSFeed">
+   <wgtStyle width="245" x="13" y="135" cx="122.50" cy="165" height="330"/>
+   <links>
+    <attr attrName="*.CurItem.value" alias="*.CurItem.value"/>
+   </links>
+   <object class="GroupWgt" id="ABB_RSSFeed1.BackBtn" customType="Keyboard Button">
+    <wgtStyle width="40" x="152" y="283" cx="20" cy="20" height="40"/>
+    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="ABB_RSSFeed1.BackBtn.frmImg" static="true">
+     <wgtStyle width="49.58" enableCache="true" x="-5.63" y="-13.85" visibility="false" bdrImageSize="80.00,40.00" cx="20.88" cy="47.88" bdrSize="0.19,0.18,0.17,0.17" height="67.70" bdrEdges="0.14,0.16,0.14,0.14"/>
+    </object>
+    <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="ABB_RSSFeed1.BackBtn.btn">
+     <wgtStyle width="40" x="0" y="0" fill="rgb(120,120,120)" dx="1" cx="19.72" form="standard" cy="20" height="40" releasePath="images\ArrowLeft_Up_40x40.png" needlePath="images\ArrowLeft_Down_40x40.png" type="momentary" value="0"/>
+     <links>
+      <action StepOverLimit="true" class="StepTagAction" attribute="onMousePress" event="onMouseDown" actionID="1" Step="-1" StepLimit="0" actionWgt="_TagMgr">
+       <dataLinks>
+        <dataLink readWrite="R" attribute="tagSrc" tag="CurItem" sourceType="Widget" tagIndex="-1" dataSource="ABB_RSSFeed1.RSSFeed"/>
+       </dataLinks>
+      </action>
+     </links>
+    </object>
+    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="ABB_RSSFeed1.BackBtn.lbl" static="true">
+     <wgtStyle width="32.11" font-color="rgb(192,192,192)" x="3.38" font-sizepx="13" y="0" font-family="Arial" wrapping="true" cx="14.08" cy="16.92" height="35.38" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+     <links>
+      <lang class="MLTextLink" textid="1"/>
+     </links>
+    </object>
+    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="ABB_RSSFeed1.BackBtn.icoImg" static="true">
+     <wgtStyle width="10.14" x="14.65" y="6.15" cx="6.20" cy="12.30" height="23.08"/>
+    </object>
+   </object>
+   <object class="ShapeWgt" id="ABB_RSSFeed1.TitleBack" static="true">
+    <wgtStyle width="245" x="0" y="0" fill="rgb(230,230,230)" cx="118.55" cy="32" height="64" nodeName="rect" stroke="rgb(230,230,230)"/>
+   </object>
+   <object class="GroupWgt" id="ABB_RSSFeed1.ForBtn" customType="Keyboard Button">
+    <wgtStyle width="40" x="202" y="283" cx="20" cy="20" height="40"/>
+    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="ABB_RSSFeed1.ForBtn.frmImg" static="true">
+     <wgtStyle width="49.58" enableCache="true" x="-5.63" y="-13.85" visibility="false" bdrImageSize="80.00,40.00" cx="20.88" cy="47.88" bdrSize="0.19,0.18,0.17,0.17" height="67.70" bdrEdges="0.14,0.16,0.14,0.14"/>
+    </object>
+    <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="ABB_RSSFeed1.ForBtn.btn">
+     <wgtStyle width="40" x="0" y="0" fill="rgb(120,120,120)" dx="1" cx="19.72" form="standard" cy="20" height="40" releasePath="images\ArrowRight_Up_40x40.png" needlePath="images\ArrowRight_Down_40x40.png" type="momentary" value="0"/>
+     <links>
+      <action StepOverLimit="false" class="StepTagAction" attribute="onMousePress" event="onMouseDown" actionID="0" Step="1" StepLimit="0" actionWgt="_TagMgr">
+       <dataLinks>
+        <dataLink readWrite="R" attribute="tagSrc" tag="CurItem" sourceType="Widget" tagIndex="-1" dataSource="ABB_RSSFeed1.RSSFeed"/>
+       </dataLinks>
+      </action>
+     </links>
+    </object>
+    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="ABB_RSSFeed1.ForBtn.lbl" static="true">
+     <wgtStyle width="32.11" font-color="rgb(192,192,192)" x="3.38" font-sizepx="13" y="0" font-family="Arial" wrapping="true" cx="14.08" cy="16.92" height="35.38" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+     <links>
+      <lang class="MLTextLink" textid="1"/>
+     </links>
+    </object>
+    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="ABB_RSSFeed1.ForBtn.icoImg" static="true">
+     <wgtStyle width="10.14" x="14.65" y="6.15" cx="6.20" cy="12.30" height="23.08"/>
+    </object>
+   </object>
+   <object class="LabelWgt" id="ABB_RSSFeed1.Title">
+    <wgtStyle width="240" font-color="rgb(70,70,70)" x="2" forcePaint="8" font-sizepx="17" y="2" font-family="Arial" wrapping="true" cx="118.58" cy="16.36" height="60" vert-align="top" text="RSSFeed" keypad-type="None" font-size="13"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="text" tag="CurTitle" sourceType="Data" dataSource="ABB_RSSFeed1.RSSFeed"/>
+    </dataLinks>
+   </object>
+   <object titleSeparator="" RSSSource="http://rss.cnn.com/rss/cnn_topstories" class="RSSFeedWgt" CurItem="0" id="ABB_RSSFeed1.RSSFeed" UpdateRate="15">
+    <wgtStyle width="31" x="2" forcePaint="1024" y="276" cx="15" cy="26" height="54"/>
+    <Sources>
+     <Source enable="true" name="CNN" resource="http://rss.cnn.com/rss/cnn_topstories"/>
+    </Sources>
+   </object>
+   <object class="LabelWgt" id="ABB_RSSFeed1.Desc">
+    <wgtStyle width="240" font-color="rgb(70,70,70)" x="2" forcePaint="8" font-sizepx="16" y="66" font-family="Arial" wrapping="true" height="206" vert-align="top" text="Feed Description" keypad-type="None" font-size="12"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="text" tag="CurDesc" sourceType="Data" dataSource="ABB_RSSFeed1.RSSFeed"/>
+    </dataLinks>
+   </object>
+   <object class="NumericWgt" id="ABB_RSSFeed1.CurItem">
+    <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="22.12" cy="21.18" step="1" timeSpec="local" alignment="center" x="92" y="296" vert-align="middle" text="0" max="4096" usingFormat="#" value="0" keypad-type="None" font-color="rgb(70,70,70)" min="0" width="25" numberFormat="6" height="30" form="Numeric" font-size="10"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="value" tag="CurItem" sourceType="Data" dataSource="ABB_RSSFeed1.RSSFeed">
+      <xForms>
+       <xForm Offset="1" class="ScaleXForm" Scale="1" name="Offset" Mod="1"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+   </object>
+   <object class="NumericWgt" id="ABB_RSSFeed1.TotalItem">
+    <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="13.47" cy="15.88" step="1" timeSpec="local" alignment="center" x="122" y="296" vert-align="middle" text="99" max="4096" usingFormat="#" value="99" keypad-type="None" font-color="rgb(70,70,70)" min="0" width="25" numberFormat="6" height="30" form="Numeric" font-size="10"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="value" tag="NumItems" sourceType="Data" dataSource="ABB_RSSFeed1.RSSFeed"/>
+    </dataLinks>
+   </object>
+   <object class="NumericWgt" id="ABB_RSSFeed1.Seperator">
+    <wgtStyle forcePaint="65" font-family="Arial" font-sizepx="16" cx="3.51" cy="15" step="1" timeSpec="local" alignment="center" x="116" y="296" vert-align="middle" text="/" max="4096" usingFormat="" value="/" keypad-type="Numeric" font-color="rgb(70,70,70)" min="0" width="7" numberFormat="0" readWrite="true" height="30" form="Numeric" font-size="12"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label2">
+   <wgtStyle width="350" font-color="rgb(255,255,255)" x="118" forcePaint="2" font-sizepx="24" y="10" font-family="Arial" font-bold="true" wrapping="true" cx="175" cy="18.94" height="40" vert-align="middle" keypad-type="None" font-size="18"/>
+   <links>
+    <lang class="MLTextLink" textid="5"/>
+   </links>
+  </object>
+  <object class="ImageWgt" id="GroupWgt2.GroupWgt5.image9" static="true">
+   <wgtStyle width="236.84" imagePath="images/CNN_headline_news.jpg" x="15" y="74" cx="118.42" cy="26.47" height="52.92"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt2.GroupWgt5.rect2">
+   <wgtStyle width="250" x="275" forcePaint="1" y="70" fill="rgb(255,255,255)" cx="120.97" cy="200" height="400" nodeName="rect" stroke="rgb(70,70,70)"/>
+  </object>
+  <object class="ImageWgt" id="GroupWgt2.GroupWgt1.image11">
+   <wgtStyle width="236.84" imagePath="images/DWN.jpg" x="280" forcePaint="1" y="74" cx="118.42" cy="26.47" height="52.92"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt2.GroupWgt5.rect3" static="true">
+   <wgtStyle width="250" x="540" y="70" fill="rgb(255,255,255)" cx="120.97" cy="200" height="400" nodeName="rect" stroke="rgb(70,70,70)"/>
+  </object>
+  <object class="ImageWgt" id="GroupWgt2.GroupWgt7.image10" static="true">
+   <wgtStyle width="236.84" imagePath="images/Reuters.jpg" x="545" y="74" cx="118.42" cy="26.47" height="52.92"/>
+  </object>
+  <object class="GroupWgt" id="ABB_RSSFeed2" customType="ABB_RSSFeed">
+   <wgtStyle width="245" x="278" forcePaint="1" y="135" cx="122.50" cy="165" height="330"/>
+   <links>
+    <attr attrName="*.CurItem.value" alias="*.CurItem.value"/>
+   </links>
+   <object class="GroupWgt" id="ABB_RSSFeed2.BackBtn" customType="Keyboard Button">
+    <wgtStyle width="40" x="152" forcePaint="1" y="283" cx="20" cy="20" height="40"/>
+    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="ABB_RSSFeed2.BackBtn.frmImg" static="true">
+     <wgtStyle width="49.58" enableCache="true" x="-5.63" y="-13.85" visibility="false" bdrImageSize="80.00,40.00" cx="20.88" cy="47.88" bdrSize="0.19,0.18,0.17,0.17" height="67.70" bdrEdges="0.14,0.16,0.14,0.14"/>
+    </object>
+    <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="ABB_RSSFeed2.BackBtn.btn">
+     <wgtStyle width="40" x="0" forcePaint="1" y="0" fill="rgb(120,120,120)" dx="1" cx="19.72" form="standard" cy="20" height="40" releasePath="images\ArrowLeft_Up_40x40.png" needlePath="images\ArrowLeft_Down_40x40.png" type="momentary" value="0"/>
+     <links>
+      <action StepOverLimit="true" class="StepTagAction" attribute="onMousePress" event="onMouseDown" actionID="1" Step="-1" StepLimit="0" actionWgt="_TagMgr">
+       <dataLinks>
+        <dataLink readWrite="R" attribute="tagSrc" tag="CurItem" sourceType="Widget" tagIndex="-1" dataSource="ABB_RSSFeed2.RSSFeed"/>
+       </dataLinks>
+      </action>
+     </links>
+    </object>
+    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="ABB_RSSFeed2.BackBtn.lbl" static="true">
+     <wgtStyle width="32.11" font-color="rgb(192,192,192)" x="3.38" font-sizepx="13" y="0" font-family="Arial" wrapping="true" cx="14.08" cy="16.92" height="35.38" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+     <links>
+      <lang class="MLTextLink" textid="1"/>
+     </links>
+    </object>
+    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="ABB_RSSFeed2.BackBtn.icoImg" static="true">
+     <wgtStyle width="10.14" x="14.65" y="6.15" cx="6.20" cy="12.30" height="23.08"/>
+    </object>
+   </object>
+   <object class="ShapeWgt" id="ABB_RSSFeed2.TitleBack">
+    <wgtStyle width="245" x="0" forcePaint="1" y="0" fill="rgb(230,230,230)" cx="118.55" cy="32" height="64" nodeName="rect" stroke="rgb(230,230,230)"/>
+   </object>
+   <object class="GroupWgt" id="ABB_RSSFeed2.ForBtn" customType="Keyboard Button">
+    <wgtStyle width="40" x="202" forcePaint="1" y="283" cx="20" cy="20" height="40"/>
+    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="ABB_RSSFeed2.ForBtn.frmImg" static="true">
+     <wgtStyle width="49.58" enableCache="true" x="-5.63" y="-13.85" visibility="false" bdrImageSize="80.00,40.00" cx="20.88" cy="47.88" bdrSize="0.19,0.18,0.17,0.17" height="67.70" bdrEdges="0.14,0.16,0.14,0.14"/>
+    </object>
+    <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="ABB_RSSFeed2.ForBtn.btn">
+     <wgtStyle width="40" x="0" forcePaint="1" y="0" fill="rgb(120,120,120)" dx="1" cx="19.72" form="standard" cy="20" height="40" releasePath="images\ArrowRight_Up_40x40.png" needlePath="images\ArrowRight_Down_40x40.png" type="momentary" value="0"/>
+     <links>
+      <action StepOverLimit="false" class="StepTagAction" attribute="onMousePress" event="onMouseDown" actionID="0" Step="1" StepLimit="0" actionWgt="_TagMgr">
+       <dataLinks>
+        <dataLink readWrite="R" attribute="tagSrc" tag="CurItem" sourceType="Widget" tagIndex="-1" dataSource="ABB_RSSFeed2.RSSFeed"/>
+       </dataLinks>
+      </action>
+     </links>
+    </object>
+    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="ABB_RSSFeed2.ForBtn.lbl" static="true">
+     <wgtStyle width="32.11" font-color="rgb(192,192,192)" x="3.38" font-sizepx="13" y="0" font-family="Arial" wrapping="true" cx="14.08" cy="16.92" height="35.38" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+     <links>
+      <lang class="MLTextLink" textid="1"/>
+     </links>
+    </object>
+    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="ABB_RSSFeed2.ForBtn.icoImg" static="true">
+     <wgtStyle width="10.14" x="14.65" y="6.15" cx="6.20" cy="12.30" height="23.08"/>
+    </object>
+   </object>
+   <object class="LabelWgt" id="ABB_RSSFeed2.Title">
+    <wgtStyle width="240" font-color="rgb(70,70,70)" x="2" forcePaint="9" font-sizepx="17" y="2" font-family="Arial" wrapping="true" cx="118.58" cy="16.36" height="60" vert-align="top" text="RSSFeed" keypad-type="None" font-size="13"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="text" tag="CurTitle" sourceType="Data" dataSource="ABB_RSSFeed2.RSSFeed"/>
+    </dataLinks>
+   </object>
+   <object titleSeparator="" RSSSource="http://www.rnz.de/feed/13-heidelberg.xml" class="RSSFeedWgt" CurItem="0" id="ABB_RSSFeed2.RSSFeed" UpdateRate="15">
+    <wgtStyle width="31" x="2" forcePaint="1025" y="276" cx="15" cy="26" height="54"/>
+    <Sources>
+     <Source enable="true" name="RNZ" resource="http://www.rnz.de/feed/13-heidelberg.xml"/>
+    </Sources>
+   </object>
+   <object class="LabelWgt" id="ABB_RSSFeed2.Desc">
+    <wgtStyle width="240" font-color="rgb(70,70,70)" x="2" forcePaint="9" font-sizepx="16" y="66" font-family="Arial" wrapping="true" height="206" vert-align="top" text="Feed Description" keypad-type="None" font-size="12"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="text" tag="CurDesc" sourceType="Data" dataSource="ABB_RSSFeed2.RSSFeed"/>
+    </dataLinks>
+   </object>
+   <object class="NumericWgt" id="ABB_RSSFeed2.CurItem">
+    <wgtStyle forcePaint="9" font-family="Arial" font-sizepx="13" cx="22.12" cy="21.18" step="1" timeSpec="local" alignment="center" x="92" y="296" vert-align="middle" text="0" max="4096" usingFormat="#" value="0" keypad-type="None" font-color="rgb(70,70,70)" min="0" width="25" numberFormat="6" height="30" form="Numeric" font-size="10"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="value" tag="CurItem" sourceType="Data" dataSource="ABB_RSSFeed2.RSSFeed">
+      <xForms>
+       <xForm Offset="1" class="ScaleXForm" Scale="1" name="Offset" Mod="1"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+   </object>
+   <object class="NumericWgt" id="ABB_RSSFeed2.TotalItem">
+    <wgtStyle forcePaint="9" font-family="Arial" font-sizepx="13" cx="13.47" cy="15.88" step="1" timeSpec="local" alignment="center" x="122" y="296" vert-align="middle" text="99" max="4096" usingFormat="#" value="99" keypad-type="None" font-color="rgb(70,70,70)" min="0" width="25" numberFormat="6" height="30" form="Numeric" font-size="10"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="value" tag="NumItems" sourceType="Data" dataSource="ABB_RSSFeed2.RSSFeed"/>
+    </dataLinks>
+   </object>
+   <object class="NumericWgt" id="ABB_RSSFeed2.Seperator">
+    <wgtStyle forcePaint="65" font-family="Arial" font-sizepx="16" cx="3.51" cy="15" step="1" timeSpec="local" alignment="center" x="116" y="296" vert-align="middle" text="/" max="4096" usingFormat="" value="/" keypad-type="Numeric" font-color="rgb(70,70,70)" min="0" width="7" numberFormat="0" readWrite="true" height="30" form="Numeric" font-size="12"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="ABB_RSSFeed3" customType="ABB_RSSFeed">
+   <wgtStyle width="245" x="543" y="135" cx="122.50" cy="165" height="330"/>
+   <links>
+    <attr attrName="*.CurItem.value" alias="*.CurItem.value"/>
+   </links>
+   <object class="GroupWgt" id="ABB_RSSFeed3.BackBtn" customType="Keyboard Button">
+    <wgtStyle width="40" x="152" y="283" cx="20" cy="20" height="40"/>
+    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="ABB_RSSFeed3.BackBtn.frmImg" static="true">
+     <wgtStyle width="49.58" enableCache="true" x="-5.63" y="-13.85" visibility="false" bdrImageSize="80.00,40.00" cx="20.88" cy="47.88" bdrSize="0.19,0.18,0.17,0.17" height="67.70" bdrEdges="0.14,0.16,0.14,0.14"/>
+    </object>
+    <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="ABB_RSSFeed3.BackBtn.btn">
+     <wgtStyle width="40" x="0" y="0" fill="rgb(120,120,120)" dx="1" cx="19.72" form="standard" cy="20" height="40" releasePath="images\ArrowLeft_Up_40x40.png" needlePath="images\ArrowLeft_Down_40x40.png" type="momentary" value="0"/>
+     <links>
+      <action StepOverLimit="true" class="StepTagAction" attribute="onMousePress" event="onMouseDown" actionID="1" Step="-1" StepLimit="0" actionWgt="_TagMgr">
+       <dataLinks>
+        <dataLink readWrite="R" attribute="tagSrc" tag="CurItem" sourceType="Widget" tagIndex="-1" dataSource="ABB_RSSFeed3.RSSFeed"/>
+       </dataLinks>
+      </action>
+     </links>
+    </object>
+    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="ABB_RSSFeed3.BackBtn.lbl" static="true">
+     <wgtStyle width="32.11" font-color="rgb(192,192,192)" x="3.38" font-sizepx="13" y="0" font-family="Arial" wrapping="true" cx="14.08" cy="16.92" height="35.38" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+     <links>
+      <lang class="MLTextLink" textid="1"/>
+     </links>
+    </object>
+    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="ABB_RSSFeed3.BackBtn.icoImg" static="true">
+     <wgtStyle width="10.14" x="14.65" y="6.15" cx="6.20" cy="12.30" height="23.08"/>
+    </object>
+   </object>
+   <object class="ShapeWgt" id="ABB_RSSFeed3.TitleBack" static="true">
+    <wgtStyle width="245" x="0" y="0" fill="rgb(230,230,230)" cx="118.55" cy="32" height="64" nodeName="rect" stroke="rgb(230,230,230)"/>
+   </object>
+   <object class="GroupWgt" id="ABB_RSSFeed3.ForBtn" customType="Keyboard Button">
+    <wgtStyle width="40" x="202" y="283" cx="20" cy="20" height="40"/>
+    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="ABB_RSSFeed3.ForBtn.frmImg" static="true">
+     <wgtStyle width="49.58" enableCache="true" x="-5.63" y="-13.85" visibility="false" bdrImageSize="80.00,40.00" cx="20.88" cy="47.88" bdrSize="0.19,0.18,0.17,0.17" height="67.70" bdrEdges="0.14,0.16,0.14,0.14"/>
+    </object>
+    <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="ABB_RSSFeed3.ForBtn.btn">
+     <wgtStyle width="40" x="0" y="0" fill="rgb(120,120,120)" dx="1" cx="19.72" form="standard" cy="20" height="40" releasePath="images\ArrowRight_Up_40x40.png" needlePath="images\ArrowRight_Down_40x40.png" type="momentary" value="0"/>
+     <links>
+      <action StepOverLimit="false" class="StepTagAction" attribute="onMousePress" event="onMouseDown" actionID="0" Step="1" StepLimit="0" actionWgt="_TagMgr">
+       <dataLinks>
+        <dataLink readWrite="R" attribute="tagSrc" tag="CurItem" sourceType="Widget" tagIndex="-1" dataSource="ABB_RSSFeed3.RSSFeed"/>
+       </dataLinks>
+      </action>
+     </links>
+    </object>
+    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="ABB_RSSFeed3.ForBtn.lbl" static="true">
+     <wgtStyle width="32.11" font-color="rgb(192,192,192)" x="3.38" font-sizepx="13" y="0" font-family="Arial" wrapping="true" cx="14.08" cy="16.92" height="35.38" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+     <links>
+      <lang class="MLTextLink" textid="1"/>
+     </links>
+    </object>
+    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="ABB_RSSFeed3.ForBtn.icoImg" static="true">
+     <wgtStyle width="10.14" x="14.65" y="6.15" cx="6.20" cy="12.30" height="23.08"/>
+    </object>
+   </object>
+   <object class="LabelWgt" id="ABB_RSSFeed3.Title">
+    <wgtStyle width="240" font-color="rgb(70,70,70)" x="2" forcePaint="8" font-sizepx="17" y="2" font-family="SimHei" wrapping="true" cx="118.58" cy="16.36" height="60" vert-align="top" text="RSSFeed" keypad-type="None" font-size="13"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="text" tag="CurTitle" sourceType="Data" dataSource="ABB_RSSFeed3.RSSFeed"/>
+    </dataLinks>
+   </object>
+   <object titleSeparator="" RSSSource="http://feeds.feedburner.com/kanzhongguo/www" class="RSSFeedWgt" CurItem="0" id="ABB_RSSFeed3.RSSFeed" UpdateRate="15">
+    <wgtStyle width="31" x="2" forcePaint="1024" y="276" cx="15" cy="26" height="54"/>
+    <Sources>
+     <Source enable="true" name="Reuters" resource="http://feeds.feedburner.com/kanzhongguo/www"/>
+    </Sources>
+   </object>
+   <object class="LabelWgt" id="ABB_RSSFeed3.Desc">
+    <wgtStyle width="240" font-color="rgb(70,70,70)" x="2" forcePaint="8" font-sizepx="16" y="66" font-family="SimHei" wrapping="true" height="206" vert-align="top" text="Feed Description" keypad-type="None" font-size="12"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="text" tag="CurDesc" sourceType="Data" dataSource="ABB_RSSFeed3.RSSFeed"/>
+    </dataLinks>
+   </object>
+   <object class="NumericWgt" id="ABB_RSSFeed3.CurItem">
+    <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="22.12" cy="21.18" step="1" timeSpec="local" alignment="center" x="92" y="296" vert-align="middle" text="0" max="4096" usingFormat="#" value="0" keypad-type="None" font-color="rgb(70,70,70)" min="0" width="25" numberFormat="6" height="30" form="Numeric" font-size="10"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="value" tag="CurItem" sourceType="Data" dataSource="ABB_RSSFeed3.RSSFeed">
+      <xForms>
+       <xForm Offset="1" class="ScaleXForm" Scale="1" name="Offset" Mod="1"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+   </object>
+   <object class="NumericWgt" id="ABB_RSSFeed3.TotalItem">
+    <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="13.47" cy="15.88" step="1" timeSpec="local" alignment="center" x="122" y="296" vert-align="middle" text="99" max="4096" usingFormat="#" value="99" keypad-type="None" font-color="rgb(70,70,70)" min="0" width="25" numberFormat="6" height="30" form="Numeric" font-size="10"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="value" tag="NumItems" sourceType="Data" dataSource="ABB_RSSFeed3.RSSFeed"/>
+    </dataLinks>
+   </object>
+   <object class="NumericWgt" id="ABB_RSSFeed3.Seperator">
+    <wgtStyle forcePaint="65" font-family="Arial" font-sizepx="16" cx="3.51" cy="15" step="1" timeSpec="local" alignment="center" x="116" y="296" vert-align="middle" text="/" max="4096" usingFormat="" value="/" keypad-type="Numeric" font-color="rgb(70,70,70)" min="0" width="7" numberFormat="0" readWrite="true" height="30" form="Numeric" font-size="12"/>
+   </object>
+  </object>
+ </object>
+</wgtPage>

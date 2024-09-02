@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alarms>
+    <multiLangs>
+        <langs defLangId="L1" curLangId="L1">
+            <lang name="English" langCode="en-US" writingsystem="Any" defaultFont="Arial" langId="L1" removable="false"/>
+            <lang name="Italian" langCode="it-IT" writingsystem="Any" defaultFont="Arial" langId="L2" removable="false"/>
+            <lang name="German" langCode="de-DE" writingsystem="Any" defaultFont="Arial" langId="L3" removable="false"/>
+            <lang name="French" langCode="fr-FR" writingsystem="Any" defaultFont="Arial" langId="L4" removable="false"/>
+            <lang name="Chinese" langCode="zh-CN" writingsystem="Any" defaultFont="SimHei" langId="L5" removable="false"/>
+            <lang name="Greek" langCode="grc" writingsystem="Any" defaultFont="Arial" langId="L6" removable="false"/>
+            <lang name="Spanish" langCode="es-ES" writingsystem="Any" defaultFont="Arial" langId="L7" removable="false"/>
+            <lang name="Russian" langCode="ru-RU" writingsystem="Any" defaultFont="Arial" langId="L8" removable="false"/>
+        </langs>
+        <MLTexts>
+            <MLText id="0" L1="Not Triggered" L2="Not Triggered" L3="Not Triggered" L4="Not Triggered" L5="Not Triggered" L6="Not Triggered" L7="Not Triggered" L8="Not Triggered"/>
+            <MLText id="22" L1="Disabled" L2="Disabled" L3="Disabled" L4="Disabled" L5="Disabled" L6="Disabled" L7="Disabled" L8="Disabled"/>
+            <MLText id="2" L1="Triggered" L2="Triggered" L3="Triggered" L4="Triggered" L5="Triggered" L6="Triggered" L7="Triggered" L8="Triggered"/>
+            <MLText id="3" L1="Triggered Not Acked" L2="Triggered Not Acked" L3="Triggered Not Acked" L4="Triggered Not Acked" L5="Triggered Not Acked" L6="Triggered Not Acked" L7="Triggered Not Acked" L8="Triggered Not Acked"/>
+            <MLText id="4" L1="Not Triggered Acked" L2="Not Triggered Acked" L3="Not Triggered Acked" L4="Not Triggered Acked" L5="Not Triggered Acked" L6="Not Triggered Acked" L7="Not Triggered Acked" L8="Not Triggered Acked"/>
+            <MLText id="5" L1="Not Triggered Not Acked" L2="Not Triggered Not Acked" L3="Not Triggered Not Acked" L4="Not Triggered Not Acked" L5="Not Triggered Not Acked" L6="Not Triggered Not Acked" L7="Not Triggered Not Acked" L8="Not Triggered Not Acked"/>
+            <MLText id="6" L1="Triggered Acked" L2="Triggered Acked" L3="Triggered Acked" L4="Triggered Acked" L5="Triggered Acked" L6="Triggered Acked" L7="Triggered Acked" L8="Triggered Acked"/>
+            <MLText id="7" L1="Error: Alarm 01 Bit Mask Alarm" L2="Error: Alarm 01 Bit Mask Alarm" L3="Error: Alarm 01 Bit Mask Alarm" L4="Error: Alarm 01 Bit Mask Alarm" L5="Error: Alarm 01 Bit Mask Alarm" L6="Error: Alarm 01 Bit Mask Alarm" L7="Error: Alarm 01 Bit Mask Alarm" L8="Error: Alarm 01 Bit Mask Alarm"/>
+            <MLText id="8" L1="Information: Alarm 02 Value Alarm [Alarm_02] Hz" L2="Information: Alarm 02 Value Alarm [Alarm_02] Hz" L3="Information: Alarm 02 Value Alarm [Alarm_02] Hz" L4="Information: Alarm 02 Value Alarm [Alarm_02] Hz" L5="Information: Alarm 02 Value Alarm [Alarm_02] Hz" L6="Information: Alarm 02 Value Alarm [Alarm_02] Hz" L7="Information: Alarm 02 Value Alarm [Alarm_02] Hz" L8="Information: Alarm 02 Value Alarm [Alarm_02] Hz"/>
+            <MLText id="9" L1="Warning: Alarm 03 Limit Alarm [Alarm_03] %" L2="Warning: Alarm 03 Limit Alarm [Alarm_03] %" L3="Warning: Alarm 03 Limit Alarm [Alarm_03] %" L4="Warning: Alarm 03 Limit Alarm [Alarm_03] %" L5="Warning: Alarm 03 Limit Alarm [Alarm_03] %" L6="Warning: Alarm 03 Limit Alarm [Alarm_03] %" L7="Warning: Alarm 03 Limit Alarm [Alarm_03] %" L8="Warning: Alarm 03 Limit Alarm [Alarm_03] %"/>
+            <MLText id="10" L1="Error: Alarm 04 Deviation Alarm [Alarm_04] kg" L2="Error: Alarm 04 Deviation Alarm [Alarm_04] kg" L3="Error: Alarm 04 Deviation Alarm [Alarm_04] kg" L4="Error: Alarm 04 Deviation Alarm [Alarm_04] kg" L5="Error: Alarm 04 Deviation Alarm [Alarm_04] kg" L6="Error: Alarm 04 Deviation Alarm [Alarm_04] kg" L7="Error: Alarm 04 Deviation Alarm [Alarm_04] kg" L8="Error: Alarm 04 Deviation Alarm [Alarm_04] kg"/>
+        </MLTexts>
+    </multiLangs>
+    <defaultColors notTriggeredTxtColor="#ffffff" notTriggeredBgColor="#f03040" disabledTxtColor="#ffffff" disabledBgColor="#f03040" triggeredTxtColor="#ffffff" triggeredBgColor="#f03040" triggeredNotAckedTxtColor="#ffffff" triggeredNotAckedBgColor="#f03040" notTriggeredAckedTxtColor="#ffffff" notTriggeredAckedBgColor="#f03040" notTriggeredNotAckedTxtColor="#ffffff" notTriggeredNotAckedBgColor="#f03040" triggeredAckedTxtColor="#ffffff" triggeredAckedBgColor="#f03040" ackTxtColor="#ff0000" ackBgColor="#ffff00"/>
+    <stateMLDesc NotTriggered="[0@Alarm]Not Triggered" Disabled="[22@Alarm]Disabled" Triggered="[2@Alarm]Triggered" TriggeredNotAcked="[3@Alarm]Triggered Not Acked" NotTriggeredAcked="[4@Alarm]Not Triggered Acked" NotTriggeredNotAcked="[5@Alarm]Not Triggered Not Acked" TriggeredAcked="[6@Alarm]Triggered Acked"/>
+    <bitMaskAlarm alarmId="1" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm1</name>
+        <groups></groups>
+        <source>Alarm_01</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>true</requireReset>
+        <actions/>
+        <useractions/>
+        <description>[7@Alarm]Error: Alarm 01 Bit Mask Alarm</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1></customField_1>
+            <customField_2></customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <valueAlarm alarmId="2" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm2</name>
+        <groups></groups>
+        <source>Alarm_02</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>true</requireReset>
+        <notTriggeredBgColor>#0096e0</notTriggeredBgColor>
+        <disabledBgColor>#0096e0</disabledBgColor>
+        <triggeredBgColor>#0096e0</triggeredBgColor>
+        <triggeredNotAckedBgColor>#0096e0</triggeredNotAckedBgColor>
+        <notTriggeredAckedBgColor>#0096e0</notTriggeredAckedBgColor>
+        <triggeredAckedBgColor>#0096e0</triggeredAckedBgColor>
+        <actions/>
+        <useractions/>
+        <description>[8@Alarm]Information: Alarm 02 Value Alarm [Alarm_02] Hz</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1></customField_1>
+            <customField_2></customField_2>
+        </customFields>
+        <value>100</value>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </valueAlarm>
+    <limitAlarm alarmId="3" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm3</name>
+        <groups></groups>
+        <source>Alarm_03</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>true</requireReset>
+        <notTriggeredBgColor>#ff7300</notTriggeredBgColor>
+        <disabledBgColor>#ff7300</disabledBgColor>
+        <triggeredBgColor>#ff7300</triggeredBgColor>
+        <triggeredNotAckedBgColor>#ff7300</triggeredNotAckedBgColor>
+        <notTriggeredAckedBgColor>#ff7300</notTriggeredAckedBgColor>
+        <triggeredAckedBgColor>#ff7300</triggeredAckedBgColor>
+        <actions/>
+        <useractions/>
+        <description>[9@Alarm]Warning: Alarm 03 Limit Alarm [Alarm_03] %</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1></customField_1>
+            <customField_2></customField_2>
+        </customFields>
+        <lowLimit>30</lowLimit>
+        <highLimit>70</highLimit>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </limitAlarm>
+    <deviationAlarm alarmId="4" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Alarm4</name>
+        <groups></groups>
+        <source>Alarm_04</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <enabled>true</enabled>
+        <requireAck>true</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>true</requireReset>
+        <actions/>
+        <useractions/>
+        <description>[10@Alarm]Error: Alarm 04 Deviation Alarm [Alarm_04] kg</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1></customField_1>
+            <customField_2></customField_2>
+        </customFields>
+        <deviation>10</deviation>
+        <setPoint>60</setPoint>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </deviationAlarm>
+</alarms>

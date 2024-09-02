@@ -1,0 +1,28 @@
+<trends>
+ <trend type="1">
+  <name>Trend1</name>
+  <source></source>
+  <samplingTime attachTo="">1000</samplingTime>
+  <active>true</active>
+  <compressed>false</compressed>
+  <size>99999</size>
+  <trigger></trigger>
+  <deviation>
+   <lowLimit>0</lowLimit>
+   <highLimit>0</highLimit>
+  </deviation>
+  <autodumptrend>false</autodumptrend>
+  <autodumpFileNameFormat>\%n\%y%M%d\%h%m%s</autodumpFileNameFormat>
+  <dataStorageLoc></dataStorageLoc>
+  <storageDevice>0</storageDevice>
+  <sources>
+   <dl comment="" name="Motor_Current">Trend_MotorCurrent</dl>
+   <dl comment="" name="Motor_Speed">Trend_MotorSpeed</dl>
+   <dl comment="" name="Motor_Temperature">Trend_MotorTemp</dl>
+  </sources>
+  <sourceTs>false</sourceTs>
+  <autoDumpFormat>0</autoDumpFormat>
+  <autoDumpTimeSpec>0</autoDumpTimeSpec>
+  <autoDumpStorageDevice>-1</autoDumpStorageDevice>
+ </trend>
+</trends>

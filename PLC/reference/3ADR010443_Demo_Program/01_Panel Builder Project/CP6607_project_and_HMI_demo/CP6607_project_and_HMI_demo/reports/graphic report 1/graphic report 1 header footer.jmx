@@ -1,0 +1,58 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="graphic report 1 header footer" pageType="report-template" pageSize="744,1052" class="ReportTemplatePageWgt" dataWndSize="0,70" downloadPrepDone="false" report-header-height="150" usedFonts="Arial" id="graphic report 1 header footer" report-footer-height="90" staticOptEnable="false">
+  <wgtStyle width="744" x="0" forcePaint="512" y="0" height="1052" ver="020800424" v="02.08.00.424"/>
+  <object class="PageMLTextMgrWgt" id="_TemplatePageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="English" defaultFont="Arial"/>
+    <lang removable="false" langCode="it-IT" langId="L2" writingsystem="Any" name="Italian" defaultFont="Arial"/>
+    <lang removable="false" langCode="de-DE" langId="L3" writingsystem="Any" name="German" defaultFont="Arial"/>
+    <lang removable="false" langCode="fr-FR" langId="L4" writingsystem="Any" name="French" defaultFont="Arial"/>
+    <lang removable="false" langCode="zh-CN" langId="L5" writingsystem="Any" name="Chinese" defaultFont="SimHei"/>
+    <lang removable="false" langCode="grc" langId="L6" writingsystem="Any" name="Greek" defaultFont="Arial"/>
+    <lang removable="false" langCode="es-ES" langId="L7" writingsystem="Any" name="Spanish" defaultFont="Arial"/>
+    <lang removable="false" langCode="ru-RU" langId="L8" writingsystem="Any" name="Russian" defaultFont="Arial"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="Key features" L2="Key features" L3="Key features" L4="Key features" L5="Key features" id="0" L6="Key features" L7="Key features" L8="Key features"/>
+    <MLText L1="CP600-eCo, CP600 and CP600-Pro" L2="CP600-eCo, CP600 and CP600-Pro" L3="CP600-eCo, CP600 and CP600-Pro" L4="CP600-eCo, CP600 and CP600-Pro" L5="CP600-eCo, CP600 and CP600-Pro" id="2" L6="CP600-eCo, CP600 and CP600-Pro" L7="CP600-eCo, CP600 and CP600-Pro" L8="CP600-eCo, CP600 and CP600-Pro"/>
+   </MLTexts>
+  </object>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="English" defaultFont="Arial"/>
+    <lang removable="false" langCode="it-IT" langId="L2" writingsystem="Any" name="Italian" defaultFont="Arial"/>
+    <lang removable="false" langCode="de-DE" langId="L3" writingsystem="Any" name="German" defaultFont="Arial"/>
+    <lang removable="false" langCode="fr-FR" langId="L4" writingsystem="Any" name="French" defaultFont="Arial"/>
+    <lang removable="false" langCode="zh-CN" langId="L5" writingsystem="Any" name="Chinese" defaultFont="SimHei"/>
+    <lang removable="false" langCode="grc" langId="L6" writingsystem="Any" name="Greek" defaultFont="Arial"/>
+    <lang removable="false" langCode="es-ES" langId="L7" writingsystem="Any" name="Spanish" defaultFont="Arial"/>
+    <lang removable="false" langCode="ru-RU" langId="L8" writingsystem="Any" name="Russian" defaultFont="Arial"/>
+   </langs>
+   <MLTexts/>
+  </object>
+  <object class="ShapeWgt" id="rect1" static="true">
+   <wgtStyle width="30" x="30" y="50" fill="rgb(255,0,0)" cx="14.52" cy="2" height="4" nodeName="rect" stroke="rgb(255,0,0)"/>
+  </object>
+  <object class="LabelWgt" id="label1" static="true">
+   <wgtStyle width="600" font-color="rgb(23,30,40)" x="30" font-sizepx="26" y="70" font-family="Arial" font-bold="true" wrapping="true" cx="300" cy="15" height="30" vert-align="top" marker="true" keypad-type="None" font-size="20"/>
+   <links>
+    <lang class="MLTextLink" textid="2">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label2" static="true">
+   <wgtStyle width="600" font-color="rgb(40,40,40)" x="30" font-sizepx="26" y="110" font-family="Arial" wrapping="true" cx="300" cy="15" height="30" vert-align="top" marker="true" keypad-type="None" font-size="20"/>
+   <links>
+    <lang class="MLTextLink" textid="0">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="ReportPageNumberWgt" id="page_number" static="true">
+   <wgtStyle width="120" font-color="rgb(70,70,70)" x="600" font-sizepx="12" y="1000" font-family="Arial" cx="37.02" cy="8" height="15" alignment="center" vert-align="top" text="Page 1 of Page n" keypad-type="None" font-size="9"/>
+  </object>
+ </object>
+</wgtPage>

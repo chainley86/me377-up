@@ -1,0 +1,158 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="Network" singleInstance="true" pageType="modal" pageSize="280,290" class="DialogWgt" dataWndSize="0,70" downloadPrepDone="true" px="0" usedFonts="Arial,Tahoma,SimHei" py="0" titlebar="false" staticFile="opt/network.png" dynPosition="false" id="Network" titleName="" staticOptEnable="true">
+  <wgtStyle width="280" x="0" y="0" height="290" ver="020800424" v="02.08.00.424"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="English" defaultFont="Arial"/>
+    <lang removable="false" langCode="it-IT" langId="L2" writingsystem="Any" name="Italian" defaultFont="Arial"/>
+    <lang removable="false" langCode="de-DE" langId="L3" writingsystem="Any" name="German" defaultFont="Arial"/>
+    <lang removable="false" langCode="fr-FR" langId="L4" writingsystem="Any" name="French" defaultFont="Arial"/>
+    <lang removable="false" langCode="zh-CN" langId="L5" writingsystem="Any" name="Chinese" defaultFont="SimHei"/>
+    <lang removable="false" langCode="grc" langId="L6" writingsystem="Any" name="Greek" defaultFont="Arial"/>
+    <lang removable="false" langCode="es-ES" langId="L7" writingsystem="Any" name="Spanish" defaultFont="Arial"/>
+    <lang removable="false" langCode="ru-RU" langId="L8" writingsystem="Any" name="Russian" defaultFont="Arial"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="Yes" L2="" L3="" L4="" L5="" id="5" L6="" L7="" L8=""/>
+    <MLText L1="No" L2="" L3="" L4="" L5="" id="2" L6="" L7="" L8=""/>
+    <MLText L1="Network Adapter Settings" L2="Network Adapter Settings" L3="Network Adapter Settings" L4="Network Adapter Settings" L5="Network Adapter Settings" id="4" L6="Network Adapter Settings" L7="Network Adapter Settings" L8="Network Adapter Settings"/>
+   </MLTexts>
+  </object>
+  <object class="GroupWgt" id="netadapterParam" customType="com.hmi.ipwidget-:1.0.1">
+   <wgtStyle width="273" x="4.50" y="38" cx="136.50" cy="124.50" height="249"/>
+   <object class="ShapeWgt" id="netadapterParam.frame" static="true">
+    <wgtStyle width="273" x="0" y="0" fill="none" cx="132.10" cy="124.50" height="249" nodeName="rect" stroke="none" fill-opacity="0.75"/>
+   </object>
+   <object class="ComboBoxWgt" id="netadapterParam.nameCombo">
+    <wgtStyle width="91" font-color="rgb(70,70,70)" x="10" font-sizepx="14" y="20" font-family="Arial" cx="45.22" cy="14.57" height="30" vert-align="top" index="0" text="" keypad-type="None" list="ETH1" font-size="11"/>
+   </object>
+   <object class="LabelWgt" id="netadapterParam.heading" static="true">
+    <wgtStyle font-bold="true" font-family="Tahoma" font-sizepx="16" cx="136" cy="10.89" alignment="center" x="0" y="-23" visibility="false" vert-align="middle" text="Network Adapter Settings" frameFill="rgb(0,0,255)" keypad-type="None" frameSize="0" font-color="rgb(255,255,255)" width="272" wrapping="true" height="23" frame="true" font-size="12" frameColor="rgb(0,0,255)"/>
+   </object>
+   <object class="LabelWgt" id="netadapterParam.macidLabel" static="true">
+    <wgtStyle width="60" font-color="rgb(70,70,70)" x="120" font-sizepx="14" y="15" font-family="Arial" wrapping="true" cx="47.31" cy="12.21" height="20" vert-align="middle" text="Mac ID:" keypad-type="None" font-size="11"/>
+   </object>
+   <object class="NumericWgt" id="netadapterParam.macidText">
+    <wgtStyle font-family="Arial" font-sizepx="14" cx="69.66" cy="11.12" step="1" timeSpec="local" x="120" y="35" vert-align="middle" text="BC:F4:BB:4F:F8:38" max="32767" usingFormat="" value="BC:F4:BB:4F:F8:38" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-32768" width="135" numberFormat="0" readWrite="true" height="20" form="Numeric" font-size="11"/>
+   </object>
+   <object class="GroupWgt" id="netadapterParam.btn" customType="Button Computer">
+    <wgtStyle width="0" x="249" forcePaint="1" y="-23" cx="0" cy="0" height="0"/>
+    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="netadapterParam.btn.img" static="true">
+     <wgtStyle width="36.92" enableCache="true" x="-6.15" y="-6.75" visibility="false" bdrImageSize="60.00,46.00" cx="22.81" cy="23.34" bdrSize="0.19,0.18,0.17,0.17" height="37.50" bdrEdges="0.14,0.16,0.14,0.14"/>
+    </object>
+   </object>
+   <object class="LabelWgt" id="netadapterParam.dhcpLabel" static="true">
+    <wgtStyle width="100" font-color="rgb(70,70,70)" x="10" font-sizepx="14" y="69" font-family="Arial" wrapping="true" cx="166.15" cy="22.83" height="20" vert-align="middle" text="Use DHCP:" keypad-type="None" font-size="11"/>
+   </object>
+   <object class="ComboBoxWgt" id="netadapterParam.dhcpCombo">
+    <wgtStyle width="71" font-color="rgb(70,70,70)" listData="," x="120" forcePaint="2" font-sizepx="14" y="65" font-family="SimHei" cx="67.70" cy="16.76" height="30" vert-align="top" index="0" text="" keypad-type="None" list="," font-size="11"/>
+    <links>
+     <lang class="MLComboBoxLink:list:">
+      <MLFontFamily L1="Tahoma" L2="Arial" L3="Arial" L4="Arial" L5="SimHei" L6="Arial" L7="Arial" L8="Arial"/>
+      <textid idx="0" val="2"/>
+      <textid idx="1" val="5"/>
+     </lang>
+    </links>
+   </object>
+   <object class="LabelWgt" id="netadapterParam.ipaddrLabel" static="true">
+    <wgtStyle width="100" font-color="rgb(70,70,70)" x="10" font-sizepx="14" y="106" font-family="Arial" wrapping="true" cx="82.01" cy="7.25" height="20" vert-align="middle" text="IP Address:" keypad-type="None" font-size="11"/>
+   </object>
+   <object class="LabelWgt" id="netadapterParam.maskLabel" static="true">
+    <wgtStyle width="100" font-color="rgb(70,70,70)" x="10" font-sizepx="14" y="137" font-family="Arial" wrapping="true" cx="137.64" cy="7.02" height="20" vert-align="middle" text="Subnet Mask:" keypad-type="None" font-size="11"/>
+   </object>
+   <object class="LabelWgt" id="netadapterParam.gatewayLabel" static="true">
+    <wgtStyle width="100" font-color="rgb(70,70,70)" x="10" font-sizepx="14" y="169" font-family="Arial" wrapping="true" cx="99.58" cy="7.25" height="20" vert-align="middle" text="Gateway:" keypad-type="None" font-size="11"/>
+   </object>
+   <object class="NumericWgt" id="netadapterParam.ipEdit">
+    <wgtStyle font-family="Arial" font-sizepx="14" cx="73.35" cy="11.57" step="1" timeSpec="local" alignment="center" x="120" y="105" vert-align="middle" frameFill="rgb(230,230,230)" text="192.168.121.123" max="32767" usingFormat="" value="192.168.121.123" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-32768" width="139" numberFormat="0" readWrite="true" height="22" frame="true" font-size="11" form="Numeric" frameColor="rgb(70,70,70)"/>
+   </object>
+   <object class="NumericWgt" id="netadapterParam.maskEdit">
+    <wgtStyle font-family="Arial" font-sizepx="14" cx="73.35" cy="11.57" step="1" timeSpec="local" alignment="center" x="120" y="136" vert-align="middle" frameFill="rgb(230,230,230)" text="192.168.121.123" max="32767" usingFormat="" value="192.168.121.123" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-32768" width="139" numberFormat="0" readWrite="true" height="22" frame="true" font-size="11" form="Numeric" frameColor="rgb(70,70,70)"/>
+   </object>
+   <object class="NumericWgt" id="netadapterParam.gatewayEdit">
+    <wgtStyle font-family="Arial" font-sizepx="14" cx="73.35" cy="11.57" step="1" timeSpec="local" alignment="center" x="120" y="167" vert-align="middle" frameFill="rgb(230,230,230)" text="192.168.121.123" max="32767" usingFormat="" value="192.168.121.123" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-32768" width="139" numberFormat="0" readWrite="true" height="22" frame="true" font-size="11" form="Numeric" frameColor="rgb(70,70,70)"/>
+   </object>
+   <object class="GroupWgt" id="netadapterParam.advancedButton" customType="Shape Button">
+    <wgtStyle width="0" x="21" y="221" cx="0" cy="0" height="0"/>
+   </object>
+   <object class="NumericWgt" id="netadapterParam.dhcpSel">
+    <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="13" cx="23" cy="9" step="1" timeSpec="local" x="182.75" y="249" visibility="false" vert-align="top" text="No" max="32767" usingFormat="#" value="No" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-32768" width="40" numberFormat="6" readWrite="true" height="17" form="Numeric" font-size="10"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" attribute="value" tag="text" sourceType="Widget" dataSource="netadapterParam.dhcpCombo"/>
+    </dataLinks>
+    <links>
+     <action f="this.dhcpSel_onDataUpdate" class="JavaScriptAction" attribute="value" event="onDataUpdate" actionID="1" actionWgt="_WgtMgr"/>
+    </links>
+   </object>
+   <object class="NumericWgt" id="netadapterParam.nameSel">
+    <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="13" cx="23" cy="9" step="1" timeSpec="local" x="235" y="249" visibility="false" vert-align="top" text="ETH1" max="32767" usingFormat="#" value="ETH1" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-32768" width="40" numberFormat="6" readWrite="true" height="17" form="Numeric" font-size="10"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" attribute="value" tag="text" sourceType="Widget" dataSource="netadapterParam.nameCombo"/>
+    </dataLinks>
+    <links>
+     <action f="this.nameSel_onDataUpdate" class="JavaScriptAction" attribute="value" event="onDataUpdate" actionID="1" actionWgt="_WgtMgr"/>
+    </links>
+   </object>
+   <object class="GroupWgt" id="netadapterParam.applyButton" customType="Keyboard Button">
+    <wgtStyle width="80" x="180" y="210.15" cx="40" cy="15" height="30"/>
+    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="netadapterParam.applyButton.frmImg" static="true">
+     <wgtStyle width="98.53" enableCache="true" x="-10.98" y="-10.38" visibility="false" bdrImageSize="80.00,40.00" cx="41.50" cy="35.91" bdrSize="0.19,0.18,0.17,0.17" height="50.77" bdrEdges="0.14,0.16,0.14,0.14"/>
+    </object>
+    <object class="ButtonWgt" hmiStyle="hmi-filltype:none; hmi-name:kbd1; hmi-shape:custom; hmi-type:btn; type:btn" id="netadapterParam.applyButton.btn">
+     <wgtStyle width="79.50" x="0.22" y="0" fill="rgb(192,192,192)" dx="1" cx="39.20" form="standard" cy="15" height="30" releasePath="images\Button_Up_120x50.png" needlePath="images\Button_Down_120x50.png" type="momentary" value="0"/>
+     <links>
+      <action f="this.applyButtonPushButton_onMouseClick" class="JavaScriptAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_WgtMgr"/>
+     </links>
+    </object>
+    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="netadapterParam.applyButton.lbl">
+     <wgtStyle width="80" x="0" forcePaint="1" font-sizepx="14" y="0" font-family="Arial" wrapping="true" cx="35.09" cy="14.34" height="30" alignment="center" vert-align="middle" text="Apply" keypad-type="None" font-size="11"/>
+    </object>
+    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="netadapterParam.applyButton.icoImg" static="true">
+     <wgtStyle width="64.30" x="7.82" y="4.23" cx="39.29" cy="11.49" height="21.54"/>
+    </object>
+   </object>
+   <object class="NumericWgt" id="netadapterParam.Adapters">
+    <wgtStyle forcePaint="8" font-family="Tahoma" font-sizepx="13" cx="23" cy="9" step="1" timeSpec="local" x="130.50" y="249" visibility="false" vert-align="top" text="99999" max="32767" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-32768" width="40" numberFormat="0" height="17" form="Numeric" font-size="10"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="string" attribute="value" tag="Adapters Parameters" class="SysPropMgrWgt" widgetType="Project" sourceType="System" dataSource="_SysPropMgr"/>
+    </dataLinks>
+    <links>
+     <action f="this.refreshAdapters" class="JavaScriptAction" attribute="onDataUpdate" event="onDataUpdate" actionID="1" actionWgt="_WgtMgr"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupSubscribeWgt" id="Network@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label7">
+   <wgtStyle font-bold="true" forcePaint="2" font-family="Arial" font-sizepx="16" cx="105" cy="14.20" x="20" y="10" vert-align="middle" frameFill="rgb(255,255,255)" keypad-type="None" font-color="rgb(70,70,70)" width="209" wrapping="true" height="29" frame="true" font-size="12" frameColor="rgb(255,255,255)"/>
+   <links>
+    <lang class="MLTextLink" textid="4">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="Arial" L6="Arial" L7="Arial" L8="Arial"/>
+    </lang>
+   </links>
+  </object>
+  <object class="ImageWgt" id="image1" static="true">
+   <wgtStyle width="24" imagePath="images/UI_Close_24.png" x="246" y="13" cx="12" cy="12" height="24"/>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="hotspotbtn">
+   <wgtStyle width="40" x="237" y="3" fill="rgb(160,160,164)" dx="1" cx="19.69" form="hotspot" dy="-1" cy="19.61" height="40" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action pageName="" class="CloseDialogAction" attribute="onMouseClick" event="onMouseClick" actionID="0" closeParam="Selected" actionWgt="_PageMgr"/>
+   </links>
+  </object>
+  <object class="ShapeWgt" id="rect5">
+   <wgtStyle width="2" x="278" forcePaint="65" y="0" fill="rgb(180,180,180)" cx="0.97" cy="145" height="290" nodeName="rect" stroke="rgb(180,180,180)"/>
+  </object>
+  <object class="ShapeWgt" id="rect6" static="true">
+   <wgtStyle width="2" x="0" y="0" fill="rgb(180,180,180)" cx="0.97" cy="145" height="290" nodeName="rect" stroke="rgb(180,180,180)"/>
+  </object>
+  <object class="ShapeWgt" id="rect7">
+   <wgtStyle width="280" x="0" forcePaint="1" y="0" fill="rgb(180,180,180)" cx="135.80" cy="1" height="2" nodeName="rect" stroke="rgb(180,180,180)"/>
+  </object>
+  <object class="ShapeWgt" id="rect8">
+   <wgtStyle width="280" x="0" forcePaint="65" y="288" fill="rgb(180,180,180)" cx="135.80" cy="1" height="2" nodeName="rect" stroke="rgb(180,180,180)"/>
+  </object>
+ </object>
+</wgtPage>

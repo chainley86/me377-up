@@ -1,0 +1,202 @@
+<groups>
+ <group Type="Auto">
+  <name>AC500_V3@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>PLC_AC500_V3/Application/GVL/Pot_AI1</tag>
+  <tag>PLC_AC500_V3/Application/GVL/Pot_AI2</tag>
+  <tag>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDI_08_CI502</tag>
+  <tag>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDI_08_DA501</tag>
+  <tag>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDI_09_CI502</tag>
+  <tag>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDI_09_DA501</tag>
+  <tag>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDI_10_CI502</tag>
+  <tag>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDI_10_DA501</tag>
+  <tag>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDI_11_CI502</tag>
+  <tag>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDI_11_DA501</tag>
+  <tag>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_08_CI502</tag>
+  <tag>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_09_CI502</tag>
+  <tag>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_10_CI502</tag>
+  <tag>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_11_CI502</tag>
+  <tag>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_16_DA501</tag>
+  <tag>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_17_DA501</tag>
+  <tag>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_18_DA501</tag>
+  <tag>PLC_AC500_V3/Application/IoConfig_Globals_Mapping/xDO_19_DA501</tag>
+ </group>
+ <group Type="Auto">
+  <name>Alarms@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Alarm triggered</tag>
+  <tag>Alarm_01</tag>
+  <tag>Alarm_02</tag>
+  <tag>Alarm_03</tag>
+  <tag>Alarm_04</tag>
+  <tag>Alarm_Active_EN</tag>
+  <tag>Alarm_History_EN</tag>
+  <tag>Number of triggered not acknowledged</tag>
+ </group>
+ <group Type="Auto">
+  <name>Background@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Languages</tag>
+  <tag>System Time</tag>
+ </group>
+ <group Type="Auto">
+  <name>CP6607_project_and_HMI_demo@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>DT_Manual_Day</tag>
+  <tag>DT_Manual_Hour</tag>
+  <tag>DT_Manual_Minute</tag>
+  <tag>DT_Manual_Month</tag>
+  <tag>DT_Manual_Second</tag>
+  <tag>DT_Manual_Sync_EN</tag>
+  <tag>DT_Manual_Year</tag>
+  <tag>Day Of Month</tag>
+  <tag>Hour</tag>
+  <tag>Minute</tag>
+  <tag>Month</tag>
+  <tag>Second</tag>
+  <tag>Year</tag>
+ </group>
+ <group Type="Auto">
+  <name>Calendar@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>System Time</tag>
+ </group>
+ <group Type="Auto">
+  <name>Email@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Email_Content</tag>
+  <tag>Email_Password</tag>
+  <tag>Email_SSL</tag>
+  <tag>Email_ServerAddress</tag>
+  <tag>Email_ServerAuthentication</tag>
+  <tag>Email_ServerPort</tag>
+  <tag>Email_Subject</tag>
+  <tag>Email_To</tag>
+  <tag>Email_User</tag>
+ </group>
+ <group Type="Auto">
+  <name>FileBrowser@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>File_DestPath</tag>
+  <tag>File_SourcePath</tag>
+ </group>
+ <group Type="Auto">
+  <name>Help_FileBrowser@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Help_FileBrowser</tag>
+ </group>
+ <group Type="Auto">
+  <name>Help_JavaScript@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Help_JavaScript</tag>
+ </group>
+ <group Type="Auto">
+  <name>Help_Table@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Help_Table</tag>
+ </group>
+ <group Type="Auto">
+  <name>Language@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Languages</tag>
+ </group>
+ <group Type="Auto">
+  <name>Network@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Adapters Parameters</tag>
+ </group>
+ <group Type="Auto">
+  <name>Recipes@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Recipe_01</tag>
+  <tag>Recipe_02</tag>
+  <tag>Recipe_03</tag>
+  <tag>Recipe_04</tag>
+  <tag>Recipe_11</tag>
+  <tag>Recipe_12</tag>
+  <tag>Recipe_13</tag>
+  <tag>Recipe_14</tag>
+ </group>
+ <group Type="Auto">
+  <name>Scheduler@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Schedule_Condition</tag>
+  <tag>Schedule_Daily</tag>
+  <tag>Schedule_Every</tag>
+  <tag>Schedule_Every2</tag>
+  <tag>Schedule_Hours</tag>
+ </group>
+ <group Type="Auto">
+  <name>Start@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Languages</tag>
+  <tag>System Time</tag>
+ </group>
+ <group Type="Auto">
+  <name>System@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Available System Memory</tag>
+  <tag>Backlight Time</tag>
+  <tag>Current project</tag>
+  <tag>DT_Manual_Day</tag>
+  <tag>DT_Manual_Hour</tag>
+  <tag>DT_Manual_Minute</tag>
+  <tag>DT_Manual_Month</tag>
+  <tag>DT_Manual_Second</tag>
+  <tag>DT_Manual_Sync_EN</tag>
+  <tag>DT_Manual_Year</tag>
+  <tag>Day Of Month</tag>
+  <tag>Display Brightness</tag>
+  <tag>Flash Free Space</tag>
+  <tag>Hour</tag>
+  <tag>Main OS Version</tag>
+  <tag>Manufacturer Code</tag>
+  <tag>Minute</tag>
+  <tag>Month</tag>
+  <tag>Project load time</tag>
+  <tag>Protocol Communication Status</tag>
+  <tag>Protocol Error Count</tag>
+  <tag>Runtime Version</tag>
+  <tag>Second</tag>
+  <tag>System Mode</tag>
+  <tag>System UpTime</tag>
+  <tag>USB Drive FreeSpace</tag>
+  <tag>USB Drive Name</tag>
+  <tag>USB Drive Size</tag>
+  <tag>USB Drive Status</tag>
+  <tag>Year</tag>
+ </group>
+ <group Type="Auto">
+  <name>Trend@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Trend_History_CursorOFF</tag>
+  <tag>Trend_History_CursorON</tag>
+  <tag>Trend_History_EN</tag>
+  <tag>Trend_MotorCurrent</tag>
+  <tag>Trend_MotorCurrent_Sel</tag>
+  <tag>Trend_MotorSpeed</tag>
+  <tag>Trend_MotorSpeed_Sel</tag>
+  <tag>Trend_MotorTemp</tag>
+  <tag>Trend_MotorTemp_Sel</tag>
+  <tag>Trend_Real_CursorOFF</tag>
+  <tag>Trend_Real_CursorON</tag>
+  <tag>Trend_Real_EN</tag>
+ </group>
+ <group Type="Auto">
+  <name>UserRight@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>This Client Group-Name</tag>
+  <tag>This Client User-Name</tag>
+ </group>
+ <group Type="Auto">
+  <name>Users@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>This Client Group-Name</tag>
+  <tag>This Client User-Name</tag>
+ </group>
+ <group Type="Auto">
+  <name>WebTemplate@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>System Time</tag>
+ </group>
+</groups>

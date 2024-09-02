@@ -1,0 +1,606 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="Recipes" pageSize="800,480" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" templateFile="background.jmx" usedFonts="Arial,SimHei" staticFile="opt/recipes.png" id="Recipes" staticOptEnable="true">
+  <wgtStyle width="800" x="0" y="0" height="480" ver="020800424" v="02.08.00.424"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="English" defaultFont="Arial"/>
+    <lang removable="false" langCode="it-IT" langId="L2" writingsystem="Any" name="Italian" defaultFont="Arial"/>
+    <lang removable="false" langCode="de-DE" langId="L3" writingsystem="Any" name="German" defaultFont="Arial"/>
+    <lang removable="false" langCode="fr-FR" langId="L4" writingsystem="Any" name="French" defaultFont="Arial"/>
+    <lang removable="false" langCode="zh-CN" langId="L5" writingsystem="Any" name="Chinese" defaultFont="SimHei"/>
+    <lang removable="false" langCode="grc" langId="L6" writingsystem="Any" name="Greek" defaultFont="Arial"/>
+    <lang removable="false" langCode="es-ES" langId="L7" writingsystem="Any" name="Spanish" defaultFont="Arial"/>
+    <lang removable="false" langCode="ru-RU" langId="L8" writingsystem="Any" name="Russian" defaultFont="Arial"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="" L2="" L3="" L4="" L5="" id="3" L6="" L7="" L8=""/>
+    <MLText L1="Last Downloaded Recipe Set:" L2="Ultimo set di ricette scaricate:" L3="Zuletzt heruntergeladener Rezeptursatz:" L4="Dernier ensemble de recettes téléchargées:" L5="最后下载的食谱集：" id="0" L6="Τελευταία λήψη του συνόλου συνταγών:" L7="Último conjunto de recetas descargadas:" L8="Последний загруженный набор рецептов:"/>
+    <MLText L1="Current Recipe Name:" L2="Nome ricetta corrente:" L3="Aktueller Rezeptname:" L4="Nom de la recette actuelle:" L5="当前食谱名称：" id="1" L6="Τρέχουσα συνταγή Όνομα:" L7="Nombre actual de la receta:" L8="Название текущего рецепта:"/>
+    <MLText L1="Recipe Selection:" L2="Selezione della ricetta:" L3="Rezeptauswahl:" L4="Sélection de la recette:" L5="食谱选择：" id="5" L6="Επιλογή συνταγής:" L7="Selección de receta:" L8="Выбор рецепта:"/>
+    <MLText L1="Recipe Set Selection:" L2="Selezione set di ricette:" L3="Auswahl des Rezeptsets:" L4="Sélection de l'ensemble de recettes:" L5="配方组选择：" id="6" L6="Επιλογή επιλογής συνταγών:" L7="Selección del conjunto de recetas:" L8="Выбор набора рецептов:"/>
+    <MLText L1="Last Recipe" L2="Ultima ricetta" L3="Letztes Rezept" L4="Dernière recette" L5="最后的食谱" id="7" L6="Τελευταία συνταγή" L7="Última receta" L8="Последний рецепт"/>
+    <MLText L1="Recipe Name" L2="Nome della ricetta" L3="Rezeptname" L4="Nom de la recette" L5="食谱名称" id="8" L6="Όνομα συνταγής" L7="Nombre de la receta" L8="Название рецепта"/>
+    <MLText L1="Current Recipe Name:" L2="Nome ricetta corrente:" L3="Aktueller Rezeptname:" L4="Nom de la recette actuelle:" L5="当前食谱名称：" id="9" L6="Τρέχουσα συνταγή Όνομα:" L7="Nombre actual de la receta:" L8="Название текущего рецепта:"/>
+    <MLText L1="Recipe Set" L2="Set di ricette" L3="Rezept-Set" L4="Ensemble de recettes" L5="食谱集" id="10" L6="Ρύθμιση συνταγών" L7="Conjunto de recetas" L8="Набор рецептов"/>
+    <MLText L1="Upload" L2="Caricare" L3="Hochladen" L4="Télécharger" L5="上传" id="11" L6="Μεταφόρτωση" L7="Subir" L8="Загрузить"/>
+    <MLText L1="Download" L2="Scaricare" L3="Herunterladen" L4="Télécharger" L5="下载" id="12" L6="Κατεβάστε" L7="Descargar" L8="Скачать"/>
+    <MLText L1="Recipe: " L2="Ricetta:" L3="Rezept:" L4="Recette:" L5="食谱：" id="13" L6="Συνταγή:" L7="Receta:" L8="Рецепт:"/>
+    <MLText L1="Recipe 1 Name" L2="Ricetta 1 Nome" L3="Rezept 1 Name" L4="Nom de la recette 1" L5="食谱 1 名称" id="14" L6="Συνταγή 1 Όνομα" L7="Receta 1 Nombre" L8="Рецепт 1 Название"/>
+    <MLText L1="Mild" L2="Mite" L3="Mild" L4="Doux" L5="温和" id="15" L6="Ήπιος" L7="Templado" L8="мягкий"/>
+    <MLText L1="Normal" L2="Normale" L3="Normal" L4="Ordinaire" L5="正常" id="16" L6="Κανονικός" L7="Normal" L8="Нормальный"/>
+    <MLText L1="Extra" L2="Extra" L3="Extra" L4="Supplémentaire" L5="额外" id="17" L6="Επιπλέον" L7="Extra" L8="дополнительный"/>
+    <MLText L1="Recipe Loaded" L2="Ricetta caricata" L3="Rezept geladen" L4="Recette chargée" L5="食谱加载" id="18" L6="Συνταγή φορτωμένο" L7="Receta cargada" L8="Рецепт загружен"/>
+    <MLText L1="Recipe: " L2="Ricetta:" L3="Rezept:" L4="Recette:" L5="食谱：" id="19" L6="Συνταγή:" L7="Receta:" L8="Рецепт:"/>
+    <MLText L1="Recipe Loaded" L2="Ricetta caricata" L3="Rezept geladen" L4="Recette chargée" L5="食谱加载" id="20" L6="Συνταγή φορτωμένο" L7="Receta cargada" L8="Рецепт загружен"/>
+    <MLText L1="Mild" L2="Mite" L3="Mild" L4="Doux" L5="温和" id="21" L6="Ήπιος" L7="Templado" L8="мягкий"/>
+    <MLText L1="Normal" L2="Normale" L3="Normal" L4="Ordinaire" L5="正常" id="22" L6="Κανονικός" L7="Normal" L8="Нормальный"/>
+    <MLText L1="Extra" L2="Extra" L3="Extra" L4="Supplémentaire" L5="额外" id="23" L6="Επιπλέον" L7="Extra" L8="дополнительный"/>
+    <MLText L1="Recipe Management" L2="Gestione delle ricette" L3="Rezeptverwaltung" L4="Gestion des recettes" L5="食谱管理" id="24" L6="Διαχείριση συνταγών" L7="Recipe Management" L8="Управление рецептами"/>
+    <MLText L1="Recipe 0 Name" L2="Ricetta 0 Nome" L3="Rezept 0 Name" L4="Nom de la recette 0" L5="食谱 0 名称" id="25" L6="Συνταγή 0 Όνομα" L7="Receta 0 Nombre" L8="Рецепт 0 Название"/>
+    <MLText L1="Espresso" L2="Caffè espresso" L3="Espresso" L4="Expresso" L5="浓咖啡" id="26" L6="Εσπρέσο" L7="Café exprés" L8="Эспрессо"/>
+    <MLText L1="Milk" L2="latte" L3="Milch" L4="Lait" L5="牛奶" id="27" L6="Γάλα" L7="Leche" L8="Молоко"/>
+    <MLText L1="Sugar" L2="zucchero" L3="Zucker" L4="Sucre" L5="糖" id="28" L6="Ζάχαρη" L7="Azúcar" L8="сахар"/>
+    <MLText L1="Water" L2="acqua" L3="Wasser" L4="Eau" L5="水" id="29" L6="Νερό" L7="Agua" L8="вода"/>
+    <MLText L1="Cocoa" L2="Cacao" L3="Kakao" L4="Cacao" L5="可可" id="30" L6="Κακάο" L7="Cacao" L8="Какао"/>
+    <MLText L1="Milk" L2="latte" L3="Milch" L4="Lait" L5="牛奶" id="31" L6="Γάλα" L7="Leche" L8="Молоко"/>
+    <MLText L1="Sugar" L2="zucchero" L3="Zucker" L4="Sucre" L5="糖" id="32" L6="Ζάχαρη" L7="Azúcar" L8="сахар"/>
+    <MLText L1="Water" L2="acqua" L3="Wasser" L4="Eau" L5="水" id="33" L6="Νερό" L7="Agua" L8="вода"/>
+   </MLTexts>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label3">
+   <wgtStyle width="270" font-color="rgb(70,70,70)" x="525" forcePaint="2" font-sizepx="13" y="205" font-family="Arial" font-bold="true" wrapping="true" cx="135" cy="14.20" height="30" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="0"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt4.label1">
+   <wgtStyle width="240" font-color="rgb(70,70,70)" x="525" forcePaint="2" font-sizepx="13" y="70" font-family="Arial" font-bold="true" wrapping="true" cx="120" cy="14.20" height="30" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="1"/>
+   </links>
+  </object>
+  <object class="GroupSubscribeWgt" id="Recipes@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt1.rect1" static="true">
+   <wgtStyle width="265" x="525" y="275" fill="none" cx="128.22" cy="97.50" height="195" nodeName="rect" stroke="rgb(200,200,200)"/>
+  </object>
+  <object class="ComboBoxWgt" id="GroupWgt1.recipesetcombo">
+   <wgtStyle width="245" x="535" forcePaint="10" font-sizepx="16" y="375" font-family="Arial" cx="32.28" cy="15" height="30" vert-align="top" index="0" text="" keypad-type="None" list="" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="list" tag="curRecipeSetList" widgetType="Project" sourceType="Recipe" dataSource="_RecipeMgr"/>
+    <dataLink readWrite="R/W" attribute="index" tag="curRecipeSet" class="RecipeMgrWgt" widgetType="Project" sourceType="Recipe" dataSource="_RecipeMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLComboBoxLink:list:">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="SimHei" L6="Arial" L7="Arial" L8="Arial"/>
+     <textid idx="0" val="3"/>
+    </lang>
+   </links>
+  </object>
+  <object class="ComboBoxWgt" id="GroupWgt1.recipecombo">
+   <wgtStyle width="245" x="535" forcePaint="10" font-sizepx="16" y="310" font-family="Arial" cx="32.28" cy="15" height="30" vert-align="top" index="0" text="" keypad-type="None" list="" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="list" tag="recipeList" widgetType="Project" sourceType="Recipe" dataSource="_RecipeMgr"/>
+    <dataLink readWrite="R/W" attribute="index" tag="curRecipe" class="RecipeMgrWgt" widgetType="Project" sourceType="Recipe" dataSource="_RecipeMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLComboBoxLink:list:">
+     <MLFontFamily L1="Arial" L2="Arial" L3="Arial" L4="Arial" L5="SimHei" L6="Arial" L7="Arial" L8="Arial"/>
+     <textid idx="0" val="3"/>
+    </lang>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label5">
+   <wgtStyle width="240" font-color="rgb(70,70,70)" x="535" forcePaint="2" font-sizepx="13" y="285" font-family="Arial" font-bold="true" wrapping="true" cx="120" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="5"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label6">
+   <wgtStyle width="240" font-color="rgb(70,70,70)" x="535" forcePaint="2" font-sizepx="13" y="350" font-family="Arial" font-bold="true" wrapping="true" cx="120" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="6"/>
+   </links>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt4.rect5" static="true">
+   <wgtStyle width="265" x="525" y="235" fill="none" cx="128.22" cy="15" height="30" nodeName="rect" stroke="rgb(200,200,200)"/>
+  </object>
+  <object class="LabelWgt" id="GroupWgt4.label4">
+   <wgtStyle width="255" font-color="rgb(70,70,70)" x="530" forcePaint="10" font-sizepx="13" y="240" font-family="Arial" wrapping="true" cx="127.50" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="text" tag="CurrentRecipe.LastDownloadedSet.Name" class="RecipeMgrWgt" widgetType="Project" sourceType="Recipe" tagIndex="-1" dataSource="_RecipeMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="7"/>
+   </links>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt6.rect4" static="true">
+   <wgtStyle width="265" x="525" y="100" fill="none" cx="128.22" cy="15" height="30" nodeName="rect" stroke="rgb(200,200,200)"/>
+  </object>
+  <object class="LabelWgt" id="GroupWgt6.label2">
+   <wgtStyle width="255" font-color="rgb(70,70,70)" x="530" forcePaint="10" font-sizepx="13" y="105" font-family="Arial" wrapping="true" cx="127.50" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="text" tag="CurrentRecipe.Name" class="RecipeMgrWgt" widgetType="Project" sourceType="Recipe" tagIndex="-1" dataSource="_RecipeMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="8"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt4.label2">
+   <wgtStyle width="240" font-color="rgb(70,70,70)" x="525" forcePaint="2" font-sizepx="13" y="135" font-family="Arial" font-bold="true" wrapping="true" cx="120" cy="14.20" height="30" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="9"/>
+   </links>
+  </object>
+  <object class="ShapeWgt" id="GroupWgt7.rect4" static="true">
+   <wgtStyle width="265" x="525" y="165" fill="none" cx="128.22" cy="15" height="30" nodeName="rect" stroke="rgb(200,200,200)"/>
+  </object>
+  <object class="LabelWgt" id="GroupWgt7.label2">
+   <wgtStyle width="255" font-color="rgb(70,70,70)" x="530" forcePaint="10" font-sizepx="13" y="170" font-family="Arial" wrapping="true" cx="127.50" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="text" tag="CurrentRecipe.CurrentSelectedSet.Name" class="RecipeMgrWgt" widgetType="Project" sourceType="Recipe" tagIndex="-1" dataSource="_RecipeMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="10"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="BtnRect" customType="Shape Button">
+   <wgtStyle width="101" x="534.47" y="415" cx="50.50" cy="22.50" height="45"/>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="BtnRect.btn">
+    <wgtStyle width="100" x="0.53" y="0" fill="rgb(220,220,220)" dx="1" form="rectangle" dy="-1" height="45" releasePath="images\win-like.svg" stroke="rgb(180,180,180)" needlePath="images\win-like-press.svg" type="momentary" value="0" pushColor="rgb(240,240,240)" needleColor="rgb(160,160,160)"/>
+    <links>
+     <action class="UpLoadCurRecipeAction" attribute="onMouseClick" event="onMouseClick" actionID="0" actionWgt="_RecipeMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="BtnRect.txt">
+    <wgtStyle width="101" font-color="rgb(70,70,70)" x="0" forcePaint="3" font-sizepx="16" y="0.70" font-family="Arial" wrapping="true" cx="51.85" cy="22.89" height="44" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="11"/>
+    </links>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnRect1" customType="Shape Button">
+   <wgtStyle width="101" x="679.47" y="415" cx="50.50" cy="22.50" height="45"/>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="BtnRect1.btn">
+    <wgtStyle width="100" x="0.53" y="0" fill="rgb(220,220,220)" dx="1" form="rectangle" dy="-1" height="45" releasePath="images\win-like.svg" stroke="rgb(180,180,180)" needlePath="images\win-like-press.svg" type="momentary" value="0" pushColor="rgb(240,240,240)" needleColor="rgb(160,160,160)"/>
+    <links>
+     <action class="DownLoadCurRecipeAction" attribute="onMouseClick" event="onMouseClick" actionID="0" actionWgt="_RecipeMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" id="BtnRect1.txt">
+    <wgtStyle width="101" font-color="rgb(70,70,70)" x="0" forcePaint="3" font-sizepx="16" y="0.70" font-family="Arial" wrapping="true" cx="51.85" cy="22.89" height="44" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="12"/>
+    </links>
+   </object>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label1">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="18" forcePaint="2" font-sizepx="16" y="290" font-family="Arial" wrapping="true" cx="50" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="13"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label2">
+   <wgtStyle width="300" font-color="rgb(70,70,70)" x="130" forcePaint="10" font-sizepx="16" y="290" font-family="Arial" wrapping="true" cx="150" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="text" tag="1.Name" class="RecipeMgrWgt" widgetType="Project" sourceType="Recipe" tagIndex="-1" dataSource="_RecipeMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="14"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label3">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="120" forcePaint="2" font-sizepx="13" y="320" font-family="Arial" font-bold="true" wrapping="true" cx="50" cy="9.47" height="20" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="15"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label20">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="220" forcePaint="2" font-sizepx="13" y="320" font-family="Arial" font-bold="true" wrapping="true" cx="50" cy="9.47" height="20" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="16"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label21">
+   <wgtStyle width="120" font-color="rgb(70,70,70)" x="318" forcePaint="3" font-sizepx="13" y="320" font-family="Arial" font-bold="true" wrapping="true" cx="60" cy="9.47" height="20" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="17"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label4">
+   <wgtStyle width="80" font-color="rgb(70,70,70)" x="435" forcePaint="3" font-sizepx="13" y="297" font-family="Arial" font-bold="true" wrapping="true" cx="40" cy="18.94" height="40" alignment="center" vert-align="bottom" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="18"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label5">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="18" forcePaint="2" font-sizepx="16" y="90" font-family="Arial" wrapping="true" cx="50" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="19"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label1">
+   <wgtStyle width="80" font-color="rgb(70,70,70)" x="435" forcePaint="2" font-sizepx="13" y="97" font-family="Arial" font-bold="true" wrapping="true" cx="40" cy="18.94" height="40" alignment="center" vert-align="bottom" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="20"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label6">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="120" forcePaint="2" font-sizepx="13" y="120" font-family="Arial" font-bold="true" wrapping="true" cx="50" cy="9.47" height="20" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="21"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label10">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="220" forcePaint="2" font-sizepx="13" y="120" font-family="Arial" font-bold="true" wrapping="true" cx="50" cy="9.47" height="20" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="22"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label11">
+   <wgtStyle width="120" font-color="rgb(70,70,70)" x="318" forcePaint="3" font-sizepx="13" y="120" font-family="Arial" font-bold="true" wrapping="true" cx="60" cy="9.47" height="20" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="23"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label2">
+   <wgtStyle width="350" font-color="rgb(255,255,255)" x="118" forcePaint="2" font-sizepx="24" y="10" font-family="Arial" font-bold="true" wrapping="true" cx="175" cy="18.94" height="40" vert-align="middle" keypad-type="None" font-size="18"/>
+   <links>
+    <lang class="MLTextLink" textid="24"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label10">
+   <wgtStyle width="300" font-color="rgb(70,70,70)" x="130" forcePaint="10" font-sizepx="16" y="90" font-family="Arial" wrapping="true" cx="150" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R" attribute="text" tag="0.Name" class="RecipeMgrWgt" widgetType="Project" sourceType="Recipe" tagIndex="-1" dataSource="_RecipeMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="25"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="GroupWgt2">
+   <wgtStyle width="502" x="10" y="140" cx="251" cy="61" height="122"/>
+   <object class="ShapeWgt" id="GroupWgt2.rect20" static="true">
+    <wgtStyle width="110" x="0" y="0" fill="rgb(240,240,240)" cx="53.22" cy="60" height="120" nodeName="rect" stroke="rgb(240,240,240)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt2.rect3" static="true">
+    <wgtStyle width="2" x="0" y="0" fill="rgb(220,220,220)" cx="0.97" cy="60" height="120" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt2.rect12" static="true">
+    <wgtStyle width="502" x="0" y="0" fill="rgb(200,200,200)" cx="243.47" cy="1" height="2" nodeName="rect" stroke="rgb(200,200,200)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt2.rect13" static="true">
+    <wgtStyle width="500" x="0" y="30" fill="rgb(220,220,220)" cx="242.50" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt2.rect14" static="true">
+    <wgtStyle width="500" x="0" y="60" fill="rgb(220,220,220)" cx="242.50" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt2.rect15" static="true">
+    <wgtStyle width="500" x="0" y="90" fill="rgb(220,220,220)" cx="242.50" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt2.rect16" static="true">
+    <wgtStyle width="502" x="0" y="120" fill="rgb(220,220,220)" cx="243.47" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt2.rect7" static="true">
+    <wgtStyle width="2" x="310" y="0" fill="rgb(220,220,220)" cx="0.97" cy="60" height="120" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt2.rect8" static="true">
+    <wgtStyle width="2" x="110" y="0" fill="rgb(220,220,220)" cx="0.97" cy="60" height="120" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt2.rect9" static="true">
+    <wgtStyle width="2" x="210" y="0" fill="rgb(220,220,220)" cx="0.97" cy="60" height="120" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt2.rect10" static="true">
+    <wgtStyle width="2" x="410" y="0" fill="rgb(220,220,220)" cx="0.97" cy="60" height="120" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt2.rect11" static="true">
+    <wgtStyle width="2" x="500" y="0" fill="rgb(220,220,220)" cx="0.97" cy="60" height="120" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label7">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="18" forcePaint="2" font-sizepx="13" y="145" font-family="Arial" wrapping="true" cx="50" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="26"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label8">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="18" forcePaint="2" font-sizepx="13" y="175" font-family="Arial" wrapping="true" cx="50" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="27"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label9">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="18" forcePaint="2" font-sizepx="13" y="235" font-family="Arial" wrapping="true" cx="50" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="28"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt1.label12">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="18" forcePaint="2" font-sizepx="13" y="205" font-family="Arial" wrapping="true" cx="50" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="29"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.field5">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="36.80" cy="13.50" step="1" timeSpec="local" alignment="center" x="430" y="142" vert-align="middle" text="99999" max="3.40282e+038" usingFormat="#.#" value="99999" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="80" numberFormat="6" height="30" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="float" attribute="value" tag="Recipe_01" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.field6">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="36.80" cy="13.50" step="1" timeSpec="local" alignment="center" x="430" y="172" vert-align="middle" text="99999" max="3.40282e+038" usingFormat="#.#" value="99999" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="80" numberFormat="6" height="30" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="float" attribute="value" tag="Recipe_02" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.field7">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="36.80" cy="13.50" step="1" timeSpec="local" alignment="center" x="430" y="202" vert-align="middle" text="99999" max="3.40282e+038" usingFormat="#.#" value="99999" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="80" numberFormat="6" height="30" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="float" attribute="value" tag="Recipe_03" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.field8">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="36.80" cy="13.50" step="1" timeSpec="local" alignment="center" x="430" y="232" vert-align="middle" text="99999" max="3.40282e+038" usingFormat="#.#" value="99999" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="80" numberFormat="6" height="30" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="float" attribute="value" tag="Recipe_04" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.field1">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="46" cy="13.50" step="1" timeSpec="local" alignment="center" x="121" y="142" vert-align="middle" text="99999" max="3.40282e+038" usingFormat="#.#" value="99999" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="100" numberFormat="6" readWrite="true" height="30" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="0.0.0.Value" class="RecipeMgrWgt" widgetType="Project" sourceType="Recipe" tagIndex="-1" dataSource="_RecipeMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.field2">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="46" cy="13.50" step="1" timeSpec="local" alignment="center" x="121" y="172" vert-align="middle" text="99999" max="3.40282e+038" usingFormat="#.#" value="99999" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="100" numberFormat="6" readWrite="true" height="30" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="0.0.1.Value" class="RecipeMgrWgt" widgetType="Project" sourceType="Recipe" tagIndex="-1" dataSource="_RecipeMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.field3">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="46" cy="13.50" step="1" timeSpec="local" alignment="center" x="121" y="202" vert-align="middle" text="99999" max="3.40282e+038" usingFormat="#.#" value="99999" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="100" numberFormat="6" readWrite="true" height="30" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="0.0.2.Value" class="RecipeMgrWgt" widgetType="Project" sourceType="Recipe" tagIndex="-1" dataSource="_RecipeMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.field4">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="46" cy="13.50" step="1" timeSpec="local" alignment="center" x="121" y="232" vert-align="middle" text="99999" max="3.40282e+038" usingFormat="#.#" value="99999" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="100" numberFormat="6" readWrite="true" height="30" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="0.0.3.Value" class="RecipeMgrWgt" widgetType="Project" sourceType="Recipe" tagIndex="-1" dataSource="_RecipeMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.field1">
+   <wgtStyle forcePaint="73" font-family="Arial" font-sizepx="13" cx="46" cy="13.50" step="1" timeSpec="local" alignment="center" x="220" y="142" vert-align="middle" text="99999" max="3.40282e+038" usingFormat="#.#" value="99999" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="100" numberFormat="6" readWrite="true" height="30" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="0.1.0.Value" class="RecipeMgrWgt" widgetType="Project" sourceType="Recipe" tagIndex="-1" dataSource="_RecipeMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.field1">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="46" cy="13.50" step="1" timeSpec="local" alignment="center" x="320" y="142" vert-align="middle" text="99999" max="3.40282e+038" usingFormat="#.#" value="99999" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="100" numberFormat="6" readWrite="true" height="30" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="0.2.0.Value" class="RecipeMgrWgt" widgetType="Project" sourceType="Recipe" tagIndex="-1" dataSource="_RecipeMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.field2">
+   <wgtStyle forcePaint="73" font-family="Arial" font-sizepx="13" cx="46" cy="13.50" step="1" timeSpec="local" alignment="center" x="220" y="172" vert-align="middle" text="99999" max="3.40282e+038" usingFormat="#.#" value="99999" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="100" numberFormat="6" readWrite="true" height="30" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="0.1.1.Value" class="RecipeMgrWgt" widgetType="Project" sourceType="Recipe" tagIndex="-1" dataSource="_RecipeMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.field3">
+   <wgtStyle forcePaint="73" font-family="Arial" font-sizepx="13" cx="46" cy="13.50" step="1" timeSpec="local" alignment="center" x="220" y="202" vert-align="middle" text="99999" max="3.40282e+038" usingFormat="#.#" value="99999" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="100" numberFormat="6" readWrite="true" height="30" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="0.1.2.Value" class="RecipeMgrWgt" widgetType="Project" sourceType="Recipe" tagIndex="-1" dataSource="_RecipeMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.field4">
+   <wgtStyle forcePaint="73" font-family="Arial" font-sizepx="13" cx="46" cy="13.50" step="1" timeSpec="local" alignment="center" x="220" y="232" vert-align="middle" text="99999" max="3.40282e+038" usingFormat="#.#" value="99999" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="100" numberFormat="6" readWrite="true" height="30" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="0.1.3.Value" class="RecipeMgrWgt" widgetType="Project" sourceType="Recipe" tagIndex="-1" dataSource="_RecipeMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.field2">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="46" cy="13.50" step="1" timeSpec="local" alignment="center" x="320" y="172" vert-align="middle" text="99999" max="3.40282e+038" usingFormat="#.#" value="99999" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="100" numberFormat="6" readWrite="true" height="30" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="0.2.1.Value" class="RecipeMgrWgt" widgetType="Project" sourceType="Recipe" tagIndex="-1" dataSource="_RecipeMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.field3">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="46" cy="13.50" step="1" timeSpec="local" alignment="center" x="320" y="202" vert-align="middle" text="99999" max="3.40282e+038" usingFormat="#.#" value="99999" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="100" numberFormat="6" readWrite="true" height="30" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="0.2.2.Value" class="RecipeMgrWgt" widgetType="Project" sourceType="Recipe" tagIndex="-1" dataSource="_RecipeMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.field4">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="46" cy="13.50" step="1" timeSpec="local" alignment="center" x="320" y="232" vert-align="middle" text="99999" max="3.40282e+038" usingFormat="#.#" value="99999" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="100" numberFormat="6" readWrite="true" height="30" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="0.2.3.Value" class="RecipeMgrWgt" widgetType="Project" sourceType="Recipe" tagIndex="-1" dataSource="_RecipeMgr"/>
+   </dataLinks>
+  </object>
+  <object class="GroupWgt" id="GroupWgt3">
+   <wgtStyle width="502" x="10" y="340" cx="251" cy="61" height="122"/>
+   <object class="ShapeWgt" id="GroupWgt3.rect20" static="true">
+    <wgtStyle width="110" x="0" y="0" fill="rgb(240,240,240)" cx="53.22" cy="60" height="120" nodeName="rect" stroke="rgb(240,240,240)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt3.rect3" static="true">
+    <wgtStyle width="2" x="0" y="0" fill="rgb(220,220,220)" cx="0.97" cy="60" height="120" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt3.rect7" static="true">
+    <wgtStyle width="2" x="310" y="0" fill="rgb(220,220,220)" cx="0.97" cy="60" height="120" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt3.rect8" static="true">
+    <wgtStyle width="2" x="110" y="0" fill="rgb(220,220,220)" cx="0.97" cy="60" height="120" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt3.rect9" static="true">
+    <wgtStyle width="2" x="210" y="0" fill="rgb(220,220,220)" cx="0.97" cy="60" height="120" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt3.rect10" static="true">
+    <wgtStyle width="2" x="410" y="0" fill="rgb(220,220,220)" cx="0.97" cy="60" height="120" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt3.rect11" static="true">
+    <wgtStyle width="2" x="500" y="0" fill="rgb(220,220,220)" cx="0.97" cy="60" height="120" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt3.rect12" static="true">
+    <wgtStyle width="502" x="0" y="0" fill="rgb(200,200,200)" cx="243.47" cy="1" height="2" nodeName="rect" stroke="rgb(200,200,200)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt3.rect13" static="true">
+    <wgtStyle width="500" x="0" y="30" fill="rgb(220,220,220)" cx="242.50" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt3.rect14" static="true">
+    <wgtStyle width="500" x="0" y="60" fill="rgb(220,220,220)" cx="242.50" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt3.rect15" static="true">
+    <wgtStyle width="500" x="0" y="90" fill="rgb(220,220,220)" cx="242.50" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+   <object class="ShapeWgt" id="GroupWgt3.rect16" static="true">
+    <wgtStyle width="502" x="0" y="120" fill="rgb(220,220,220)" cx="243.47" cy="1" height="2" nodeName="rect" stroke="rgb(220,220,220)"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label7">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="18" forcePaint="2" font-sizepx="13" y="345" font-family="Arial" wrapping="true" cx="50" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="30"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label8">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="18" forcePaint="2" font-sizepx="13" y="375" font-family="Arial" wrapping="true" cx="50" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="31"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label9">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="18" forcePaint="2" font-sizepx="13" y="435" font-family="Arial" wrapping="true" cx="50" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="32"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="GroupWgt2.label12">
+   <wgtStyle width="100" font-color="rgb(70,70,70)" x="18" forcePaint="2" font-sizepx="13" y="405" font-family="Arial" wrapping="true" cx="50" cy="9.47" height="20" vert-align="middle" keypad-type="None" font-size="10"/>
+   <links>
+    <lang class="MLTextLink" textid="33"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="GroupWgt2.field5">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="36.80" cy="13.50" step="1" timeSpec="local" alignment="center" x="430" y="342" vert-align="middle" text="99999" max="3.40282e+038" usingFormat="#.#" value="99999" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="80" numberFormat="6" height="30" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="float" attribute="value" tag="Recipe_11" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt2.field6">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="36.80" cy="13.50" step="1" timeSpec="local" alignment="center" x="430" y="372" vert-align="middle" text="99999" max="3.40282e+038" usingFormat="#.#" value="99999" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="80" numberFormat="6" height="30" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="float" attribute="value" tag="Recipe_12" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt2.field7">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="36.80" cy="13.50" step="1" timeSpec="local" alignment="center" x="430" y="402" vert-align="middle" text="99999" max="3.40282e+038" usingFormat="#.#" value="99999" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="80" numberFormat="6" height="30" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="float" attribute="value" tag="Recipe_13" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt2.field8">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="36.80" cy="13.50" step="1" timeSpec="local" alignment="center" x="430" y="432" vert-align="middle" text="99999" max="3.40282e+038" usingFormat="#.#" value="99999" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="80" numberFormat="6" height="30" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="float" attribute="value" tag="Recipe_14" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt2.field1">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="46" cy="13.50" step="1" timeSpec="local" alignment="center" x="121" y="342" vert-align="middle" text="99999" max="3.40282e+038" usingFormat="#.#" value="99999" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="100" numberFormat="6" readWrite="true" height="30" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="1.0.0.Value" class="RecipeMgrWgt" widgetType="Project" sourceType="Recipe" tagIndex="-1" dataSource="_RecipeMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt2.field2">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="46" cy="13.50" step="1" timeSpec="local" alignment="center" x="121" y="372" vert-align="middle" text="99999" max="3.40282e+038" usingFormat="#.#" value="99999" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="100" numberFormat="6" readWrite="true" height="30" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="1.0.1.Value" class="RecipeMgrWgt" widgetType="Project" sourceType="Recipe" tagIndex="-1" dataSource="_RecipeMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt2.field3">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="46" cy="13.50" step="1" timeSpec="local" alignment="center" x="121" y="402" vert-align="middle" text="99999" max="3.40282e+038" usingFormat="#.#" value="99999" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="100" numberFormat="6" readWrite="true" height="30" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="1.0.2.Value" class="RecipeMgrWgt" widgetType="Project" sourceType="Recipe" tagIndex="-1" dataSource="_RecipeMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt2.field4">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="46" cy="13.50" step="1" timeSpec="local" alignment="center" x="121" y="432" vert-align="middle" text="99999" max="3.40282e+038" usingFormat="#.#" value="99999" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="100" numberFormat="6" readWrite="true" height="30" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="1.0.3.Value" class="RecipeMgrWgt" widgetType="Project" sourceType="Recipe" tagIndex="-1" dataSource="_RecipeMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.field9">
+   <wgtStyle forcePaint="73" font-family="Arial" font-sizepx="13" cx="46" cy="13.50" step="1" timeSpec="local" alignment="center" x="220" y="342" vert-align="middle" text="99999" max="3.40282e+038" usingFormat="#.#" value="99999" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="100" numberFormat="6" readWrite="true" height="30" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="1.1.0.Value" class="RecipeMgrWgt" widgetType="Project" sourceType="Recipe" tagIndex="-1" dataSource="_RecipeMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.field10">
+   <wgtStyle forcePaint="73" font-family="Arial" font-sizepx="13" cx="46" cy="13.50" step="1" timeSpec="local" alignment="center" x="220" y="372" vert-align="middle" text="99999" max="3.40282e+038" usingFormat="#.#" value="99999" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="100" numberFormat="6" readWrite="true" height="30" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="1.1.1.Value" class="RecipeMgrWgt" widgetType="Project" sourceType="Recipe" tagIndex="-1" dataSource="_RecipeMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.field11">
+   <wgtStyle forcePaint="73" font-family="Arial" font-sizepx="13" cx="46" cy="13.50" step="1" timeSpec="local" alignment="center" x="220" y="402" vert-align="middle" text="99999" max="3.40282e+038" usingFormat="#.#" value="99999" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="100" numberFormat="6" readWrite="true" height="30" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="1.1.2.Value" class="RecipeMgrWgt" widgetType="Project" sourceType="Recipe" tagIndex="-1" dataSource="_RecipeMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.field12">
+   <wgtStyle forcePaint="73" font-family="Arial" font-sizepx="13" cx="46" cy="13.50" step="1" timeSpec="local" alignment="center" x="220" y="432" vert-align="middle" text="99999" max="3.40282e+038" usingFormat="#.#" value="99999" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="100" numberFormat="6" readWrite="true" height="30" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="1.1.3.Value" class="RecipeMgrWgt" widgetType="Project" sourceType="Recipe" tagIndex="-1" dataSource="_RecipeMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.field13">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="46" cy="13.50" step="1" timeSpec="local" alignment="center" x="320" y="342" vert-align="middle" text="99999" max="3.40282e+038" usingFormat="#.#" value="99999" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="100" numberFormat="6" readWrite="true" height="30" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="1.2.0.Value" class="RecipeMgrWgt" widgetType="Project" sourceType="Recipe" tagIndex="-1" dataSource="_RecipeMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.field14">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="46" cy="13.50" step="1" timeSpec="local" alignment="center" x="320" y="372" vert-align="middle" text="99999" max="3.40282e+038" usingFormat="#.#" value="99999" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="100" numberFormat="6" readWrite="true" height="30" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="1.2.1.Value" class="RecipeMgrWgt" widgetType="Project" sourceType="Recipe" tagIndex="-1" dataSource="_RecipeMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.field15">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="46" cy="13.50" step="1" timeSpec="local" alignment="center" x="320" y="402" vert-align="middle" text="99999" max="3.40282e+038" usingFormat="#.#" value="99999" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="100" numberFormat="6" readWrite="true" height="30" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="1.2.2.Value" class="RecipeMgrWgt" widgetType="Project" sourceType="Recipe" tagIndex="-1" dataSource="_RecipeMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="GroupWgt1.field16">
+   <wgtStyle forcePaint="8" font-family="Arial" font-sizepx="13" cx="46" cy="13.50" step="1" timeSpec="local" alignment="center" x="320" y="432" vert-align="middle" text="99999" max="3.40282e+038" usingFormat="#.#" value="99999" keypad-type="Numeric" font-color="rgb(70,70,70)" min="-3.40282e+038" width="100" numberFormat="6" readWrite="true" height="30" form="Numeric" font-size="10"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="1.2.3.Value" class="RecipeMgrWgt" widgetType="Project" sourceType="Recipe" tagIndex="-1" dataSource="_RecipeMgr"/>
+   </dataLinks>
+  </object>
+  <object class="GroupWgt" id="BtnStd7" customType="Button">
+   <wgtStyle width="26" x="765" y="65" cx="13.01" cy="12.99" height="26"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="image16" static="true">
+    <wgtStyle width="30.73" x="-4.13" y="-4.14" visibility="false" bdrImageSize="57.00,52.00" fill="rgb(127,127,127)" cx="15.09" cy="15.37" bdrSize="0.45,0.43,0.40,0.42" height="30.73" bdrEdges="0.13,0.13,0.13,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shiney; hmi-shape:round; hmi-type:btn; type:btn" id="buttonStd20">
+    <wgtStyle width="22.46" x="0" y="0" bdrImageSize="42.00,38.00" fill="rgb(192,192,192)" cx="10.16" form="standard" cy="10.83" bdrSize="0.40,0.43,0.38,0.35" height="22.46" type="momentary" value="0"/>
+    <links>
+     <action pageName="help_recipes.jmx" class="ShowDialogAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="label8" static="true">
+    <wgtStyle width="19.50" font-color="rgb(40,40,40)" x="0.59" font-sizepx="13" y="2.95" font-family="Arial" wrapping="true" cx="12.99" cy="11.24" height="17.73" alignment="center" vert-align="middle" keypad-type="None" font-size="10"/>
+    <links>
+     <lang class="MLTextLink" textid="3"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="image17">
+    <wgtStyle width="23.64" imagePath="images/ic_ma1_022.svg" x="2.36" forcePaint="1" y="2.36" fill="rgb(70,70,70)" cx="11.81" cy="10.34" height="23.64"/>
+   </object>
+  </object>
+ </object>
+</wgtPage>

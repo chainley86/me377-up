@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" height="85.99px" viewBox="0 0 85.99 85.99" width="85.99px" version="1.1" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 85.99 85.99">
+<path id="bgColor00" d="m0.004 85.988v-85.988h85.986v85.988h-85.986z" fill="#F46C0F"/>
+<linearGradient id="path4856_1_" y2="-819.59" gradientUnits="userSpaceOnUse" x2="315.95" gradientTransform="matrix(1 0 0 -1 -272.95 -819.61)" y1="-905.1" x1="315.95">
+	<stop stop-opacity=".65" offset="0"/>
+	<stop stop-opacity="0" offset=".1273"/>
+	<stop stop-color="#fff" stop-opacity="0" offset=".8888"/>
+	<stop stop-color="#fff" offset="1"/>
+</linearGradient>
+<path opacity=".62" d="m0.004 85.988v-85.988h85.986v85.988c0-0.003-85.986 0-85.986 0z" enable-background="new    " fill="url(#path4856_1_)"/>
+<linearGradient id="path4867_1_" y2="-862.59" gradientUnits="userSpaceOnUse" x2="273.92" gradientTransform="matrix(1 0 0 -1 -272.95 -819.61)" y1="-862.58" x1="358.92">
+	<stop stop-opacity=".65" offset="0"/>
+	<stop stop-opacity="0" offset=".1273"/>
+	<stop stop-color="#fff" stop-opacity="0" offset=".8888"/>
+	<stop stop-color="#fff" offset="1"/>
+</linearGradient>
+<path opacity=".59" d="m0.004 85.988v-85.988h85.986v85.988h-85.986z" enable-background="new    " fill="url(#path4867_1_)"/>
+</svg>

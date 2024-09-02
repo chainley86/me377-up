@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" width="400px" xml:space="preserve" viewBox="0 0 400 406.25" height="406.25px" baseProfile="tiny" version="1.2" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px" x="0px" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+		<polygon points="326.64 381.84 317.24 381.84 322.44 367.06 326.64 367.06" fill="#FF000F"/>
+		<polygon points="331.58 367.06 327.22 367.06 327.22 381.84 336.67 381.84" fill="#FF000F"/>
+		<polygon points="319.34 397.34 311.8 397.34 317 382.44 326.61 382.44 326.61 391.29 321.52 391.3" fill="#FF000F"/>
+		<polygon points="342.12 397.34 334.48 397.34 332.43 391.31 327.22 391.31 327.22 382.44 336.9 382.44" fill="#FF000F"/>
+		<rect y="367.06" x="344.18" height="14.781" width="8.795" fill="#FF000F"/>
+		<rect y="382.44" x="344.18" height="14.896" width="8.795" fill="#FF000F"/>
+		<path d="m362.8 381.84h-9.196v-14.781h3.199s5.774 0.169 6.396 6.41c0.133 4.665-3.508 6.32-3.508 6.32s2.24 0.96 3.11 2.05z" fill="#FF000F"/>
+		<path d="m365.46 388.39c0.013 0.739-0.386 8.409-9.082 8.945h-2.779v-14.9h9.773c2.31 2.86 2.09 5.95 2.09 5.95z" fill="#FF000F"/>
+		<rect y="367.06" x="367.84" height="14.781" width="8.796" fill="#FF000F"/>
+		<rect y="382.44" x="367.84" height="14.896" width="8.796" fill="#FF000F"/>
+		<path d="m386.45 381.84h-9.196v-14.781h3.199s5.774 0.169 6.396 6.41c0.134 4.665-3.508 6.32-3.508 6.32s2.25 0.96 3.11 2.05z" fill="#FF000F"/>
+		<path d="m389.12 388.39c0.013 0.739-0.386 8.409-9.082 8.945h-2.779v-14.9h9.773c2.31 2.86 2.09 5.95 2.09 5.95z" fill="#FF000F"/>
+</svg>

@@ -1,0 +1,11 @@
+﻿<defs>
+ <g id="custom_properties" showChildNodes="0" inherit="widget_properties" attributeName="PTZ Controls">
+  <text eventName="onMouseClick" display="Up OnMouseClick Action" attributeType="event" menuBtn="true" layer="Events" childPropName="action" childAttrName="onMouseClick.action" read_only="false" attributeName="ButtonWgt2.onMouseClick" isCompound="true">Action for Mouse Click Event</text>
+  <text eventName="onMouseClick" display="Left OnMouseClick Action" attributeType="event" menuBtn="true" layer="Events" childPropName="action" childAttrName="onMouseClick.action" read_only="false" attributeName="ButtonWgt3.onMouseClick" isCompound="true">Action for Mouse Click Event</text>
+  <text eventName="onMouseClick" display="Right OnMouseClick Action" attributeType="event" menuBtn="true" layer="Events" childPropName="action" childAttrName="onMouseClick.action" read_only="false" attributeName="ButtonWgt5.onMouseClick" isCompound="true">Action for Mouse Click Event</text>
+  <text eventName="onMouseClick" display="Down OnMouseClick Action" attributeType="event" menuBtn="true" layer="Events" childPropName="action" childAttrName="onMouseClick.action" read_only="false" attributeName="ButtonWgt4.onMouseClick" isCompound="true">Action for Mouse Click Event</text>
+  <text eventName="onMouseClick" display="Home Position OnMouseClick Action" attributeType="event" menuBtn="true" layer="Events" childPropName="action" childAttrName="onMouseClick.action" read_only="false" attributeName="ButtonWgt1.onMouseClick" isCompound="true">Action for Mouse Click Event</text>
+  <text eventName="onMouseClick" display="Stop Horizon Patrol OnMouseClick Action" attributeType="event" menuBtn="true" layer="Events" childPropName="action" childAttrName="onMouseClick.action" read_only="false" attributeName="ButtonWgt7.onMouseClick" isCompound="true">Action for Mouse Click Event</text>
+  <text eventName="onMouseClick" display="Horizon Patrol OnMouseClick Action" attributeType="event" menuBtn="true" layer="Events" childPropName="action" childAttrName="onMouseClick.action" read_only="false" attributeName="ButtonWgt6.onMouseClick" isCompound="true">Action for Mouse Click Event</text>
+ </g>
+</defs>
